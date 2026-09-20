@@ -30,3 +30,34 @@ for ($d=0; $d<10 && $current; $d++, $current=$current->parentNode) {
         break;
     }
 }
+
+echo "\n\nITEM PAGE DEBUG:\n";
+$html = file_get_contents('https://tactics.tools/pt/items');
+$dom = new DOMDocument();
+libxml_use_internal_errors(true);
+$dom->loadHTML('<?xml encoding="UTF-8">' . $html);
+$xp = new DOMXPath($dom);
+foreach ($xp->query('//tr') ?: [] as $tr) {
+    if (!$tr instanceof DOMElement) continue;
+    $imgs = $tr->getElementsByTagName('img');
+    $hasItem = false;
+    foreach ($imgs as $img) {
+        if (str_contains($img->getAttribute('src'), '/items_s14/')) {
+            $hasItem = true;
+            break;
+        }
+    }
+    if (!$hasItem) continue;
+    echo "ROW TEXT:\n".trim(preg_replace('/\\s+/u',' ', $tr->textContent ?? ''))."\nIMAGES:\n";
+    foreach ($imgs as $img) {
+        echo json_encode([
+            'alt'=>$img->getAttribute('alt'),
+            'src'=>$img->getAttribute('src')
+        ], JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES)."\n";
+    }
+    echo "CELLS:\n";
+    foreach ($tr->getElementsByTagName('td') as $td) {
+        echo "[".trim(preg_replace('/\\s+/u',' ', $td->textContent ?? ''))."]\n";
+    }
+    break;
+}
