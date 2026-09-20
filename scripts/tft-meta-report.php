@@ -121,7 +121,12 @@ function personalTftRows(array $players): array
 
         if ($matches !== []) {
             $summary = Analytics::tftSummary($matches, 20);
-            $row['recent'] = $summary;
+            $row['recent'] = [
+                'games' => (int) ($summary['games'] ?? 0),
+                'top4_rate' => (float) ($summary['top4_rate'] ?? 0),
+                'first_rate' => (float) ($summary['first_rate'] ?? 0),
+                'avg_placement' => (float) ($summary['avg_placement'] ?? 0),
+            ];
         }
 
         $rows[] = $row;
@@ -201,7 +206,7 @@ if ($items !== []) {
             : [];
 
         $line = sprintf(
-            '**%s** — Win %s • Top4 %s • média %.2f • uso %.2f',
+            '**%s** — Win %s • Top4 %s • média %.2f • uso %.2f/8',
             (string) ($item['name'] ?? 'Item'),
             tftPct((float) ($item['win_rate'] ?? 0)),
             tftPct((float) ($item['top4_rate'] ?? 0)),
@@ -233,7 +238,7 @@ if ($personal !== []) {
 
         if ($row['official_win_rate'] !== null) {
             $line .= sprintf(
-                "\n1º lugar oficial: **%s** (%d/%d)",
+                "\nWin/1º lugar: **%s** (%d/%d)",
                 tftPct((float) $row['official_win_rate']),
                 (int) $row['official_firsts'],
                 (int) $row['official_games']
