@@ -5,7 +5,6 @@ declare(strict_types=1);
 require __DIR__ . '/../bootstrap.php';
 
 use DiscordAutomation\Support\DiscordWebhook;
-use DiscordAutomation\Support\HtmlLinkExtractor;
 use DiscordAutomation\Support\HttpClient;
 use DiscordAutomation\Support\StateStore;
 
@@ -32,45 +31,77 @@ function fortniteCompactText(string $text, int $limit = 900): string
         : rtrim(mb_substr($text, 0, max(1, $limit - 1), 'UTF-8')) . '…';
 }
 
-try {
-    $newsUrl = (string) $config['news_url'];
-    $html = HttpClient::getText($newsUrl, ['Accept: text/html,application/xhtml+xml']);
-    $links = HtmlLinkExtractor::extract($html, $newsUrl);
-    $seenNews = [];
+function appendFortniteNewsItems(array &$items, array $section, string $mode): void
+{
+    $motds = is_array($section['motds'] ?? null) ? $section['motds'] : [];
+    $messages = is_array($section['messages'] ?? null) ? $section['messages'] : [];
 
-    foreach ($links as $link) {
-        $url = (string) ($link['url'] ?? '');
-        $title = fortniteCompactText((string) ($link['title'] ?? ''), 220);
-        $parts = parse_url($url);
-        $path = is_array($parts) ? (string) ($parts['path'] ?? '') : '';
-
-        if (
-            $url === ''
-            || $title === ''
-            || !is_array($parts)
-            || ($parts['host'] ?? '') !== 'www.fortnite.com'
-            || !str_starts_with($path, '/news/')
-            || str_contains($path, '/news/tag/')
-            || isset($seenNews[$url])
-        ) {
+    foreach ($motds as $entry) {
+        if (!is_array($entry)) {
             continue;
         }
 
-        $seenNews[$url] = true;
+        $id = trim((string) ($entry['id'] ?? ''));
+        $title = fortniteCompactText((string) ($entry['title'] ?? $entry['tabTitle'] ?? 'Fortnite News'), 220);
+        $body = fortniteCompactText((string) ($entry['body'] ?? ''), 900);
+        $image = trim((string) ($entry['image'] ?? $entry['tileImage'] ?? ''));
+
+        if ($title === '') {
+            continue;
+        }
+
+        $idBase = $id !== '' ? $id : hash('sha256', $mode . '|' . $title . '|' . $body);
+
         $items[] = [
-            'id' => 'news:' . hash('sha256', $url),
+            'id' => 'news:' . $mode . ':' . $idBase,
             'kind' => 'news',
             'title' => $title,
-            'description' => 'Nova publicação detectada nas notícias oficiais do Fortnite.',
-            'url' => $url,
+            'description' => $body !== '' ? $body : 'Nova mensagem detectada no feed do Fortnite.',
+            'url' => 'https://www.fortnite.com/news?lang=pt-BR',
+            'image' => $image,
+            'mode' => $mode,
         ];
+    }
 
-        if (count($seenNews) >= 30) {
-            break;
+    foreach ($messages as $entry) {
+        if (!is_array($entry)) {
+            continue;
         }
+
+        $title = fortniteCompactText((string) ($entry['title'] ?? 'Fortnite News'), 220);
+        $body = fortniteCompactText((string) ($entry['body'] ?? ''), 900);
+        $image = trim((string) ($entry['image'] ?? ''));
+
+        if ($title === '') {
+            continue;
+        }
+
+        $items[] = [
+            'id' => 'message:' . $mode . ':' . hash('sha256', $title . '|' . $body . '|' . $image),
+            'kind' => 'news',
+            'title' => $title,
+            'description' => $body !== '' ? $body : 'Nova mensagem detectada no feed do Fortnite.',
+            'url' => 'https://www.fortnite.com/news?lang=pt-BR',
+            'image' => $image,
+            'mode' => $mode,
+        ];
+    }
+}
+
+try {
+    $news = HttpClient::getJson((string) $config['news_api_url']);
+    $data = is_array($news['data'] ?? null) ? $news['data'] : [];
+
+    foreach ([
+        'br' => 'Battle Royale',
+        'stw' => 'Salve o Mundo',
+        'creative' => 'Criativo',
+    ] as $key => $mode) {
+        $section = is_array($data[$key] ?? null) ? $data[$key] : [];
+        appendFortniteNewsItems($items, $section, $mode);
     }
 } catch (Throwable $e) {
-    echo "Falha ao consultar notícias do Fortnite: {$e->getMessage()}\n";
+    echo "Falha ao consultar Fortnite-API news: {$e->getMessage()}\n";
 }
 
 try {
@@ -80,6 +111,7 @@ try {
     );
 
     $previous = libxml_use_internal_errors(true);
+
     try {
         $xml = simplexml_load_string($rss, 'SimpleXMLElement', LIBXML_NOCDATA);
     } finally {
@@ -102,6 +134,7 @@ try {
             }
 
             $idBase = $guid !== '' ? $guid : ($link !== '' ? $link : $title);
+
             $items[] = [
                 'id' => 'status:' . hash('sha256', $idBase),
                 'kind' => 'status',
@@ -110,6 +143,8 @@ try {
                     ? $description
                     : 'Atualização do status dos serviços Epic/Fortnite.',
                 'url' => $link !== '' ? $link : 'https://status.epicgames.com/',
+                'image' => '',
+                'mode' => 'Status',
             ];
 
             if (++$count >= 15) {
@@ -142,21 +177,40 @@ $discord = new DiscordWebhook($webhookUrl);
 $sendItem = static function (array $item, bool $test = false) use ($discord): void {
     $isStatus = $item['kind'] === 'status';
 
-    $discord->send([
-        'embeds' => [[
-            'title' => ($test ? '🧪 TESTE • ' : '') . ($isStatus ? '🚨 Fortnite Status' : '🎮 Fortnite News'),
-            'description' => '**' . $item['title'] . "**\n\n" . $item['description'],
-            'url' => $item['url'],
-            'color' => $isStatus ? 0xED4245 : 0x9B59B6,
-            'fields' => [[
-                'name' => '🔗 Fonte oficial',
-                'value' => '[Abrir atualização](' . $item['url'] . ')',
-                'inline' => false,
-            ]],
-            'footer' => ['text' => $isStatus ? 'Epic Games Status' : 'Fortnite.com'],
-            'timestamp' => date(DATE_ATOM),
-        ]],
-    ]);
+    $embed = [
+        'title' => ($test ? '🧪 TESTE • ' : '') . ($isStatus ? '🚨 Fortnite Status' : '🎮 Fortnite News'),
+        'description' => '**' . $item['title'] . "**\n\n" . $item['description'],
+        'url' => $item['url'],
+        'color' => $isStatus ? 0xED4245 : 0x9B59B6,
+        'fields' => [
+            [
+                'name' => '🎯 Categoria',
+                'value' => (string) ($item['mode'] ?? 'Fortnite'),
+                'inline' => true,
+            ],
+            [
+                'name' => '🔗 Fonte',
+                'value' => $isStatus
+                    ? '[Epic Games Status](' . $item['url'] . ')'
+                    : '[Fortnite](' . $item['url'] . ')',
+                'inline' => true,
+            ],
+        ],
+        'footer' => [
+            'text' => $isStatus
+                ? 'Epic Games Status'
+                : 'Dados in-game: Fortnite-API.com',
+        ],
+        'timestamp' => date(DATE_ATOM),
+    ];
+
+    $image = trim((string) ($item['image'] ?? ''));
+
+    if (preg_match('~^https?://~i', $image) === 1) {
+        $embed['thumbnail'] = ['url' => $image];
+    }
+
+    $discord->send(['embeds' => [$embed]]);
 };
 
 if (!isset($current['initialized_at'])) {
@@ -192,6 +246,7 @@ if ($new === []) {
 }
 
 $published = [];
+
 foreach (array_slice($new, 0, $maxPosts) as $item) {
     $sendItem($item);
     $published[] = $item['id'];
