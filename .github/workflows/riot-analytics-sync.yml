@@ -1,0 +1,58 @@
+name: Riot Analytics — Sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_report:
+        description: 'Enviar um resumo de teste para todos os jogadores'
+        required: false
+        default: false
+        type: boolean
+
+  schedule:
+    - cron: '41 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discord-automation-riot-analytics
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Sincronizar LoL e TFT
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+          FORCE_REPORT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_report || false }}
+        run: php scripts/riot-sync.php
+
+      - name: Persistir Riot Analytics
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain -- .state/riot-analytics.json)" ]; then
+            echo 'Nenhuma alteração de estado para registrar.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .state/riot-analytics.json
+          git commit -m 'chore: update riot analytics state'
+          git pull --rebase origin main
+          git push
