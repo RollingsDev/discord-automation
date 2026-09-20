@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+/vendor/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
+*.tmp
