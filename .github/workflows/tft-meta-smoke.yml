@@ -29,5 +29,4 @@ jobs:
           DRY_RUN: 'true'
         run: php scripts/tft-meta-report.php
 
-      - name: Debug estrutura da comp
         run: php scripts/tft-meta-debug.php
