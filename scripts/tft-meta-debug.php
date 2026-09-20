@@ -97,3 +97,22 @@ for ($i=0; $i<min(20,$rows->length); $i++) {
     }
     echo "\n---\n";
 }
+
+echo "\nITEM ROWS TAIL DEBUG:\n";
+$html = file_get_contents('https://tactics.tools/pt/items');
+$dom = new DOMDocument();
+libxml_use_internal_errors(true);
+$dom->loadHTML('<?xml encoding="UTF-8">' . $html);
+$xp = new DOMXPath($dom);
+$rows = $xp->query('//div[contains(concat(" ", normalize-space(@class), " "), " tbl-row-md ")]');
+for ($i=48; $i<$rows->length; $i++) {
+    $row=$rows->item($i);
+    if (!$row instanceof DOMElement) continue;
+    echo "ROW {$i} CLASS=".$row->getAttribute('class')."\n";
+    echo "TEXT=".trim(preg_replace('/\\s+/u',' ', $row->textContent ?? ''))."\n";
+    echo "IMAGES:";
+    foreach ($row->getElementsByTagName('img') as $img) {
+      echo " ".$img->getAttribute('alt')."|".$img->getAttribute('src');
+    }
+    echo "\n---\n";
+}
