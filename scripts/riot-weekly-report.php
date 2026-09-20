@@ -8,10 +8,10 @@ use DiscordAutomation\Riot\Analytics;
 use DiscordAutomation\Support\DiscordWebhook;
 use DiscordAutomation\Support\StateStore;
 
-$webhookUrl = trim((string) getenv('WEBHOOK_RIOT'));
+$webhookUrl = trim((string) getenv('WEBHOOK_RIOT_RANKING'));
 
 if ($webhookUrl === '') {
-    throw new RuntimeException('WEBHOOK_RIOT não configurado.');
+    throw new RuntimeException('WEBHOOK_RIOT_RANKING não configurado.');
 }
 
 $state = (new StateStore(__DIR__ . '/../.state'))
