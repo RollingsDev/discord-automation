@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/../bootstrap.php';
 
+use DiscordAutomation\Riot\AdvancedAnalytics;
 use DiscordAutomation\Riot\Analytics;
 use DiscordAutomation\Support\DiscordWebhook;
 use DiscordAutomation\Support\StateStore;
@@ -32,6 +33,44 @@ function weeklyPct(float $value): string
     return number_format($value * 100, 1, ',', '.') . '%';
 }
 
+function weeklyAdvancedText(array $advanced): string
+{
+    if ((int) ($advanced['timeline_games'] ?? 0) === 0) {
+        return 'Timelines ainda sendo acumuladas.';
+    }
+
+    $point15 = is_array($advanced['checkpoints']['15'] ?? null)
+        ? $advanced['checkpoints']['15']
+        : [];
+
+    $early = is_array($advanced['early'] ?? null) ? $advanced['early'] : [];
+    $objectives = is_array($advanced['objectives'] ?? null) ? $advanced['objectives'] : [];
+
+    $text = sprintf(
+        '15 min: Gold %+.0f • CS %+.1f • XP %+.0f',
+        (float) ($point15['gold_diff'] ?? 0),
+        (float) ($point15['cs_diff'] ?? 0),
+        (float) ($point15['xp_diff'] ?? 0)
+    );
+
+    $text .= sprintf(
+        "\nAté 10 min/jogo: %.2f K • %.2f D • %.2f A",
+        (float) ($early['kills_10_per_game'] ?? 0),
+        (float) ($early['deaths_10_per_game'] ?? 0),
+        (float) ($early['assists_10_per_game'] ?? 0)
+    );
+
+    $text .= sprintf(
+        "\nParticipação/jogo: Dragão %.2f • Barão %.2f • Arauto %.2f",
+        (float) ($objectives['dragon_per_game'] ?? 0),
+        (float) ($objectives['baron_per_game'] ?? 0),
+        (float) ($objectives['herald_per_game'] ?? 0)
+    );
+
+    return $text;
+}
+
+
 foreach ($players as $player) {
     if (!is_array($player)) {
         continue;
@@ -59,6 +98,7 @@ foreach ($players as $player) {
     $lol = Analytics::lolSummary($lolMatches, 100);
     $aram = Analytics::lolSummary($aramMatches, 100);
     $tft = Analytics::tftSummary($tftMatches, 100);
+    $advanced = AdvancedAnalytics::lolAdvancedSummary($lolMatches, 100);
 
     $snapshots = is_array($player['rank_snapshots'] ?? null)
         ? $player['rank_snapshots']
@@ -105,6 +145,11 @@ foreach ($players as $player) {
                                 (float) ($lol['damage_per_min'] ?? 0)
                             )
                             : "\nSem partidas ranqueadas registradas na semana."),
+                    'inline' => false,
+                ],
+                [
+                    'name' => '⏱️ LoL — camada 2',
+                    'value' => weeklyAdvancedText($advanced),
                     'inline' => false,
                 ],
                 [
