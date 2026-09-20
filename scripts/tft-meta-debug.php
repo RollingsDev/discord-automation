@@ -61,3 +61,19 @@ foreach ($xp->query('//tr') ?: [] as $tr) {
     }
     break;
 }
+
+echo "\nITEM ANCESTOR DEBUG:\n";
+$html = file_get_contents('https://tactics.tools/pt/items');
+$dom = new DOMDocument();
+libxml_use_internal_errors(true);
+$dom->loadHTML('<?xml encoding="UTF-8">' . $html);
+$xp = new DOMXPath($dom);
+$imgs = $xp->query('//img[contains(@src,"/items_s14/")]');
+$img = $imgs?->item(0);
+$current = $img;
+for ($d=0; $d<8 && $current; $d++, $current=$current->parentNode) {
+    if (!$current instanceof DOMElement) continue;
+    echo "DEPTH {$d} TAG=".$current->tagName." CLASS=".$current->getAttribute('class')."\n";
+    echo "TEXT=".substr(trim(preg_replace('/\\s+/u',' ', $current->textContent ?? '')),0,1200)."\n";
+    echo "IMGS=".$current->getElementsByTagName('img')->length." LINKS=".$current->getElementsByTagName('a')->length."\n---\n";
+}
