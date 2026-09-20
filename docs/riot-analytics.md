@@ -14,7 +14,7 @@ A automação acompanha os Riot IDs cadastrados em:
 ## Secrets
 
 - `RIOT_API_KEY`
-- `WEBHOOK_RIOT`
+- `WEBHOOK_RIOT_RANKING`
 
 A chave Riot nunca deve ser commitada.
 
