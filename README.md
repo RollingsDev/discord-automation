@@ -60,6 +60,10 @@ O histórico ARAM é separado do ranqueado.
 - soma de pontos de maestria;
 - ranking semanal do grupo por pontos oficiais de maestria.
 
+### Camada 2
+
+No LoL, o Match-V5 Timeline adiciona diferenças de gold/CS/XP aos 10/15/20 minutos, early K/D/A, role, lado do mapa, objetivos, builds e timing de itens. O TFT também cruza carry + item no histórico.
+
 ### TFT
 
 - rank e LP;
@@ -75,8 +79,9 @@ Os relatórios são **pós-jogo**. O projeto não fornece recomendações dinâm
 
 ### Relatórios
 
-- **Sync horário (:41)**: coleta LoL, ARAM, TFT, ranks e maestrias.
-- **Daily 08:17**: LoL + ARAM + overview + Top maestrias + TFT.
+- **Sync horário (:41)**: coleta LoL, ARAM, TFT, ranks, maestrias e timelines.
+- **Group Board 08:07**: painel coletivo com ranks oficiais e recorte recente.
+- **Daily 08:17**: LoL + ARAM + overview + early game 10/15/20 + builds + objetivos + Top maestrias + TFT.
 - **Weekly domingo 20:17**: evolução semanal de LoL, ARAM e TFT.
 - **Mastery domingo 20:27**: ranking de maestrias do grupo.
 
@@ -91,6 +96,7 @@ discord-automation/
 │   ├── dev-watch.yml
 │   ├── riot-patches.yml
 │   ├── riot-analytics-sync.yml
+│   ├── riot-group.yml
 │   ├── riot-daily.yml
 │   ├── riot-weekly.yml
 │   ├── riot-mastery.yml
