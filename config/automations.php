@@ -31,7 +31,7 @@ return [
         'label' => 'Fortnite Updates',
         'webhook_env' => 'WEBHOOK_FORTNITE',
         'enabled' => true,
-        'source' => 'Fortnite.com + Epic Games Status',
+        'source' => 'Fortnite-API + Epic Games Status',
         'workflow' => '.github/workflows/fortnite.yml',
     ],
 
