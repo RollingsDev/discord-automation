@@ -88,6 +88,37 @@ O Daily inclui um overview factual do recorte recente:
 
 O overview descreve o histórico observado. Ele não tenta diagnosticar personalidade, talento ou MMR oculto.
 
+## Camada 2 — LoL
+
+A camada 2 usa o timeline pós-jogo do Match-V5 e adiciona:
+
+- diferença média de gold aos 10, 15 e 20 minutos;
+- diferença média de CS e XP aos 10, 15 e 20 minutos;
+- kills, deaths e assists até 10 minutos;
+- desempenho quando chega aos 15 minutos à frente ou atrás em gold;
+- performance por role;
+- performance por lado azul/vermelho;
+- participação observada em dragões, Barão e Arauto;
+- itens finais recorrentes;
+- win rate observado por item;
+- timing médio de compra dos itens finais.
+
+O sync enriquece gradualmente partidas antigas para respeitar os limites da Riot API.
+
+## Painel do grupo
+
+`.github/workflows/riot-group.yml`
+
+Todos os dias às 08:07 em São Paulo, publica um painel coletivo com:
+
+- LoL Solo/Duo ordenado pelo rank oficial;
+- TFT ordenado pelo rank oficial;
+- W/L, win rate e KDA recentes;
+- Top 4/posição média no TFT;
+- recorte de ARAM.
+
+Não existe score próprio nem estimativa de MMR.
+
 ## TFT
 
 Acompanha:
@@ -124,13 +155,21 @@ A cada hora, no minuto 41.
 
 Coleta incrementalmente LoL ranqueado, ARAM, TFT, ranks e Champion Mastery.
 
+### Group Board
+
+`.github/workflows/riot-group.yml`
+
+08:07 em São Paulo.
+
+Publica o painel coletivo com ranks oficiais e métricas recentes.
+
 ### Daily
 
 `.github/workflows/riot-daily.yml`
 
 08:17 em São Paulo.
 
-Envia um relatório por jogador com LoL, ARAM, overview, maestrias e TFT.
+Envia um relatório por jogador com LoL, ARAM, overview, maestrias, timeline avançada e TFT.
 
 ### Weekly
 
