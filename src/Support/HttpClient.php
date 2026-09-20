@@ -9,7 +9,7 @@ use RuntimeException;
 
 final class HttpClient
 {
-    public static function getJson(string $url, array $headers = []): array
+    public static function getText(string $url, array $headers = []): string
     {
         $ch = curl_init($url);
 
@@ -18,8 +18,8 @@ final class HttpClient
         }
 
         $defaultHeaders = [
-            'Accept: application/json',
             'User-Agent: discord-automation/1.0',
+            'Cache-Control: no-cache',
         ];
 
         curl_setopt_array($ch, [
@@ -27,6 +27,7 @@ final class HttpClient
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_CONNECTTIMEOUT => 10,
             CURLOPT_TIMEOUT => 30,
+            CURLOPT_ENCODING => '',
             CURLOPT_HTTPHEADER => array_merge($defaultHeaders, $headers),
         ]);
 
@@ -41,6 +42,16 @@ final class HttpClient
                 sprintf('Erro HTTP ao consultar %s. Status %d. %s', $url, $status, $error)
             );
         }
+
+        return (string) $response;
+    }
+
+    public static function getJson(string $url, array $headers = []): array
+    {
+        $response = self::getText(
+            $url,
+            array_merge(['Accept: application/json'], $headers)
+        );
 
         try {
             $data = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
