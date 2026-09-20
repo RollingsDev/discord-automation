@@ -1,0 +1,32 @@
+name: Riot Analytics — Daily
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '17 11 * * *'
+
+concurrency:
+  group: discord-automation-riot-daily
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Enviar relatório diário
+        env:
+          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+        run: php scripts/riot-daily-report.php
