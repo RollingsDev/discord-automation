@@ -58,6 +58,7 @@ $discord = new DiscordWebhook($webhookUrl);
 $dataDragon = new DataDragon();
 $championNames = $dataDragon->championNames();
 $itemNames = $dataDragon->itemNames();
+$completedItemIds = $dataDragon->completedItemIds();
 
 foreach ($players as $playerConfig) {
     if (!is_array($playerConfig)) {
@@ -122,7 +123,8 @@ foreach ($players as $playerConfig) {
                     $fullMatch,
                     $client->lolTimeline($matchId),
                     $puuid,
-                    $itemNames
+                    $itemNames,
+                    $completedItemIds
                 );
 
                 if ($advanced !== []) {
@@ -144,7 +146,7 @@ foreach ($players as $playerConfig) {
 
         if (
             !is_array($storedMatch)
-            || isset($storedMatch['advanced'])
+            || (int) ($storedMatch['advanced']['version'] ?? 0) >= 2
             || trim((string) ($storedMatch['id'] ?? '')) === ''
         ) {
             continue;
@@ -163,7 +165,8 @@ foreach ($players as $playerConfig) {
                 $fullMatch,
                 $client->lolTimeline($matchId),
                 $puuid,
-                $itemNames
+                $itemNames,
+                $completedItemIds
             );
 
             if ($advanced !== []) {
