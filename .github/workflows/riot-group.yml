@@ -1,0 +1,32 @@
+name: Riot Analytics — Group Board
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 11 * * *'
+
+concurrency:
+  group: discord-automation-riot-group-board
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Enviar painel do grupo
+        env:
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
+        run: php scripts/riot-group-report.php
