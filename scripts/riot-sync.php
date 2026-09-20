@@ -5,6 +5,7 @@ declare(strict_types=1);
 require __DIR__ . '/../bootstrap.php';
 
 use DiscordAutomation\Riot\Analytics;
+use DiscordAutomation\Riot\DataDragon;
 use DiscordAutomation\Riot\RiotClient;
 use DiscordAutomation\Support\DiscordWebhook;
 use DiscordAutomation\Support\StateStore;
@@ -40,6 +41,7 @@ $players = is_array($config['players'] ?? null) ? $config['players'] : [];
 $historyLimit = max(20, (int) ($config['history_limit'] ?? 100));
 $backfill = max(1, min(20, (int) ($config['backfill_per_game'] ?? 8)));
 $discord = new DiscordWebhook($webhookUrl);
+$championNames = (new DataDragon())->championNames();
 
 foreach ($players as $playerConfig) {
     if (!is_array($playerConfig)) {
@@ -77,11 +79,15 @@ foreach ($players as $playerConfig) {
     $lolMatches = is_array($previous['lol_matches'] ?? null)
         ? $previous['lol_matches']
         : [];
+    $aramMatches = is_array($previous['aram_matches'] ?? null)
+        ? $previous['aram_matches']
+        : [];
     $tftMatches = is_array($previous['tft_matches'] ?? null)
         ? $previous['tft_matches']
         : [];
 
     $knownLol = array_fill_keys(array_column($lolMatches, 'id'), true);
+    $knownAram = array_fill_keys(array_column($aramMatches, 'id'), true);
     $knownTft = array_fill_keys(array_column($tftMatches, 'id'), true);
 
     foreach ($client->lolMatchIds($puuid, $backfill) as $matchId) {
@@ -99,6 +105,24 @@ foreach ($players as $playerConfig) {
         if ($compact !== null && $compact['id'] !== '') {
             array_unshift($lolMatches, $compact);
             $knownLol[$compact['id']] = true;
+        }
+    }
+
+    foreach ($client->aramMatchIds($puuid, $backfill) as $matchId) {
+        $matchId = (string) $matchId;
+
+        if ($matchId === '' || isset($knownAram[$matchId])) {
+            continue;
+        }
+
+        $compact = Analytics::compactLolMatch(
+            $client->lolMatch($matchId),
+            $puuid
+        );
+
+        if ($compact !== null && $compact['id'] !== '') {
+            array_unshift($aramMatches, $compact);
+            $knownAram[$compact['id']] = true;
         }
     }
 
@@ -126,13 +150,26 @@ foreach ($players as $playerConfig) {
             => ((int) ($b['timestamp'] ?? 0)) <=> ((int) ($a['timestamp'] ?? 0))
     );
     usort(
+        $aramMatches,
+        static fn (array $a, array $b): int
+            => ((int) ($b['timestamp'] ?? 0)) <=> ((int) ($a['timestamp'] ?? 0))
+    );
+    usort(
         $tftMatches,
         static fn (array $a, array $b): int
             => ((int) ($b['timestamp'] ?? 0)) <=> ((int) ($a['timestamp'] ?? 0))
     );
 
     $lolMatches = array_slice($lolMatches, 0, $historyLimit);
+    $aramMatches = array_slice($aramMatches, 0, $historyLimit);
     $tftMatches = array_slice($tftMatches, 0, $historyLimit);
+
+    $masteriesRaw = $client->championMasteries($puuid);
+    $masteries = Analytics::compactMasteries($masteriesRaw, $championNames, 20);
+    $totalMasteryPoints = array_sum(array_map(
+        static fn (array $entry): int => (int) ($entry['championPoints'] ?? 0),
+        array_filter($masteriesRaw, 'is_array')
+    ));
 
     $previousSolo = is_array($previous['lol_solo'] ?? null)
         ? $previous['lol_solo']
@@ -169,13 +206,17 @@ foreach ($players as $playerConfig) {
         'lol_flex' => $lolFlex,
         'tft_rank' => $tftRank,
         'lol_matches' => $lolMatches,
+        'aram_matches' => $aramMatches,
         'tft_matches' => $tftMatches,
+        'masteries' => $masteries,
+        'total_mastery_points' => $totalMasteryPoints,
         'rank_snapshots' => $snapshots,
         'updated_at' => date(DATE_ATOM),
     ];
 
     if ($soloChanged || $tftChanged || $forceReport) {
         $lol = Analytics::lolSummary($lolMatches, 20);
+        $aram = Analytics::lolSummary($aramMatches, 20);
         $tft = Analytics::tftSummary($tftMatches, 20);
 
         $fields = [
@@ -187,6 +228,16 @@ foreach ($players as $playerConfig) {
                             . number_format(($lol['winrate'] ?? 0) * 100, 1, ',', '.')
                             . '% WR'
                         : ''),
+                'inline' => true,
+            ],
+            [
+                'name' => '🎲 ARAM',
+                'value' => (($aram['games'] ?? 0) > 0
+                    ? "{$aram['games']} partidas • "
+                        . number_format(($aram['winrate'] ?? 0) * 100, 1, ',', '.')
+                        . '% WR • KDA '
+                        . number_format((float) ($aram['avg_kda'] ?? 0), 2, ',', '.')
+                    : 'Sem ARAM recente no histórico coletado.'),
                 'inline' => true,
             ],
             [
