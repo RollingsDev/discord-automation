@@ -29,7 +29,7 @@ return [
 
     'riot-analytics' => [
         'label' => 'Riot Analytics — LoL + TFT',
-        'webhook_env' => 'WEBHOOK_RIOT',
+        'webhook_env' => 'WEBHOOK_RIOT_RANKING',
         'enabled' => true,
         'requires' => 'RIOT_API_KEY',
         'source' => 'Riot Games API',
