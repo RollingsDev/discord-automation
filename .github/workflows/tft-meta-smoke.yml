@@ -28,5 +28,3 @@ jobs:
         env:
           DRY_RUN: 'true'
         run: php scripts/tft-meta-report.php
-
-        run: php scripts/tft-meta-debug.php
