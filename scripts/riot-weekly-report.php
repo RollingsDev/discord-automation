@@ -46,12 +46,18 @@ foreach ($players as $player) {
         static fn (array $match): bool => (int) ($match['timestamp'] ?? 0) >= $cutoffMs
     ));
 
+    $aramMatches = array_values(array_filter(
+        is_array($player['aram_matches'] ?? null) ? $player['aram_matches'] : [],
+        static fn (array $match): bool => (int) ($match['timestamp'] ?? 0) >= $cutoffMs
+    ));
+
     $tftMatches = array_values(array_filter(
         is_array($player['tft_matches'] ?? null) ? $player['tft_matches'] : [],
         static fn (array $match): bool => (int) ($match['timestamp'] ?? 0) >= $cutoffMs
     ));
 
     $lol = Analytics::lolSummary($lolMatches, 100);
+    $aram = Analytics::lolSummary($aramMatches, 100);
     $tft = Analytics::tftSummary($tftMatches, 100);
 
     $snapshots = is_array($player['rank_snapshots'] ?? null)
@@ -99,6 +105,19 @@ foreach ($players as $player) {
                                 (float) ($lol['damage_per_min'] ?? 0)
                             )
                             : "\nSem partidas ranqueadas registradas na semana."),
+                    'inline' => false,
+                ],
+                [
+                    'name' => '🎲 ARAM',
+                    'value' => (($aram['games'] ?? 0) > 0
+                        ? sprintf(
+                            "%d partidas • %s WR • KDA %.2f • DPM %.0f",
+                            (int) ($aram['games'] ?? 0),
+                            weeklyPct((float) ($aram['winrate'] ?? 0)),
+                            (float) ($aram['avg_kda'] ?? 0),
+                            (float) ($aram['damage_per_min'] ?? 0)
+                        )
+                        : 'Sem ARAM registrado na semana.'),
                     'inline' => false,
                 ],
                 [
