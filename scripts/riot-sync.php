@@ -38,6 +38,18 @@ $state = $stateStore->read($stateKey, [
 ]);
 
 $players = is_array($config['players'] ?? null) ? $config['players'] : [];
+$configuredPlayerIds = array_values(array_filter(array_map(
+    static fn (mixed $player): string => is_array($player)
+        ? (string) ($player['id'] ?? '')
+        : '',
+    $players
+)));
+
+$state['players'] = array_intersect_key(
+    is_array($state['players'] ?? null) ? $state['players'] : [],
+    array_fill_keys($configuredPlayerIds, true)
+);
+
 $historyLimit = max(20, (int) ($config['history_limit'] ?? 100));
 $backfill = max(1, min(20, (int) ($config['backfill_per_game'] ?? 8)));
 $discord = new DiscordWebhook($webhookUrl);
