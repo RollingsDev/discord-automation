@@ -10,6 +10,7 @@ Central de automações gratuitas do Discord, executadas com **PHP + GitHub Acti
 | 💻 Dev Watch | `WEBHOOK_DEV` | 09:27 e 18:27 |
 | ⚔️ LoL / TFT Patch Watch | `WEBHOOK_RIOT` | 10:07 e 19:07 |
 | 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT_RANKING` + `RIOT_API_KEY` | sync horário + daily + weekly + mastery |
+| ♟️ TFT Meta — Comps e Itens | `WEBHOOK_TFT_META` | manual até conectar o canal |
 | 🎮 Fortnite | `WEBHOOK_FORTNITE` | 10:23 e 18:23 |
 | 🛡️ Security Watch | `WEBHOOK_SECURITY` | 08:53 |
 | 🏍️ Entregas SP — Zona Norte | `WEBHOOK_DELIVERY` | 10:35, 16:35 e 19:35 |
@@ -64,6 +65,10 @@ O histórico ARAM é separado do ranqueado.
 
 No LoL, o Match-V5 Timeline adiciona diferenças de gold/CS/XP aos 10/15/20 minutos, early K/D/A, role, lado do mapa, objetivos, builds e timing de itens. O TFT também cruza carry + item no histórico.
 
+### TFT Meta isolado
+
+A automação `tft-meta` prepara um canal separado com comps atuais, Win/Top4/posição média, play rate, itens por campeão, estatísticas globais de itens e a seção TFT dos jogadores monitorados. O webhook separado é `WEBHOOK_TFT_META`.
+
 ### TFT
 
 - rank e LP;
@@ -100,6 +105,7 @@ discord-automation/
 │   ├── riot-daily.yml
 │   ├── riot-weekly.yml
 │   ├── riot-mastery.yml
+│   ├── tft-meta.yml
 │   ├── fortnite.yml
 │   ├── security-watch.yml
 │   └── delivery-advisor.yml
@@ -127,6 +133,7 @@ discord-automation/
 - `docs/dev-watch.md`
 - `docs/riot-patches.md`
 - `docs/riot-analytics.md`
+- `docs/tft-meta.md`
 - `docs/fortnite.md`
 - `docs/security-watch.md`
 - `docs/delivery-advisor.md`
