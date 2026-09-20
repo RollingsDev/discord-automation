@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/../bootstrap.php';
 
+use DiscordAutomation\Riot\AdvancedAnalytics;
 use DiscordAutomation\Riot\Analytics;
 use DiscordAutomation\Riot\DataDragon;
 use DiscordAutomation\Riot\RiotClient;
@@ -52,8 +53,11 @@ $state['players'] = array_intersect_key(
 
 $historyLimit = max(20, (int) ($config['history_limit'] ?? 100));
 $backfill = max(1, min(20, (int) ($config['backfill_per_game'] ?? 8)));
+$timelineBackfill = max(0, min(5, (int) ($config['timeline_backfill_per_run'] ?? 2)));
 $discord = new DiscordWebhook($webhookUrl);
-$championNames = (new DataDragon())->championNames();
+$dataDragon = new DataDragon();
+$championNames = $dataDragon->championNames();
+$itemNames = $dataDragon->itemNames();
 
 foreach ($players as $playerConfig) {
     if (!is_array($playerConfig)) {
@@ -109,15 +113,66 @@ foreach ($players as $playerConfig) {
             continue;
         }
 
-        $compact = Analytics::compactLolMatch(
-            $client->lolMatch($matchId),
-            $puuid
-        );
+        $fullMatch = $client->lolMatch($matchId);
+        $compact = Analytics::compactLolMatch($fullMatch, $puuid);
 
         if ($compact !== null && $compact['id'] !== '') {
+            if (in_array((int) ($compact['queue_id'] ?? 0), [420, 440], true)) {
+                $advanced = AdvancedAnalytics::lolTimelineSnapshot(
+                    $fullMatch,
+                    $client->lolTimeline($matchId),
+                    $puuid,
+                    $itemNames
+                );
+
+                if ($advanced !== []) {
+                    $compact['advanced'] = $advanced;
+                }
+            }
+
             array_unshift($lolMatches, $compact);
             $knownLol[$compact['id']] = true;
         }
+    }
+
+    $timelineEnriched = 0;
+
+    foreach ($lolMatches as $index => $storedMatch) {
+        if ($timelineEnriched >= $timelineBackfill) {
+            break;
+        }
+
+        if (
+            !is_array($storedMatch)
+            || isset($storedMatch['advanced'])
+            || trim((string) ($storedMatch['id'] ?? '')) === ''
+        ) {
+            continue;
+        }
+
+        $matchId = (string) $storedMatch['id'];
+        $fullMatch = $client->lolMatch($matchId);
+        $refreshed = Analytics::compactLolMatch($fullMatch, $puuid);
+
+        if ($refreshed === null) {
+            continue;
+        }
+
+        if (in_array((int) ($refreshed['queue_id'] ?? 0), [420, 440], true)) {
+            $advanced = AdvancedAnalytics::lolTimelineSnapshot(
+                $fullMatch,
+                $client->lolTimeline($matchId),
+                $puuid,
+                $itemNames
+            );
+
+            if ($advanced !== []) {
+                $refreshed['advanced'] = $advanced;
+            }
+        }
+
+        $lolMatches[$index] = $refreshed;
+        $timelineEnriched++;
     }
 
     foreach ($client->aramMatchIds($puuid, $backfill) as $matchId) {
