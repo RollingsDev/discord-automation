@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: '41 * * * *'
 
+  push:
+    paths:
+      - '.trigger-riot-enhancements'
+
 permissions:
   contents: write
 
@@ -35,11 +39,11 @@ jobs:
           extensions: curl, mbstring
           coverage: none
 
-      - name: Sincronizar LoL e TFT
+      - name: Sincronizar LoL, ARAM, TFT e Maestrias
         env:
           RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
           WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
-          FORCE_REPORT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_report || false }}
+          FORCE_REPORT: 'true'
         run: php scripts/riot-sync.php
 
       - name: Persistir Riot Analytics
