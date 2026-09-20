@@ -14,6 +14,10 @@ on:
     - cron: '13 12 * * *'
     - cron: '13 21 * * *'
 
+  push:
+    paths:
+      - '.trigger-free-games'
+
 permissions:
   contents: write
 
@@ -40,7 +44,7 @@ jobs:
       - name: Buscar e publicar jogos grátis
         env:
           WEBHOOK_FREE_GAMES: ${{ secrets.WEBHOOK_FREE_GAMES }}
-          FORCE_LATEST: ${{ github.event_name == 'workflow_dispatch' && inputs.force_latest || false }}
+          FORCE_LATEST: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force_latest) }}
         run: php scripts/free-games.php
 
       - name: Persistir estado
