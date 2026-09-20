@@ -42,7 +42,7 @@ final class Analytics
         $info = is_array($match['info'] ?? null) ? $match['info'] : [];
         $queueId = (int) ($info['queueId'] ?? 0);
 
-        if (!in_array($queueId, [420, 440], true)) {
+        if (!in_array($queueId, [420, 440, 450], true)) {
             return null;
         }
 
@@ -92,11 +92,13 @@ final class Analytics
             'queue_id' => $queueId,
             'win' => (bool) ($participant['win'] ?? false),
             'champion' => (string) ($participant['championName'] ?? 'Unknown'),
-            'role' => (string) (
-                $participant['teamPosition']
-                ?? $participant['individualPosition']
-                ?? 'UNKNOWN'
-            ),
+            'role' => $queueId === 450
+                ? 'ARAM'
+                : (string) (
+                    $participant['teamPosition']
+                    ?? $participant['individualPosition']
+                    ?? 'UNKNOWN'
+                ),
             'kills' => $kills,
             'deaths' => $deaths,
             'assists' => $assists,
@@ -352,6 +354,80 @@ final class Analytics
             'items' => $items,
         ];
     }
+
+
+    public static function gameplayOverview(array $rankedMatches, array $aramMatches, int $limit = 20): array
+    {
+        $ranked = array_slice($rankedMatches, 0, $limit);
+        $aram = array_slice($aramMatches, 0, $limit);
+
+        $roles = [];
+        $champions = [];
+
+        foreach ($ranked as $match) {
+            $role = strtoupper(trim((string) ($match['role'] ?? 'UNKNOWN')));
+            if ($role !== '' && $role !== 'UNKNOWN') {
+                $roles[$role] = ($roles[$role] ?? 0) + 1;
+            }
+
+            $champion = trim((string) ($match['champion'] ?? ''));
+            if ($champion !== '') {
+                $champions[$champion] = ($champions[$champion] ?? 0) + 1;
+            }
+        }
+
+        arsort($roles);
+        arsort($champions);
+
+        $rankedSummary = self::lolSummary($ranked, $limit);
+        $aramSummary = self::lolSummary($aram, $limit);
+
+        return [
+            'ranked_games' => count($ranked),
+            'aram_games' => count($aram),
+            'primary_role' => array_key_first($roles),
+            'primary_role_games' => $roles !== [] ? (int) reset($roles) : 0,
+            'champion_pool' => count($champions),
+            'most_played_champion' => array_key_first($champions),
+            'most_played_champion_games' => $champions !== [] ? (int) reset($champions) : 0,
+            'ranked' => $rankedSummary,
+            'aram' => $aramSummary,
+        ];
+    }
+
+    public static function compactMasteries(array $entries, array $championNames, int $limit = 20): array
+    {
+        $rows = [];
+
+        foreach ($entries as $entry) {
+            if (!is_array($entry)) {
+                continue;
+            }
+
+            $championId = (int) ($entry['championId'] ?? 0);
+
+            if ($championId <= 0) {
+                continue;
+            }
+
+            $rows[] = [
+                'champion_id' => $championId,
+                'champion' => (string) ($championNames[$championId] ?? ('Champion ' . $championId)),
+                'level' => (int) ($entry['championLevel'] ?? 0),
+                'points' => (int) ($entry['championPoints'] ?? 0),
+                'last_play_time' => (int) ($entry['lastPlayTime'] ?? 0),
+            ];
+        }
+
+        usort(
+            $rows,
+            static fn (array $a, array $b): int
+                => [$b['points'], $b['level']] <=> [$a['points'], $a['level']]
+        );
+
+        return array_slice($rows, 0, max(1, $limit));
+    }
+
 
     public static function rankDirection(?array $before, ?array $after): string
     {
