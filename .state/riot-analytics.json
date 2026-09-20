@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947294,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1789947188,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -202,7 +215,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T20:33:08-03:00"
+            "updated_at": "2026-09-20T20:34:54-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -239,6 +252,7 @@
                         3340
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "BLUE",
                         "duration_min": 31.3,
                         "checkpoints": {
@@ -279,21 +293,6 @@
                         },
                         "final_items": [
                             {
-                                "id": 1037,
-                                "name": "Picareta",
-                                "minute": 6.5
-                            },
-                            {
-                                "id": 2019,
-                                "name": "Sigilo de Aço",
-                                "minute": 27.2
-                            },
-                            {
-                                "id": 2055,
-                                "name": "Sentinela de Controle",
-                                "minute": 9.7
-                            },
-                            {
                                 "id": 6692,
                                 "name": "Eclipse",
                                 "minute": 9.7
@@ -302,16 +301,6 @@
                                 "id": 6610,
                                 "name": "Céu Dividido",
                                 "minute": 20.8
-                            },
-                            {
-                                "id": 3047,
-                                "name": "Botas Galvanizadas de Aço",
-                                "minute": 23.6
-                            },
-                            {
-                                "id": 3340,
-                                "name": "Sentinela Invisível",
-                                "minute": 0.1
                             }
                         ]
                     }
@@ -341,6 +330,7 @@
                         3340
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "RED",
                         "duration_min": 35.7,
                         "checkpoints": {
@@ -386,11 +376,6 @@
                                 "minute": 32.9
                             },
                             {
-                                "id": 2055,
-                                "name": "Sentinela de Controle",
-                                "minute": 4.4
-                            },
-                            {
                                 "id": 6610,
                                 "name": "Céu Dividido",
                                 "minute": 11.4
@@ -399,16 +384,6 @@
                                 "id": 6692,
                                 "name": "Eclipse",
                                 "minute": 25.5
-                            },
-                            {
-                                "id": 3111,
-                                "name": "Passos de Mercúrio",
-                                "minute": 18.8
-                            },
-                            {
-                                "id": 3340,
-                                "name": "Sentinela Invisível",
-                                "minute": 0.3
                             }
                         ]
                     }
@@ -1206,6 +1181,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947299,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1789947193,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1224,7 +1205,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T20:33:13-03:00"
+            "updated_at": "2026-09-20T20:34:59-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1268,6 +1249,7 @@
                         3363
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "BLUE",
                         "duration_min": 31.3,
                         "checkpoints": {
@@ -1308,38 +1290,14 @@
                         },
                         "final_items": [
                             {
-                                "id": 3040,
-                                "name": "Abraço de Seraph"
-                            },
-                            {
                                 "id": 6657,
                                 "name": "Bastão das Eras",
                                 "minute": 15.8
                             },
                             {
-                                "id": 1026,
-                                "name": "Varinha Explosiva",
-                                "minute": 15.3
-                            },
-                            {
-                                "id": 3111,
-                                "name": "Passos de Mercúrio",
-                                "minute": 20.9
-                            },
-                            {
                                 "id": 3089,
                                 "name": "Capuz da Morte de Rabadon",
                                 "minute": 26.2
-                            },
-                            {
-                                "id": 4630,
-                                "name": "Joia da Ruína",
-                                "minute": 29.3
-                            },
-                            {
-                                "id": 3363,
-                                "name": "Alteração Vidente",
-                                "minute": 25.4
                             }
                         ]
                     }
@@ -1370,6 +1328,7 @@
                         3364
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "RED",
                         "duration_min": 35.7,
                         "checkpoints": {
@@ -1415,11 +1374,6 @@
                                 "minute": 26.5
                             },
                             {
-                                "id": 1058,
-                                "name": "Bastão Desnecessariamente Grande",
-                                "minute": 26.4
-                            },
-                            {
                                 "id": 6653,
                                 "name": "Tormento de Liandry",
                                 "minute": 16.3
@@ -1433,16 +1387,6 @@
                                 "id": 2503,
                                 "name": "Tocha de Chamas Negras",
                                 "minute": 8.3
-                            },
-                            {
-                                "id": 3020,
-                                "name": "Sapatos do Feiticeiro",
-                                "minute": 10.9
-                            },
-                            {
-                                "id": 3364,
-                                "name": "Lente do Oráculo",
-                                "minute": 26.8
                             }
                         ]
                     }
@@ -1937,6 +1881,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947306,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 48,
+                        "wins": 54,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1789947198,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1976,7 +1933,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T20:33:18-03:00"
+            "updated_at": "2026-09-20T20:35:06-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -2027,6 +1984,7 @@
                         3340
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "RED",
                         "duration_min": 41.8,
                         "checkpoints": {
@@ -2095,11 +2053,6 @@
                                 "id": 4633,
                                 "name": "Criafendas",
                                 "minute": 40.1
-                            },
-                            {
-                                "id": 3340,
-                                "name": "Sentinela Invisível",
-                                "minute": 0.5
                             }
                         ]
                     }
@@ -2129,6 +2082,7 @@
                         3340
                     ],
                     "advanced": {
+                        "version": 2,
                         "side": "RED",
                         "duration_min": 35.6,
                         "checkpoints": {
@@ -2187,16 +2141,6 @@
                                 "id": 3089,
                                 "name": "Capuz da Morte de Rabadon",
                                 "minute": 32.8
-                            },
-                            {
-                                "id": 3020,
-                                "name": "Sapatos do Feiticeiro",
-                                "minute": 4.4
-                            },
-                            {
-                                "id": 3340,
-                                "name": "Sentinela Invisível",
-                                "minute": 0.3
                             }
                         ]
                     }
@@ -2696,6 +2640,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947309,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789947202,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -2756,8 +2720,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T20:33:22-03:00"
+            "updated_at": "2026-09-20T20:35:09-03:00"
         }
     },
-    "updated_at": "2026-09-20T20:33:22-03:00"
+    "updated_at": "2026-09-20T20:35:09-03:00"
 }
