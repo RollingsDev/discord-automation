@@ -38,7 +38,7 @@ jobs:
       - name: Sincronizar LoL, ARAM, TFT e Maestrias
         env:
           RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
-          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
           FORCE_REPORT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_report || false }}
         run: php scripts/riot-sync.php
 
