@@ -7,6 +7,7 @@ return [
     'platform' => 'br1',
     'history_limit' => 100,
     'backfill_per_game' => 8,
+    'timeline_backfill_per_run' => 2,
 
     'players' => [
         [
