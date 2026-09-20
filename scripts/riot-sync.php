@@ -201,7 +201,6 @@ foreach ($players as $playerConfig) {
             'game_name' => (string) ($account['gameName'] ?? $gameName),
             'tag_line' => (string) ($account['tagLine'] ?? $tagLine),
         ],
-        'puuid' => $puuid,
         'lol_solo' => $lolSolo,
         'lol_flex' => $lolFlex,
         'tft_rank' => $tftRank,
