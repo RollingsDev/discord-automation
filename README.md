@@ -2,8 +2,6 @@
 
 Central de automações gratuitas do Discord, executadas com **PHP + GitHub Actions**.
 
-Os projetos de liturgia e clima geral continuam separados. Este repositório concentra as demais integrações do servidor.
-
 ## Automações ativas
 
 | Automação | Secret | Rotina |
@@ -11,11 +9,59 @@ Os projetos de liturgia e clima geral continuam separados. Este repositório con
 | 🎁 Jogos grátis | `WEBHOOK_FREE_GAMES` | 09:13 e 18:13 |
 | 💻 Dev Watch | `WEBHOOK_DEV` | 09:27 e 18:27 |
 | ⚔️ LoL / TFT Patch Watch | `WEBHOOK_RIOT` | 10:07 e 19:07 |
+| 🏆 Riot Analytics — LoL + TFT | `WEBHOOK_RIOT` + `RIOT_API_KEY` | sync horário + daily + weekly |
 | 🎮 Fortnite | `WEBHOOK_FORTNITE` | 10:23 e 18:23 |
 | 🛡️ Security Watch | `WEBHOOK_SECURITY` | 08:53 |
 | 🏍️ Entregas SP — Zona Norte | `WEBHOOK_DELIVERY` | 10:35, 16:35 e 19:35 |
 
-Os horários acima são de São Paulo. GitHub Actions pode iniciar alguns minutos depois do horário programado.
+Os horários são de São Paulo. GitHub Actions pode iniciar alguns minutos depois do horário programado.
+
+## Riot Analytics — LoL + TFT
+
+Jogadores monitorados:
+
+- crow#GT1
+- Não grita#grll
+- flafu#ILY
+- Lappush#br1
+- KingXds#br1
+
+O sync roda a cada hora no minuto 41 e mantém histórico incremental em `.state/riot-analytics.json`.
+
+### LoL
+
+- Solo/Duo e Flex oficiais;
+- rank e LP;
+- partidas ranqueadas;
+- W/L e win rate;
+- KDA;
+- CS/min;
+- dano/min;
+- ouro/min;
+- visão/min;
+- kill participation;
+- desempenho por campeão.
+
+### TFT
+
+- rank e LP;
+- partidas Ranked TFT;
+- Top 4 rate;
+- 1º lugar rate;
+- posição média;
+- comps/traits mais utilizadas;
+- desempenho histórico por comp;
+- desempenho histórico por item.
+
+Os relatórios são **pós-jogo**. O projeto não fornece recomendações dinâmicas durante a partida e não calcula MMR/ELO oculto.
+
+### Relatórios
+
+- **Sync horário**: detecta rank e partidas novas.
+- **Daily 08:17**: relatório detalhado por jogador.
+- **Weekly domingo 20:17**: evolução da semana usando rank e LP oficiais observados.
+
+Documentação completa: `docs/riot-analytics.md`.
 
 ## Estrutura
 
@@ -25,6 +71,9 @@ discord-automation/
 │   ├── free-games.yml
 │   ├── dev-watch.yml
 │   ├── riot-patches.yml
+│   ├── riot-analytics-sync.yml
+│   ├── riot-daily.yml
+│   ├── riot-weekly.yml
 │   ├── fortnite.yml
 │   ├── security-watch.yml
 │   └── delivery-advisor.yml
@@ -32,84 +81,56 @@ discord-automation/
 ├── config/
 ├── docs/
 ├── scripts/
-├── src/Support/
+├── src/
+│   ├── Support/
+│   └── Riot/
 ├── bootstrap.php
 └── README.md
 ```
 
 ## Como funciona
 
-Cada integração segue o mesmo padrão:
-
 ```text
-fonte pública
-     ↓
+fonte/API
+   ↓
 script PHP
-     ↓
+   ↓
 StateStore
-     ↓
-é novidade?
+   ↓
+novidade?
  ├─ não → encerra
- └─ sim → webhook do Discord
+ └─ sim → Discord
            ↓
        atualiza .state
 ```
 
-A primeira execução das automações de notícias/releases inicializa o estado sem publicar um grande histórico antigo.
-
 ## 🏍️ Entregas SP — Zona Norte
 
-O boletim de entregas é focado em quatro pontos representativos:
+Foco em Santana, Tucuruvi, Vila Maria e Casa Verde.
 
-- Santana
-- Tucuruvi
-- Vila Maria
-- Casa Verde
-
-Ele usa condições atuais e as próximas 4 horas para resumir chuva, rajadas, calor, umidade e tempestades.
-
-O índice operacional de 0–100 é **somente meteorológico**. Ele não prevê demanda, ganhos, tarifa dinâmica ou quantidade de pedidos.
+O índice operacional é somente meteorológico e considera chuva, vento, tempestades, calor e umidade.
 
 ## Security Watch
 
-Monitora advisories HIGH e CRITICAL para pacotes relevantes do stack Laravel/PHP, JavaScript e GitHub Actions.
+Monitora advisories HIGH e CRITICAL relevantes ao stack Laravel/PHP, JavaScript e GitHub Actions.
 
 ## Dev Watch
 
-Monitora novas tags de Laravel, Livewire, FrankenPHP, Octane, Horizon, PHP, Docker Compose, Redis, MySQL e Pest.
+Monitora novas versões de Laravel, Livewire, FrankenPHP, Octane, Horizon, PHP, Docker Compose, Redis, MySQL e Pest.
 
-## LoL / TFT
+## Segurança
 
-O Patch Watch usa páginas oficiais da Riot e funciona apenas com `WEBHOOK_RIOT`.
-
-O futuro **Rank Tracker** continua desativado porque exige uma chave separada:
-
-```text
-RIOT_API_KEY
-```
-
-## Testes manuais
-
-Todos os workflows possuem `workflow_dispatch` e podem ser executados pela aba **Actions**. Os workflows de notícias/releases possuem uma opção para forçar uma publicação de teste.
+- Webhooks e `RIOT_API_KEY` ficam apenas em Repository Secrets.
+- Nenhuma chave deve ser commitada.
+- Estados em `.state` não contêm secrets.
+- Menções automáticas do Discord são bloqueadas.
 
 ## Documentação
 
 - `docs/free-games.md`
 - `docs/dev-watch.md`
 - `docs/riot-patches.md`
+- `docs/riot-analytics.md`
 - `docs/fortnite.md`
 - `docs/security-watch.md`
 - `docs/delivery-advisor.md`
-
-## Segurança
-
-- Webhooks ficam apenas em Repository Secrets.
-- Nenhuma URL de webhook deve ser commitada.
-- `allowed_mentions` é desativado no cliente compartilhado para evitar menções acidentais.
-- Estados persistidos em `.state` contêm somente IDs e metadados operacionais.
-
-## Requisitos
-
-- PHP 8.4+
-- GitHub Actions
-- extensões PHP definidas em cada workflow
