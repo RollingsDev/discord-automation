@@ -82,6 +82,13 @@ final class RiotClient
         );
     }
 
+    public function lolTimeline(string $matchId): array
+    {
+        return $this->regional(
+            '/lol/match/v5/matches/' . rawurlencode($matchId) . '/timeline'
+        );
+    }
+
     public function tftMatchIds(string $puuid, int $count = 10): array
     {
         return $this->regional(
