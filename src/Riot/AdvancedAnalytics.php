@@ -10,7 +10,8 @@ final class AdvancedAnalytics
         array $match,
         array $timeline,
         string $puuid,
-        array $itemNames
+        array $itemNames,
+        array $completedItemIds = []
     ): array {
         $info = is_array($match['info'] ?? null) ? $match['info'] : [];
         $participants = is_array($info['participants'] ?? null)
@@ -125,9 +126,12 @@ final class AdvancedAnalytics
         ];
 
         $finalItemIds = [];
-        for ($slot = 0; $slot <= 6; $slot++) {
+        for ($slot = 0; $slot <= 5; $slot++) {
             $itemId = (int) ($participant['item' . $slot] ?? 0);
-            if ($itemId > 0) {
+            if (
+                $itemId > 0
+                && ($completedItemIds === [] || isset($completedItemIds[$itemId]))
+            ) {
                 $finalItemIds[] = $itemId;
             }
         }
@@ -219,6 +223,7 @@ final class AdvancedAnalytics
         }
 
         return [
+            'version' => 2,
             'side' => $teamId === 100 ? 'BLUE' : ($teamId === 200 ? 'RED' : 'UNKNOWN'),
             'duration_min' => round(max(1, (int) ($info['gameDuration'] ?? 1)) / 60, 1),
             'checkpoints' => $checkpoints,
