@@ -1,0 +1,26 @@
+name: Riot Ranking Smoke Test
+
+on:
+  push:
+    paths:
+      - '.trigger-riot-ranking'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Testar webhook de ranking
+        env:
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
+        run: |
+          php -r 'require "bootstrap.php"; $w = new \DiscordAutomation\Support\DiscordWebhook(getenv("WEBHOOK_RIOT_RANKING")); $w->send(["content" => "✅ Riot Analytics conectado ao canal de ranking."]); echo "Mensagem de teste enviada ao webhook de ranking.\n";'
