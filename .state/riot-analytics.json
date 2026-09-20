@@ -5,7 +5,6 @@
                 "game_name": "crow",
                 "tag_line": "GT1"
             },
-            "puuid": "ryLwXClIZbxdKR-R9os8i4mTF_KrZ6XMTXQvZydgDm0oaDBsr7PnMpAXTFByb8MikFJWGqKM9g2rVg",
             "lol_solo": null,
             "lol_flex": null,
             "tft_rank": {
@@ -17,8 +16,165 @@
                 "losses": 52
             },
             "lol_matches": [],
+            "aram_matches": [],
             "tft_matches": [],
+            "masteries": [
+                {
+                    "champion_id": 50,
+                    "champion": "Swain",
+                    "level": 4,
+                    "points": 19317,
+                    "last_play_time": 1789871543000
+                },
+                {
+                    "champion_id": 526,
+                    "champion": "Rell",
+                    "level": 3,
+                    "points": 10170,
+                    "last_play_time": 1789693512000
+                },
+                {
+                    "champion_id": 78,
+                    "champion": "Poppy",
+                    "level": 3,
+                    "points": 9793,
+                    "last_play_time": 1789695897000
+                },
+                {
+                    "champion_id": 67,
+                    "champion": "Vayne",
+                    "level": 3,
+                    "points": 8926,
+                    "last_play_time": 1789873572000
+                },
+                {
+                    "champion_id": 111,
+                    "champion": "Nautilus",
+                    "level": 3,
+                    "points": 8000,
+                    "last_play_time": 1788478830000
+                },
+                {
+                    "champion_id": 150,
+                    "champion": "Gnar",
+                    "level": 3,
+                    "points": 7614,
+                    "last_play_time": 1786854219000
+                },
+                {
+                    "champion_id": 223,
+                    "champion": "Tahm Kench",
+                    "level": 3,
+                    "points": 7612,
+                    "last_play_time": 1789868688000
+                },
+                {
+                    "champion_id": 29,
+                    "champion": "Twitch",
+                    "level": 3,
+                    "points": 6478,
+                    "last_play_time": 1789694406000
+                },
+                {
+                    "champion_id": 106,
+                    "champion": "Volibear",
+                    "level": 3,
+                    "points": 6028,
+                    "last_play_time": 1789004498000
+                },
+                {
+                    "champion_id": 4,
+                    "champion": "Twisted Fate",
+                    "level": 2,
+                    "points": 5768,
+                    "last_play_time": 1787011110000
+                },
+                {
+                    "champion_id": 222,
+                    "champion": "Jinx",
+                    "level": 2,
+                    "points": 5519,
+                    "last_play_time": 1789263269000
+                },
+                {
+                    "champion_id": 81,
+                    "champion": "Ezreal",
+                    "level": 2,
+                    "points": 5199,
+                    "last_play_time": 1788394090000
+                },
+                {
+                    "champion_id": 804,
+                    "champion": "Yunara",
+                    "level": 2,
+                    "points": 4826,
+                    "last_play_time": 1789872549000
+                },
+                {
+                    "champion_id": 5,
+                    "champion": "Xin Zhao",
+                    "level": 2,
+                    "points": 4515,
+                    "last_play_time": 1789262038000
+                },
+                {
+                    "champion_id": 202,
+                    "champion": "Jhin",
+                    "level": 2,
+                    "points": 4379,
+                    "last_play_time": 1789089116000
+                },
+                {
+                    "champion_id": 429,
+                    "champion": "Kalista",
+                    "level": 2,
+                    "points": 4320,
+                    "last_play_time": 1788484938000
+                },
+                {
+                    "champion_id": 555,
+                    "champion": "Pyke",
+                    "level": 2,
+                    "points": 4179,
+                    "last_play_time": 1787706147000
+                },
+                {
+                    "champion_id": 267,
+                    "champion": "Nami",
+                    "level": 2,
+                    "points": 4145,
+                    "last_play_time": 1787622042000
+                },
+                {
+                    "champion_id": 498,
+                    "champion": "Xayah",
+                    "level": 2,
+                    "points": 4101,
+                    "last_play_time": 1788476420000
+                },
+                {
+                    "champion_id": 122,
+                    "champion": "Darius",
+                    "level": 2,
+                    "points": 4079,
+                    "last_play_time": 1787166864000
+                }
+            ],
+            "total_mastery_points": 260581,
             "rank_snapshots": [
+                {
+                    "timestamp": 1789942718,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
                 {
                     "timestamp": 1789941652,
                     "lol_solo": null,
@@ -33,14 +189,13 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T19:00:52-03:00"
+            "updated_at": "2026-09-20T19:18:38-03:00"
         },
         "nao-grita": {
             "riot_id": {
                 "game_name": "Não grita",
                 "tag_line": "grll"
             },
-            "puuid": "S2-bA7Okv4PJF8pLgXccX_W5RyjndOYF3_L-BZqd_6JH0g7S0OL7Q9elDsLZUfRxYT1LbxwAcaTFCg",
             "lol_solo": null,
             "lol_flex": null,
             "tft_rank": null,
@@ -243,6 +398,207 @@
                         6610,
                         3111,
                         3340
+                    ]
+                }
+            ],
+            "aram_matches": [
+                {
+                    "id": "BR1_3075122161",
+                    "timestamp": 1741569877909,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Kennen",
+                    "role": "ARAM",
+                    "kills": 3,
+                    "deaths": 7,
+                    "assists": 14,
+                    "kda": 2.4285714285714284,
+                    "cs_per_min": 0.9882352941176471,
+                    "damage_per_min": 915.6705882352942,
+                    "gold_per_min": 582.4235294117648,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6296296296296297,
+                    "items": [
+                        4646,
+                        3145,
+                        3152,
+                        3020,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3075106093",
+                    "timestamp": 1741568833396,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Khazix",
+                    "role": "ARAM",
+                    "kills": 28,
+                    "deaths": 10,
+                    "assists": 18,
+                    "kda": 4.6,
+                    "cs_per_min": 2.990033222591362,
+                    "damage_per_min": 2005.6146179401992,
+                    "gold_per_min": 759.9667774086379,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6301369863013698,
+                    "items": [
+                        6694,
+                        3814,
+                        3156,
+                        3042,
+                        6676,
+                        3111
+                    ]
+                },
+                {
+                    "id": "BR1_3055109623",
+                    "timestamp": 1737249972326,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Orianna",
+                    "role": "ARAM",
+                    "kills": 5,
+                    "deaths": 8,
+                    "assists": 22,
+                    "kda": 3.375,
+                    "cs_per_min": 2.7247956403269753,
+                    "damage_per_min": 1258.692098092643,
+                    "gold_per_min": 615.149863760218,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7105263157894737,
+                    "items": [
+                        4645,
+                        6655,
+                        4646,
+                        3020
+                    ]
+                },
+                {
+                    "id": "BR1_3055093868",
+                    "timestamp": 1737248590324,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Corki",
+                    "role": "ARAM",
+                    "kills": 36,
+                    "deaths": 16,
+                    "assists": 21,
+                    "kda": 3.5625,
+                    "cs_per_min": 3.522935779816514,
+                    "damage_per_min": 2713.6880733944954,
+                    "gold_per_min": 864.9908256880734,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7402597402597403,
+                    "items": [
+                        3042,
+                        6676,
+                        3036,
+                        3031,
+                        3078,
+                        3006
+                    ]
+                },
+                {
+                    "id": "BR1_3053903362",
+                    "timestamp": 1736999485404,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Gragas",
+                    "role": "ARAM",
+                    "kills": 11,
+                    "deaths": 15,
+                    "assists": 35,
+                    "kda": 3.066666666666667,
+                    "cs_per_min": 1.3034623217922607,
+                    "damage_per_min": 1505.784114052953,
+                    "gold_per_min": 638.9816700610997,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7076923076923077,
+                    "items": [
+                        4645,
+                        3135,
+                        6655,
+                        4646,
+                        3020,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3053881621",
+                    "timestamp": 1736997100370,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Lux",
+                    "role": "ARAM",
+                    "kills": 10,
+                    "deaths": 9,
+                    "assists": 30,
+                    "kda": 4.444444444444445,
+                    "cs_per_min": 4.115755627009646,
+                    "damage_per_min": 1702.765273311897,
+                    "gold_per_min": 648.2958199356913,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7017543859649122,
+                    "items": [
+                        4645,
+                        3089,
+                        3135,
+                        6655,
+                        4628,
+                        3020,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3053868701",
+                    "timestamp": 1736994959792,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Twitch",
+                    "role": "ARAM",
+                    "kills": 11,
+                    "deaths": 14,
+                    "assists": 35,
+                    "kda": 3.2857142857142856,
+                    "cs_per_min": 2.6830848995463383,
+                    "damage_per_min": 2043.5385612443295,
+                    "gold_per_min": 646.8956578094621,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6301369863013698,
+                    "items": [
+                        3036,
+                        3087,
+                        3031,
+                        3153,
+                        3085,
+                        3006
+                    ]
+                },
+                {
+                    "id": "BR1_3051174474",
+                    "timestamp": 1736483885414,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Jinx",
+                    "role": "ARAM",
+                    "kills": 16,
+                    "deaths": 15,
+                    "assists": 35,
+                    "kda": 3.4,
+                    "cs_per_min": 5.478589420654912,
+                    "damage_per_min": 2146.8136020151137,
+                    "gold_per_min": 735.3400503778338,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7083333333333334,
+                    "items": [
+                        3031,
+                        3153,
+                        3036,
+                        6676,
+                        6673,
+                        3006,
+                        2052
                     ]
                 }
             ],
@@ -543,7 +899,156 @@
                     ]
                 }
             ],
+            "masteries": [
+                {
+                    "champion_id": 64,
+                    "champion": "Lee Sin",
+                    "level": 80,
+                    "points": 898752,
+                    "last_play_time": 1789000017000
+                },
+                {
+                    "champion_id": 79,
+                    "champion": "Gragas",
+                    "level": 19,
+                    "points": 199684,
+                    "last_play_time": 1787614597000
+                },
+                {
+                    "champion_id": 81,
+                    "champion": "Ezreal",
+                    "level": 13,
+                    "points": 164293,
+                    "last_play_time": 1787274451000
+                },
+                {
+                    "champion_id": 202,
+                    "champion": "Jhin",
+                    "level": 11,
+                    "points": 116914,
+                    "last_play_time": 1787104119000
+                },
+                {
+                    "champion_id": 104,
+                    "champion": "Graves",
+                    "level": 12,
+                    "points": 113226,
+                    "last_play_time": 1787792368000
+                },
+                {
+                    "champion_id": 119,
+                    "champion": "Draven",
+                    "level": 13,
+                    "points": 112295,
+                    "last_play_time": 1788558151000
+                },
+                {
+                    "champion_id": 121,
+                    "champion": "Kha'Zix",
+                    "level": 10,
+                    "points": 84775,
+                    "last_play_time": 1741568838000
+                },
+                {
+                    "champion_id": 45,
+                    "champion": "Veigar",
+                    "level": 10,
+                    "points": 83238,
+                    "last_play_time": 1788311922000
+                },
+                {
+                    "champion_id": 236,
+                    "champion": "Lucian",
+                    "level": 10,
+                    "points": 81729,
+                    "last_play_time": 1788221762000
+                },
+                {
+                    "champion_id": 105,
+                    "champion": "Fizz",
+                    "level": 10,
+                    "points": 81122,
+                    "last_play_time": 1788742835000
+                },
+                {
+                    "champion_id": 22,
+                    "champion": "Ashe",
+                    "level": 10,
+                    "points": 77394,
+                    "last_play_time": 1789350659000
+                },
+                {
+                    "champion_id": 51,
+                    "champion": "Caitlyn",
+                    "level": 10,
+                    "points": 77078,
+                    "last_play_time": 1788822575000
+                },
+                {
+                    "champion_id": 268,
+                    "champion": "Azir",
+                    "level": 9,
+                    "points": 71305,
+                    "last_play_time": 1789870496000
+                },
+                {
+                    "champion_id": 41,
+                    "champion": "Gangplank",
+                    "level": 8,
+                    "points": 69041,
+                    "last_play_time": 1789874666000
+                },
+                {
+                    "champion_id": 141,
+                    "champion": "Kayn",
+                    "level": 7,
+                    "points": 68504,
+                    "last_play_time": 1787186925000
+                },
+                {
+                    "champion_id": 29,
+                    "champion": "Twitch",
+                    "level": 9,
+                    "points": 68481,
+                    "last_play_time": 1789437993000
+                },
+                {
+                    "champion_id": 11,
+                    "champion": "Master Yi",
+                    "level": 9,
+                    "points": 68141,
+                    "last_play_time": 1789089116000
+                },
+                {
+                    "champion_id": 60,
+                    "champion": "Elise",
+                    "level": 8,
+                    "points": 63575,
+                    "last_play_time": 1787794439000
+                },
+                {
+                    "champion_id": 96,
+                    "champion": "Kog'Maw",
+                    "level": 8,
+                    "points": 63054,
+                    "last_play_time": 1789257633000
+                },
+                {
+                    "champion_id": 112,
+                    "champion": "Viktor",
+                    "level": 8,
+                    "points": 57555,
+                    "last_play_time": 1789433304000
+                }
+            ],
+            "total_mastery_points": 5125449,
             "rank_snapshots": [
+                {
+                    "timestamp": 1789942724,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1789941660,
                     "lol_solo": null,
@@ -551,14 +1056,13 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T19:01:00-03:00"
+            "updated_at": "2026-09-20T19:18:44-03:00"
         },
         "flafu": {
             "riot_id": {
                 "game_name": "flafu",
                 "tag_line": "ILY"
             },
-            "puuid": "a6TNhrQvimHC4PUDK37MPY_OEOf8MVUjZ0jfNjx-RlYoBMywkqbHjLA3ODFDF-X4eTI7CV2e9Rv71A",
             "lol_solo": null,
             "lol_flex": null,
             "tft_rank": {
@@ -771,8 +1275,359 @@
                     ]
                 }
             ],
+            "aram_matches": [
+                {
+                    "id": "BR1_3263317567",
+                    "timestamp": 1784403178368,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Karma",
+                    "role": "ARAM",
+                    "kills": 14,
+                    "deaths": 9,
+                    "assists": 41,
+                    "kda": 6.111111111111111,
+                    "cs_per_min": 0.8830744071954211,
+                    "damage_per_min": 1354.3417825020442,
+                    "gold_per_min": 742.3712183156174,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7236842105263158,
+                    "items": [
+                        6655,
+                        3157,
+                        3047,
+                        3089,
+                        4645
+                    ]
+                },
+                {
+                    "id": "BR1_3139181778",
+                    "timestamp": 1757090298508,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Draven",
+                    "role": "ARAM",
+                    "kills": 15,
+                    "deaths": 13,
+                    "assists": 34,
+                    "kda": 3.769230769230769,
+                    "cs_per_min": 2.4190064794816415,
+                    "damage_per_min": 1867.0842332613393,
+                    "gold_per_min": 762.9373650107992,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6447368421052632,
+                    "items": [
+                        6676,
+                        3006,
+                        3031,
+                        3072,
+                        6673,
+                        3036,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3111193839",
+                    "timestamp": 1750453335495,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Bard",
+                    "role": "ARAM",
+                    "kills": 13,
+                    "deaths": 7,
+                    "assists": 29,
+                    "kda": 6,
+                    "cs_per_min": 0.6550218340611353,
+                    "damage_per_min": 1571.2663755458514,
+                    "gold_per_min": 757.4672489082969,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7777777777777778,
+                    "items": [
+                        3070,
+                        3100,
+                        3115,
+                        3020,
+                        3087
+                    ]
+                },
+                {
+                    "id": "BR1_3110760319",
+                    "timestamp": 1750359733697,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Yorick",
+                    "role": "ARAM",
+                    "kills": 13,
+                    "deaths": 6,
+                    "assists": 35,
+                    "kda": 8,
+                    "cs_per_min": 4.018099547511312,
+                    "damage_per_min": 2282.1719457013573,
+                    "gold_per_min": 764.9049773755655,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7868852459016393,
+                    "items": [
+                        3042,
+                        126697,
+                        3047,
+                        6610,
+                        6662
+                    ]
+                },
+                {
+                    "id": "BR1_3110088509",
+                    "timestamp": 1750197541622,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Seraphine",
+                    "role": "ARAM",
+                    "kills": 10,
+                    "deaths": 3,
+                    "assists": 31,
+                    "kda": 13.666666666666666,
+                    "cs_per_min": 1.141304347826087,
+                    "damage_per_min": 984.0489130434783,
+                    "gold_per_min": 812.6086956521739,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.9761904761904762,
+                    "items": [
+                        3118,
+                        3158,
+                        3116,
+                        2508,
+                        3147
+                    ]
+                },
+                {
+                    "id": "BR1_3108881243",
+                    "timestamp": 1749915236306,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Jayce",
+                    "role": "ARAM",
+                    "kills": 10,
+                    "deaths": 4,
+                    "assists": 22,
+                    "kda": 8,
+                    "cs_per_min": 1.505791505791506,
+                    "damage_per_min": 1483.0888030888032,
+                    "gold_per_min": 855.6370656370657,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.8888888888888888,
+                    "items": [
+                        3042,
+                        126697,
+                        1001
+                    ]
+                },
+                {
+                    "id": "BR1_3108873723",
+                    "timestamp": 1749914461298,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Neeko",
+                    "role": "ARAM",
+                    "kills": 14,
+                    "deaths": 10,
+                    "assists": 18,
+                    "kda": 3.2,
+                    "cs_per_min": 2.3866790009250693,
+                    "damage_per_min": 1499.3339500462534,
+                    "gold_per_min": 715.9481961147086,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7804878048780488,
+                    "items": [
+                        4646,
+                        4645,
+                        3020,
+                        3089,
+                        4630,
+                        1026
+                    ]
+                },
+                {
+                    "id": "BR1_3107789288",
+                    "timestamp": 1749605584160,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Pyke",
+                    "role": "ARAM",
+                    "kills": 10,
+                    "deaths": 12,
+                    "assists": 16,
+                    "kda": 2.1666666666666665,
+                    "cs_per_min": 0.2262443438914027,
+                    "damage_per_min": 772.3076923076923,
+                    "gold_per_min": 609.683257918552,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.5531914893617021,
+                    "items": [
+                        126697,
+                        3111,
+                        6676,
+                        6696,
+                        6694
+                    ]
+                }
+            ],
             "tft_matches": [],
+            "masteries": [
+                {
+                    "champion_id": 13,
+                    "champion": "Ryze",
+                    "level": 33,
+                    "points": 367116,
+                    "last_play_time": 1789000017000
+                },
+                {
+                    "champion_id": 99,
+                    "champion": "Lux",
+                    "level": 17,
+                    "points": 201591,
+                    "last_play_time": 1786565072000
+                },
+                {
+                    "champion_id": 81,
+                    "champion": "Ezreal",
+                    "level": 18,
+                    "points": 187326,
+                    "last_play_time": 1789173031000
+                },
+                {
+                    "champion_id": 25,
+                    "champion": "Morgana",
+                    "level": 16,
+                    "points": 160051,
+                    "last_play_time": 1789347922000
+                },
+                {
+                    "champion_id": 45,
+                    "champion": "Veigar",
+                    "level": 13,
+                    "points": 153931,
+                    "last_play_time": 1789350659000
+                },
+                {
+                    "champion_id": 83,
+                    "champion": "Yorick",
+                    "level": 16,
+                    "points": 146654,
+                    "last_play_time": 1788912479000
+                },
+                {
+                    "champion_id": 64,
+                    "champion": "Lee Sin",
+                    "level": 13,
+                    "points": 145096,
+                    "last_play_time": 1788911131000
+                },
+                {
+                    "champion_id": 21,
+                    "champion": "Miss Fortune",
+                    "level": 16,
+                    "points": 144309,
+                    "last_play_time": 1789871543000
+                },
+                {
+                    "champion_id": 86,
+                    "champion": "Garen",
+                    "level": 12,
+                    "points": 144303,
+                    "last_play_time": 1727579433000
+                },
+                {
+                    "champion_id": 1,
+                    "champion": "Annie",
+                    "level": 10,
+                    "points": 120358,
+                    "last_play_time": 1786404526000
+                },
+                {
+                    "champion_id": 53,
+                    "champion": "Blitzcrank",
+                    "level": 12,
+                    "points": 120150,
+                    "last_play_time": 1787015976000
+                },
+                {
+                    "champion_id": 30,
+                    "champion": "Karthus",
+                    "level": 13,
+                    "points": 119314,
+                    "last_play_time": 1787787939000
+                },
+                {
+                    "champion_id": 26,
+                    "champion": "Zilean",
+                    "level": 13,
+                    "points": 118692,
+                    "last_play_time": 1789693512000
+                },
+                {
+                    "champion_id": 235,
+                    "champion": "Senna",
+                    "level": 11,
+                    "points": 115307,
+                    "last_play_time": 1786225187000
+                },
+                {
+                    "champion_id": 76,
+                    "champion": "Nidalee",
+                    "level": 13,
+                    "points": 110178,
+                    "last_play_time": 1789874666000
+                },
+                {
+                    "champion_id": 12,
+                    "champion": "Alistar",
+                    "level": 10,
+                    "points": 109896,
+                    "last_play_time": 1788391696000
+                },
+                {
+                    "champion_id": 78,
+                    "champion": "Poppy",
+                    "level": 10,
+                    "points": 100816,
+                    "last_play_time": 1788816137000
+                },
+                {
+                    "champion_id": 202,
+                    "champion": "Jhin",
+                    "level": 11,
+                    "points": 97489,
+                    "last_play_time": 1789254362000
+                },
+                {
+                    "champion_id": 43,
+                    "champion": "Karma",
+                    "level": 10,
+                    "points": 95228,
+                    "last_play_time": 1789171726000
+                },
+                {
+                    "champion_id": 36,
+                    "champion": "Dr. Mundo",
+                    "level": 10,
+                    "points": 94295,
+                    "last_play_time": 1789606913000
+                }
+            ],
+            "total_mastery_points": 7354396,
             "rank_snapshots": [
+                {
+                    "timestamp": 1789942729,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 48,
+                        "wins": 54,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1789941665,
                     "lol_solo": null,
@@ -787,14 +1642,13 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T19:01:05-03:00"
+            "updated_at": "2026-09-20T19:18:49-03:00"
         },
         "lappush": {
             "riot_id": {
                 "game_name": "Lappush",
                 "tag_line": "br1"
             },
-            "puuid": "0a8NkF0elh-Z5mcbCXiy-eevuSHk10LbxR1LVNEx9MZxw24aul3UNiP5yElGY95Wot-oJlnvnzzBsQ",
             "lol_solo": {
                 "queue": "RANKED_SOLO_5x5",
                 "tier": "GOLD",
@@ -1016,8 +1870,368 @@
                     ]
                 }
             ],
+            "aram_matches": [
+                {
+                    "id": "BR1_3147790166",
+                    "timestamp": 1759005616610,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Riven",
+                    "role": "ARAM",
+                    "kills": 6,
+                    "deaths": 6,
+                    "assists": 8,
+                    "kda": 2.3333333333333335,
+                    "cs_per_min": 2.5531914893617023,
+                    "damage_per_min": 939.4762684124386,
+                    "gold_per_min": 713.2242225859247,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6666666666666666,
+                    "items": [
+                        6692,
+                        3111,
+                        2021,
+                        1028,
+                        1036,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3144224554",
+                    "timestamp": 1758340299919,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Jax",
+                    "role": "ARAM",
+                    "kills": 19,
+                    "deaths": 16,
+                    "assists": 16,
+                    "kda": 2.1875,
+                    "cs_per_min": 3.0718085106382977,
+                    "damage_per_min": 1813.843085106383,
+                    "gold_per_min": 722.1941489361702,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.625,
+                    "items": [
+                        3078,
+                        6333,
+                        3111,
+                        3153,
+                        3091,
+                        6610,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3144212676",
+                    "timestamp": 1758338594649,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Ryze",
+                    "role": "ARAM",
+                    "kills": 7,
+                    "deaths": 14,
+                    "assists": 20,
+                    "kda": 1.9285714285714286,
+                    "cs_per_min": 3.5294117647058827,
+                    "damage_per_min": 1700.3651115618661,
+                    "gold_per_min": 609.5740365111562,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.47368421052631576,
+                    "items": [
+                        1029,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3141787239",
+                    "timestamp": 1757728857090,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Varus",
+                    "role": "ARAM",
+                    "kills": 20,
+                    "deaths": 8,
+                    "assists": 15,
+                    "kda": 4.375,
+                    "cs_per_min": 3.578621223857475,
+                    "damage_per_min": 1680.604182804028,
+                    "gold_per_min": 745.7939581719597,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7,
+                    "items": [
+                        6676,
+                        3042,
+                        3006,
+                        3153,
+                        3124,
+                        3035,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3140740397",
+                    "timestamp": 1757455992204,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Jhin",
+                    "role": "ARAM",
+                    "kills": 13,
+                    "deaths": 11,
+                    "assists": 21,
+                    "kda": 3.090909090909091,
+                    "cs_per_min": 3.7469586374695862,
+                    "damage_per_min": 1289.2457420924575,
+                    "gold_per_min": 769.9756690997567,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6938775510204082,
+                    "items": [
+                        3742,
+                        6662,
+                        3748,
+                        3190,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3140699285",
+                    "timestamp": 1757448004296,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Khazix",
+                    "role": "ARAM",
+                    "kills": 20,
+                    "deaths": 17,
+                    "assists": 18,
+                    "kda": 2.235294117647059,
+                    "cs_per_min": 1.0845986984815619,
+                    "damage_per_min": 1767.5054229934924,
+                    "gold_per_min": 702.9501084598699,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.5507246376811594,
+                    "items": [
+                        6676,
+                        6694,
+                        126697,
+                        3158,
+                        6692,
+                        3814,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3140690751",
+                    "timestamp": 1757446367074,
+                    "queue_id": 450,
+                    "win": false,
+                    "champion": "Trundle",
+                    "role": "ARAM",
+                    "kills": 15,
+                    "deaths": 17,
+                    "assists": 25,
+                    "kda": 2.3529411764705883,
+                    "cs_per_min": 1.59174649963154,
+                    "damage_per_min": 1316.1974944731023,
+                    "gold_per_min": 696.6985998526161,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.6896551724137931,
+                    "items": [
+                        1033,
+                        2052
+                    ]
+                },
+                {
+                    "id": "BR1_3140681400",
+                    "timestamp": 1757444460396,
+                    "queue_id": 450,
+                    "win": true,
+                    "champion": "Karthus",
+                    "role": "ARAM",
+                    "kills": 26,
+                    "deaths": 24,
+                    "assists": 45,
+                    "kda": 2.9583333333333335,
+                    "cs_per_min": 4.863309352517986,
+                    "damage_per_min": 2848.460431654676,
+                    "gold_per_min": 740.0287769784172,
+                    "vision_per_min": 0,
+                    "kill_participation": 0.7029702970297029,
+                    "items": [
+                        3118,
+                        6653,
+                        4646,
+                        2503,
+                        4645,
+                        3089,
+                        2052
+                    ]
+                }
+            ],
             "tft_matches": [],
+            "masteries": [
+                {
+                    "champion_id": 157,
+                    "champion": "Yasuo",
+                    "level": 21,
+                    "points": 230221,
+                    "last_play_time": 1789257633000
+                },
+                {
+                    "champion_id": 64,
+                    "champion": "Lee Sin",
+                    "level": 23,
+                    "points": 222732,
+                    "last_play_time": 1789001473000
+                },
+                {
+                    "champion_id": 105,
+                    "champion": "Fizz",
+                    "level": 18,
+                    "points": 164872,
+                    "last_play_time": 1789862906000
+                },
+                {
+                    "champion_id": 84,
+                    "champion": "Akali",
+                    "level": 13,
+                    "points": 144105,
+                    "last_play_time": 1789848669000
+                },
+                {
+                    "champion_id": 43,
+                    "champion": "Karma",
+                    "level": 12,
+                    "points": 124615,
+                    "last_play_time": 1787512048000
+                },
+                {
+                    "champion_id": 16,
+                    "champion": "Soraka",
+                    "level": 12,
+                    "points": 118541,
+                    "last_play_time": 1783203022000
+                },
+                {
+                    "champion_id": 99,
+                    "champion": "Lux",
+                    "level": 13,
+                    "points": 111563,
+                    "last_play_time": 1782592683000
+                },
+                {
+                    "champion_id": 202,
+                    "champion": "Jhin",
+                    "level": 12,
+                    "points": 105587,
+                    "last_play_time": 1789263269000
+                },
+                {
+                    "champion_id": 91,
+                    "champion": "Talon",
+                    "level": 11,
+                    "points": 96954,
+                    "last_play_time": 1787412904000
+                },
+                {
+                    "champion_id": 55,
+                    "champion": "Katarina",
+                    "level": 9,
+                    "points": 85518,
+                    "last_play_time": 1754762065000
+                },
+                {
+                    "champion_id": 8,
+                    "champion": "Vladimir",
+                    "level": 10,
+                    "points": 79440,
+                    "last_play_time": 1789934449000
+                },
+                {
+                    "champion_id": 75,
+                    "champion": "Nasus",
+                    "level": 9,
+                    "points": 72593,
+                    "last_play_time": 1789787615000
+                },
+                {
+                    "champion_id": 119,
+                    "champion": "Draven",
+                    "level": 9,
+                    "points": 67968,
+                    "last_play_time": 1780711652000
+                },
+                {
+                    "champion_id": 53,
+                    "champion": "Blitzcrank",
+                    "level": 9,
+                    "points": 67226,
+                    "last_play_time": 1782670562000
+                },
+                {
+                    "champion_id": 85,
+                    "champion": "Kennen",
+                    "level": 8,
+                    "points": 63702,
+                    "last_play_time": 1779064807000
+                },
+                {
+                    "champion_id": 67,
+                    "champion": "Vayne",
+                    "level": 8,
+                    "points": 63516,
+                    "last_play_time": 1789281883000
+                },
+                {
+                    "champion_id": 121,
+                    "champion": "Kha'Zix",
+                    "level": 8,
+                    "points": 58184,
+                    "last_play_time": 1784474421000
+                },
+                {
+                    "champion_id": 61,
+                    "champion": "Orianna",
+                    "level": 8,
+                    "points": 58162,
+                    "last_play_time": 1789090438000
+                },
+                {
+                    "champion_id": 39,
+                    "champion": "Irelia",
+                    "level": 8,
+                    "points": 57962,
+                    "last_play_time": 1788911131000
+                },
+                {
+                    "champion_id": 11,
+                    "champion": "Master Yi",
+                    "level": 8,
+                    "points": 56375,
+                    "last_play_time": 1789002810000
+                }
+            ],
+            "total_mastery_points": 3970325,
             "rank_snapshots": [
+                {
+                    "timestamp": 1789942734,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1789941670,
                     "lol_solo": {
@@ -1039,14 +2253,13 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T19:01:10-03:00"
+            "updated_at": "2026-09-20T19:18:54-03:00"
         },
         "kingxds": {
             "riot_id": {
                 "game_name": "KingXds",
                 "tag_line": "br1"
             },
-            "puuid": "1z2_pZgr4gE9S5_znodxxdfVHL4bQgxeG49xwExJ4qBp6mKVeOeu_qBYv9YhDNeBSWKL0koM2V04aw",
             "lol_solo": {
                 "queue": "RANKED_SOLO_5x5",
                 "tier": "GOLD",
@@ -1264,6 +2477,7 @@
                     ]
                 }
             ],
+            "aram_matches": [],
             "tft_matches": [
                 {
                     "id": "BR1_3190515583",
@@ -2068,7 +3282,163 @@
                     ]
                 }
             ],
+            "masteries": [
+                {
+                    "champion_id": 202,
+                    "champion": "Jhin",
+                    "level": 145,
+                    "points": 1569731,
+                    "last_play_time": 1789930870000
+                },
+                {
+                    "champion_id": 35,
+                    "champion": "Shaco",
+                    "level": 68,
+                    "points": 754686,
+                    "last_play_time": 1781313192000
+                },
+                {
+                    "champion_id": 51,
+                    "champion": "Caitlyn",
+                    "level": 70,
+                    "points": 738482,
+                    "last_play_time": 1789780540000
+                },
+                {
+                    "champion_id": 86,
+                    "champion": "Garen",
+                    "level": 56,
+                    "points": 590431,
+                    "last_play_time": 1784163143000
+                },
+                {
+                    "champion_id": 157,
+                    "champion": "Yasuo",
+                    "level": 21,
+                    "points": 228006,
+                    "last_play_time": 1787534670000
+                },
+                {
+                    "champion_id": 58,
+                    "champion": "Renekton",
+                    "level": 20,
+                    "points": 199306,
+                    "last_play_time": 1788069396000
+                },
+                {
+                    "champion_id": 412,
+                    "champion": "Thresh",
+                    "level": 15,
+                    "points": 180565,
+                    "last_play_time": 1756952565000
+                },
+                {
+                    "champion_id": 236,
+                    "champion": "Lucian",
+                    "level": 15,
+                    "points": 179162,
+                    "last_play_time": 1784440551000
+                },
+                {
+                    "champion_id": 53,
+                    "champion": "Blitzcrank",
+                    "level": 15,
+                    "points": 169141,
+                    "last_play_time": 1777758439000
+                },
+                {
+                    "champion_id": 105,
+                    "champion": "Fizz",
+                    "level": 11,
+                    "points": 148913,
+                    "last_play_time": 1782076587000
+                },
+                {
+                    "champion_id": 113,
+                    "champion": "Sejuani",
+                    "level": 12,
+                    "points": 125406,
+                    "last_play_time": 1778977415000
+                },
+                {
+                    "champion_id": 22,
+                    "champion": "Ashe",
+                    "level": 13,
+                    "points": 114064,
+                    "last_play_time": 1789782995000
+                },
+                {
+                    "champion_id": 223,
+                    "champion": "Tahm Kench",
+                    "level": 13,
+                    "points": 113772,
+                    "last_play_time": 1769390828000
+                },
+                {
+                    "champion_id": 64,
+                    "champion": "Lee Sin",
+                    "level": 10,
+                    "points": 111538,
+                    "last_play_time": 1711938175000
+                },
+                {
+                    "champion_id": 238,
+                    "champion": "Zed",
+                    "level": 10,
+                    "points": 107518,
+                    "last_play_time": 1729730216000
+                },
+                {
+                    "champion_id": 13,
+                    "champion": "Ryze",
+                    "level": 12,
+                    "points": 106112,
+                    "last_play_time": 1774060776000
+                },
+                {
+                    "champion_id": 122,
+                    "champion": "Darius",
+                    "level": 12,
+                    "points": 105144,
+                    "last_play_time": 1781841568000
+                },
+                {
+                    "champion_id": 82,
+                    "champion": "Mordekaiser",
+                    "level": 12,
+                    "points": 104383,
+                    "last_play_time": 1787537673000
+                },
+                {
+                    "champion_id": 11,
+                    "champion": "Master Yi",
+                    "level": 10,
+                    "points": 101174,
+                    "last_play_time": 1781825641000
+                },
+                {
+                    "champion_id": 81,
+                    "champion": "Ezreal",
+                    "level": 10,
+                    "points": 85993,
+                    "last_play_time": 1783041154000
+                }
+            ],
+            "total_mastery_points": 7795653,
             "rank_snapshots": [
+                {
+                    "timestamp": 1789942735,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 18,
+                        "wins": 247,
+                        "losses": 264
+                    },
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1789941676,
                     "lol_solo": {
@@ -2083,8 +3453,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T19:01:16-03:00"
+            "updated_at": "2026-09-20T19:18:55-03:00"
         }
     },
-    "updated_at": "2026-09-20T19:01:17-03:00"
+    "updated_at": "2026-09-20T19:18:56-03:00"
 }
