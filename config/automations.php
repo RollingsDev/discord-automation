@@ -27,6 +27,15 @@ return [
         'workflow' => '.github/workflows/riot-patches.yml',
     ],
 
+    'riot-analytics' => [
+        'label' => 'Riot Analytics — LoL + TFT',
+        'webhook_env' => 'WEBHOOK_RIOT',
+        'enabled' => true,
+        'requires' => 'RIOT_API_KEY',
+        'source' => 'Riot Games API',
+        'workflow' => '.github/workflows/riot-analytics-sync.yml',
+    ],
+
     'fortnite' => [
         'label' => 'Fortnite Updates',
         'webhook_env' => 'WEBHOOK_FORTNITE',
@@ -41,13 +50,6 @@ return [
         'enabled' => true,
         'source' => 'GitHub Advisory Database',
         'workflow' => '.github/workflows/security-watch.yml',
-    ],
-
-    'riot-rank' => [
-        'label' => 'Riot Rank Tracker',
-        'webhook_env' => 'WEBHOOK_RIOT',
-        'enabled' => false,
-        'requires' => 'RIOT_API_KEY',
     ],
 
     'delivery-advisor' => [
