@@ -1,0 +1,32 @@
+name: Riot Analytics — Mastery
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '27 23 * * 0'
+
+concurrency:
+  group: discord-automation-riot-mastery
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Enviar ranking de maestrias
+        env:
+          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+        run: php scripts/riot-mastery-report.php
