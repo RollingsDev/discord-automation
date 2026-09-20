@@ -6,7 +6,9 @@ return [
     'free-games' => [
         'label' => 'Jogos Grátis',
         'webhook_env' => 'WEBHOOK_FREE_GAMES',
-        'enabled' => false,
+        'enabled' => true,
+        'source' => 'GamerPower',
+        'workflow' => '.github/workflows/free-games.yml',
     ],
 
     'dev-watch' => [
