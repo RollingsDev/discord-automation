@@ -36,6 +36,14 @@ return [
         'workflow' => '.github/workflows/riot-analytics-sync.yml',
     ],
 
+    'tft-meta' => [
+        'label' => 'TFT Meta — Comps e Itens',
+        'webhook_env' => 'WEBHOOK_TFT_META',
+        'enabled' => false,
+        'source' => 'tactics.tools + Riot TFT API',
+        'workflow' => '.github/workflows/tft-meta.yml',
+    ],
+
     'fortnite' => [
         'label' => 'Fortnite Updates',
         'webhook_env' => 'WEBHOOK_FORTNITE',
