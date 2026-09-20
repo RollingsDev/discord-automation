@@ -104,8 +104,8 @@ function personalTftRows(array $players): array
             'name' => $name,
             'rank' => $rank,
             'official_games' => 0,
-            'official_firsts' => 0,
-            'official_win_rate' => null,
+            'official_wins' => 0,
+            'league_win_rate' => null,
             'recent' => null,
         ];
 
@@ -115,8 +115,8 @@ function personalTftRows(array $players): array
             $games = $wins + $losses;
 
             $row['official_games'] = $games;
-            $row['official_firsts'] = $wins;
-            $row['official_win_rate'] = $games > 0 ? $wins / $games : null;
+            $row['official_wins'] = $wins;
+            $row['league_win_rate'] = $games > 0 ? $wins / $games : null;
         }
 
         if ($matches !== []) {
@@ -142,8 +142,8 @@ function personalTftRows(array $players): array
                 return $bRanked <=> $aRanked;
             }
 
-            return ((float) ($b['official_win_rate'] ?? -1))
-                <=> ((float) ($a['official_win_rate'] ?? -1));
+            return ((float) ($b['league_win_rate'] ?? -1))
+                <=> ((float) ($a['league_win_rate'] ?? -1));
         }
     );
 
@@ -236,12 +236,12 @@ if ($personal !== []) {
     foreach ($personal as $row) {
         $line = '**' . $row['name'] . '** — ' . tftRankLabel($row['rank']);
 
-        if ($row['official_win_rate'] !== null) {
+        if ($row['league_win_rate'] !== null) {
             $line .= sprintf(
-                "\nWin/1º lugar: **%s** (%d/%d)",
-                tftPct((float) $row['official_win_rate']),
-                (int) $row['official_firsts'],
-                (int) $row['official_games']
+                "\nLeague W/L: **%s** (%dW/%dL)",
+                tftPct((float) $row['league_win_rate']),
+                (int) $row['official_wins'],
+                max(0, (int) $row['official_games'] - (int) $row['official_wins'])
             );
         }
 
@@ -280,11 +280,12 @@ if (!$fresh) {
 $payload = [
     'embeds' => [[
         'title' => '♟️ TFT Meta — Comps, Itens e Jogadores',
+        'url' => (string) ($meta['source_url'] ?? 'https://tactics.tools/pt/team-compositions/all'),
         'description' => $description,
         'color' => 0x7C4DFF,
         'fields' => $fields,
         'footer' => [
-            'text' => 'Meta: tactics.tools • dados pessoais: Riot API • Win TFT oficial = 1º lugar',
+            'text' => 'Meta: tactics.tools • jogadores: Riot API • Top4/1º vêm do Match-V1',
         ],
         'timestamp' => date(DATE_ATOM),
     ]],
