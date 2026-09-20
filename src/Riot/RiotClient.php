@@ -55,6 +55,26 @@ final class RiotClient
         );
     }
 
+    public function aramMatchIds(string $puuid, int $count = 10): array
+    {
+        return $this->regional(
+            '/lol/match/v5/matches/by-puuid/' . rawurlencode($puuid) . '/ids',
+            [
+                'start' => 0,
+                'count' => max(1, min(100, $count)),
+                'queue' => 450,
+            ]
+        );
+    }
+
+    public function championMasteries(string $puuid): array
+    {
+        return $this->platform(
+            '/lol/champion-mastery/v4/champion-masteries/by-puuid/'
+            . rawurlencode($puuid)
+        );
+    }
+
     public function lolMatch(string $matchId): array
     {
         return $this->regional(
