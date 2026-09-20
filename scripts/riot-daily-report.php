@@ -56,6 +56,81 @@ function topLolChampions(array $champions): string
     return $lines === [] ? 'Amostra ainda pequena.' : implode("\n", $lines);
 }
 
+function topMasteries(array $masteries, int $limit = 5): string
+{
+    if ($masteries === []) {
+        return 'Sem dados de maestria.';
+    }
+
+    $lines = [];
+    foreach (array_slice($masteries, 0, $limit) as $index => $entry) {
+        if (!is_array($entry)) {
+            continue;
+        }
+
+        $lines[] = sprintf(
+            '**%d. %s** — M%d • %s pts',
+            $index + 1,
+            (string) ($entry['champion'] ?? 'Champion'),
+            (int) ($entry['level'] ?? 0),
+            number_format((int) ($entry['points'] ?? 0), 0, ',', '.')
+        );
+    }
+
+    return $lines === [] ? 'Sem dados de maestria.' : implode("\n", $lines);
+}
+
+function gameplayOverviewText(array $overview): string
+{
+    $parts = [];
+
+    $rankedGames = (int) ($overview['ranked_games'] ?? 0);
+    $aramGames = (int) ($overview['aram_games'] ?? 0);
+
+    if ($rankedGames > 0) {
+        $role = (string) ($overview['primary_role'] ?? 'N/A');
+        $roleGames = (int) ($overview['primary_role_games'] ?? 0);
+        $pool = (int) ($overview['champion_pool'] ?? 0);
+        $champion = (string) ($overview['most_played_champion'] ?? 'N/A');
+        $championGames = (int) ($overview['most_played_champion_games'] ?? 0);
+        $ranked = is_array($overview['ranked'] ?? null) ? $overview['ranked'] : [];
+
+        $parts[] = sprintf(
+            'Ranqueada: **%s** em %d/%d jogos • pool de **%d campeões** • mais usado: **%s** (%d)',
+            $role,
+            $roleGames,
+            $rankedGames,
+            $pool,
+            $champion,
+            $championGames
+        );
+
+        $parts[] = sprintf(
+            'KP **%s** • KDA **%.2f** • CS/min **%.1f** • DPM **%.0f**',
+            pct((float) ($ranked['kill_participation'] ?? 0)),
+            (float) ($ranked['avg_kda'] ?? 0),
+            (float) ($ranked['cs_per_min'] ?? 0),
+            (float) ($ranked['damage_per_min'] ?? 0)
+        );
+    }
+
+    if ($aramGames > 0) {
+        $aram = is_array($overview['aram'] ?? null) ? $overview['aram'] : [];
+
+        $parts[] = sprintf(
+            'ARAM: **%d jogos** • **%s WR** • KDA **%.2f** • DPM **%.0f**',
+            $aramGames,
+            pct((float) ($aram['winrate'] ?? 0)),
+            (float) ($aram['avg_kda'] ?? 0),
+            (float) ($aram['damage_per_min'] ?? 0)
+        );
+    }
+
+    return $parts === []
+        ? 'Amostra recente ainda insuficiente para montar o overview.'
+        : implode("\n", $parts);
+}
+
 function topTftRows(array $rows, int $limit = 4): string
 {
     if ($rows === []) {
@@ -98,8 +173,19 @@ foreach ($players as $player) {
         20
     );
 
+    $aram = Analytics::lolSummary(
+        is_array($player['aram_matches'] ?? null) ? $player['aram_matches'] : [],
+        20
+    );
+
     $tft = Analytics::tftSummary(
         is_array($player['tft_matches'] ?? null) ? $player['tft_matches'] : [],
+        20
+    );
+
+    $overview = Analytics::gameplayOverview(
+        is_array($player['lol_matches'] ?? null) ? $player['lol_matches'] : [],
+        is_array($player['aram_matches'] ?? null) ? $player['aram_matches'] : [],
         20
     );
 
@@ -121,6 +207,18 @@ foreach ($players as $player) {
             pct((float) ($lol['kill_participation'] ?? 0))
         );
     }
+
+    $aramValue = ($aram['games'] ?? 0) > 0
+        ? sprintf(
+            '**%dW/%dL • %s WR**\nKDA %.2f • DPM %.0f • KP %s',
+            (int) ($aram['wins'] ?? 0),
+            (int) ($aram['losses'] ?? 0),
+            pct((float) ($aram['winrate'] ?? 0)),
+            (float) ($aram['avg_kda'] ?? 0),
+            (float) ($aram['damage_per_min'] ?? 0),
+            pct((float) ($aram['kill_participation'] ?? 0))
+        )
+        : 'Sem ARAM recente no histórico coletado.';
 
     $tftValue = Analytics::rankLabel(
         is_array($player['tft_rank'] ?? null) ? $player['tft_rank'] : null
@@ -151,6 +249,23 @@ foreach ($players as $player) {
                     'name' => '🔥 Campeões recentes',
                     'value' => topLolChampions(
                         is_array($lol['champions'] ?? null) ? $lol['champions'] : []
+                    ),
+                    'inline' => false,
+                ],
+                [
+                    'name' => '🎲 ARAM',
+                    'value' => $aramValue,
+                    'inline' => false,
+                ],
+                [
+                    'name' => '🧠 Overview da gameplay',
+                    'value' => gameplayOverviewText($overview),
+                    'inline' => false,
+                ],
+                [
+                    'name' => '🏅 Top maestrias',
+                    'value' => topMasteries(
+                        is_array($player['masteries'] ?? null) ? $player['masteries'] : []
                     ),
                     'inline' => false,
                 ],
