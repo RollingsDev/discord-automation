@@ -1,0 +1,59 @@
+name: Jogos Grátis
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_latest:
+        description: 'Enviar o jogo grátis mais recente como teste, mesmo que já seja conhecido'
+        required: false
+        default: false
+        type: boolean
+
+  schedule:
+    # 09:13 e 18:13 em São Paulo (UTC-3)
+    - cron: '13 12 * * *'
+    - cron: '13 21 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discord-automation-free-games
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Buscar e publicar jogos grátis
+        env:
+          WEBHOOK_FREE_GAMES: ${{ secrets.WEBHOOK_FREE_GAMES }}
+          FORCE_LATEST: ${{ github.event_name == 'workflow_dispatch' && inputs.force_latest || false }}
+        run: php scripts/free-games.php
+
+      - name: Persistir estado
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain -- .state/free-games.json)" ]; then
+            echo 'Nenhuma alteração de estado para registrar.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .state/free-games.json
+          git commit -m 'chore: update free games state'
+          git pull --rebase origin main
+          git push
