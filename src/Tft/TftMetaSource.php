@@ -15,44 +15,28 @@ final class TftMetaSource
 {
     private const COMPS_URL = 'https://tactics.tools/pt/team-compositions/all';
     private const ITEMS_URL = 'https://tactics.tools/pt/items';
-    private const CHAMPIONS_URL = 'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/pt_br/v1/tftchampions.json';
-    private const TFT_ITEMS_URL = 'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/pt_br/v1/tftitems.json';
 
     public function fetch(): array
     {
-        $championNames = $this->entityNames(
-            HttpClient::getJson(self::CHAMPIONS_URL),
-            'champion'
-        );
+        $headers = [
+            'Accept: text/html,application/xhtml+xml',
+            'Accept-Language: pt-BR,pt;q=0.9,en;q=0.7',
+        ];
 
-        $itemNames = $this->entityNames(
-            HttpClient::getJson(self::TFT_ITEMS_URL),
-            'item'
-        );
-
-        $compsHtml = HttpClient::getText(
-            self::COMPS_URL,
-            [
-                'Accept: text/html,application/xhtml+xml',
-                'Accept-Language: pt-BR,pt;q=0.9,en;q=0.7',
-            ]
-        );
-
-        $itemsHtml = HttpClient::getText(
-            self::ITEMS_URL,
-            [
-                'Accept: text/html,application/xhtml+xml',
-                'Accept-Language: pt-BR,pt;q=0.9,en;q=0.7',
-            ]
-        );
+        $compsHtml = HttpClient::getText(self::COMPS_URL, $headers);
+        $itemsHtml = HttpClient::getText(self::ITEMS_URL, $headers);
 
         [$patch, $rank] = $this->pageContext($compsHtml);
 
-        $comps = $this->parseComps($compsHtml, $championNames, $itemNames);
-        $items = $this->parseItems($itemsHtml, $championNames, $itemNames);
+        $comps = $this->parseComps($compsHtml);
+        $items = $this->parseItems($itemsHtml);
 
         if ($comps === []) {
             throw new RuntimeException('Não foi possível extrair composições do meta TFT.');
+        }
+
+        if ($items === []) {
+            throw new RuntimeException('Não foi possível extrair estatísticas de itens TFT.');
         }
 
         return [
@@ -67,12 +51,9 @@ final class TftMetaSource
         ];
     }
 
-    private function parseComps(
-        string $html,
-        array $championNames,
-        array $itemNames
-    ): array {
-        [$dom, $xpath] = $this->dom($html);
+    private function parseComps(string $html): array
+    {
+        [, $xpath] = $this->dom($html);
         $nodes = $xpath->query('//text()[normalize-space(.)="Play Rate"]');
 
         if ($nodes === false) {
@@ -114,11 +95,8 @@ final class TftMetaSource
                 continue;
             }
 
-            $images = $this->imageAlts($card);
-            [$units, $unitItems] = $this->classifyImages(
-                $images,
-                $championNames,
-                $itemNames
+            [$units, $unitItems] = $this->classifyCompImages(
+                $this->imageData($card)
             );
 
             $key = $this->normalizeName($name);
@@ -150,144 +128,140 @@ final class TftMetaSource
         return array_slice($rows, 0, 12);
     }
 
-    private function parseItems(
-        string $html,
-        array $championNames,
-        array $itemNames
-    ): array {
-        [$dom, $xpath] = $this->dom($html);
-        $candidates = [];
+    private function parseItems(string $html): array
+    {
+        [, $xpath] = $this->dom($html);
 
-        $rows = $xpath->query('//tr');
+        $nodes = $xpath->query(
+            '//div[contains(concat(" ", normalize-space(@class), " "), " tbl-row-md ")]'
+        );
 
-        if ($rows !== false) {
-            foreach ($rows as $row) {
-                if (!$row instanceof DOMElement) {
-                    continue;
-                }
-
-                $parsed = $this->parseItemContainer($row, $championNames, $itemNames);
-                if ($parsed !== null) {
-                    $candidates[] = $parsed;
-                }
-            }
+        if ($nodes === false) {
+            return [];
         }
 
-        if ($candidates === []) {
-            $images = $xpath->query('//img[@alt]');
+        $names = [];
+        $stats = [];
 
-            if ($images !== false) {
-                foreach ($images as $image) {
-                    if (!$image instanceof DOMElement) {
-                        continue;
-                    }
-
-                    $alt = trim($image->getAttribute('alt'));
-                    $normalized = $this->normalizeName($alt);
-
-                    if (!isset($itemNames[$normalized])) {
-                        continue;
-                    }
-
-                    $container = $this->findNumericContainer($image);
-
-                    if (!$container instanceof DOMElement) {
-                        continue;
-                    }
-
-                    $parsed = $this->parseItemContainer(
-                        $container,
-                        $championNames,
-                        $itemNames
-                    );
-
-                    if ($parsed !== null) {
-                        $candidates[] = $parsed;
-                    }
-                }
-            }
-        }
-
-        $unique = [];
-
-        foreach ($candidates as $row) {
-            $key = $this->normalizeName((string) ($row['name'] ?? ''));
-
-            if ($key === '' || isset($unique[$key])) {
+        foreach ($nodes as $node) {
+            if (!$node instanceof DOMElement) {
                 continue;
             }
 
-            $unique[$key] = $row;
+            $images = $this->imageData($node);
+            $text = $this->normalizeText($node->textContent ?? '');
+
+            $itemImage = null;
+
+            foreach ($images as $image) {
+                if (str_contains($image['src'], '/items_s14/')) {
+                    $itemImage = $image;
+                    break;
+                }
+            }
+
+            if (
+                $itemImage !== null
+                && count($images) === 1
+                && trim($itemImage['alt']) !== ''
+            ) {
+                $names[] = trim($itemImage['alt']);
+                continue;
+            }
+
+            $compact = preg_replace('/\s+/u', '', $text) ?? '';
+
+            if (
+                preg_match(
+                    '/^([0-9]+(?:[.,][0-9]+)?)\/8'
+                    . '([1-8][.,][0-9]{2})'
+                    . '([0-9]{1,2}(?:[.,][0-9]+)?)%'
+                    . '([0-9]{1,2}(?:[.,][0-9]+)?)%$/u',
+                    $compact,
+                    $match
+                ) !== 1
+            ) {
+                continue;
+            }
+
+            $topUsers = [];
+
+            foreach ($images as $image) {
+                if (
+                    str_contains($image['src'], '/face/')
+                    && trim($image['alt']) !== ''
+                ) {
+                    $topUsers[] = trim($image['alt']);
+                }
+            }
+
+            $stats[] = [
+                'play_rate' => $this->float($match[1]),
+                'avg_place' => $this->float($match[2]),
+                'top4_rate' => $this->float($match[3]) / 100,
+                'win_rate' => $this->float($match[4]) / 100,
+                'top_users' => array_slice(
+                    array_values(array_unique($topUsers)),
+                    0,
+                    5
+                ),
+            ];
         }
 
-        $rows = array_values($unique);
+        $count = min(count($names), count($stats));
+        $rows = [];
 
-        usort(
-            $rows,
-            static fn (array $a, array $b): int
-                => [$b['play_rate'], $b['top4_rate']]
-                <=> [$a['play_rate'], $a['top4_rate']]
-        );
+        for ($index = 0; $index < $count; $index++) {
+            $rows[] = array_merge(
+                ['name' => $names[$index]],
+                $stats[$index]
+            );
+        }
 
         return array_slice($rows, 0, 15);
     }
 
-    private function parseItemContainer(
-        DOMElement $container,
-        array $championNames,
-        array $itemNames
-    ): ?array {
-        $images = $this->imageAlts($container);
-        $item = null;
-        $topUsers = [];
+    private function classifyCompImages(array $images): array
+    {
+        $units = [];
+        $unitItems = [];
+        $currentChampion = null;
 
-        foreach ($images as $alt) {
-            $normalized = $this->normalizeName($alt);
+        foreach ($images as $image) {
+            $alt = trim((string) ($image['alt'] ?? ''));
+            $src = (string) ($image['src'] ?? '');
 
-            if ($item === null && isset($itemNames[$normalized])) {
-                $item = $itemNames[$normalized];
+            if ($alt === '') {
                 continue;
             }
 
-            if ($item !== null && isset($championNames[$normalized])) {
-                $topUsers[] = $championNames[$normalized];
+            if (str_contains($src, '/face/')) {
+                $currentChampion = $alt;
+
+                if (!in_array($currentChampion, $units, true)) {
+                    $units[] = $currentChampion;
+                }
+
+                $unitItems[$currentChampion] ??= [];
+                continue;
+            }
+
+            if (
+                $currentChampion !== null
+                && str_contains($src, '/items_s14/')
+                && count($unitItems[$currentChampion]) < 3
+                && !in_array($alt, $unitItems[$currentChampion], true)
+            ) {
+                $unitItems[$currentChampion][] = $alt;
             }
         }
 
-        if ($item === null) {
-            return null;
-        }
+        $unitItems = array_filter(
+            $unitItems,
+            static fn (array $items): bool => $items !== []
+        );
 
-        $text = $this->normalizeText($container->textContent ?? '');
-        $numbers = [];
-
-        if (preg_match_all('/(?<![A-Za-z])([0-9]+(?:[.,][0-9]+)?)(?:%|\/8)?/u', $text, $m) > 0) {
-            foreach ($m[1] as $value) {
-                $numbers[] = (float) str_replace(',', '.', (string) $value);
-            }
-        }
-
-        if (count($numbers) < 4) {
-            return null;
-        }
-
-        $play = $numbers[0];
-        $place = $numbers[1];
-        $top4 = $numbers[2];
-        $win = $numbers[3];
-
-        if ($place < 1 || $place > 8 || $top4 < 0 || $top4 > 100 || $win < 0 || $win > 100) {
-            return null;
-        }
-
-        return [
-            'name' => $item,
-            'play_rate' => $play,
-            'avg_place' => $place,
-            'top4_rate' => $top4 / 100,
-            'win_rate' => $win / 100,
-            'top_users' => array_slice(array_values(array_unique($topUsers)), 0, 5),
-        ];
+        return [$units, $unitItems];
     }
 
     private function metrics(string $text): array
@@ -310,7 +284,7 @@ final class TftMetaSource
             return null;
         }
 
-        return (float) str_replace(',', '.', $match[1]);
+        return $this->float($match[1]);
     }
 
     private function findMetricContainer(
@@ -330,7 +304,7 @@ final class TftMetaSource
                     && str_contains($text, 'Top 4 %')
                     && str_contains($text, 'Win %')
                     && str_contains($text, 'Place')
-                    && count($this->imageAlts($current)) >= $minimumImages
+                    && count($this->imageData($current)) >= $minimumImages
                 ) {
                     return $current;
                 }
@@ -342,122 +316,22 @@ final class TftMetaSource
         return null;
     }
 
-    private function findNumericContainer(DOMElement $image): ?DOMElement
+    private function imageData(DOMElement $container): array
     {
-        $current = $image->parentNode;
-
-        for ($depth = 0; $depth < 8 && $current !== null; $depth++) {
-            if ($current instanceof DOMElement) {
-                $text = $this->normalizeText($current->textContent ?? '');
-
-                if (
-                    preg_match_all('/[0-9]+(?:[.,][0-9]+)?%?/u', $text) >= 4
-                    && count($this->imageAlts($current)) >= 1
-                ) {
-                    return $current;
-                }
-            }
-
-            $current = $current->parentNode;
-        }
-
-        return null;
-    }
-
-    private function classifyImages(
-        array $images,
-        array $championNames,
-        array $itemNames
-    ): array {
-        $units = [];
-        $unitItems = [];
-        $currentChampion = null;
-
-        foreach ($images as $alt) {
-            $normalized = $this->normalizeName($alt);
-
-            if (isset($championNames[$normalized])) {
-                $currentChampion = $championNames[$normalized];
-
-                if (!in_array($currentChampion, $units, true)) {
-                    $units[] = $currentChampion;
-                }
-
-                $unitItems[$currentChampion] ??= [];
-                continue;
-            }
-
-            if (
-                $currentChampion !== null
-                && isset($itemNames[$normalized])
-                && count($unitItems[$currentChampion]) < 3
-            ) {
-                $item = $itemNames[$normalized];
-
-                if (!in_array($item, $unitItems[$currentChampion], true)) {
-                    $unitItems[$currentChampion][] = $item;
-                }
-            }
-        }
-
-        return [$units, $unitItems];
-    }
-
-    private function imageAlts(DOMElement $container): array
-    {
-        $alts = [];
+        $images = [];
 
         foreach ($container->getElementsByTagName('img') as $image) {
             if (!$image instanceof DOMElement) {
                 continue;
             }
 
-            $alt = trim($image->getAttribute('alt'));
-
-            if ($alt !== '') {
-                $alts[] = $alt;
-            }
+            $images[] = [
+                'alt' => trim($image->getAttribute('alt')),
+                'src' => trim($image->getAttribute('src')),
+            ];
         }
 
-        return $alts;
-    }
-
-    private function entityNames(array $data, string $type): array
-    {
-        $names = [];
-
-        $walk = function (mixed $node) use (&$walk, &$names, $type): void {
-            if (!is_array($node)) {
-                return;
-            }
-
-            $name = trim((string) ($node['name'] ?? ''));
-            $apiName = strtoupper(trim((string) ($node['apiName'] ?? '')));
-
-            if ($name !== '' && ($apiName === '' || str_contains($apiName, 'TFT'))) {
-                $normalized = $this->normalizeName($name);
-
-                if ($normalized !== '') {
-                    $names[$normalized] = $name;
-                }
-            }
-
-            foreach ($node as $child) {
-                if (is_array($child)) {
-                    $walk($child);
-                }
-            }
-        };
-
-        $walk($data);
-
-        if ($names === []) {
-            throw new RuntimeException(
-                'CommunityDragon não retornou nomes TFT para ' . $type . '.'
-            );
-        }
-
-        return $names;
+        return $images;
     }
 
     private function pageContext(string $html): array
@@ -468,18 +342,37 @@ final class TftMetaSource
         $patch = null;
         $rank = null;
 
-        if (preg_match('/\b([0-9]{1,2}\.[0-9]+[a-z]?)\b/i', $text, $m) === 1) {
-            $patch = $m[1];
-        }
-
         if (
             preg_match(
-                '/\b(Iron\+|Bronze\+|Silver\+|Gold\+|Platinum\+|Emerald\+|Diamond\+|Master\+|GM\+|Challenger)\b/i',
+                '/Ranked\s*'
+                . '(Iron\+|Bronze\+|Silver\+|Gold\+|Platinum\+|Emerald\+|Diamond\+|Master\+|GM\+|Challenger)'
+                . '\s*([0-9]{1,2}\.[0-9]+[a-z]?)/iu',
                 $text,
-                $m
+                $match
             ) === 1
         ) {
-            $rank = $m[1];
+            $rank = $match[1];
+            $patch = $match[2];
+        }
+
+        if ($rank === null) {
+            if (
+                preg_match(
+                    '/\b(Iron\+|Bronze\+|Silver\+|Gold\+|Platinum\+|Emerald\+|Diamond\+|Master\+|GM\+|Challenger)\b/iu',
+                    $text,
+                    $match
+                ) === 1
+            ) {
+                $rank = $match[1];
+            }
+        }
+
+        if ($patch === null) {
+            if (
+                preg_match('/\b(1[0-9]\.[0-9]+[a-z]?)\b/i', $text, $match) === 1
+            ) {
+                $patch = $match[1];
+            }
         }
 
         return [$patch, $rank];
@@ -539,5 +432,10 @@ final class TftMetaSource
         $value = preg_replace('/[^a-z0-9]+/i', '', $value) ?? '';
 
         return strtolower($value);
+    }
+
+    private function float(string $value): float
+    {
+        return (float) str_replace(',', '.', $value);
     }
 }
