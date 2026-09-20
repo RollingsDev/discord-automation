@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947188,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1789942718,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -189,7 +202,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T19:18:38-03:00"
+            "updated_at": "2026-09-20T20:33:08-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -224,7 +237,84 @@
                         6610,
                         3047,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "BLUE",
+                        "duration_min": 31.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3672,
+                                "cs": 50,
+                                "xp": 3126,
+                                "gold_diff": -638,
+                                "cs_diff": -30,
+                                "xp_diff": -1301
+                            },
+                            "15": {
+                                "gold": 5899,
+                                "cs": 75,
+                                "xp": 5947,
+                                "gold_diff": -540,
+                                "cs_diff": -51,
+                                "xp_diff": -1316
+                            },
+                            "20": {
+                                "gold": 7811,
+                                "cs": 91,
+                                "xp": 8052,
+                                "gold_diff": -1384,
+                                "cs_diff": -73,
+                                "xp_diff": -2318
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 0,
+                            "assists_10": 2
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 1037,
+                                "name": "Picareta",
+                                "minute": 6.5
+                            },
+                            {
+                                "id": 2019,
+                                "name": "Sigilo de Aço",
+                                "minute": 27.2
+                            },
+                            {
+                                "id": 2055,
+                                "name": "Sentinela de Controle",
+                                "minute": 9.7
+                            },
+                            {
+                                "id": 6692,
+                                "name": "Eclipse",
+                                "minute": 9.7
+                            },
+                            {
+                                "id": 6610,
+                                "name": "Céu Dividido",
+                                "minute": 20.8
+                            },
+                            {
+                                "id": 3047,
+                                "name": "Botas Galvanizadas de Aço",
+                                "minute": 23.6
+                            },
+                            {
+                                "id": 3340,
+                                "name": "Sentinela Invisível",
+                                "minute": 0.1
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3281409459",
@@ -249,7 +339,79 @@
                         6692,
                         3111,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "RED",
+                        "duration_min": 35.7,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4036,
+                                "cs": 54,
+                                "xp": 3714,
+                                "gold_diff": 928,
+                                "cs_diff": 4,
+                                "xp_diff": 437
+                            },
+                            "15": {
+                                "gold": 5639,
+                                "cs": 78,
+                                "xp": 5974,
+                                "gold_diff": 980,
+                                "cs_diff": 2,
+                                "xp_diff": 940
+                            },
+                            "20": {
+                                "gold": 7658,
+                                "cs": 105,
+                                "xp": 8641,
+                                "gold_diff": 1442,
+                                "cs_diff": 12,
+                                "xp_diff": 1712
+                            }
+                        },
+                        "early": {
+                            "kills_10": 2,
+                            "deaths_10": 0,
+                            "assists_10": 3
+                        },
+                        "objectives": {
+                            "dragon": 2,
+                            "baron": 2,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 6333,
+                                "name": "Dança da Morte",
+                                "minute": 32.9
+                            },
+                            {
+                                "id": 2055,
+                                "name": "Sentinela de Controle",
+                                "minute": 4.4
+                            },
+                            {
+                                "id": 6610,
+                                "name": "Céu Dividido",
+                                "minute": 11.4
+                            },
+                            {
+                                "id": 6692,
+                                "name": "Eclipse",
+                                "minute": 25.5
+                            },
+                            {
+                                "id": 3111,
+                                "name": "Passos de Mercúrio",
+                                "minute": 18.8
+                            },
+                            {
+                                "id": 3340,
+                                "name": "Sentinela Invisível",
+                                "minute": 0.3
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045725252",
@@ -1044,6 +1206,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947193,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1789942724,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1056,7 +1224,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T19:18:44-03:00"
+            "updated_at": "2026-09-20T20:33:13-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1098,7 +1266,83 @@
                         3089,
                         4630,
                         3363
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "BLUE",
+                        "duration_min": 31.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3539,
+                                "cs": 84,
+                                "xp": 4434,
+                                "gold_diff": -303,
+                                "cs_diff": 4,
+                                "xp_diff": -622
+                            },
+                            "15": {
+                                "gold": 5557,
+                                "cs": 131,
+                                "xp": 7035,
+                                "gold_diff": -184,
+                                "cs_diff": 17,
+                                "xp_diff": -614
+                            },
+                            "20": {
+                                "gold": 9236,
+                                "cs": 172,
+                                "xp": 10409,
+                                "gold_diff": 708,
+                                "cs_diff": -7,
+                                "xp_diff": -1551
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 2,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3040,
+                                "name": "Abraço de Seraph"
+                            },
+                            {
+                                "id": 6657,
+                                "name": "Bastão das Eras",
+                                "minute": 15.8
+                            },
+                            {
+                                "id": 1026,
+                                "name": "Varinha Explosiva",
+                                "minute": 15.3
+                            },
+                            {
+                                "id": 3111,
+                                "name": "Passos de Mercúrio",
+                                "minute": 20.9
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 26.2
+                            },
+                            {
+                                "id": 4630,
+                                "name": "Joia da Ruína",
+                                "minute": 29.3
+                            },
+                            {
+                                "id": 3363,
+                                "name": "Alteração Vidente",
+                                "minute": 25.4
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3281409459",
@@ -1124,7 +1368,84 @@
                         2503,
                         3020,
                         3364
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "RED",
+                        "duration_min": 35.7,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4523,
+                                "cs": 84,
+                                "xp": 5906,
+                                "gold_diff": 1875,
+                                "cs_diff": 26,
+                                "xp_diff": 2041
+                            },
+                            "15": {
+                                "gold": 7006,
+                                "cs": 131,
+                                "xp": 10239,
+                                "gold_diff": 3132,
+                                "cs_diff": 44,
+                                "xp_diff": 3948
+                            },
+                            "20": {
+                                "gold": 10218,
+                                "cs": 161,
+                                "xp": 13972,
+                                "gold_diff": 3453,
+                                "cs_diff": 31,
+                                "xp_diff": 3765
+                            }
+                        },
+                        "early": {
+                            "kills_10": 5,
+                            "deaths_10": 0,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3157,
+                                "name": "Ampulheta de Zhonya",
+                                "minute": 26.5
+                            },
+                            {
+                                "id": 1058,
+                                "name": "Bastão Desnecessariamente Grande",
+                                "minute": 26.4
+                            },
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 16.3
+                            },
+                            {
+                                "id": 3116,
+                                "name": "Cetro de Cristal de Rylai",
+                                "minute": 21.1
+                            },
+                            {
+                                "id": 2503,
+                                "name": "Tocha de Chamas Negras",
+                                "minute": 8.3
+                            },
+                            {
+                                "id": 3020,
+                                "name": "Sapatos do Feiticeiro",
+                                "minute": 10.9
+                            },
+                            {
+                                "id": 3364,
+                                "name": "Lente do Oráculo",
+                                "minute": 26.8
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045725252",
@@ -1616,6 +1937,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947198,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 48,
+                        "wins": 54,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1789942729,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1642,7 +1976,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T19:18:49-03:00"
+            "updated_at": "2026-09-20T20:33:18-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -1691,7 +2025,84 @@
                         3089,
                         4633,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "RED",
+                        "duration_min": 41.8,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3834,
+                                "cs": 91,
+                                "xp": 5591,
+                                "gold_diff": 1050,
+                                "cs_diff": 34,
+                                "xp_diff": 969
+                            },
+                            "15": {
+                                "gold": 5942,
+                                "cs": 148,
+                                "xp": 9236,
+                                "gold_diff": 1356,
+                                "cs_diff": 53,
+                                "xp_diff": 1508
+                            },
+                            "20": {
+                                "gold": 9567,
+                                "cs": 182,
+                                "xp": 13043,
+                                "gold_diff": 2798,
+                                "cs_diff": 58,
+                                "xp_diff": 2767
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 0,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 4629,
+                                "name": "Ímpeto Cósmico",
+                                "minute": 28.7
+                            },
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 11.3
+                            },
+                            {
+                                "id": 3157,
+                                "name": "Ampulheta de Zhonya",
+                                "minute": 40
+                            },
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 18.3
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 23.9
+                            },
+                            {
+                                "id": 4633,
+                                "name": "Criafendas",
+                                "minute": 40.1
+                            },
+                            {
+                                "id": 3340,
+                                "name": "Sentinela Invisível",
+                                "minute": 0.5
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3285077183",
@@ -1716,7 +2127,79 @@
                         3089,
                         3020,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "side": "RED",
+                        "duration_min": 35.6,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3484,
+                                "cs": 45,
+                                "xp": 2939,
+                                "gold_diff": 563,
+                                "cs_diff": -9,
+                                "xp_diff": 129
+                            },
+                            "15": {
+                                "gold": 6163,
+                                "cs": 70,
+                                "xp": 5647,
+                                "gold_diff": 1253,
+                                "cs_diff": -1,
+                                "xp_diff": 1103
+                            },
+                            "20": {
+                                "gold": 8022,
+                                "cs": 99,
+                                "xp": 8406,
+                                "gold_diff": 1296,
+                                "cs_diff": 1,
+                                "xp_diff": 1229
+                            }
+                        },
+                        "early": {
+                            "kills_10": 2,
+                            "deaths_10": 0,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 2,
+                            "baron": 2,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 18.6
+                            },
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 12.4
+                            },
+                            {
+                                "id": 3157,
+                                "name": "Ampulheta de Zhonya",
+                                "minute": 32.8
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 32.8
+                            },
+                            {
+                                "id": 3020,
+                                "name": "Sapatos do Feiticeiro",
+                                "minute": 4.4
+                            },
+                            {
+                                "id": 3340,
+                                "name": "Sentinela Invisível",
+                                "minute": 0.3
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3284908999",
@@ -2213,6 +2696,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789947202,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789942734,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -2253,8 +2756,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T19:18:54-03:00"
+            "updated_at": "2026-09-20T20:33:22-03:00"
         }
     },
-    "updated_at": "2026-09-20T22:24:19.022Z"
+    "updated_at": "2026-09-20T20:33:22-03:00"
 }
