@@ -9,7 +9,9 @@ use RuntimeException;
 
 final class DataDragon
 {
+    private ?string $version = null;
     private ?array $champions = null;
+    private ?array $items = null;
 
     /** @return array<int, string> */
     public function championNames(): array
@@ -18,19 +20,9 @@ final class DataDragon
             return $this->champions;
         }
 
-        $versions = HttpClient::getJson(
-            'https://ddragon.leagueoflegends.com/api/versions.json'
-        );
-
-        $version = trim((string) ($versions[0] ?? ''));
-
-        if ($version === '') {
-            throw new RuntimeException('Data Dragon não retornou uma versão válida.');
-        }
-
         $payload = HttpClient::getJson(
             'https://ddragon.leagueoflegends.com/cdn/'
-            . rawurlencode($version)
+            . rawurlencode($this->version())
             . '/data/pt_BR/champion.json'
         );
 
@@ -60,5 +52,67 @@ final class DataDragon
         $this->champions = $map;
 
         return $map;
+    }
+
+    /** @return array<int, string> */
+    public function itemNames(): array
+    {
+        if ($this->items !== null) {
+            return $this->items;
+        }
+
+        $payload = HttpClient::getJson(
+            'https://ddragon.leagueoflegends.com/cdn/'
+            . rawurlencode($this->version())
+            . '/data/pt_BR/item.json'
+        );
+
+        $data = is_array($payload['data'] ?? null)
+            ? $payload['data']
+            : [];
+
+        $map = [];
+
+        foreach ($data as $id => $item) {
+            if (!is_array($item)) {
+                continue;
+            }
+
+            $itemId = (int) $id;
+            $name = trim((string) ($item['name'] ?? ''));
+
+            if ($itemId > 0 && $name !== '') {
+                $map[$itemId] = $name;
+            }
+        }
+
+        if ($map === []) {
+            throw new RuntimeException('Data Dragon não retornou itens utilizáveis.');
+        }
+
+        $this->items = $map;
+
+        return $map;
+    }
+
+    private function version(): string
+    {
+        if ($this->version !== null) {
+            return $this->version;
+        }
+
+        $versions = HttpClient::getJson(
+            'https://ddragon.leagueoflegends.com/api/versions.json'
+        );
+
+        $version = trim((string) ($versions[0] ?? ''));
+
+        if ($version === '') {
+            throw new RuntimeException('Data Dragon não retornou uma versão válida.');
+        }
+
+        $this->version = $version;
+
+        return $version;
     }
 }
