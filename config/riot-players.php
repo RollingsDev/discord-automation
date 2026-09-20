@@ -29,10 +29,5 @@ return [
             'game_name' => 'Lappush',
             'tag_line' => 'br1',
         ],
-        [
-            'id' => 'kingxds',
-            'game_name' => 'KingXds',
-            'tag_line' => 'br1',
-        ],
     ],
 ];
