@@ -28,5 +28,5 @@ jobs:
 
       - name: Enviar ranking de maestrias
         env:
-          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
         run: php scripts/riot-mastery-report.php
