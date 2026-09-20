@@ -9,7 +9,7 @@ Central de automações gratuitas do Discord, executadas com **PHP + GitHub Acti
 | 🎁 Jogos grátis | `WEBHOOK_FREE_GAMES` | 09:13 e 18:13 |
 | 💻 Dev Watch | `WEBHOOK_DEV` | 09:27 e 18:27 |
 | ⚔️ LoL / TFT Patch Watch | `WEBHOOK_RIOT` | 10:07 e 19:07 |
-| 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT` + `RIOT_API_KEY` | sync horário + daily + weekly + mastery |
+| 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT_RANKING` + `RIOT_API_KEY` | sync horário + daily + weekly + mastery |
 | 🎮 Fortnite | `WEBHOOK_FORTNITE` | 10:23 e 18:23 |
 | 🛡️ Security Watch | `WEBHOOK_SECURITY` | 08:53 |
 | 🏍️ Entregas SP — Zona Norte | `WEBHOOK_DELIVERY` | 10:35, 16:35 e 19:35 |
@@ -110,7 +110,7 @@ discord-automation/
 
 ## Segurança
 
-- Webhooks e `RIOT_API_KEY` ficam apenas em Repository Secrets.
+- `WEBHOOK_RIOT` fica reservado para updates/patches; `WEBHOOK_RIOT_RANKING` recebe ranking e analytics. Ambos, junto com `RIOT_API_KEY`, ficam apenas em Repository Secrets.
 - Nenhuma chave deve ser commitada.
 - O state público não persiste PUUID.
 - Menções automáticas do Discord são bloqueadas.
