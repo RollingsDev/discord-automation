@@ -6,7 +6,7 @@ Central de automações do Discord do grupo, executada principalmente via **GitH
 
 Centralizar automações como:
 
-1. 🎁 Jogos grátis
+1. ✅ 🎁 Jogos grátis
 2. 💻 Dev Watch
 3. ⚔️ LoL / TFT Patch Watch
 4. 🎮 Fortnite Updates
@@ -23,9 +23,16 @@ Os projetos existentes de liturgia e clima continuam separados por enquanto.
 discord-automation/
 ├── .github/
 │   └── workflows/
+│       └── free-games.yml
 ├── .state/
 ├── config/
+│   ├── automations.php
+│   └── free-games.php
+├── docs/
+│   └── free-games.md
 ├── scripts/
+│   ├── README.md
+│   └── free-games.php
 ├── src/
 │   └── Support/
 ├── bootstrap.php
@@ -42,18 +49,7 @@ Código compartilhado entre todas as automações:
 
 ### `scripts`
 
-Cada automação terá um script executável próprio. Exemplos futuros:
-
-```text
-scripts/
-├── free-games.php
-├── dev-watch.php
-├── riot-patches.php
-├── fortnite.php
-├── security-watch.php
-├── riot-rank.php
-└── delivery-advisor.php
-```
+Cada automação possui um ponto de entrada executável próprio.
 
 ### `.state`
 
@@ -63,9 +59,7 @@ Nunca deve conter tokens, chaves ou webhooks.
 
 ## Secrets
 
-Os webhooks serão armazenados somente em **GitHub Actions Secrets**.
-
-Padrão planejado:
+Os webhooks são armazenados somente em **GitHub Actions Secrets**.
 
 ```text
 WEBHOOK_FREE_GAMES
@@ -79,16 +73,29 @@ RIOT_API_KEY
 
 Não coloque URLs de webhook ou chaves de API diretamente no repositório.
 
+## 🎁 Jogos Grátis
+
+Primeira automação implementada.
+
+- Fonte: GamerPower API
+- Somente jogos completos
+- Foco em PC/Steam/Epic/GOG e plataformas relacionadas
+- Duas verificações diárias
+- Controle de duplicidade com `StateStore`
+- Primeira execução não envia promoções antigas
+- Teste manual disponível pelo GitHub Actions
+
+Configuração completa:
+
+```text
+docs/free-games.md
+```
+
 ## Ordem de implementação
 
-A primeira fase será:
-
-1. 🎁 Jogos grátis
+1. ✅ 🎁 Jogos grátis
 2. 💻 Dev Watch
 3. ⚔️ LoL / TFT Patch Watch
-
-Depois:
-
 4. 🎮 Fortnite
 5. 🔐 Security Watch
 6. 🏆 Riot Rank Tracker
@@ -102,8 +109,6 @@ Depois:
 - GitHub Actions
 
 ## Filosofia
-
-Cada automação seguirá, sempre que possível:
 
 ```text
 API/RSS
