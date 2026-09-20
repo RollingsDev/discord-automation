@@ -6,6 +6,6 @@ return [
     'meta_source' => 'https://tactics.tools/pt/team-compositions/all',
     'items_source' => 'https://tactics.tools/pt/items',
     'max_comps' => 6,
-    'max_items' => 8,
+    'max_items' => 6,
     'minimum_item_games_display' => 0,
 ];
