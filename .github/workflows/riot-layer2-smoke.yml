@@ -1,0 +1,70 @@
+name: Riot Layer 2 Smoke
+
+on:
+  push:
+    paths:
+      - '.trigger-riot-layer2'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: riot-layer2-smoke
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: curl, mbstring
+          coverage: none
+
+      - name: Validar sintaxe
+        run: |
+          php -l src/Riot/AdvancedAnalytics.php
+          php -l src/Riot/RiotClient.php
+          php -l src/Riot/DataDragon.php
+          php -l scripts/riot-sync.php
+          php -l scripts/riot-daily-report.php
+          php -l scripts/riot-weekly-report.php
+          php -l scripts/riot-group-report.php
+
+      - name: Sincronizar camada 2
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
+          FORCE_REPORT: 'false'
+        run: php scripts/riot-sync.php
+
+      - name: Testar painel do grupo
+        env:
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
+        run: php scripts/riot-group-report.php
+
+      - name: Testar relatório camada 2
+        env:
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
+        run: php scripts/riot-daily-report.php
+
+      - name: Persistir state
+        if: success()
+        run: |
+          if [ -z "$(git status --porcelain -- .state/riot-analytics.json)" ]; then
+            echo 'Sem alteração de state.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .state/riot-analytics.json
+          git commit -m 'chore: update riot layer 2 state'
+          git pull --rebase origin main
+          git push
