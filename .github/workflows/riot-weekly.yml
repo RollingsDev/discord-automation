@@ -28,5 +28,5 @@ jobs:
 
       - name: Enviar relatório semanal
         env:
-          WEBHOOK_RIOT: ${{ secrets.WEBHOOK_RIOT }}
+          WEBHOOK_RIOT_RANKING: ${{ secrets.WEBHOOK_RIOT_RANKING }}
         run: php scripts/riot-weekly-report.php
