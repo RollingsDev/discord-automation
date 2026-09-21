@@ -93,6 +93,21 @@ Os relatórios são **pós-jogo**. O projeto não fornece recomendações dinâm
 
 Documentação completa: `docs/riot-analytics.md`.
 
+## Auditor Receita
+
+Agente Windows privado para o fluxo de CNPJ da Receita, com Playwright + Discord.
+
+- lê planilhas com `Entidade` e `CNPJ`;
+- deduplica CNPJs repetidos entre sheets;
+- aguarda a validação humana do hCaptcha;
+- salva ISC e QSA em PDF;
+- gera controle CSV e ZIP;
+- pode ser acionado por `/receita lote` em canal/usuário restritos.
+
+Código: `agents/receita-auditor/`.
+
+A planilha, os PDFs e o perfil do navegador não são versionados.
+
 ## Oráculo TFT
 
 Bot de slash commands hospedado em Cloudflare Workers, usando os snapshots já mantidos pelo projeto.
@@ -130,6 +145,7 @@ discord-automation/
 │   └── delivery-advisor.yml
 ├── .state/
 ├── bot/tft-worker/
+├── agents/receita-auditor/
 ├── config/
 ├── docs/
 ├── scripts/
