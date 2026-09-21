@@ -2,6 +2,9 @@ name: TFT Meta
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '37 11 * * *'
+    - cron: '37 21 * * *'
 
 permissions:
   contents: write
