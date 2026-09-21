@@ -92,6 +92,24 @@ Os relatórios são **pós-jogo**. O projeto não fornece recomendações dinâm
 
 Documentação completa: `docs/riot-analytics.md`.
 
+## Oráculo TFT
+
+Bot de slash commands hospedado em Cloudflare Workers, usando os snapshots já mantidos pelo projeto.
+
+Comandos:
+
+- `/tft meta`
+- `/tft comp nome:<comp>`
+- `/tft champ nome:<campeão>`
+- `/tft item nome:<item>`
+- `/tft player nome:<Riot ID>`
+- `/tft players`
+
+Código: `bot/tft-worker/`.
+
+O Worker valida assinaturas do Discord e não precisa manter uma conexão Gateway/WebSocket aberta.
+
+
 ## Estrutura
 
 ```text
@@ -110,6 +128,7 @@ discord-automation/
 │   ├── security-watch.yml
 │   └── delivery-advisor.yml
 ├── .state/
+├── bot/tft-worker/
 ├── config/
 ├── docs/
 ├── scripts/
