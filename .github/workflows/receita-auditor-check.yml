@@ -1,0 +1,36 @@
+name: Receita Auditor — Check
+
+on:
+  push:
+    paths:
+      - 'agents/receita-auditor/**'
+      - '.github/workflows/receita-auditor-check.yml'
+  pull_request:
+    paths:
+      - 'agents/receita-auditor/**'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalar dependências
+        working-directory: agents/receita-auditor
+        run: npm install
+
+      - name: Validar JavaScript
+        working-directory: agents/receita-auditor
+        run: npm run check
+
+      - name: Rodar testes
+        working-directory: agents/receita-auditor
+        run: npm test
