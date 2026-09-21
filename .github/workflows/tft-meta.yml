@@ -5,9 +5,6 @@ on:
   schedule:
     - cron: '37 11 * * *'
     - cron: '37 21 * * *'
-  push:
-    paths:
-      - '.trigger-tft-meta-live'
 
 permissions:
   contents: write
