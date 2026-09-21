@@ -95,18 +95,21 @@ Documentação completa: `docs/riot-analytics.md`.
 
 ## Auditor Receita
 
-Agente Windows privado para o fluxo de CNPJ da Receita, com Playwright + Discord.
+Agente privado para consulta em lote de CNPJ via API SERPRO/Receita + Discord.
 
 - lê planilhas com `Entidade` e `CNPJ`;
 - deduplica CNPJs repetidos entre sheets;
-- aguarda a validação humana do hCaptcha;
-- salva ISC e QSA em PDF;
-- gera controle CSV e ZIP;
-- pode ser acionado por `/receita lote` em canal/usuário restritos.
+- faz uma consulta QSA por CNPJ e reaproveita o retorno cadastral;
+- gera ISC e QSA em PDF;
+- guarda o JSON bruto, controle CSV e ZIP;
+- pode usar uma planilha fixa privada, permitindo apenas `/receita lote`;
+- restringe o comando por servidor, canal e usuário.
+
+O fluxo principal não depende de navegador nem CAPTCHA.
 
 Código: `agents/receita-auditor/`.
 
-A planilha, os PDFs e o perfil do navegador não são versionados.
+Credenciais SERPRO, planilha, PDFs, JSONs e ZIPs não são versionados.
 
 ## Oráculo TFT
 
