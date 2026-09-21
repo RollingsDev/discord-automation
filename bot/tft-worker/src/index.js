@@ -194,7 +194,7 @@ function renderPlayers(riot) {
     color: COLORS.green,
     description: players.map(player => {
       const recent = tftRecent(player.tft_matches ?? []);
-      const lines = [`**${riotId(player)}** — ${rankLabel(player.tft_rank)}`);
+      const lines = [`**${riotId(player)}** — ${rankLabel(player.tft_rank)}`];
       if (player.tft_rank) lines.push(`${player.tft_rank.wins ?? 0}W / ${player.tft_rank.losses ?? 0}L`);
       if (recent.games) lines.push(`Top4 ${pct(recent.top4Rate)} • 1º ${pct(recent.firstRate)} • média ${num(recent.avgPlacement, 2)} (${recent.games}j)`);
       return lines.join("\n");
