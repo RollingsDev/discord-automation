@@ -10,6 +10,7 @@ A automação acompanha os Riot IDs cadastrados em:
 - Não grita#grll
 - flafu#ILY
 - Lappush#br1
+- Souza Nara#br1
 
 ## Secrets
 
