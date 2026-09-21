@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789950506,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1789947294,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -215,7 +228,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T20:34:54-03:00"
+            "updated_at": "2026-09-20T21:28:26-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -411,7 +424,60 @@
                         2055,
                         3158,
                         3364
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 21.7,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3229,
+                                "cs": 67,
+                                "xp": 3507,
+                                "gold_diff": 33,
+                                "cs_diff": 18,
+                                "xp_diff": 308
+                            },
+                            "15": {
+                                "gold": 4943,
+                                "cs": 106,
+                                "xp": 5839,
+                                "gold_diff": 527,
+                                "cs_diff": 32,
+                                "xp_diff": 1289
+                            },
+                            "20": {
+                                "gold": 7484,
+                                "cs": 144,
+                                "xp": 9113,
+                                "gold_diff": 1684,
+                                "cs_diff": 49,
+                                "xp_diff": 2304
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 3,
+                            "baron": 0,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 3814,
+                                "name": "Limiar da Noite",
+                                "minute": 21.5
+                            },
+                            {
+                                "id": 3142,
+                                "name": "Lâmina Fantasma de Youmuu",
+                                "minute": 13.6
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045709789",
@@ -436,7 +502,47 @@
                         1036,
                         3047,
                         3364
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 15.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3300,
+                                "cs": 61,
+                                "xp": 3186,
+                                "gold_diff": -255,
+                                "cs_diff": -7,
+                                "xp_diff": -374
+                            },
+                            "15": {
+                                "gold": 5069,
+                                "cs": 90,
+                                "xp": 5299,
+                                "gold_diff": -285,
+                                "cs_diff": 1,
+                                "xp_diff": -48
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 0,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3142,
+                                "name": "Lâmina Fantasma de Youmuu",
+                                "minute": 15
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045684884",
@@ -1181,6 +1287,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789950511,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1789947299,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1205,7 +1317,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T20:34:59-03:00"
+            "updated_at": "2026-09-20T21:28:31-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1414,7 +1526,65 @@
                         1056,
                         3135,
                         3363
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 21.7,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3635,
+                                "cs": 86,
+                                "xp": 4857,
+                                "gold_diff": 760,
+                                "cs_diff": 38,
+                                "xp_diff": 554
+                            },
+                            "15": {
+                                "gold": 8406,
+                                "cs": 147,
+                                "xp": 8500,
+                                "gold_diff": 3660,
+                                "cs_diff": 70,
+                                "xp_diff": 1847
+                            },
+                            "20": {
+                                "gold": 11710,
+                                "cs": 191,
+                                "xp": 11471,
+                                "gold_diff": 4398,
+                                "cs_diff": 69,
+                                "xp_diff": 1625
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 1,
+                            "assists_10": 2
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 10.9
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 15.3
+                            },
+                            {
+                                "id": 3135,
+                                "name": "Cajado do Vazio",
+                                "minute": 20.3
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045709789",
@@ -1439,7 +1609,47 @@
                         1054,
                         3047,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 15.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3055,
+                                "cs": 65,
+                                "xp": 4410,
+                                "gold_diff": -467,
+                                "cs_diff": -6,
+                                "xp_diff": 122
+                            },
+                            "15": {
+                                "gold": 6765,
+                                "cs": 111,
+                                "xp": 8203,
+                                "gold_diff": 1857,
+                                "cs_diff": 5,
+                                "xp_diff": 1742
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 0,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3078,
+                                "name": "Força da Trindade",
+                                "minute": 15
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3045684884",
@@ -1881,6 +2091,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789950515,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 48,
+                        "wins": 54,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1789947306,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1933,7 +2156,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-20T20:35:06-03:00"
+            "updated_at": "2026-09-20T21:28:35-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -2169,7 +2392,64 @@
                         6653,
                         3067,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 27.6,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3334,
+                                "cs": 71,
+                                "xp": 4664,
+                                "gold_diff": -65,
+                                "cs_diff": -7,
+                                "xp_diff": 28
+                            },
+                            "15": {
+                                "gold": 5708,
+                                "cs": 107,
+                                "xp": 7840,
+                                "gold_diff": 240,
+                                "cs_diff": 18,
+                                "xp_diff": 1556
+                            },
+                            "20": {
+                                "gold": 7625,
+                                "cs": 142,
+                                "xp": 9761,
+                                "gold_diff": 413,
+                                "cs_diff": 18,
+                                "xp_diff": 1120
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 2,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 11.8
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 20.2
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3284901172",
@@ -2194,7 +2474,74 @@
                         6653,
                         4629,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 33.7,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3872,
+                                "cs": 67,
+                                "xp": 4608,
+                                "gold_diff": -1300,
+                                "cs_diff": -15,
+                                "xp_diff": -802
+                            },
+                            "15": {
+                                "gold": 5837,
+                                "cs": 107,
+                                "xp": 7467,
+                                "gold_diff": -1490,
+                                "cs_diff": -4,
+                                "xp_diff": -736
+                            },
+                            "20": {
+                                "gold": 8177,
+                                "cs": 148,
+                                "xp": 10721,
+                                "gold_diff": -881,
+                                "cs_diff": 11,
+                                "xp_diff": 583
+                            }
+                        },
+                        "early": {
+                            "kills_10": 3,
+                            "deaths_10": 4,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 31.4
+                            },
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 11.8
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 18.6
+                            },
+                            {
+                                "id": 4629,
+                                "name": "Ímpeto Cósmico",
+                                "minute": 24.3
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3284850733",
@@ -2640,6 +2987,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789950518,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789947309,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -2720,8 +3087,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-20T20:35:09-03:00"
+            "updated_at": "2026-09-20T21:28:38-03:00"
         }
     },
-    "updated_at": "2026-09-20T20:35:09-03:00"
+    "updated_at": "2026-09-20T21:28:38-03:00"
 }
