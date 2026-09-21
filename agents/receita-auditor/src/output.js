@@ -8,6 +8,7 @@ export async function ensureOutputDirectories(root) {
   const dirs = {
     root,
     pdf: path.join(root, "pdf"),
+    raw: path.join(root, "raw"),
     debug: path.join(root, "debug")
   };
 
@@ -30,6 +31,8 @@ export async function writeManifest(root, rows, skipped = []) {
       "ISC",
       "QSA",
       "Status",
+      "HTTP API",
+      "Retorno Parcial",
       "Inicio",
       "Fim",
       "Erro"
@@ -44,6 +47,8 @@ export async function writeManifest(root, rows, skipped = []) {
       row.isc ?? "",
       row.qsa ?? "",
       row.status ?? "",
+      row.apiStatus ?? "",
+      row.partial ? "SIM" : "NAO",
       row.startedAt ?? "",
       row.finishedAt ?? "",
       row.error ?? ""
@@ -58,6 +63,8 @@ export async function writeManifest(root, rows, skipped = []) {
       "",
       "",
       "IGNORADO",
+      "",
+      "",
       "",
       "",
       item.reason ?? ""
