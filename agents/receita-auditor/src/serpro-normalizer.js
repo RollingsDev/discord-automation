@@ -208,7 +208,7 @@ function formatNatureza(value) {
 function formatCnae(value) {
   const raw = onlyDigits(value);
   if (raw.length !== 7) return text(value);
-  return `${raw.slice(0, 2)}.${raw.slice(2, 4)}-${raw.slice(4)}`;
+  return `${raw.slice(0, 2)}.${raw.slice(2, 4)}-${raw.slice(4, 5)}-${raw.slice(5)}`;
 }
 
 function numberValue(value) {
