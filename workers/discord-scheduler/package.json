@@ -1,0 +1,13 @@
+{
+  "name": "discord-scheduler-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/index.js && node --check src/discord.js && node --check src/weather.js && node --check src/liturgy.js && node --check src/time.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.102.0"
+  }
+}
