@@ -307,8 +307,7 @@ if ($dryRun) {
 }
 
 if ($webhookUrl === '') {
-    echo "WEBHOOK_TFT_META ainda não configurado; snapshot atualizado sem publicar.\n";
-    exit(0);
+    throw new RuntimeException('WEBHOOK_TFT_META não configurado.');
 }
 
 (new DiscordWebhook($webhookUrl))->send($payload);
