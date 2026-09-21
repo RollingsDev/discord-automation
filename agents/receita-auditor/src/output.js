@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import archiver from "archiver";
-import { createWriteStream } from "node:fs";
+import { createWriteStream, statSync } from "node:fs";
 import { filenameCnpj } from "./utils.js";
 
 export async function ensureOutputDirectories(root) {
@@ -153,7 +153,11 @@ async function createZip(zipPath, entries) {
     archive.pipe(output);
 
     for (const entry of entries) {
-      archive.file(entry.source, { name: entry.name });
+      if (statSync(entry.source).isDirectory()) {
+        archive.directory(entry.source, entry.name);
+      } else {
+        archive.file(entry.source, { name: entry.name });
+      }
     }
 
     archive.finalize();
