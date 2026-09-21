@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789988670,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1789968325,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -241,7 +254,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T02:25:25-03:00"
+            "updated_at": "2026-09-21T08:04:30-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -744,7 +757,47 @@
                         3047,
                         1101,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 15.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3328,
+                                "cs": 53,
+                                "xp": 2998,
+                                "gold_diff": 991,
+                                "cs_diff": 19,
+                                "xp_diff": 589
+                            },
+                            "15": {
+                                "gold": 5179,
+                                "cs": 73,
+                                "xp": 4895,
+                                "gold_diff": 1169,
+                                "cs_diff": 21,
+                                "xp_diff": 682
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 0,
+                            "assists_10": 2
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 6610,
+                                "name": "Céu Dividido",
+                                "minute": 13.8
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3024449290",
@@ -770,7 +823,65 @@
                         6610,
                         3111,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 37.4,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3808,
+                                "cs": 49,
+                                "xp": 2976,
+                                "gold_diff": 218,
+                                "cs_diff": -10,
+                                "xp_diff": -116
+                            },
+                            "15": {
+                                "gold": 6040,
+                                "cs": 78,
+                                "xp": 5886,
+                                "gold_diff": -204,
+                                "cs_diff": -18,
+                                "xp_diff": -40
+                            },
+                            "20": {
+                                "gold": 8300,
+                                "cs": 108,
+                                "xp": 8131,
+                                "gold_diff": 135,
+                                "cs_diff": -5,
+                                "xp_diff": 1124
+                            }
+                        },
+                        "early": {
+                            "kills_10": 3,
+                            "deaths_10": 0,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3071,
+                                "name": "Cutelo Negro",
+                                "minute": 32.3
+                            },
+                            {
+                                "id": 6692,
+                                "name": "Eclipse",
+                                "minute": 12.1
+                            },
+                            {
+                                "id": 6610,
+                                "name": "Céu Dividido",
+                                "minute": 21
+                            }
+                        ]
+                    }
                 }
             ],
             "aram_matches": [
@@ -1416,6 +1527,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789988676,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1789968331,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1452,7 +1569,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T02:25:31-03:00"
+            "updated_at": "2026-09-21T08:04:36-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1968,7 +2085,47 @@
                         3078,
                         3009,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 15.3,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4134,
+                                "cs": 66,
+                                "xp": 5099,
+                                "gold_diff": 1959,
+                                "cs_diff": 38,
+                                "xp_diff": 1962
+                            },
+                            "15": {
+                                "gold": 8445,
+                                "cs": 92,
+                                "xp": 8087,
+                                "gold_diff": 4914,
+                                "cs_diff": 31,
+                                "xp_diff": 2923
+                            }
+                        },
+                        "early": {
+                            "kills_10": 4,
+                            "deaths_10": 1,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3078,
+                                "name": "Força da Trindade",
+                                "minute": 10
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3031681957",
@@ -1993,7 +2150,65 @@
                         1036,
                         3161,
                         3364
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 28.4,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 2899,
+                                "cs": 62,
+                                "xp": 3004,
+                                "gold_diff": -394,
+                                "cs_diff": 12,
+                                "xp_diff": -132
+                            },
+                            "15": {
+                                "gold": 5480,
+                                "cs": 88,
+                                "xp": 5500,
+                                "gold_diff": 446,
+                                "cs_diff": 13,
+                                "xp_diff": 415
+                            },
+                            "20": {
+                                "gold": 8169,
+                                "cs": 137,
+                                "xp": 9252,
+                                "gold_diff": 1472,
+                                "cs_diff": 38,
+                                "xp_diff": 1932
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 3,
+                            "baron": 0,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 6610,
+                                "name": "Céu Dividido",
+                                "minute": 13.9
+                            },
+                            {
+                                "id": 3053,
+                                "name": "Sinal de Sterak",
+                                "minute": 19.6
+                            },
+                            {
+                                "id": 3161,
+                                "name": "Lança de Shojin",
+                                "minute": 25.4
+                            }
+                        ]
+                    }
                 }
             ],
             "aram_matches": [
@@ -2337,6 +2552,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789988682,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 48,
+                        "wins": 54,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1789968336,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -2415,7 +2643,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T02:25:36-03:00"
+            "updated_at": "2026-09-21T08:04:42-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -2980,7 +3208,69 @@
                         3175,
                         3113,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 31.2,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3915,
+                                "cs": 85,
+                                "xp": 5462,
+                                "gold_diff": 150,
+                                "cs_diff": 2,
+                                "xp_diff": 462
+                            },
+                            "15": {
+                                "gold": 5119,
+                                "cs": 111,
+                                "xp": 6932,
+                                "gold_diff": -1067,
+                                "cs_diff": -16,
+                                "xp_diff": -1101
+                            },
+                            "20": {
+                                "gold": 6411,
+                                "cs": 138,
+                                "xp": 8954,
+                                "gold_diff": -1438,
+                                "cs_diff": -16,
+                                "xp_diff": -1466
+                            }
+                        },
+                        "early": {
+                            "kills_10": 2,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 10
+                            },
+                            {
+                                "id": 3152,
+                                "name": "Explocinturão Hextec",
+                                "minute": 30.1
+                            },
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 24.4
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            }
+                        ]
+                    }
                 },
                 {
                     "id": "BR1_3284760309",
@@ -3006,7 +3296,70 @@
                         3089,
                         4645,
                         3340
-                    ]
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 28.4,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4664,
+                                "cs": 51,
+                                "xp": 3242,
+                                "gold_diff": -246,
+                                "cs_diff": 22,
+                                "xp_diff": 469
+                            },
+                            "15": {
+                                "gold": 7197,
+                                "cs": 84,
+                                "xp": 5945,
+                                "gold_diff": -193,
+                                "cs_diff": 37,
+                                "xp_diff": 1024
+                            },
+                            "20": {
+                                "gold": 9555,
+                                "cs": 108,
+                                "xp": 8343,
+                                "gold_diff": -127,
+                                "cs_diff": 44,
+                                "xp_diff": 440
+                            }
+                        },
+                        "early": {
+                            "kills_10": 4,
+                            "deaths_10": 1,
+                            "assists_10": 4
+                        },
+                        "objectives": {
+                            "dragon": 3,
+                            "baron": 1,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 3152,
+                                "name": "Explocinturão Hextec",
+                                "minute": 14.8
+                            },
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 11.8
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 24.9
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 22.8
+                            }
+                        ]
+                    }
                 }
             ],
             "aram_matches": [
@@ -3352,6 +3705,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789988686,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789968340,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -3472,7 +3845,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T02:25:40-03:00"
+            "updated_at": "2026-09-21T08:04:46-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -5009,6 +5382,26 @@
             "total_mastery_points": 4963040,
             "rank_snapshots": [
                 {
+                    "timestamp": 1789988689,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "I",
+                        "lp": 74,
+                        "wins": 16,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "GOLD",
+                        "rank": "II",
+                        "lp": 94,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789968355,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -5029,8 +5422,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T02:25:55-03:00"
+            "updated_at": "2026-09-21T08:04:49-03:00"
         }
     },
-    "updated_at": "2026-09-21T02:25:55-03:00"
+    "updated_at": "2026-09-21T08:04:49-03:00"
 }
