@@ -68,7 +68,6 @@ async function handleTftCommand(interaction, env) {
     console.error(error);
     await editOriginal(interaction, {
       content: "⚠️ Não consegui consultar os dados agora. Tente novamente em alguns segundos.",
-      flags: 64,
       allowed_mentions: { parse: [] }
     });
   }
@@ -350,7 +349,7 @@ function embedResponse({ title, url, description, color, fields = [], footer }) 
 }
 
 function errorResponse(message) {
-  return { embeds: [{ title: "🔎 Não encontrei", description: trim(message, 4096), color: COLORS.red }], flags: 64, allowed_mentions: { parse: [] } };
+  return { embeds: [{ title: "🔎 Não encontrei", description: trim(message, 4096), color: COLORS.red }], allowed_mentions: { parse: [] } };
 }
 
 function interactionMessage(content, ephemeral = false) {
