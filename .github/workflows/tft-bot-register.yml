@@ -1,0 +1,26 @@
+name: TFT Bot — Register Commands
+
+on:
+  workflow_dispatch:
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Registrar /tft no servidor
+        working-directory: bot/tft-worker
+        env:
+          DISCORD_APP_ID: ${{ secrets.DISCORD_APP_ID }}
+          DISCORD_GUILD_ID: ${{ secrets.DISCORD_GUILD_ID }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: node scripts/register-commands.mjs
