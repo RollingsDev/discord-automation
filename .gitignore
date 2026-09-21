@@ -13,3 +13,7 @@ Thumbs.db
 # Arquivos temporários
 *.log
 *.tmp
+
+# Auditor Receita — dados locais privados
+agents/receita-auditor/data/
+agents/receita-auditor/.env
