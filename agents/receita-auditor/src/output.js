@@ -92,55 +92,6 @@ export async function createFullZip(root, outputZip) {
   return outputZip;
 }
 
-export async function createDiscordChunks(
-  root,
-  pdfFiles,
-  manifestPath,
-  maxBytes
-) {
-  const groups = [];
-  let current = [];
-
-  for (const file of pdfFiles) {
-    current.push(file);
-
-    const rawSize = await totalSize(current);
-
-    // PDFs normalmente já são comprimidos. Mantemos margem antes do limite.
-    if (rawSize > maxBytes * 0.82 && current.length > 1) {
-      const last = current.pop();
-      groups.push(current);
-      current = [last];
-    }
-  }
-
-  if (current.length) groups.push(current);
-
-  const outputs = [];
-
-  for (let index = 0; index < groups.length; index++) {
-    const zipPath = path.join(
-      root,
-      `Receita_Discord_parte-${String(index + 1).padStart(2, "0")}.zip`
-    );
-
-    const entries = groups[index].map(file => ({
-      source: file,
-      name: path.basename(file)
-    }));
-
-    entries.push({
-      source: manifestPath,
-      name: path.basename(manifestPath)
-    });
-
-    await createZip(zipPath, entries);
-    outputs.push(zipPath);
-  }
-
-  return outputs;
-}
-
 async function createZip(zipPath, entries) {
   await new Promise((resolve, reject) => {
     const output = createWriteStream(zipPath);
@@ -162,16 +113,6 @@ async function createZip(zipPath, entries) {
 
     archive.finalize();
   });
-}
-
-async function totalSize(files) {
-  let total = 0;
-
-  for (const file of files) {
-    total += (await fs.stat(file)).size;
-  }
-
-  return total;
 }
 
 function csvCell(value) {
