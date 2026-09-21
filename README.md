@@ -95,17 +95,19 @@ Documentação completa: `docs/riot-analytics.md`.
 
 ## Auditor Receita
 
-Agente privado para consulta em lote de CNPJ via API SERPRO/Receita + Discord.
+Gerador local em lote via API SERPRO/Receita.
 
-- lê planilhas com `Entidade` e `CNPJ`;
-- deduplica CNPJs repetidos entre sheets;
-- faz uma consulta QSA por CNPJ e reaproveita o retorno cadastral;
-- gera ISC e QSA em PDF;
-- guarda o JSON bruto, controle CSV e ZIP;
-- pode usar uma planilha fixa privada, permitindo apenas `/receita lote`;
-- restringe o comando por servidor, canal e usuário.
+- lê e deduplica CNPJs da planilha;
+- faz uma consulta QSA por CNPJ;
+- gera ISC + QSA em PDF;
+- salva JSON bruto e controle CSV;
+- entrega um ZIP local com todo o lote.
 
-O fluxo principal não depende de navegador nem CAPTCHA.
+Execução:
+
+`cd agents/receita-auditor && npm run gerar`
+
+Não depende de Discord, navegador ou CAPTCHA.
 
 Código: `agents/receita-auditor/`.
 
