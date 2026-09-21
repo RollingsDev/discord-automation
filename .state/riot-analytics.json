@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790010659,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1789988670,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -254,7 +267,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T08:04:30-03:00"
+            "updated_at": "2026-09-21T14:10:59-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -1527,6 +1540,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790010662,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1789988676,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1569,7 +1588,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T08:04:36-03:00"
+            "updated_at": "2026-09-21T14:11:02-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1582,8 +1601,8 @@
                 "queue": "RANKED_TFT",
                 "tier": "PLATINUM",
                 "rank": "II",
-                "lp": 48,
-                "wins": 54,
+                "lp": 93,
+                "wins": 55,
                 "losses": 41
             },
             "lol_matches": [
@@ -2406,7 +2425,126 @@
                     ]
                 }
             ],
-            "tft_matches": [],
+            "tft_matches": [
+                {
+                    "id": "BR1_3285444909",
+                    "timestamp": 1790008909652,
+                    "queue_id": 1100,
+                    "placement": 1,
+                    "level": 10,
+                    "players_eliminated": 0,
+                    "gold_left": 2,
+                    "last_round": 35,
+                    "comp": "DA Juggernaut18 6 + DA 18 Fae 4 + DA 18 Hunter 2",
+                    "traits": [
+                        {
+                            "name": "DA Juggernaut18",
+                            "tier": 3,
+                            "units": 6
+                        },
+                        {
+                            "name": "DA 18 Fae",
+                            "tier": 2,
+                            "units": 4
+                        },
+                        {
+                            "name": "DA 18 Hunter",
+                            "tier": 1,
+                            "units": 2
+                        },
+                        {
+                            "name": "DA 18 Greenfather",
+                            "tier": 1,
+                            "units": 1
+                        },
+                        {
+                            "name": "DA 18 Maokai Unique Trait",
+                            "tier": 1,
+                            "units": 1
+                        }
+                    ],
+                    "units": [
+                        {
+                            "name": "DA 18 Rakan",
+                            "tier": 1,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Yorick",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Sejuani",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Tristana",
+                            "tier": 2,
+                            "items": [
+                                "DA Last Whisper",
+                                "DA Guinsoos Rageblade",
+                                "DA Infinity Edge"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Xayah",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA Amumu18",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA Vi18",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Maokai",
+                            "tier": 2,
+                            "items": [
+                                "DA Steadfast Heart",
+                                "DA Sunfire Cape",
+                                "DA Spirit Visage"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Ivern",
+                            "tier": 2,
+                            "items": [
+                                "DA Archangels Staff",
+                                "DA Blue Buff"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Ashe",
+                            "tier": 1,
+                            "items": [
+                                "DA 18 Emblem Fae",
+                                "DA Red Buff",
+                                "DA Giant Slayer"
+                            ]
+                        }
+                    ],
+                    "items": [
+                        "DA Last Whisper",
+                        "DA Guinsoos Rageblade",
+                        "DA Infinity Edge",
+                        "DA Steadfast Heart",
+                        "DA Sunfire Cape",
+                        "DA Spirit Visage",
+                        "DA Archangels Staff",
+                        "DA Blue Buff",
+                        "DA 18 Emblem Fae",
+                        "DA Red Buff",
+                        "DA Giant Slayer"
+                    ]
+                }
+            ],
             "masteries": [
                 {
                     "champion_id": 13,
@@ -2552,6 +2690,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790010665,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 93,
+                        "wins": 55,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1789988682,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -2643,7 +2794,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T08:04:42-03:00"
+            "updated_at": "2026-09-21T14:11:05-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -3705,6 +3856,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790010667,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789988686,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -3845,7 +4016,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T08:04:46-03:00"
+            "updated_at": "2026-09-21T14:11:07-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -5382,6 +5553,26 @@
             "total_mastery_points": 4963040,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790010669,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "I",
+                        "lp": 74,
+                        "wins": 16,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "GOLD",
+                        "rank": "II",
+                        "lp": 94,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1789988689,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -5422,8 +5613,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T08:04:49-03:00"
+            "updated_at": "2026-09-21T14:11:09-03:00"
         }
     },
-    "updated_at": "2026-09-21T08:04:49-03:00"
+    "updated_at": "2026-09-21T14:11:09-03:00"
 }
