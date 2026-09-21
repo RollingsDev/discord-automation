@@ -24,7 +24,7 @@ O Worker não consulta tactics.tools nem a Riot a cada comando. Ele lê os snaps
 
 O endpoint valida assinaturas Ed25519 enviadas pelo Discord. O Worker precisa do secret `DISCORD_PUBLIC_KEY`.
 
-Opcionalmente, configure `DISCORD_GUILD_ID` para aceitar comandos somente do servidor esperado.
+Configure `DISCORD_GUILD_ID` para aceitar comandos somente do servidor esperado. Opcionalmente, configure `DISCORD_TFT_CHANNEL_ID` para restringir o `/tft` ao canal de TFT.
 
 Nunca commite Bot Token, Client Secret ou outras credenciais.
 
