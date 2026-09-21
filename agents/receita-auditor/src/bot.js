@@ -74,11 +74,22 @@ client.on(Events.InteractionCreate, async interaction => {
     return;
   }
 
-  const attachment = interaction.options.getAttachment("arquivo", true);
+  const attachment = interaction.options.getAttachment("arquivo", false);
+  const configuredWorkbook =
+    process.env.RECEITA_WORKBOOK_PATH?.trim() || "";
 
-  if (!/\.xlsx$/i.test(attachment.name ?? "")) {
+  if (attachment && !/\.xlsx$/i.test(attachment.name ?? "")) {
     await interaction.reply({
       content: "Envie uma planilha `.xlsx`.",
+      ephemeral: true
+    });
+    return;
+  }
+
+  if (!attachment && !configuredWorkbook) {
+    await interaction.reply({
+      content:
+        "Nenhuma planilha foi anexada e RECEITA_WORKBOOK_PATH não está configurado.",
       ephemeral: true
     });
     return;
@@ -97,27 +108,33 @@ client.on(Events.InteractionCreate, async interaction => {
   );
   const inputDir = path.join(jobRoot, "input");
   const outputDir = path.join(jobRoot, "output");
-  const inputPath = path.join(
-    inputDir,
-    sanitizeInputName(attachment.name || "estrutura.xlsx")
-  );
-
   await fs.mkdir(inputDir, { recursive: true });
 
-  const response = await fetch(attachment.url);
+  let inputPath;
 
-  if (!response.ok) {
-    await interaction.reply({
-      content: `Não consegui baixar a planilha do Discord. HTTP ${response.status}.`,
-      ephemeral: true
-    });
-    return;
+  if (attachment) {
+    inputPath = path.join(
+      inputDir,
+      sanitizeInputName(attachment.name || "estrutura.xlsx")
+    );
+
+    const response = await fetch(attachment.url);
+
+    if (!response.ok) {
+      await interaction.reply({
+        content: `Não consegui baixar a planilha do Discord. HTTP ${response.status}.`,
+        ephemeral: true
+      });
+      return;
+    }
+
+    await fs.writeFile(
+      inputPath,
+      Buffer.from(await response.arrayBuffer())
+    );
+  } else {
+    inputPath = path.resolve(configuredWorkbook);
   }
-
-  await fs.writeFile(
-    inputPath,
-    Buffer.from(await response.arrayBuffer())
-  );
 
   activeJob = {
     id: jobId,
@@ -130,8 +147,8 @@ client.on(Events.InteractionCreate, async interaction => {
 
   await interaction.reply({
     content:
-      "📦 **Lote da Receita recebido.**\n" +
-      "Vou abrir o navegador nesta máquina. Quando aparecer **Sou humano**, resolva manualmente; o agente continua sozinho depois disso.\n" +
+      "📦 **Lote da Receita iniciado.**\n" +
+      "A consulta será feita automaticamente pela API SERPRO, sem navegador e sem CAPTCHA.\n" +
       `Job: \`${jobId}\``
   });
 
@@ -178,10 +195,6 @@ async function runJob({
   jobId
 }) {
   const channel = interaction.channel;
-  const profileDir = path.resolve(
-    process.env.RECEITA_BROWSER_PROFILE ||
-      path.join(process.cwd(), "data", "browser-profile")
-  );
   const limit =
     Number(process.env.RECEITA_LIMIT ?? 0) || 0;
   const maxMb =
@@ -191,7 +204,6 @@ async function runJob({
     const result = await processWorkbook({
       inputPath,
       outputRoot: outputDir,
-      profileDir,
       limit,
       uploadMaxBytes: Math.floor(maxMb * 1024 * 1024),
       onEvent: async message => {
@@ -204,18 +216,6 @@ async function runJob({
           `${formatCnpj(progress.company.cnpj)} — ${progress.company.name}`;
         activeJob.status = progress.status;
       },
-      onHumanRequired: async company => {
-        activeJob.status = "AGUARDANDO SOU HUMANO";
-        activeJob.company =
-          `${formatCnpj(company.cnpj)} — ${company.name}`;
-
-        await channel.send({
-          content:
-            "🔐 **Ação humana necessária**\n" +
-            `No navegador desta máquina, marque **Sou humano** para **${formatCnpj(company.cnpj)} — ${company.name}**.\n` +
-            "Não precisa clicar em mais nada; depois da validação o agente continua sozinho."
-        });
-      }
     });
 
     const summary =
@@ -223,6 +223,7 @@ async function runJob({
       `CNPJs: **${result.companies}**\n` +
       `Sucesso: **${result.ok}**\n` +
       `Erros: **${result.errors}**\n` +
+      `Retornos parciais: **${result.partial}**\n` +
       `Ignorados na planilha: **${result.skipped}**`;
 
     await channel.send({ content: summary });
