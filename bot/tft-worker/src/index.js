@@ -40,6 +40,17 @@ export default {
       return interactionMessage("Este Oráculo TFT está configurado para outro servidor.", true);
     }
 
+    if (
+      env.DISCORD_TFT_CHANNEL_ID &&
+      interaction.channel_id &&
+      interaction.channel_id !== env.DISCORD_TFT_CHANNEL_ID
+    ) {
+      return interactionMessage(
+        "Use os comandos do Oráculo TFT no canal configurado para TFT.",
+        true
+      );
+    }
+
     ctx.waitUntil(handleTftCommand(interaction, env));
     return json({ type: 5 });
   }
