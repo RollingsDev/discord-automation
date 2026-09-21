@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oraculo-tft",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-20",
+  "vars": {
+    "TFT_META_URL": "https://raw.githubusercontent.com/RollingsDev/discord-automation/main/.state/tft-meta.json",
+    "RIOT_ANALYTICS_URL": "https://raw.githubusercontent.com/RollingsDev/discord-automation/main/.state/riot-analytics.json"
+  }
+}
