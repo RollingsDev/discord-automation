@@ -163,6 +163,19 @@
             "total_mastery_points": 260581,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790025227,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1790010659,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -267,7 +280,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T14:10:59-03:00"
+            "updated_at": "2026-09-21T18:13:47-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -1540,6 +1553,12 @@
             "total_mastery_points": 5125449,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790025231,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1790010662,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1588,7 +1607,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T14:11:02-03:00"
+            "updated_at": "2026-09-21T18:13:51-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -1600,9 +1619,9 @@
             "tft_rank": {
                 "queue": "RANKED_TFT",
                 "tier": "PLATINUM",
-                "rank": "II",
-                "lp": 93,
-                "wins": 55,
+                "rank": "I",
+                "lp": 37,
+                "wins": 56,
                 "losses": 41
             },
             "lol_matches": [
@@ -2427,6 +2446,151 @@
             ],
             "tft_matches": [
                 {
+                    "id": "BR1_3285507222",
+                    "timestamp": 1790024035868,
+                    "queue_id": 1100,
+                    "placement": 1,
+                    "level": 10,
+                    "players_eliminated": 0,
+                    "gold_left": 3,
+                    "last_round": 41,
+                    "comp": "DA Juggernaut18 4 + DA 18 Fae 3 + DA 18 Hunter 2",
+                    "traits": [
+                        {
+                            "name": "DA Juggernaut18",
+                            "tier": 2,
+                            "units": 4
+                        },
+                        {
+                            "name": "DA 18 Fae",
+                            "tier": 1,
+                            "units": 3
+                        },
+                        {
+                            "name": "DA 18 Hunter",
+                            "tier": 1,
+                            "units": 2
+                        },
+                        {
+                            "name": "DA 18 Lunar",
+                            "tier": 1,
+                            "units": 2
+                        },
+                        {
+                            "name": "DA 18 Vanguard",
+                            "tier": 1,
+                            "units": 2
+                        },
+                        {
+                            "name": "DA 18 Greenfather",
+                            "tier": 1,
+                            "units": 1
+                        },
+                        {
+                            "name": "DA 18 Lux Unique Trait",
+                            "tier": 1,
+                            "units": 1
+                        },
+                        {
+                            "name": "DA 18 Maokai Unique Trait",
+                            "tier": 1,
+                            "units": 1
+                        },
+                        {
+                            "name": "DA Emerald18",
+                            "tier": 1,
+                            "units": 1
+                        }
+                    ],
+                    "units": [
+                        {
+                            "name": "DA 18 Rakan",
+                            "tier": 2,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Xayah",
+                            "tier": 1,
+                            "items": []
+                        },
+                        {
+                            "name": "DA Vi18",
+                            "tier": 2,
+                            "items": [
+                                "DA Sunfire Cape",
+                                "DA 18 Emblem Hunter",
+                                "DA Component Chain Vest"
+                            ]
+                        },
+                        {
+                            "name": "DA Amumu18",
+                            "tier": 1,
+                            "items": []
+                        },
+                        {
+                            "name": "DA 18 Maokai",
+                            "tier": 2,
+                            "items": [
+                                "DA Dragons Claw",
+                                "DA Protectors Vow"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Lillia",
+                            "tier": 1,
+                            "items": []
+                        },
+                        {
+                            "name": "DA Taric18",
+                            "tier": 2,
+                            "items": [
+                                "DA Thiefs Gloves",
+                                "DA Gargoyle Stoneplate",
+                                "DA Steadfast Heart"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Ashe",
+                            "tier": 2,
+                            "items": [
+                                "DA Last Whisper",
+                                "DA Deathblade",
+                                "DA Guinsoos Rageblade"
+                            ]
+                        },
+                        {
+                            "name": "DA 18 Ivern",
+                            "tier": 2,
+                            "items": [
+                                "DA Hand Of Justice",
+                                "DA Nashors Tooth",
+                                "DA Archangels Staff"
+                            ]
+                        },
+                        {
+                            "name": "DA Lux18 Base",
+                            "tier": 1,
+                            "items": []
+                        }
+                    ],
+                    "items": [
+                        "DA Sunfire Cape",
+                        "DA 18 Emblem Hunter",
+                        "DA Component Chain Vest",
+                        "DA Dragons Claw",
+                        "DA Protectors Vow",
+                        "DA Thiefs Gloves",
+                        "DA Gargoyle Stoneplate",
+                        "DA Steadfast Heart",
+                        "DA Last Whisper",
+                        "DA Deathblade",
+                        "DA Guinsoos Rageblade",
+                        "DA Hand Of Justice",
+                        "DA Nashors Tooth",
+                        "DA Archangels Staff"
+                    ]
+                },
+                {
                     "id": "BR1_3285444909",
                     "timestamp": 1790008909652,
                     "queue_id": 1100,
@@ -2690,6 +2854,19 @@
             "total_mastery_points": 7354396,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790025234,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
+                {
                     "timestamp": 1790010665,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -2794,7 +2971,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-21T14:11:05-03:00"
+            "updated_at": "2026-09-21T18:13:54-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -3856,6 +4033,26 @@
             "total_mastery_points": 3970325,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790025237,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 31,
+                        "wins": 8,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "III",
+                        "lp": 98,
+                        "wins": 31,
+                        "losses": 28
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1790010667,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -4016,7 +4213,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T14:11:07-03:00"
+            "updated_at": "2026-09-21T18:13:57-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -5553,6 +5750,26 @@
             "total_mastery_points": 4963040,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790025240,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "I",
+                        "lp": 74,
+                        "wins": 16,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "GOLD",
+                        "rank": "II",
+                        "lp": 94,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1790010669,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -5613,8 +5830,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-21T14:11:09-03:00"
+            "updated_at": "2026-09-21T18:14:00-03:00"
         }
     },
-    "updated_at": "2026-09-21T14:11:09-03:00"
+    "updated_at": "2026-09-21T18:14:00-03:00"
 }
