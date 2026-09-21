@@ -1,0 +1,28 @@
+name: Discord Scheduler — Check
+
+on:
+  push:
+    paths:
+      - 'workers/discord-scheduler/**'
+      - '.github/workflows/discord-scheduler-check.yml'
+  pull_request:
+    paths:
+      - 'workers/discord-scheduler/**'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validar JavaScript
+        working-directory: workers/discord-scheduler
+        run: npm run check
