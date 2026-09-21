@@ -1,0 +1,31 @@
+name: TFT Bot — Check
+
+on:
+  push:
+    paths:
+      - 'bot/tft-worker/**'
+      - '.github/workflows/tft-bot-check.yml'
+  pull_request:
+    paths:
+      - 'bot/tft-worker/**'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validar JavaScript
+        working-directory: bot/tft-worker
+        run: |
+          node --check src/index.js
+          node --check src/commands.js
+          node --check scripts/register-commands.mjs
