@@ -1,109 +1,98 @@
-# 🔒 Auditor Receita - modo automático SERPRO
+# Auditor Receita - gerador local automático
 
-Agente privado para processar lotes de CNPJ sem navegador e sem CAPTCHA.
+Ferramenta local para processar uma planilha de empresas e gerar os arquivos de auditoria por CNPJ.
 
-O fluxo principal usa a API contratada do SERPRO/Receita:
+## O que ela faz
 
-1. lê a planilha XLSX;
-2. encontra sheets com `Entidade` e `CNPJ`;
-3. valida e deduplica os CNPJs;
-4. obtém e reutiliza Bearer Token;
-5. faz **uma consulta QSA por CNPJ**;
-6. usa o mesmo retorno para gerar:
+Ao executar o comando, o programa:
+
+1. lê todas as sheets que tenham `Entidade` e `CNPJ`;
+2. valida os CNPJs;
+3. remove duplicidades entre sheets;
+4. consulta automaticamente o QSA pela API SERPRO/Receita;
+5. reaproveita a mesma resposta cadastral para gerar:
    - `... - ISC.pdf`;
    - `... - QSA.pdf`;
-7. salva o JSON bruto da consulta;
-8. atualiza `_controle.csv`;
-9. gera o ZIP completo;
-10. envia o ZIP pelo canal privado do Discord.
+6. salva o JSON bruto retornado pela API;
+7. cria `_controle.csv`;
+8. cria um ZIP com tudo.
 
-## Importante sobre os PDFs
+Não usa Discord, navegador, CAPTCHA ou interface gráfica.
 
-Os PDFs são gerados automaticamente pelo agente a partir dos dados retornados pela API oficial contratada.
+## PDFs
 
-Eles usam o mesmo conteúdo cadastral necessário para auditoria, mas **não são o comprovante impresso diretamente pelo botão Imprimir do portal da Receita**. O rodapé deixa essa distinção explícita.
+Os PDFs são gerados pelo programa a partir dos dados retornados pela API oficial contratada.
 
-## Requisitos
+Eles não são o PDF produzido pelo botão **Imprimir** do portal da Receita. O próprio arquivo deixa essa origem explícita para não confundir um relatório gerado pelo sistema com um comprovante impresso diretamente no portal.
 
-- Node.js 22+
-- contratação ou demonstração da API Consulta CNPJ do SERPRO;
-- Consumer Key;
-- Consumer Secret.
-
-Não precisa de:
-
-- Chrome;
-- Chromium;
-- Playwright para o fluxo principal;
-- interface gráfica;
-- CAPTCHA.
-
-## Ubuntu / WSL
+## Instalação no Ubuntu / WSL
 
 ```bash
 git pull
-cd discord-automation/agents/receita-auditor
+cd ~/discord-automation/agents/receita-auditor
 chmod +x install-ubuntu.sh
 ./install-ubuntu.sh
 ```
 
-O instalador apenas executa `npm install`, cria as pastas locais e preserva um `.env` existente.
-
 ## Configuração
 
-Abra:
+Edite:
 
 ```bash
 nano .env
 ```
 
-Campos mínimos para a API:
+Preencha:
 
 ```dotenv
 SERPRO_CONSUMER_KEY=
 SERPRO_CONSUMER_SECRET=
 SERPRO_CNPJ_MODE=production
-SERPRO_TOKEN_URL=https://gateway.apiserpro.serpro.gov.br/token
-SERPRO_CNPJ_QSA_URL=https://gateway.apiserpro.serpro.gov.br/consulta-cnpj-df/v2/qsa
+
+RECEITA_WORKBOOK_PATH=/home/andre/Auditoria/estrutura prototipo.xlsx
 ```
 
-Para não precisar anexar a mesma planilha em todo lote:
+As credenciais não devem ser enviadas em chat nem commitadas.
 
-```dotenv
-RECEITA_WORKBOOK_PATH=/home/usuario/Auditoria/estrutura prototipo.xlsx
+## Conferir a planilha
+
+Sem consultar a Receita:
+
+```bash
+npm run inspect -- --input "/home/andre/Auditoria/estrutura prototipo.xlsx"
 ```
-
-A URL do QSA pode ser sobrescrita no `.env` se a documentação do contrato apresentar um endpoint diferente.
 
 ## Testar a API
-
-Depois de preencher as credenciais:
 
 ```bash
 npm run serpro:check -- --cnpj "00.000.000/0001-00"
 ```
 
-O teste:
-
-- obtém o Bearer Token;
-- consulta QSA;
-- mostra HTTP, CNPJ, razão social, situação e quantidade de sócios.
-
-## Testar o lote
+## Gerar somente uma empresa
 
 Com `RECEITA_WORKBOOK_PATH` configurado:
 
 ```bash
-npm start -- --limit 1
+npm run gerar -- --limit 1
 ```
 
-Depois:
+## Gerar o lote inteiro
 
 ```bash
-npm start
+npm run gerar
 ```
 
-Saída:
+Também é possível informar a planilha diretamente:
+
+```bash
+npm run gerar -- \
+  --input "/home/andre/Auditoria/estrutura prototipo.xlsx" \
+  --output "/home/andre/Auditoria/resultado"
+```
+
+## Saída
+
+Por padrão:
 
 ```text
 data/output/
@@ -116,66 +105,21 @@ data/output/
 └── Receita_CNPJ_YYYYMMDD.zip
 ```
 
-## Discord privado
-
-Comandos:
-
-- `/receita lote`
-- `/receita lote arquivo:<xlsx>`
-- `/receita status`
-
-Quando `RECEITA_WORKBOOK_PATH` está configurado, o auditor usa apenas:
-
-```text
-/receita lote
-```
-
-Nenhum arquivo precisa ser enviado.
-
-O bot valida simultaneamente:
-
-- `DISCORD_GUILD_ID`;
-- `DISCORD_AUDITOR_CHANNEL_ID`;
-- `DISCORD_AUDITOR_USER_ID`.
-
-## Credenciais do Discord
-
-No `.env`:
+O JSON bruto é mantido por padrão para rastreabilidade da auditoria. Para não incluí-lo:
 
 ```dotenv
-DISCORD_BOT_TOKEN=
-DISCORD_APP_ID=
-DISCORD_GUILD_ID=
-DISCORD_AUDITOR_CHANNEL_ID=
-DISCORD_AUDITOR_USER_ID=
+SERPRO_KEEP_RAW=0
 ```
 
-Registrar o comando:
+## Segurança
 
-```bash
-npm run register
-```
-
-Iniciar:
-
-```bash
-npm run bot
-```
-
-## Privacidade
-
-Não faça commit de:
+O repositório não deve conter:
 
 - Consumer Key;
 - Consumer Secret;
-- Bot Token;
-- planilha do auditor;
+- planilha;
 - PDFs;
-- respostas JSON;
+- JSONs;
 - ZIPs.
 
-O `.env` e `data/` permanecem fora do Git.
-
-## Fluxo legado por navegador
-
-O protótipo Playwright foi mantido no código apenas como referência/fallback. O processamento principal e o bot não dependem mais dele.
+O `.env` e a pasta `data/` ficam fora do Git.
