@@ -10,7 +10,7 @@ Central de automações gratuitas do Discord, executadas com **PHP + GitHub Acti
 | 💻 Dev Watch | `WEBHOOK_DEV` | 09:27 e 18:27 |
 | ⚔️ LoL / TFT Patch Watch | `WEBHOOK_RIOT` | 10:07 e 19:07 |
 | 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT_RANKING` + `RIOT_API_KEY` | sync horário + daily + weekly + mastery |
-| ♟️ TFT Meta — Comps e Itens | `WEBHOOK_TFT_META` | manual até conectar o canal |
+| ♟️ TFT Meta — Comps e Itens | `WEBHOOK_TFT_META` | 08:37 e 18:37 |
 | 🎮 Fortnite | `WEBHOOK_FORTNITE` | 10:23 e 18:23 |
 | 🛡️ Security Watch | `WEBHOOK_SECURITY` | 08:53 |
 | 🏍️ Entregas SP — Zona Norte | `WEBHOOK_DELIVERY` | 10:35, 16:35 e 19:35 |
