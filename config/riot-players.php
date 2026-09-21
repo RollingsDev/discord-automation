@@ -30,5 +30,10 @@ return [
             'game_name' => 'Lappush',
             'tag_line' => 'br1',
         ],
+        [
+            'id' => 'souza-nara',
+            'game_name' => 'Souza Nara',
+            'tag_line' => 'br1',
+        ],
     ],
 ];
