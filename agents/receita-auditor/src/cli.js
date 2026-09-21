@@ -6,50 +6,49 @@ import { formatCnpj } from "./utils.js";
 
 const args = parseArgs(process.argv.slice(2));
 
-if (!args.input) {
+const configuredWorkbook =
+  process.env.RECEITA_WORKBOOK_PATH?.trim() || "";
+
+const input = args.input || configuredWorkbook;
+
+if (!input) {
   console.error(
-    'Uso: npm start -- --input "C:\\caminho\\estrutura.xlsx" [--output "C:\\saida"] [--limit 1]'
+    'Uso: npm start -- --input "/caminho/estrutura.xlsx" [--output "/caminho/saida"] [--limit 1]'
+  );
+  console.error(
+    "Ou configure RECEITA_WORKBOOK_PATH no .env para não precisar informar --input."
   );
   process.exit(1);
 }
 
-const inputPath = path.resolve(args.input);
+const inputPath = path.resolve(input);
 const outputRoot = path.resolve(
-  args.output ?? path.join(process.cwd(), "data", "output")
+  args.output ??
+    path.join(process.cwd(), "data", "output")
 );
-const profileDir = path.resolve(
-  process.env.RECEITA_BROWSER_PROFILE ||
-    path.join(process.cwd(), "data", "browser-profile")
-);
-const limit = Number(args.limit ?? process.env.RECEITA_LIMIT ?? 0) || 0;
+const limit =
+  Number(
+    args.limit ??
+      process.env.RECEITA_LIMIT ??
+      0
+  ) || 0;
 
-console.log("Receita Auditor");
+console.log("Receita Auditor - modo API SERPRO");
 console.log(`Entrada: ${inputPath}`);
 console.log(`Saída:   ${outputRoot}`);
 console.log(
-  "O robô NÃO resolve CAPTCHA. Quando a Receita mostrar 'Sou humano', marque manualmente no navegador."
+  "Fluxo automático: 1 consulta QSA por CNPJ, geração de ISC + QSA e ZIP."
 );
 
 const result = await processWorkbook({
   inputPath,
   outputRoot,
-  profileDir,
   limit,
   onEvent: async message => console.log(message),
   onProgress: async progress => {
     console.log(
-      `[${progress.current}/${progress.total}] ${formatCnpj(progress.company.cnpj)} — ${progress.status}`
+      `[${progress.current}/${progress.total}] ${formatCnpj(progress.company.cnpj)} - ${progress.status}`
     );
-  },
-  onHumanRequired: async company => {
-    console.log("");
-    console.log("============================================================");
-    console.log(
-      `🔐 AÇÃO HUMANA NECESSÁRIA: marque 'Sou humano' para ${formatCnpj(company.cnpj)} — ${company.name}`
-    );
-    console.log("Não feche o navegador. O agente continuará sozinho após a validação.");
-    console.log("============================================================");
-    console.log("");
   }
 });
 
@@ -57,6 +56,7 @@ console.log("");
 console.log("Processamento concluído.");
 console.log(`CNPJs: ${result.companies}`);
 console.log(`Sucesso: ${result.ok}`);
+console.log(`Retornos parciais: ${result.partial}`);
 console.log(`Erros: ${result.errors}`);
 console.log(`ZIP completo: ${result.fullZip}`);
 
