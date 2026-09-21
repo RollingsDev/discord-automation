@@ -4,7 +4,6 @@ import { SerproCnpjClient } from "./serpro-client.js";
 import { generateCnpjPdfs } from "./pdf-generator.js";
 import { readCompaniesFromWorkbook } from "./spreadsheet.js";
 import {
-  createDiscordChunks,
   createFullZip,
   ensureOutputDirectories,
   writeManifest
@@ -15,7 +14,6 @@ export async function processWorkbook({
   inputPath,
   outputRoot,
   limit = 0,
-  uploadMaxBytes = 9 * 1024 * 1024,
   keepRaw = truthy(process.env.SERPRO_KEEP_RAW ?? "1"),
   delayMs = Number(process.env.SERPRO_DELAY_MS ?? 150) || 0,
   onEvent = async () => {},
@@ -165,21 +163,6 @@ export async function processWorkbook({
 
   await createFullZip(dirs.root, fullZip);
 
-  const successfulPdfs = results
-    .filter(row => ["OK", "OK_PARCIAL"].includes(row.status))
-    .flatMap(row => [
-      path.join(dirs.pdf, row.isc),
-      path.join(dirs.pdf, row.qsa)
-    ]);
-
-  const discordFiles = await chooseDiscordFiles({
-    fullZip,
-    root: dirs.root,
-    pdfFiles: successfulPdfs,
-    manifestPath,
-    uploadMaxBytes
-  });
-
   return {
     companies: companies.length,
     skipped: parsed.skipped.length,
@@ -194,30 +177,8 @@ export async function processWorkbook({
     ).length,
     results,
     manifestPath,
-    fullZip,
-    discordFiles
+    fullZip
   };
-}
-
-async function chooseDiscordFiles({
-  fullZip,
-  root,
-  pdfFiles,
-  manifestPath,
-  uploadMaxBytes
-}) {
-  const stat = await fs.stat(fullZip);
-
-  if (stat.size <= uploadMaxBytes) {
-    return [fullZip];
-  }
-
-  return createDiscordChunks(
-    root,
-    pdfFiles,
-    manifestPath,
-    uploadMaxBytes
-  );
 }
 
 function requestTagFor(index) {
