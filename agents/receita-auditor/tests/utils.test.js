@@ -31,7 +31,7 @@ test("gera nome de arquivo no padrão solicitado", () => {
 
   assert.equal(
     base,
-    "12.345.678.0001-95 - EMPRESA TESTE LTDA"
+    "12.345.678.0001-95 - EMPRESA TESTE LTDA."
   );
 });
 
