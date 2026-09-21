@@ -16,13 +16,13 @@ const command = {
     {
       type: 1,
       name: "lote",
-      description: "Processa uma planilha e gera ISC + QSA",
+      description: "Processa o lote fixo ou uma planilha enviada e gera ISC + QSA",
       options: [
         {
           type: 11,
           name: "arquivo",
           description: "Planilha XLSX com Entidade e CNPJ",
-          required: true
+          required: false
         }
       ]
     },
