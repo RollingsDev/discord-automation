@@ -53,9 +53,15 @@ export function sanitizeFilename(value) {
 }
 
 export function companyBaseFilename(entity) {
+  const company = String(entity.name ?? "")
+    .replace(/[<>:"/\\|?*\u0000-\u001F]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 135);
+
   return sanitizeFilename(
-    `${filenameCnpj(entity.cnpj)} - ${entity.name}`
-  );
+    `${filenameCnpj(entity.cnpj)} - ${company} X`
+  ).replace(/ X$/, "");
 }
 
 export function isoNow() {
