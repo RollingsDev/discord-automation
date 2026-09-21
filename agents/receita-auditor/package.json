@@ -7,16 +7,18 @@
     "bot": "node src/bot.js",
     "register": "node scripts/register-commands.mjs",
     "install-browser": "playwright install chromium",
-    "check": "node --check src/cli.js && node --check src/bot.js && node --check src/processor.js && node --check src/receita-browser.js && node --check src/spreadsheet.js && node --check src/output.js && node --check src/utils.js && node --check src/inspect.js && node --check scripts/register-commands.mjs",
+    "check": "node --check src/cli.js && node --check src/bot.js && node --check src/processor.js && node --check src/serpro-client.js && node --check src/serpro-normalizer.js && node --check src/pdf-generator.js && node --check src/serpro-check.js && node --check src/spreadsheet.js && node --check src/output.js && node --check src/utils.js && node --check src/inspect.js && node --check scripts/register-commands.mjs",
     "test": "node --test tests/*.test.js",
     "inspect": "node src/inspect.js",
-    "install-browser-ubuntu": "playwright install --with-deps chromium"
+    "install-browser-ubuntu": "playwright install --with-deps chromium",
+    "serpro:check": "node src/serpro-check.js"
   },
   "dependencies": {
     "archiver": "^7.0.1",
     "discord.js": "^14.22.1",
     "dotenv": "^17.2.2",
     "exceljs": "^4.4.0",
-    "playwright": "^1.55.0"
+    "playwright": "^1.55.0",
+    "pdfkit": "^0.17.2"
   }
 }
