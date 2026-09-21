@@ -52,7 +52,7 @@ test("normaliza retorno QSA do SERPRO", () => {
   assert.equal(data.tipoEstabelecimento, "MATRIZ");
   assert.equal(data.dataAbertura, "11/07/2017");
   assert.equal(data.porte, "DEMAIS");
-  assert.equal(data.cnaePrincipal.codigo, "66.30-400");
+  assert.equal(data.cnaePrincipal.codigo, "66.30-4-00");
   assert.equal(data.naturezaJuridica.codigo, "206-2");
   assert.equal(data.endereco.cep, "04547-901");
   assert.equal(data.situacaoCadastral.descricao, "ATIVA");
