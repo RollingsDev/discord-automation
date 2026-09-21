@@ -20,5 +20,24 @@ test("valida e formata CNPJ", () => {
 
 test("rejeita CNPJ inválido", () => {
   assert.equal(isValidCnpj("12.345.678/0001-00"), false);
-  assert.equal(isValidCnpj,("11111111111111"), false);
+  assert.equal(isValidCnpj("11111111111111"), false);
+});
+
+test("gera nome de arquivo no padrão solicitado", () => {
+  const base = companyBaseFilename({
+    cnpj: "12.345.678/0001-95",
+    name: "EMPRESA TESTE LTDA."
+  });
+
+  assert.equal(
+    base,
+    "12.345.678.0001-95 - EMPRESA TESTE LTDA"
+  );
+});
+
+test("remove caracteres inválidos do Windows", () => {
+  assert.equal(
+    sanitizeFilename('EMPRESA: TESTE / "A"?'),
+    "EMPRESA TESTE A"
+  );
 });
