@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { ReceitaBrowser } from "./receita-browser.js";
+import { SerproCnpjClient } from "./serpro-client.js";
+import { generateCnpjPdfs } from "./pdf-generator.js";
 import { readCompaniesFromWorkbook } from "./spreadsheet.js";
 import {
   createDiscordChunks,
@@ -8,17 +9,17 @@ import {
   ensureOutputDirectories,
   writeManifest
 } from "./output.js";
-import { formatCnpj, isoNow } from "./utils.js";
+import { formatCnpj, isoNow, sleep } from "./utils.js";
 
 export async function processWorkbook({
   inputPath,
   outputRoot,
-  profileDir,
   limit = 0,
   uploadMaxBytes = 9 * 1024 * 1024,
+  keepRaw = truthy(process.env.SERPRO_KEEP_RAW ?? "1"),
+  delayMs = Number(process.env.SERPRO_DELAY_MS ?? 150) || 0,
   onEvent = async () => {},
-  onProgress = async () => {},
-  onHumanRequired = async () => {}
+  onProgress = async () => {}
 }) {
   const parsed = await readCompaniesFromWorkbook(inputPath);
   const companies =
@@ -30,75 +31,119 @@ export async function processWorkbook({
 
   const dirs = await ensureOutputDirectories(outputRoot);
   const results = [];
-  const browser = new ReceitaBrowser({
-    profileDir,
-    onHumanRequired,
-    onEvent
-  });
+  const client = new SerproCnpjClient();
+
+  // Falha cedo se as credenciais não estiverem configuradas.
+  client.validateConfig();
+  await client.getToken();
 
   await onEvent(
     `Planilha carregada: ${companies.length} CNPJ(s) único(s); ${parsed.skipped.length} linha(s) ignorada(s).`
   );
 
-  try {
-    await browser.start();
+  for (let index = 0; index < companies.length; index++) {
+    const company = companies[index];
 
-    for (let index = 0; index < companies.length; index++) {
-      const company = companies[index];
-      const row = {
-        ...company,
-        status: "PROCESSANDO",
-        startedAt: isoNow(),
-        finishedAt: "",
-        isc: "",
-        qsa: "",
-        error: ""
-      };
+    const row = {
+      ...company,
+      status: "PROCESSANDO",
+      startedAt: isoNow(),
+      finishedAt: "",
+      isc: "",
+      qsa: "",
+      apiStatus: "",
+      partial: false,
+      error: ""
+    };
 
-      results.push(row);
+    results.push(row);
+
+    await onProgress({
+      current: index + 1,
+      total: companies.length,
+      company,
+      status: "PROCESSANDO"
+    });
+
+    try {
+      const queriedAt = new Date();
+      const response = await client.queryQsa(company.cnpj, {
+        requestTag: requestTagFor(index + 1)
+      });
+
+      row.apiStatus = String(response.httpStatus);
+      row.partial = response.partial;
+
+      if (keepRaw) {
+        const rawPath = path.join(dirs.raw, `${company.cnpj}.json`);
+
+        await fs.writeFile(
+          rawPath,
+          JSON.stringify(
+            {
+              queriedAt: queriedAt.toISOString(),
+              httpStatus: response.httpStatus,
+              partial: response.partial,
+              requestId: response.requestId,
+              data: response.data
+            },
+            null,
+            2
+          ),
+          "utf8"
+        );
+      }
+
+      const generated = await generateCnpjPdfs({
+        entity: company,
+        serproData: response.data,
+        outputDir: dirs.pdf,
+        queriedAt,
+        sourceLabel: "SERPRO / Receita Federal"
+      });
+
+      row.name =
+        generated.normalized.nomeEmpresarial || company.name;
+      row.isc = path.basename(generated.iscPath);
+      row.qsa = path.basename(generated.qsaPath);
+      row.status = response.partial ? "OK_PARCIAL" : "OK";
+
+      await onEvent(
+        `✅ ${index + 1}/${companies.length} - ${formatCnpj(company.cnpj)} - ${row.name}` +
+          (response.partial ? " (retorno parcial HTTP 206)" : "")
+      );
+    } catch (error) {
+      row.status = "ERRO";
+      row.error =
+        error instanceof Error ? error.message : String(error);
+
+      await onEvent(
+        `❌ ${index + 1}/${companies.length} - ${formatCnpj(company.cnpj)} - ${row.error}`
+      );
+    } finally {
+      row.finishedAt = isoNow();
+
+      await writeManifest(
+        dirs.root,
+        results,
+        parsed.skipped
+      );
 
       await onProgress({
         current: index + 1,
         total: companies.length,
-        company,
-        status: "PROCESSANDO"
+        company: {
+          ...company,
+          name: row.name || company.name
+        },
+        status: row.status,
+        error: row.error
       });
-
-      try {
-        const files = await browser.captureCompany(company, dirs);
-
-        row.isc = path.basename(files.iscPath);
-        row.qsa = path.basename(files.qsaPath);
-        row.status = "OK";
-
-        await onEvent(
-          `✅ ${index + 1}/${companies.length} — ${formatCnpj(company.cnpj)} — ${company.name}`
-        );
-      } catch (error) {
-        row.status = "ERRO";
-        row.error = error instanceof Error ? error.message : String(error);
-
-        await captureDebug(browser.page, dirs.debug, company.cnpj);
-
-        await onEvent(
-          `❌ ${index + 1}/${companies.length} — ${formatCnpj(company.cnpj)} — ${row.error}`
-        );
-      } finally {
-        row.finishedAt = isoNow();
-
-        await writeManifest(dirs.root, results, parsed.skipped);
-
-        await onProgress({
-          current: index + 1,
-          total: companies.length,
-          company,
-          status: row.status,
-          error: row.error
-        });
-      }
     }
-  } finally {
-    await browser.close();
+
+    if (delayMs > 0 && index < companies.length - 1) {
+      await sleep(delayMs);
+    }
   }
 
   const manifestPath = await writeManifest(
@@ -108,14 +153,20 @@ export async function processWorkbook({
   );
 
   const date = new Date()
-    .toLocaleDateString("sv-SE", { timeZone: "America/Sao_Paulo" })
+    .toLocaleDateString("sv-SE", {
+      timeZone: "America/Sao_Paulo"
+    })
     .replaceAll("-", "");
 
-  const fullZip = path.join(dirs.root, `Receita_CNPJ_${date}.zip`);
+  const fullZip = path.join(
+    dirs.root,
+    `Receita_CNPJ_${date}.zip`
+  );
+
   await createFullZip(dirs.root, fullZip);
 
   const successfulPdfs = results
-    .filter(row => row.status === "OK")
+    .filter(row => ["OK", "OK_PARCIAL"].includes(row.status))
     .flatMap(row => [
       path.join(dirs.pdf, row.isc),
       path.join(dirs.pdf, row.qsa)
@@ -132,8 +183,15 @@ export async function processWorkbook({
   return {
     companies: companies.length,
     skipped: parsed.skipped.length,
-    ok: results.filter(row => row.status === "OK").length,
-    errors: results.filter(row => row.status === "ERRO").length,
+    ok: results.filter(row =>
+      ["OK", "OK_PARCIAL"].includes(row.status)
+    ).length,
+    partial: results.filter(
+      row => row.status === "OK_PARCIAL"
+    ).length,
+    errors: results.filter(
+      row => row.status === "ERRO"
+    ).length,
     results,
     manifestPath,
     fullZip,
@@ -162,27 +220,22 @@ async function chooseDiscordFiles({
   );
 }
 
-async function captureDebug(page, debugDir, cnpj) {
-  if (!page) return;
+function requestTagFor(index) {
+  const prefix = String(
+    process.env.SERPRO_REQUEST_TAG ||
+      "auditoria-receita"
+  )
+    .replace(/[^a-zA-Z0-9._-]/g, "-")
+    .slice(0, 24);
 
-  const safe = String(cnpj).replace(/\D/g, "");
+  return `${prefix}-${String(index).padStart(3, "0")}`.slice(
+    0,
+    32
+  );
+}
 
-  await page
-    .screenshot({
-      path: path.join(debugDir, `${safe}-erro.png`),
-      fullPage: true
-    })
-    .catch(() => {});
-
-  const html = await page.content().catch(() => "");
-
-  if (html) {
-    await fs
-      .writeFile(
-        path.join(debugDir, `${safe}-erro.html`),
-        html,
-        "utf8"
-      )
-      .catch(() => {});
-  }
+function truthy(value) {
+  return ["1", "true", "yes", "sim", "on"].includes(
+    String(value).trim().toLowerCase()
+  );
 }
