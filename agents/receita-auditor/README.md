@@ -1,4 +1,4 @@
-# 🔒 Auditor Receita — Agente Windows
+# 🔒 Auditor Receita — Agente local (Ubuntu/Windows)
 
 Agente local para gerar os dois documentos usados pelo auditor:
 
@@ -63,13 +63,13 @@ Preencha esses valores apenas no `.env` local.
 
 Registrar comandos:
 
-```powershell
+```bash
 npm run register
 ```
 
 Executar bot:
 
-```powershell
+```bash
 npm run bot
 ```
 
