@@ -76,9 +76,9 @@ client.on(Events.InteractionCreate, async interaction => {
 
   const attachment = interaction.options.getAttachment("arquivo", true);
 
-  if (!/\.xlsx?$/i.test(attachment.name ?? "")) {
+  if (!/\.xlsx$/i.test(attachment.name ?? "")) {
     await interaction.reply({
-      content: "Envie uma planilha `.xlsx` ou `.xls`.",
+      content: "Envie uma planilha `.xlsx`.",
       ephemeral: true
     });
     return;
