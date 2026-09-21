@@ -27,8 +27,12 @@ export class ReceitaBrowser {
   async start() {
     await fs.mkdir(this.profileDir, { recursive: true });
 
+    const browserChannel =
+      String(process.env.RECEITA_BROWSER_CHANNEL ?? "").trim() || undefined;
+
     this.context = await chromium.launchPersistentContext(this.profileDir, {
       headless: false,
+      channel: browserChannel,
       viewport: null,
       args: ["--start-maximized"],
       acceptDownloads: true
