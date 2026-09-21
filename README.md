@@ -25,6 +25,7 @@ Jogadores monitorados:
 - Não grita#grll
 - flafu#ILY
 - Lappush#br1
+- Souza Nara#br1
 
 O sync roda a cada hora no minuto 41 e mantém histórico incremental em `.state/riot-analytics.json`.
 
