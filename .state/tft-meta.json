@@ -7,19 +7,19 @@
     "comps": [
         {
             "name": "Fera do Rift Amumu & Aphelios",
-            "play_rate": 0.74,
-            "avg_place": 4.05,
-            "top4_rate": 0.591,
-            "win_rate": 0.146,
+            "play_rate": 0.85,
+            "avg_place": 4.17,
+            "top4_rate": 0.568,
+            "win_rate": 0.13,
             "units": [
                 "Kog'Maw",
                 "Vi",
                 "Aphelios",
                 "Amumu",
                 "Nidalee",
+                "Varus",
                 "Diana",
-                "Azuporã",
-                "Alune"
+                "Azuporã"
             ],
             "unit_items": {
                 "Kog'Maw": [
@@ -49,7 +49,7 @@
             "play_rate": 0.3,
             "avg_place": 4.21,
             "top4_rate": 0.5710000000000001,
-            "win_rate": 0.09380000000000001,
+            "win_rate": 0.09369999999999999,
             "units": [
                 "Kog'Maw",
                 "Sivir",
@@ -108,7 +108,7 @@
                     "Efeito Vermelho"
                 ],
                 "Azuporã": [
-                    "Juramento do Protetor"
+                    "Armadura de Warmog"
                 ],
                 "Sett": [
                     "Semblante Espiritual",
@@ -123,17 +123,17 @@
             "name": "Sabugueiro Ezreal & Draven",
             "play_rate": 0.35,
             "avg_place": 4.26,
-            "top4_rate": 0.521,
-            "win_rate": 0.204,
+            "top4_rate": 0.522,
+            "win_rate": 0.205,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Amumu",
                 "Kennen",
                 "Soraka",
-                "Draven",
                 "Ivern",
-                "Maokai"
+                "Maokai",
+                "Taric"
             ],
             "unit_items": {
                 "Ezreal": [
@@ -143,11 +143,6 @@
                 ],
                 "Kennen": [
                     "Limiar da Noite"
-                ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Efeito Vermelho",
-                    "Lâmina Mortal"
                 ],
                 "Ivern": [
                     "Lança de Shojin"
@@ -163,7 +158,7 @@
             "play_rate": 0.06,
             "avg_place": 4.26,
             "top4_rate": 0.56,
-            "win_rate": 0.0913,
+            "win_rate": 0.09119999999999999,
             "units": [
                 "Ornn",
                 "Yunara",
@@ -243,10 +238,10 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 3.39,
+            "play_rate": 3.38,
             "avg_place": 4.33,
             "top4_rate": 0.53,
-            "win_rate": 0.138,
+            "win_rate": 0.13699999999999998,
             "top_users": [
                 "Nidalee",
                 "Camille",
@@ -302,7 +297,7 @@
             "play_rate": 2.49,
             "avg_place": 4.13,
             "top4_rate": 0.5670000000000001,
-            "win_rate": 0.154,
+            "win_rate": 0.155,
             "top_users": [
                 "Ashe",
                 "Morgana",
@@ -315,8 +310,8 @@
             "name": "Cajado do Vazio",
             "play_rate": 2.33,
             "avg_place": 4.19,
-            "top4_rate": 0.5589999999999999,
-            "win_rate": 0.142,
+            "top4_rate": 0.56,
+            "win_rate": 0.14300000000000002,
             "top_users": [
                 "Morgana",
                 "Cassiopeia",
@@ -335,8 +330,8 @@
                 "Malphite",
                 "Ornn",
                 "Hecarim",
-                "Fiddlesticks",
-                "Maokai"
+                "Maokai",
+                "Fiddlesticks"
             ]
         },
         {
@@ -349,8 +344,8 @@
                 "Rek'Sai",
                 "Hecarim",
                 "Maokai",
-                "Lillia",
-                "Malphite"
+                "Malphite",
+                "Lillia"
             ]
         },
         {
@@ -400,7 +395,7 @@
             "play_rate": 1.99,
             "avg_place": 4.11,
             "top4_rate": 0.578,
-            "win_rate": 0.139,
+            "win_rate": 0.138,
             "top_users": [
                 "Nidalee",
                 "Camille",
@@ -410,5 +405,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-09-22T12:39:59-03:00"
+    "fetched_at": "2026-09-22T20:46:18-03:00"
 }
