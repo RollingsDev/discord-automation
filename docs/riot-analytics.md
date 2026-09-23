@@ -14,10 +14,13 @@ A automação acompanha os Riot IDs cadastrados em:
 
 ## Secrets
 
-- `RIOT_API_KEY`
-- `WEBHOOK_RIOT_RANKING`
+- `RIOT_API_KEY` — Account, League of Legends, ARAM, Match-V5 e Champion Mastery;
+- `RIOT_TFT_API_KEY` — TFT League-V1 e TFT Match-V1;
+- `WEBHOOK_RIOT_RANKING` — relatórios/ranking no Discord.
 
-A chave Riot nunca deve ser commitada.
+As chaves Riot nunca devem ser commitadas.
+
+A separação evita que uma limitação ou expiração da chave TFT derrube a coleta principal de League of Legends. Se `RIOT_TFT_API_KEY` ainda não estiver configurada, o sync mantém o último estado TFT salvo e continua atualizando LoL, ARAM e Champion Mastery. Se uma chamada TFT falhar durante o sync, a falha é isolada e o histórico TFT anterior é preservado.
 
 ## LoL ranqueado
 
@@ -134,7 +137,19 @@ Acompanha:
 - itens mais recorrentes;
 - Top 4, 1º lugar e posição média observados quando cada item apareceu.
 
+Todas as chamadas TFT usam exclusivamente `RIOT_TFT_API_KEY`.
+
 Essas métricas são pós-jogo e históricas. Não são recomendações dinâmicas durante uma partida.
+
+## Validação das chaves
+
+O workflow:
+
+`.github/workflows/riot-key-check.yml`
+
+testa as duas credenciais separadamente.
+
+Com `RIOT_TFT_API_KEY` ausente, o check valida somente a chave principal de League e encerra com sucesso. Quando a chave TFT estiver configurada, o mesmo workflow também testa TFT League-V1 e TFT Match-V1.
 
 ## Projeções / tendência
 
@@ -192,7 +207,7 @@ O histórico fica em:
 
 `.state/riot-analytics.json`
 
-O state mantém ranks, snapshots e estatísticas compactadas. A API key nunca é persistida, e o PUUID não é mantido no state público.
+O state mantém ranks, snapshots e estatísticas compactadas. As API keys nunca são persistidas, e o PUUID não é mantido no state público.
 
 ## Observação sobre ARAM
 
