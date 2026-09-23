@@ -24,34 +24,17 @@ jobs:
             exit 1
           fi
 
-          request() {
-            local label="$1"
-            local url="$2"
-            local outfile="$3"
-
-            local status
-            status=$(curl -sS -o "$outfile" -w '%{http_code}' \
-              -H 'Accept: application/json' \
-              -H "X-Riot-Token: ${RIOT_API_KEY}" \
-              -H 'User-Agent: discord-automation-riot-key-check/1.0' \
-              "$url")
-
-            echo "${label}: HTTP ${status}"
-            printf '%s' "$status"
-          }
-
           echo '=== Riot API key check ==='
 
-          account_status=$(request \
-            'Account-V1 (americas)' \
-            'https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/crow/GT1' \
-            /tmp/account.json | tail -n1)
+          account_status=$(curl -sS -o /tmp/account.json -w '%{http_code}' \
+            -H 'Accept: application/json' \
+            -H "X-Riot-Token: ${RIOT_API_KEY}" \
+            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
+            'https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/crow/GT1')
+          echo "Account-V1 (americas): HTTP ${account_status}"
 
           if [ "$account_status" != '200' ]; then
             echo "Account-V1 falhou com HTTP ${account_status}."
-            if [ "$account_status" = '403' ]; then
-              echo 'A chave foi recusada pela Riot antes de qualquer consulta de jogador.'
-            fi
             exit 1
           fi
 
@@ -61,8 +44,6 @@ jobs:
             exit 1
           fi
 
-          echo 'Account-V1: OK'
-
           lol_status=$(curl -sS -o /tmp/lol.json -w '%{http_code}' \
             -H 'Accept: application/json' \
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
@@ -70,12 +51,12 @@ jobs:
             "https://br1.api.riotgames.com/lol/league/v4/entries/by-puuid/${puuid}")
           echo "League-V4 (BR1): HTTP ${lol_status}"
 
-          tft_status=$(curl -sS -o /tmp/tft.json -w '%{http_code}' \
+          tft_league_status=$(curl -sS -o /tmp/tft-league.json -w '%{http_code}' \
             -H 'Accept: application/json' \
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             "https://br1.api.riotgames.com/tft/league/v1/by-puuid/${puuid}")
-          echo "TFT League-V1 (BR1): HTTP ${tft_status}"
+          echo "TFT League-V1 (BR1): HTTP ${tft_league_status}"
 
           mastery_status=$(curl -sS -o /tmp/mastery.json -w '%{http_code}' \
             -H 'Accept: application/json' \
@@ -84,23 +65,36 @@ jobs:
             "https://br1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/${puuid}")
           echo "Champion Mastery-V4 (BR1): HTTP ${mastery_status}"
 
-          match_status=$(curl -sS -o /tmp/matches.json -w '%{http_code}' \
+          lol_match_status=$(curl -sS -o /tmp/lol-matches.json -w '%{http_code}' \
             -H 'Accept: application/json' \
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=1")
-          echo "Match-V5 (americas): HTTP ${match_status}"
+          echo "LoL Match-V5 (americas): HTTP ${lol_match_status}"
+
+          tft_match_status=$(curl -sS -o /tmp/tft-matches.json -w '%{http_code}' \
+            -H 'Accept: application/json' \
+            -H "X-Riot-Token: ${RIOT_API_KEY}" \
+            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
+            "https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${puuid}/ids?start=0&count=1")
+          echo "TFT Match-V1 (americas): HTTP ${tft_match_status}"
 
           failed=0
-          for value in "$lol_status" "$tft_status" "$mastery_status" "$match_status"; do
+          for value in "$lol_status" "$mastery_status" "$lol_match_status"; do
             if [ "$value" = '403' ] || [ "$value" = '401' ]; then
               failed=1
             fi
           done
 
           if [ "$failed" -ne 0 ]; then
-            echo 'A chave autentica no Account-V1, mas foi recusada em pelo menos uma API usada pela automação.'
+            echo 'Falha em uma API principal de League of Legends.'
             exit 1
           fi
 
-          echo 'Chave aceita nas APIs testadas.'
+          if [ "$tft_league_status" = '403' ] || [ "$tft_match_status" = '403' ]; then
+            echo 'League of Legends: OK.'
+            echo 'TFT: acesso recusado em pelo menos um endpoint.'
+            exit 2
+          fi
+
+          echo 'League of Legends e TFT: chave aceita nas APIs testadas.'
