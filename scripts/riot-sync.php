@@ -14,6 +14,7 @@ use DiscordAutomation\Support\StateStore;
 $config = require __DIR__ . '/../config/riot-players.php';
 
 $apiKey = trim((string) getenv('RIOT_API_KEY'));
+$tftApiKey = trim((string) getenv('RIOT_TFT_API_KEY'));
 $webhookUrl = trim((string) getenv('WEBHOOK_RIOT_RANKING'));
 $forceReport = filter_var(getenv('FORCE_REPORT') ?: 'false', FILTER_VALIDATE_BOOLEAN);
 
@@ -25,10 +26,17 @@ if ($webhookUrl === '') {
     throw new RuntimeException('WEBHOOK_RIOT_RANKING não configurado.');
 }
 
+$tftEnabled = $tftApiKey !== '';
+
+if (!$tftEnabled) {
+    echo "RIOT_TFT_API_KEY não configurada: TFT será preservado do estado anterior e o sync de LoL continuará normalmente.\n";
+}
+
 $client = new RiotClient(
     $apiKey,
     (string) ($config['region'] ?? 'americas'),
     (string) ($config['platform'] ?? 'br1'),
+    $tftApiKey !== '' ? $tftApiKey : null,
 );
 
 $stateStore = new StateStore(__DIR__ . '/../.state');
@@ -87,11 +95,21 @@ foreach ($players as $playerConfig) {
         : [];
 
     $lolRanksRaw = $client->lolRanks($puuid);
-    $tftRanksRaw = $client->tftRanks($puuid);
-
     $lolSolo = Analytics::rankEntry($lolRanksRaw, 'RANKED_SOLO_5x5');
     $lolFlex = Analytics::rankEntry($lolRanksRaw, 'RANKED_FLEX_SR');
-    $tftRank = Analytics::rankEntry($tftRanksRaw, 'RANKED_TFT');
+
+    $tftRank = is_array($previous['tft_rank'] ?? null)
+        ? $previous['tft_rank']
+        : null;
+
+    if ($tftEnabled) {
+        try {
+            $tftRanksRaw = $client->tftRanks($puuid);
+            $tftRank = Analytics::rankEntry($tftRanksRaw, 'RANKED_TFT');
+        } catch (RuntimeException $e) {
+            echo "Aviso TFT rank {$gameName}#{$tagLine}: {$e->getMessage()} Mantendo estado anterior.\n";
+        }
+    }
 
     $lolMatches = is_array($previous['lol_matches'] ?? null)
         ? $previous['lol_matches']
@@ -196,21 +214,27 @@ foreach ($players as $playerConfig) {
         }
     }
 
-    foreach ($client->tftMatchIds($puuid, $backfill) as $matchId) {
-        $matchId = (string) $matchId;
+    if ($tftEnabled) {
+        try {
+            foreach ($client->tftMatchIds($puuid, $backfill) as $matchId) {
+                $matchId = (string) $matchId;
 
-        if ($matchId === '' || isset($knownTft[$matchId])) {
-            continue;
-        }
+                if ($matchId === '' || isset($knownTft[$matchId])) {
+                    continue;
+                }
 
-        $compact = Analytics::compactTftMatch(
-            $client->tftMatch($matchId),
-            $puuid
-        );
+                $compact = Analytics::compactTftMatch(
+                    $client->tftMatch($matchId),
+                    $puuid
+                );
 
-        if ($compact !== null && $compact['id'] !== '') {
-            array_unshift($tftMatches, $compact);
-            $knownTft[$compact['id']] = true;
+                if ($compact !== null && $compact['id'] !== '') {
+                    array_unshift($tftMatches, $compact);
+                    $knownTft[$compact['id']] = true;
+                }
+            }
+        } catch (RuntimeException $e) {
+            echo "Aviso TFT matches {$gameName}#{$tagLine}: {$e->getMessage()} Mantendo histórico anterior.\n";
         }
     }
 
