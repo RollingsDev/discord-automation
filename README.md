@@ -9,7 +9,7 @@ Central de automações gratuitas do Discord, executadas com **PHP + GitHub Acti
 | 🎁 Jogos grátis | `WEBHOOK_FREE_GAMES` | 09:13 e 18:13 |
 | 💻 Dev Watch | `WEBHOOK_DEV` | 09:27 e 18:27 |
 | ⚔️ LoL / TFT Patch Watch | `WEBHOOK_RIOT` | 10:07 e 19:07 |
-| 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT_RANKING` + `RIOT_API_KEY` | sync horário + daily + weekly + mastery |
+| 🏆 Riot Analytics — LoL + ARAM + TFT | `WEBHOOK_RIOT_RANKING` + `RIOT_API_KEY` + `RIOT_TFT_API_KEY` | sync horário + daily + weekly + mastery |
 | ♟️ TFT Meta — Comps e Itens | `WEBHOOK_TFT_META` | 08:37 e 18:37 |
 | 🎮 Fortnite | `WEBHOOK_FORTNITE` | 10:23 e 18:23 |
 | 🛡️ Security Watch | `WEBHOOK_SECURITY` | 08:53 |
@@ -28,6 +28,13 @@ Jogadores monitorados:
 - Souza Nara#br1
 
 O sync roda a cada hora no minuto 41 e mantém histórico incremental em `.state/riot-analytics.json`.
+
+As chaves Riot são separadas por produto:
+
+- `RIOT_API_KEY`: Account, League of Legends, ARAM, Match-V5 e Champion Mastery;
+- `RIOT_TFT_API_KEY`: TFT League-V1 e TFT Match-V1.
+
+Se `RIOT_TFT_API_KEY` ainda não estiver configurada ou uma chamada TFT falhar, o sync preserva o último estado TFT conhecido e continua atualizando LoL/ARAM/Mastery.
 
 ### LoL
 
@@ -163,7 +170,10 @@ discord-automation/
 
 ## Segurança
 
-- `WEBHOOK_RIOT` fica reservado para updates/patches; `WEBHOOK_RIOT_RANKING` recebe ranking e analytics. Ambos, junto com `RIOT_API_KEY`, ficam apenas em Repository Secrets.
+- `WEBHOOK_RIOT` fica reservado para updates/patches; `WEBHOOK_RIOT_RANKING` recebe ranking e analytics.
+- `RIOT_API_KEY` é usada somente nas APIs de League/Account/Mastery/LoL Match.
+- `RIOT_TFT_API_KEY` é usada somente nas APIs TFT League/Match.
+- Todas as chaves ficam apenas em Repository Secrets.
 - Nenhuma chave deve ser commitada.
 - O state público não persiste PUUID.
 - Menções automáticas do Discord são bloqueadas.
