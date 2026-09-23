@@ -13,6 +13,7 @@ final class RiotClient
         private readonly string $apiKey,
         private readonly string $region = 'americas',
         private readonly string $platform = 'br1',
+        private readonly ?string $tftApiKey = null,
     ) {
         if (trim($this->apiKey) === '') {
             throw new RuntimeException('RIOT_API_KEY não configurada.');
@@ -39,7 +40,9 @@ final class RiotClient
     public function tftRanks(string $puuid): array
     {
         return $this->platform(
-            '/tft/league/v1/by-puuid/' . rawurlencode($puuid)
+            '/tft/league/v1/by-puuid/' . rawurlencode($puuid),
+            [],
+            $this->tftKey()
         );
     }
 
@@ -96,37 +99,59 @@ final class RiotClient
             [
                 'start' => 0,
                 'count' => max(1, min(100, $count)),
-            ]
+            ],
+            $this->tftKey()
         );
     }
 
     public function tftMatch(string $matchId): array
     {
         return $this->regional(
-            '/tft/match/v1/matches/' . rawurlencode($matchId)
+            '/tft/match/v1/matches/' . rawurlencode($matchId),
+            [],
+            $this->tftKey()
         );
     }
 
-    private function regional(string $path, array $query = []): array
+    private function regional(string $path, array $query = [], ?string $apiKey = null): array
     {
         return $this->request(
             'https://' . $this->region . '.api.riotgames.com' . $path,
-            $query
+            $query,
+            $apiKey ?? $this->apiKey
         );
     }
 
-    private function platform(string $path, array $query = []): array
+    private function platform(string $path, array $query = [], ?string $apiKey = null): array
     {
         return $this->request(
             'https://' . $this->platform . '.api.riotgames.com' . $path,
-            $query
+            $query,
+            $apiKey ?? $this->apiKey
         );
     }
 
-    private function request(string $url, array $query = []): array
+    private function tftKey(): string
+    {
+        $key = trim((string) ($this->tftApiKey ?? ''));
+
+        if ($key === '') {
+            throw new RuntimeException('RIOT_TFT_API_KEY não configurada.');
+        }
+
+        return $key;
+    }
+
+    private function request(string $url, array $query = [], ?string $apiKey = null): array
     {
         if ($query !== []) {
             $url .= '?' . http_build_query($query, '', '&', PHP_QUERY_RFC3986);
+        }
+
+        $effectiveApiKey = trim((string) ($apiKey ?? $this->apiKey));
+
+        if ($effectiveApiKey === '') {
+            throw new RuntimeException('Chave Riot não configurada para esta API.');
         }
 
         for ($attempt = 1; $attempt <= 5; $attempt++) {
@@ -144,7 +169,7 @@ final class RiotClient
                 CURLOPT_ENCODING => '',
                 CURLOPT_HTTPHEADER => [
                     'Accept: application/json',
-                    'X-Riot-Token: ' . $this->apiKey,
+                    'X-Riot-Token: ' . $effectiveApiKey,
                     'User-Agent: discord-automation-riot/1.0',
                 ],
                 CURLOPT_HEADER => true,
@@ -197,7 +222,7 @@ final class RiotClient
 
             if ($status === 403) {
                 throw new RuntimeException(
-                    'Riot API recusou a chave (HTTP 403). A Development Key pode ter expirado.'
+                    'Riot API recusou a chave usada nesta API (HTTP 403).'
                 );
             }
 
