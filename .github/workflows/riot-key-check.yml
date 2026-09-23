@@ -12,9 +12,10 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Testar chave em APIs Riot
+      - name: Testar chaves Riot
         env:
           RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          RIOT_TFT_API_KEY: ${{ secrets.RIOT_TFT_API_KEY }}
         shell: bash
         run: |
           set -euo pipefail
@@ -31,7 +32,7 @@ jobs:
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             'https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/crow/GT1')
-          echo "Account-V1 (americas): HTTP ${account_status}"
+          echo "Account-V1 (americas) [RIOT_API_KEY]: HTTP ${account_status}"
 
           if [ "$account_status" != '200' ]; then
             echo "Account-V1 falhou com HTTP ${account_status}."
@@ -49,52 +50,54 @@ jobs:
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             "https://br1.api.riotgames.com/lol/league/v4/entries/by-puuid/${puuid}")
-          echo "League-V4 (BR1): HTTP ${lol_status}"
-
-          tft_league_status=$(curl -sS -o /tmp/tft-league.json -w '%{http_code}' \
-            -H 'Accept: application/json' \
-            -H "X-Riot-Token: ${RIOT_API_KEY}" \
-            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
-            "https://br1.api.riotgames.com/tft/league/v1/by-puuid/${puuid}")
-          echo "TFT League-V1 (BR1): HTTP ${tft_league_status}"
+          echo "League-V4 (BR1) [RIOT_API_KEY]: HTTP ${lol_status}"
 
           mastery_status=$(curl -sS -o /tmp/mastery.json -w '%{http_code}' \
             -H 'Accept: application/json' \
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             "https://br1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-puuid/${puuid}")
-          echo "Champion Mastery-V4 (BR1): HTTP ${mastery_status}"
+          echo "Champion Mastery-V4 (BR1) [RIOT_API_KEY]: HTTP ${mastery_status}"
 
           lol_match_status=$(curl -sS -o /tmp/lol-matches.json -w '%{http_code}' \
             -H 'Accept: application/json' \
             -H "X-Riot-Token: ${RIOT_API_KEY}" \
             -H 'User-Agent: discord-automation-riot-key-check/1.0' \
             "https://americas.api.riotgames.com/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=1")
-          echo "LoL Match-V5 (americas): HTTP ${lol_match_status}"
+          echo "LoL Match-V5 (americas) [RIOT_API_KEY]: HTTP ${lol_match_status}"
 
-          tft_match_status=$(curl -sS -o /tmp/tft-matches.json -w '%{http_code}' \
-            -H 'Accept: application/json' \
-            -H "X-Riot-Token: ${RIOT_API_KEY}" \
-            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
-            "https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${puuid}/ids?start=0&count=1")
-          echo "TFT Match-V1 (americas): HTTP ${tft_match_status}"
-
-          failed=0
           for value in "$lol_status" "$mastery_status" "$lol_match_status"; do
             if [ "$value" = '403' ] || [ "$value" = '401' ]; then
-              failed=1
+              echo 'Falha em uma API principal de League of Legends.'
+              exit 1
             fi
           done
 
-          if [ "$failed" -ne 0 ]; then
-            echo 'Falha em uma API principal de League of Legends.'
-            exit 1
+          echo 'League of Legends: OK.'
+
+          if [ -z "${RIOT_TFT_API_KEY:-}" ]; then
+            echo 'RIOT_TFT_API_KEY ainda não configurada; testes TFT foram ignorados.'
+            exit 0
           fi
 
-          if [ "$tft_league_status" = '403' ] || [ "$tft_match_status" = '403' ]; then
-            echo 'League of Legends: OK.'
-            echo 'TFT: acesso recusado em pelo menos um endpoint.'
+          tft_league_status=$(curl -sS -o /tmp/tft-league.json -w '%{http_code}' \
+            -H 'Accept: application/json' \
+            -H "X-Riot-Token: ${RIOT_TFT_API_KEY}" \
+            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
+            "https://br1.api.riotgames.com/tft/league/v1/by-puuid/${puuid}")
+          echo "TFT League-V1 (BR1) [RIOT_TFT_API_KEY]: HTTP ${tft_league_status}"
+
+          tft_match_status=$(curl -sS -o /tmp/tft-matches.json -w '%{http_code}' \
+            -H 'Accept: application/json' \
+            -H "X-Riot-Token: ${RIOT_TFT_API_KEY}" \
+            -H 'User-Agent: discord-automation-riot-key-check/1.0' \
+            "https://americas.api.riotgames.com/tft/match/v1/matches/by-puuid/${puuid}/ids?start=0&count=1")
+          echo "TFT Match-V1 (americas) [RIOT_TFT_API_KEY]: HTTP ${tft_match_status}"
+
+          if [ "$tft_league_status" = '403' ] || [ "$tft_league_status" = '401' ] || [ "$tft_match_status" = '403' ] || [ "$tft_match_status" = '401' ]; then
+            echo 'TFT: RIOT_TFT_API_KEY foi recusada em pelo menos um endpoint.'
             exit 2
           fi
 
-          echo 'League of Legends e TFT: chave aceita nas APIs testadas.'
+          echo 'TFT: OK.'
+          echo 'As duas chaves foram aceitas nas APIs testadas.'
