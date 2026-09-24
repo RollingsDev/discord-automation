@@ -1,4 +1,4 @@
-name: TFT Bot — Check
+name: Riot Bot — Check
 
 on:
   push:
@@ -26,6 +26,8 @@ jobs:
       - name: Validar JavaScript
         working-directory: bot/tft-worker
         run: |
-          node --check src/index.js
+          node --check src/worker.js
+          node --check src/riot-live.js
+          node --check src/tft-snapshot.js
           node --check src/commands.js
           node --check scripts/register-commands.mjs
