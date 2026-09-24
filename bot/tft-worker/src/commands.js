@@ -1,8 +1,46 @@
+export const LOL_COMMAND = {
+  name: "lol",
+  type: 1,
+  description: "Consulta informações de League of Legends pela Riot API",
+  options: [
+    {
+      type: 1,
+      name: "player",
+      description: "Rank, partidas recentes e maestrias de um Riot ID",
+      options: [riotIdOption()]
+    },
+    {
+      type: 1,
+      name: "partida",
+      description: "Mostra a partida ranqueada mais recente do jogador",
+      options: [riotIdOption()]
+    },
+    {
+      type: 1,
+      name: "maestria",
+      description: "Mostra as maiores maestrias do jogador",
+      options: [riotIdOption()]
+    }
+  ]
+};
+
 export const TFT_COMMAND = {
   name: "tft",
   type: 1,
-  description: "Consulta rápida de meta e jogadores de Teamfight Tactics",
+  description: "Consulta TFT pela Riot API e o snapshot de meta",
   options: [
+    {
+      type: 1,
+      name: "player",
+      description: "Rank e partidas recentes de qualquer Riot ID",
+      options: [riotIdOption()]
+    },
+    {
+      type: 1,
+      name: "partida",
+      description: "Mostra a partida de TFT mais recente do jogador",
+      options: [riotIdOption()]
+    },
     { type: 1, name: "meta", description: "Mostra as principais composições do meta atual" },
     {
       type: 1,
@@ -22,12 +60,17 @@ export const TFT_COMMAND = {
       description: "Consulta estatísticas de um item",
       options: [{ type: 3, name: "nome", description: "Nome do item, ex.: Gume do Infinito", required: true }]
     },
-    {
-      type: 1,
-      name: "player",
-      description: "Consulta o TFT de um jogador monitorado",
-      options: [{ type: 3, name: "nome", description: "Riot ID ou parte do nome, ex.: flafu", required: true }]
-    },
-    { type: 1, name: "players", description: "Mostra todos os jogadores monitorados com dados de TFT" }
+    { type: 1, name: "players", description: "Mostra os jogadores monitorados com dados de TFT" }
   ]
 };
+
+export const COMMANDS = [LOL_COMMAND, TFT_COMMAND];
+
+function riotIdOption() {
+  return {
+    type: 3,
+    name: "riot_id",
+    description: "Riot ID completo, ex.: crow#GT1",
+    required: true
+  };
+}
