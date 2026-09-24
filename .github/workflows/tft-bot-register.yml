@@ -1,4 +1,4 @@
-name: TFT Bot — Register Commands
+name: Riot Bot — Register Commands
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Registrar /tft no servidor
+      - name: Registrar /lol e /tft no servidor
         working-directory: bot/tft-worker
         env:
           DISCORD_APP_ID: ${{ secrets.DISCORD_APP_ID }}
