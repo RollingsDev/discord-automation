@@ -1,5 +1,5 @@
 {
-  "name": "oraculo-tft-discord-worker",
+  "name": "oraculo-riot-discord-worker",
   "private": true,
   "type": "module",
   "scripts": {
