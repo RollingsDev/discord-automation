@@ -6,29 +6,66 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Fera do Rift Dragão Ancião & Amumu",
-            "play_rate": 0.41,
-            "avg_place": 4.17,
-            "top4_rate": 0.5429999999999999,
-            "win_rate": 0.196,
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.15,
+            "avg_place": 4.11,
+            "top4_rate": 0.5479999999999999,
+            "win_rate": 0.233,
             "units": [
+                "Rakan",
                 "Vi",
+                "Sivir",
                 "Amumu",
-                "Varus",
-                "Diana",
-                "Azuporã",
-                "Aphelios",
-                "Nidalee",
-                "Alune"
+                "Maokai",
+                "Ivern",
+                "Kennen",
+                "Taric"
             ],
             "unit_items": {
-                "Amumu": [
-                    "Juramento do Protetor",
-                    "Semblante Espiritual",
-                    "Stemmaguarda"
+                "Sivir": [
+                    "Gume do Infinito",
+                    "Lança de Shojin",
+                    "Último Sussurro"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Kennen": [
+                    "Limiar da Noite"
+                ]
+            }
+        },
+        {
+            "name": "Fera do Rift Dragão Ancião & Amumu",
+            "play_rate": 0.4,
+            "avg_place": 4.16,
+            "top4_rate": 0.546,
+            "win_rate": 0.195,
+            "units": [
+                "Diana",
+                "Kog'Maw",
+                "Aphelios",
+                "Amumu",
+                "Nidalee",
+                "Azuporã",
+                "Mamãe Bicuda",
+                "Vi"
+            ],
+            "unit_items": {
+                "Kog'Maw": [
+                    "Efeito Vermelho"
                 ],
                 "Aphelios": [
-                    "Gume do Infinito"
+                    "Fúria do Cráquem"
+                ],
+                "Amumu": [
+                    "Armadura de Warmog",
+                    "Juramento do Protetor",
+                    "Semblante Espiritual"
                 ],
                 "Nidalee": [
                     "Sinal de Sterak"
@@ -36,43 +73,11 @@
             }
         },
         {
-            "name": "Sabugueiro Ezreal & Draven",
-            "play_rate": 0.22,
-            "avg_place": 4.24,
-            "top4_rate": 0.529,
-            "win_rate": 0.196,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Gnar",
-                "Draven",
-                "Ivern",
-                "Lux Lunar",
-                "Taric"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Último Sussurro",
-                    "Gume do Infinito",
-                    "Lança de Shojin"
-                ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Lâmina Mortal",
-                    "Fúria do Cráquem"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ]
-            }
-        },
-        {
             "name": "Colosso Zyra & Amumu",
-            "play_rate": 0.39,
-            "avg_place": 4.24,
-            "top4_rate": 0.547,
-            "win_rate": 0.142,
+            "play_rate": 0.41,
+            "avg_place": 4.23,
+            "top4_rate": 0.5489999999999999,
+            "win_rate": 0.14300000000000002,
             "units": [
                 "Yorick",
                 "Vi",
@@ -87,64 +92,64 @@
                 "Zyra": [
                     "Cajado do Arcanjo",
                     "Pistola Laminar Hextec",
-                    "Efeito Azul"
+                    "Cajado do Vazio"
                 ],
                 "Amumu": [
                     "Centelha Iônica",
-                    "Coração Inabalável",
-                    "Semblante Espiritual"
+                    "Capa de Fogo Solar",
+                    "Coração Inabalável"
                 ],
                 "Maokai": [
                     "Armadura de Warmog",
                     "Centelha Iônica"
+                ],
+                "Sivir": [
+                    "Efeito Vermelho"
                 ]
             }
         },
         {
-            "name": "Enfeitiçador Veigar & Ornn",
-            "play_rate": 0.42,
-            "avg_place": 4.28,
-            "top4_rate": 0.541,
-            "win_rate": 0.147,
+            "name": "Sabugueiro Ezreal & Draven",
+            "play_rate": 0.23,
+            "avg_place": 4.25,
+            "top4_rate": 0.527,
+            "win_rate": 0.19399999999999998,
             "units": [
-                "Ornn",
-                "Rek'Sai",
-                "Veigar",
                 "Alistar",
-                "LeBlanc",
-                "Cassiopeia",
-                "Fiddlesticks",
-                "Soraka"
+                "Ezreal",
+                "Draven",
+                "Gnar",
+                "Ivern",
+                "Kennen",
+                "Maokai",
+                "Taric"
             ],
             "unit_items": {
-                "Ornn": [
-                    "Centelha Iônica",
-                    "Stemmaguarda",
+                "Ezreal": [
+                    "Último Sussurro",
+                    "Gume do Infinito",
+                    "Lâmina Mortal"
+                ],
+                "Draven": [
+                    "Emblema de Carrasco",
+                    "Lâmina Mortal",
+                    "Fúria do Cráquem"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
                     "Placa Gargolítica"
-                ],
-                "Veigar": [
-                    "Auronúcleo",
-                    "Tormenta de Luden",
-                    "Efeito Azul Radiante"
-                ],
-                "Alistar": [
-                    "Capa de Fogo Solar",
-                    "Placa Gargolítica"
-                ],
-                "LeBlanc": [
-                    "Cajado do Vazio"
-                ],
-                "Cassiopeia": [
-                    "Cajado do Vazio"
                 ]
             }
         },
         {
             "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.2,
-            "avg_place": 4.28,
-            "top4_rate": 0.539,
-            "win_rate": 0.142,
+            "play_rate": 0.26,
+            "avg_place": 4.25,
+            "top4_rate": 0.544,
+            "win_rate": 0.145,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -164,7 +169,7 @@
                 "Rammus": [
                     "Placa Gargolítica",
                     "Stemmaguarda",
-                    "Semblante Espiritual"
+                    "Armadura de Warmog"
                 ],
                 "Fiddlesticks": [
                     "Centelha Iônica"
@@ -203,14 +208,14 @@
             "top_users": [
                 "Maokai",
                 "Alistar",
-                "Hecarim",
                 "Malphite",
+                "Hecarim",
                 "Rammus"
             ]
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 4.03,
+            "play_rate": 4.04,
             "avg_place": 4.31,
             "top4_rate": 0.535,
             "win_rate": 0.141,
@@ -224,7 +229,7 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 3.18,
+            "play_rate": 3.17,
             "avg_place": 4.42,
             "top4_rate": 0.512,
             "win_rate": 0.135,
@@ -232,13 +237,13 @@
                 "Caitlyn",
                 "Aphelios",
                 "Draven",
-                "Tristana",
-                "Master Yi"
+                "Master Yi",
+                "Rengar"
             ]
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 3.11,
+            "play_rate": 3.1,
             "avg_place": 4.34,
             "top4_rate": 0.529,
             "win_rate": 0.139,
@@ -273,14 +278,14 @@
             "top_users": [
                 "Alistar",
                 "Maokai",
-                "Malphite",
                 "Hecarim",
+                "Malphite",
                 "Rammus"
             ]
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.6,
+            "play_rate": 2.61,
             "avg_place": 4.18,
             "top4_rate": 0.56,
             "win_rate": 0.145,
@@ -297,7 +302,7 @@
             "play_rate": 2.59,
             "avg_place": 4.14,
             "top4_rate": 0.565,
-            "win_rate": 0.157,
+            "win_rate": 0.156,
             "top_users": [
                 "Ashe",
                 "Morgana",
@@ -308,9 +313,9 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.27,
-            "avg_place": 4.24,
-            "top4_rate": 0.5479999999999999,
+            "play_rate": 2.28,
+            "avg_place": 4.25,
+            "top4_rate": 0.547,
             "win_rate": 0.141,
             "top_users": [
                 "Caitlyn",
@@ -330,22 +335,22 @@
                 "Malphite",
                 "Rammus",
                 "Fiddlesticks",
-                "Ornn",
-                "Hecarim"
+                "Hecarim",
+                "Maokai"
             ]
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 2.21,
+            "play_rate": 2.2,
             "avg_place": 4.06,
             "top4_rate": 0.58,
             "win_rate": 0.163,
             "top_users": [
                 "Kennen",
                 "Diana",
-                "Vi",
+                "Amumu",
                 "Gnar",
-                "Sett"
+                "Vi"
             ]
         },
         {
@@ -356,10 +361,10 @@
             "win_rate": 0.147,
             "top_users": [
                 "Fiddlesticks",
-                "Lillia",
                 "Maokai",
+                "Lillia",
                 "Hecarim",
-                "Kennen"
+                "Azuporã"
             ]
         },
         {
@@ -367,7 +372,7 @@
             "play_rate": 2.06,
             "avg_place": 4.04,
             "top4_rate": 0.59,
-            "win_rate": 0.156,
+            "win_rate": 0.157,
             "top_users": [
                 "Ivern",
                 "Morgana",
@@ -379,7 +384,7 @@
         {
             "name": "Mata-Gigantes",
             "play_rate": 1.94,
-            "avg_place": 4.15,
+            "avg_place": 4.16,
             "top4_rate": 0.565,
             "win_rate": 0.145,
             "top_users": [
@@ -387,9 +392,9 @@
                 "Ezreal",
                 "Sivir",
                 "Morgana",
-                "Ashe"
+                "Draven"
             ]
         }
     ],
-    "fetched_at": "2026-09-27T12:47:06-03:00"
+    "fetched_at": "2026-09-27T20:55:06-03:00"
 }
