@@ -163,6 +163,19 @@
             "total_mastery_points": 273494,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790574538,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1790553405,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -644,7 +657,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-27T20:56:45-03:00"
+            "updated_at": "2026-09-28T02:48:58-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -1914,8 +1927,14 @@
                     "last_play_time": 1790392702000
                 }
             ],
-            "total_mastery_points": 5167136,
+            "total_mastery_points": 5172607,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790574539,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1790553406,
                     "lol_solo": null,
@@ -2139,7 +2158,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-27T20:56:46-03:00"
+            "updated_at": "2026-09-28T02:48:59-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -3281,8 +3300,8 @@
                     "champion_id": 83,
                     "champion": "Yorick",
                     "level": 16,
-                    "points": 148039,
-                    "last_play_time": 1790206790000
+                    "points": 149574,
+                    "last_play_time": 1790559185000
                 },
                 {
                     "champion_id": 21,
@@ -3383,8 +3402,21 @@
                     "last_play_time": 1790041220000
                 }
             ],
-            "total_mastery_points": 7396394,
+            "total_mastery_points": 7401980,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790574541,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1790553407,
                     "lol_solo": null,
@@ -3867,7 +3899,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-27T20:56:47-03:00"
+            "updated_at": "2026-09-28T02:49:01-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -6530,6 +6562,26 @@
             "total_mastery_points": 4007020,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790574542,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 91,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 27,
+                        "wins": 41,
+                        "losses": 38
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1790553410,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -7270,7 +7322,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-27T20:56:50-03:00"
+            "updated_at": "2026-09-28T02:49:02-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -9269,8 +9321,8 @@
                     "champion_id": 53,
                     "champion": "Blitzcrank",
                     "level": 9,
-                    "points": 70626,
-                    "last_play_time": 1790544333000
+                    "points": 72117,
+                    "last_play_time": 1790559185000
                 },
                 {
                     "champion_id": 24,
@@ -9308,8 +9360,28 @@
                     "last_play_time": 1787458076000
                 }
             ],
-            "total_mastery_points": 4996527,
+            "total_mastery_points": 5001929,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790574544,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 2,
+                        "wins": 17,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 20,
+                        "wins": 15,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1790553411,
                     "lol_solo": {
@@ -9951,8 +10023,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-27T20:56:51-03:00"
+            "updated_at": "2026-09-28T02:49:04-03:00"
         }
     },
-    "updated_at": "2026-09-27T20:56:51-03:00"
+    "updated_at": "2026-09-28T02:49:04-03:00"
 }
