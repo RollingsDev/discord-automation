@@ -1,7 +1,8 @@
 {
     "initialized_at": "2026-09-20T20:19:25-03:00",
-    "updated_at": "2026-09-22T14:08:25-03:00",
+    "updated_at": "2026-09-28T16:46:58-03:00",
     "items": [
+        "livewire/livewire@v4.4.7",
         "laravel/framework@v13.33.0",
         "laravel/octane@v2.20.0",
         "laravel/horizon@v5.50.0",
