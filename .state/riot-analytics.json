@@ -163,6 +163,19 @@
             "total_mastery_points": 278573,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790734865,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1790723459,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -748,7 +761,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-29T20:10:59-03:00"
+            "updated_at": "2026-09-29T23:21:05-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -1948,18 +1961,18 @@
                     "last_play_time": 1788742835000
                 },
                 {
+                    "champion_id": 51,
+                    "champion": "Caitlyn",
+                    "level": 10,
+                    "points": 77931,
+                    "last_play_time": 1790731373000
+                },
+                {
                     "champion_id": 22,
                     "champion": "Ashe",
                     "level": 10,
                     "points": 77394,
                     "last_play_time": 1789350659000
-                },
-                {
-                    "champion_id": 51,
-                    "champion": "Caitlyn",
-                    "level": 10,
-                    "points": 77078,
-                    "last_play_time": 1788822575000
                 },
                 {
                     "champion_id": 268,
@@ -1976,6 +1989,13 @@
                     "last_play_time": 1790390424000
                 },
                 {
+                    "champion_id": 11,
+                    "champion": "Master Yi",
+                    "level": 9,
+                    "points": 69124,
+                    "last_play_time": 1790732612000
+                },
+                {
                     "champion_id": 141,
                     "champion": "Kayn",
                     "level": 7,
@@ -1988,13 +2008,6 @@
                     "level": 9,
                     "points": 68481,
                     "last_play_time": 1789437993000
-                },
-                {
-                    "champion_id": 11,
-                    "champion": "Master Yi",
-                    "level": 9,
-                    "points": 68141,
-                    "last_play_time": 1789089116000
                 },
                 {
                     "champion_id": 96,
@@ -2018,8 +2031,14 @@
                     "last_play_time": 1790392702000
                 }
             ],
-            "total_mastery_points": 5177998,
+            "total_mastery_points": 5183591,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790734867,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1790723461,
                     "lol_solo": null,
@@ -2291,7 +2310,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-29T20:11:01-03:00"
+            "updated_at": "2026-09-29T23:21:07-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -3412,15 +3431,15 @@
                     "champion_id": 81,
                     "champion": "Ezreal",
                     "level": 19,
-                    "points": 189365,
-                    "last_play_time": 1790382227000
+                    "points": 190303,
+                    "last_play_time": 1790732612000
                 },
                 {
                     "champion_id": 25,
                     "champion": "Morgana",
                     "level": 16,
-                    "points": 161722,
-                    "last_play_time": 1790131506000
+                    "points": 162630,
+                    "last_play_time": 1790726614000
                 },
                 {
                     "champion_id": 45,
@@ -3433,8 +3452,8 @@
                     "champion_id": 83,
                     "champion": "Yorick",
                     "level": 16,
-                    "points": 149574,
-                    "last_play_time": 1790559185000
+                    "points": 150525,
+                    "last_play_time": 1790727733000
                 },
                 {
                     "champion_id": 21,
@@ -3496,8 +3515,8 @@
                     "champion_id": 76,
                     "champion": "Nidalee",
                     "level": 13,
-                    "points": 111453,
-                    "last_play_time": 1790545760000
+                    "points": 112079,
+                    "last_play_time": 1790734156000
                 },
                 {
                     "champion_id": 12,
@@ -3535,8 +3554,21 @@
                     "last_play_time": 1790041220000
                 }
             ],
-            "total_mastery_points": 7407303,
+            "total_mastery_points": 7413313,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790734868,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1790723463,
                     "lol_solo": null,
@@ -4123,7 +4155,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-09-29T20:11:03-03:00"
+            "updated_at": "2026-09-29T23:21:08-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -4142,12 +4174,193 @@
                 "queue": "RANKED_FLEX_SR",
                 "tier": "PLATINUM",
                 "rank": "II",
-                "lp": 27,
-                "wins": 41,
-                "losses": 38
+                "lp": 34,
+                "wins": 42,
+                "losses": 39
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3288228524",
+                    "timestamp": 1790727582667,
+                    "queue_id": 440,
+                    "win": false,
+                    "champion": "Nunu",
+                    "role": "JUNGLE",
+                    "kills": 3,
+                    "deaths": 8,
+                    "assists": 10,
+                    "kda": 1.625,
+                    "cs_per_min": 6.017699115044248,
+                    "damage_per_min": 590.0632111251581,
+                    "gold_per_min": 357.1934260429836,
+                    "vision_per_min": 0.9355246523388117,
+                    "kill_participation": 0.38235294117647056,
+                    "items": [
+                        3020,
+                        4646,
+                        3152,
+                        3089,
+                        6655,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 39.6,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3577,
+                                "cs": 55,
+                                "xp": 3070,
+                                "gold_diff": 479,
+                                "cs_diff": 7,
+                                "xp_diff": -67
+                            },
+                            "15": {
+                                "gold": 5350,
+                                "cs": 87,
+                                "xp": 5574,
+                                "gold_diff": 465,
+                                "cs_diff": 11,
+                                "xp_diff": -6
+                            },
+                            "20": {
+                                "gold": 7268,
+                                "cs": 116,
+                                "xp": 7610,
+                                "gold_diff": 403,
+                                "cs_diff": 6,
+                                "xp_diff": -812
+                            }
+                        },
+                        "early": {
+                            "kills_10": 2,
+                            "deaths_10": 1,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 4,
+                            "baron": 3,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 10.2
+                            },
+                            {
+                                "id": 3152,
+                                "name": "Explocinturão Hextec",
+                                "minute": 23.8
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 31
+                            },
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 39.2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "BR1_3288207710",
+                    "timestamp": 1790724674248,
+                    "queue_id": 440,
+                    "win": true,
+                    "champion": "Fizz",
+                    "role": "MIDDLE",
+                    "kills": 17,
+                    "deaths": 3,
+                    "assists": 4,
+                    "kda": 7,
+                    "cs_per_min": 8.648302370275465,
+                    "damage_per_min": 1388.686739269699,
+                    "gold_per_min": 610.3395259449071,
+                    "vision_per_min": 1.2684176809737349,
+                    "kill_participation": 0.5121951219512195,
+                    "items": [
+                        1056,
+                        6655,
+                        3175,
+                        3100,
+                        4645,
+                        4646,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 26,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4569,
+                                "cs": 84,
+                                "xp": 5102,
+                                "gold_diff": 1674,
+                                "cs_diff": 22,
+                                "xp_diff": 146
+                            },
+                            "15": {
+                                "gold": 7521,
+                                "cs": 146,
+                                "xp": 9257,
+                                "gold_diff": 2960,
+                                "cs_diff": 53,
+                                "xp_diff": 2466
+                            },
+                            "20": {
+                                "gold": 11438,
+                                "cs": 181,
+                                "xp": 12231,
+                                "gold_diff": 4657,
+                                "cs_diff": 46,
+                                "xp_diff": 2319
+                            }
+                        },
+                        "early": {
+                            "kills_10": 3,
+                            "deaths_10": 0,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 9.5
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 3100,
+                                "name": "Perdição de Lich",
+                                "minute": 15.6
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 19
+                            },
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 23.6
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3287605185",
                     "timestamp": 1790553249873,
@@ -6660,8 +6873,8 @@
                     "champion_id": 105,
                     "champion": "Fizz",
                     "level": 19,
-                    "points": 177889,
-                    "last_play_time": 1790553257000
+                    "points": 179548,
+                    "last_play_time": 1790724678000
                 },
                 {
                     "champion_id": 84,
@@ -6743,9 +6956,9 @@
                 {
                     "champion_id": 67,
                     "champion": "Vayne",
-                    "level": 8,
-                    "points": 64542,
-                    "last_play_time": 1790531614000
+                    "level": 9,
+                    "points": 65230,
+                    "last_play_time": 1790729109000
                 },
                 {
                     "champion_id": 85,
@@ -6783,8 +6996,28 @@
                     "last_play_time": 1790291892000
                 }
             ],
-            "total_mastery_points": 4007020,
+            "total_mastery_points": 4010301,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790734872,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 91,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 34,
+                        "wins": 42,
+                        "losses": 39
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1790723464,
                     "lol_solo": {
@@ -7686,7 +7919,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-29T20:11:04-03:00"
+            "updated_at": "2026-09-29T23:21:12-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -9727,6 +9960,26 @@
             "total_mastery_points": 5001929,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790734874,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 2,
+                        "wins": 17,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 20,
+                        "wins": 15,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1790723466,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -10527,8 +10780,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-09-29T20:11:06-03:00"
+            "updated_at": "2026-09-29T23:21:14-03:00"
         }
     },
-    "updated_at": "2026-09-29T20:11:06-03:00"
+    "updated_at": "2026-09-29T23:21:14-03:00"
 }
