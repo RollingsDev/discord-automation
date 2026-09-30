@@ -1,7 +1,14 @@
 {
     "initialized_at": "2026-09-21T14:12:59-03:00",
-    "updated_at": "2026-09-21T14:12:59-03:00",
+    "updated_at": "2026-09-30T14:01:05-03:00",
     "items": [
+        "GHSA-m8m8-qj5v-23w3",
+        "GHSA-r4gj-5m52-g5wh",
+        "GHSA-c29m-xwm3-cm6r",
+        "GHSA-mghh-pgcx-3jjj",
+        "GHSA-x97p-jq2g-jp4f",
+        "GHSA-3pq3-5fj3-cg6v",
+        "GHSA-542g-h47m-68v8",
         "GHSA-v5mv-p594-2x33",
         "GHSA-mjrx-74jh-7xgw",
         "GHSA-mqq9-gxg5-m58g",
