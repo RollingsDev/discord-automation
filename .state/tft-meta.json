@@ -7,7 +7,7 @@
     "comps": [
         {
             "name": "Fera do Rift Aphelios & Nidalee",
-            "play_rate": 0.93,
+            "play_rate": 0.94,
             "avg_place": 4.06,
             "top4_rate": 0.595,
             "win_rate": 0.125,
@@ -22,8 +22,8 @@
                 "Maokai"
             ],
             "unit_items": {
-                "Vi": [
-                    "Placa Gargolítica"
+                "Kog'Maw": [
+                    "Efeito Vermelho"
                 ],
                 "Aphelios": [
                     "Gume do Infinito",
@@ -37,6 +37,45 @@
                 ],
                 "Azuporã": [
                     "Armadura de Warmog"
+                ]
+            }
+        },
+        {
+            "name": "Espinhos Negros Warwick & Malphite",
+            "play_rate": 0.05,
+            "avg_place": 4.13,
+            "top4_rate": 0.593,
+            "win_rate": 0.0735,
+            "units": [
+                "Rek'Sai",
+                "Warwick",
+                "Lobo Trevoguari",
+                "Krugue",
+                "Malphite",
+                "Rubrivira",
+                "Camille",
+                "Azir"
+            ],
+            "unit_items": {
+                "Rek'Sai": [
+                    "Proteção Imutável"
+                ],
+                "Warwick": [
+                    "Determinação Titânica Radiante",
+                    "Luvinhas",
+                    "Determinação Titânica"
+                ],
+                "Lobo Trevoguari": [
+                    "Mercúrio",
+                    "Sinal de Sterak"
+                ],
+                "Malphite": [
+                    "Proteção Imutável",
+                    "Stemmaguarda",
+                    "Placa Gargolítica"
+                ],
+                "Rubrivira": [
+                    "Emblema de Espinhos Negros"
                 ]
             }
         },
@@ -65,54 +104,18 @@
                 "Maokai": [
                     "Armadura de Warmog",
                     "Centelha Iônica"
-                ]
-            }
-        },
-        {
-            "name": "Espinhos Negros Warwick & Malphite",
-            "play_rate": 0.06,
-            "avg_place": 4.16,
-            "top4_rate": 0.5870000000000001,
-            "win_rate": 0.0711,
-            "units": [
-                "Rek'Sai",
-                "Warwick",
-                "Lobo Trevoguari",
-                "Krugue",
-                "Malphite",
-                "Rubrivira",
-                "Camille",
-                "Azir"
-            ],
-            "unit_items": {
-                "Rek'Sai": [
-                    "Proteção Imutável"
                 ],
-                "Warwick": [
-                    "Determinação Titânica Radiante",
-                    "Luvinhas",
-                    "Determinação Titânica"
-                ],
-                "Lobo Trevoguari": [
-                    "Mercúrio",
-                    "Mão da Justiça"
-                ],
-                "Malphite": [
-                    "Proteção Imutável",
-                    "Stemmaguarda",
-                    "Placa Gargolítica"
-                ],
-                "Rubrivira": [
-                    "Emblema de Espinhos Negros"
+                "Sivir": [
+                    "Efeito Vermelho"
                 ]
             }
         },
         {
             "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.33,
+            "play_rate": 0.34,
             "avg_place": 4.17,
-            "top4_rate": 0.5579999999999999,
-            "win_rate": 0.15,
+            "top4_rate": 0.5589999999999999,
+            "win_rate": 0.151,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -186,7 +189,7 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.75,
+            "play_rate": 5.76,
             "avg_place": 4.41,
             "top4_rate": 0.517,
             "win_rate": 0.131,
@@ -228,14 +231,14 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 3.19,
+            "play_rate": 3.2,
             "avg_place": 4.42,
-            "top4_rate": 0.512,
+            "top4_rate": 0.513,
             "win_rate": 0.134,
             "top_users": [
                 "Caitlyn",
-                "Draven",
                 "Master Yi",
+                "Draven",
                 "Tristana",
                 "Rengar"
             ]
@@ -250,8 +253,8 @@
                 "Nidalee",
                 "Aphelios",
                 "Rubrivirim",
-                "Draven",
-                "Dragão Ancião"
+                "Dragão Ancião",
+                "Draven"
             ]
         },
         {
@@ -278,13 +281,13 @@
                 "Alistar",
                 "Rammus",
                 "Malphite",
-                "Hecarim",
-                "Maokai"
+                "Maokai",
+                "Hecarim"
             ]
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.68,
+            "play_rate": 2.69,
             "avg_place": 4.18,
             "top4_rate": 0.56,
             "win_rate": 0.146,
@@ -312,21 +315,21 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.37,
+            "play_rate": 2.38,
             "avg_place": 4.24,
             "top4_rate": 0.5479999999999999,
             "win_rate": 0.142,
             "top_users": [
                 "Caitlyn",
-                "Cassiopeia",
                 "Azir",
+                "Cassiopeia",
                 "Morgana",
-                "Aphelios"
+                "Zyra"
             ]
         },
         {
             "name": "Stemmaguarda",
-            "play_rate": 2.24,
+            "play_rate": 2.23,
             "avg_place": 4.16,
             "top4_rate": 0.5670000000000001,
             "win_rate": 0.146,
@@ -347,8 +350,8 @@
             "top_users": [
                 "Kennen",
                 "Diana",
-                "Amumu",
                 "Vi",
+                "Amumu",
                 "Gnar"
             ]
         },
@@ -383,7 +386,7 @@
         {
             "name": "Mata-Gigantes",
             "play_rate": 1.92,
-            "avg_place": 4.15,
+            "avg_place": 4.16,
             "top4_rate": 0.5660000000000001,
             "win_rate": 0.145,
             "top_users": [
@@ -395,5 +398,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-01T22:03:29-03:00"
+    "fetched_at": "2026-10-02T13:48:41-03:00"
 }
