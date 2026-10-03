@@ -7,10 +7,10 @@
     "comps": [
         {
             "name": "Fera do Rift Aphelios & Nidalee",
-            "play_rate": 0.95,
+            "play_rate": 0.94,
             "avg_place": 4.06,
-            "top4_rate": 0.595,
-            "win_rate": 0.124,
+            "top4_rate": 0.596,
+            "win_rate": 0.12300000000000001,
             "units": [
                 "Diana",
                 "Kog'Maw",
@@ -41,42 +41,50 @@
             }
         },
         {
-            "name": "Colosso Zyra & Amumu",
-            "play_rate": 0.45,
-            "avg_place": 4.15,
-            "top4_rate": 0.562,
-            "win_rate": 0.149,
+            "name": "Espinhos Negros Warwick & Malphite",
+            "play_rate": 0.05,
+            "avg_place": 4.11,
+            "top4_rate": 0.598,
+            "win_rate": 0.0738,
             "units": [
-                "Yorick",
-                "Aronguejo",
-                "Vi",
-                "Amumu",
-                "Maokai",
-                "Rakan",
-                "Sivir",
-                "Soraka"
+                "Rek'Sai",
+                "Warwick",
+                "Lobo Trevoguari",
+                "Krugue",
+                "Malphite",
+                "Rubrivira",
+                "Camille",
+                "Azir"
             ],
             "unit_items": {
-                "Amumu": [
-                    "Centelha Iônica",
-                    "Coração Inabalável",
+                "Rek'Sai": [
                     "Proteção Imutável"
                 ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Centelha Iônica"
+                "Warwick": [
+                    "Determinação Titânica Radiante",
+                    "Luvinhas",
+                    "Determinação Titânica"
                 ],
-                "Sivir": [
-                    "Efeito Vermelho"
+                "Lobo Trevoguari": [
+                    "Mercúrio",
+                    "Mão da Justiça"
+                ],
+                "Malphite": [
+                    "Proteção Imutável",
+                    "Stemmaguarda",
+                    "Placa Gargolítica"
+                ],
+                "Rubrivira": [
+                    "Emblema de Espinhos Negros"
                 ]
             }
         },
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.34,
-            "avg_place": 4.16,
-            "top4_rate": 0.561,
-            "win_rate": 0.152,
+            "avg_place": 4.15,
+            "top4_rate": 0.562,
+            "win_rate": 0.153,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -111,11 +119,39 @@
             }
         },
         {
+            "name": "Colosso Zyra & Amumu",
+            "play_rate": 0.45,
+            "avg_place": 4.15,
+            "top4_rate": 0.562,
+            "win_rate": 0.149,
+            "units": [
+                "Yorick",
+                "Aronguejo",
+                "Vi",
+                "Amumu",
+                "Maokai",
+                "Rakan",
+                "Sivir",
+                "Soraka"
+            ],
+            "unit_items": {
+                "Amumu": [
+                    "Centelha Iônica",
+                    "Coração Inabalável",
+                    "Proteção Imutável"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Centelha Iônica"
+                ]
+            }
+        },
+        {
             "name": "Fera do Rift Ahri & Morgana",
             "play_rate": 0.53,
             "avg_place": 4.23,
             "top4_rate": 0.557,
-            "win_rate": 0.12,
+            "win_rate": 0.121,
             "units": [
                 "Cascalho",
                 "Krugue",
@@ -138,42 +174,6 @@
                     "Efeito Vermelho"
                 ]
             }
-        },
-        {
-            "name": "Enfeitiçador Veigar & Ornn",
-            "play_rate": 0.44,
-            "avg_place": 4.29,
-            "top4_rate": 0.536,
-            "win_rate": 0.147,
-            "units": [
-                "Ornn",
-                "Rek'Sai",
-                "Veigar",
-                "Alistar",
-                "LeBlanc",
-                "Fiddlesticks",
-                "Cassiopeia",
-                "Lux Espinhos Negros"
-            ],
-            "unit_items": {
-                "Ornn": [
-                    "Centelha Iônica",
-                    "Stemmaguarda",
-                    "Placa Gargolítica"
-                ],
-                "Veigar": [
-                    "Auronúcleo",
-                    "Tormenta de Luden",
-                    "Efeito Azul Radiante"
-                ],
-                "Alistar": [
-                    "Capa de Fogo Solar",
-                    "Placa Gargolítica"
-                ],
-                "Cassiopeia": [
-                    "Cajado do Vazio"
-                ]
-            }
         }
     ],
     "items": [
@@ -194,12 +194,12 @@
         {
             "name": "Armadura de Warmog",
             "play_rate": 4.24,
-            "avg_place": 4.31,
+            "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
             "top_users": [
-                "Maokai",
                 "Malphite",
+                "Maokai",
                 "Rammus",
                 "Alistar",
                 "Hecarim"
@@ -207,7 +207,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 4.05,
+            "play_rate": 4.06,
             "avg_place": 4.31,
             "top4_rate": 0.534,
             "win_rate": 0.14,
@@ -215,8 +215,8 @@
                 "LeBlanc",
                 "Nidalee",
                 "Ashe",
-                "Ivern",
-                "Ahri"
+                "Ahri",
+                "Ivern"
             ]
         },
         {
@@ -241,8 +241,8 @@
             "win_rate": 0.136,
             "top_users": [
                 "Nidalee",
-                "Aphelios",
                 "Dragão Ancião",
+                "Aphelios",
                 "Rubrivirim",
                 "Draven"
             ]
@@ -258,7 +258,7 @@
                 "Ahri",
                 "Diana",
                 "Morgana",
-                "Veigar"
+                "Azir"
             ]
         },
         {
@@ -277,7 +277,7 @@
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.69,
+            "play_rate": 2.7,
             "avg_place": 4.18,
             "top4_rate": 0.56,
             "win_rate": 0.146,
@@ -285,14 +285,14 @@
                 "Morgana",
                 "LeBlanc",
                 "Cassiopeia",
-                "Ivern",
-                "Zyra"
+                "Zyra",
+                "Ivern"
             ]
         },
         {
             "name": "Efeito Vermelho",
-            "play_rate": 2.6,
-            "avg_place": 4.15,
+            "play_rate": 2.61,
+            "avg_place": 4.14,
             "top4_rate": 0.564,
             "win_rate": 0.156,
             "top_users": [
@@ -336,7 +336,7 @@
             "play_rate": 2.21,
             "avg_place": 4.06,
             "top4_rate": 0.58,
-            "win_rate": 0.163,
+            "win_rate": 0.162,
             "top_users": [
                 "Kennen",
                 "Diana",
@@ -355,8 +355,8 @@
                 "Hecarim",
                 "Maokai",
                 "Lillia",
-                "Fiddlesticks",
-                "Azuporã"
+                "Azuporã",
+                "Fiddlesticks"
             ]
         },
         {
@@ -370,23 +370,23 @@
                 "Morgana",
                 "Fiddlesticks",
                 "Kennen",
-                "Soraka"
+                "Azuporã"
             ]
         },
         {
-            "name": "Mata-Gigantes",
+            "name": "Cajado do Arcanjo",
             "play_rate": 1.91,
-            "avg_place": 4.16,
-            "top4_rate": 0.5660000000000001,
-            "win_rate": 0.145,
+            "avg_place": 4.22,
+            "top4_rate": 0.552,
+            "win_rate": 0.141,
             "top_users": [
-                "Aphelios",
-                "Dragão Ancião",
-                "Draven",
-                "Morgana",
-                "Ezreal"
+                "Ivern",
+                "Azir",
+                "Cassiopeia",
+                "Zyra",
+                "Cascalho"
             ]
         }
     ],
-    "fetched_at": "2026-10-03T12:13:52-03:00"
+    "fetched_at": "2026-10-03T20:59:58-03:00"
 }
