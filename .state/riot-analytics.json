@@ -163,6 +163,19 @@
             "total_mastery_points": 283959,
             "rank_snapshots": [
                 {
+                    "timestamp": 1790990665,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1790980420,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -917,7 +930,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-02T19:33:40-03:00"
+            "updated_at": "2026-10-02T22:24:25-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -928,6 +941,90 @@
             "lol_flex": null,
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3289163380",
+                    "timestamp": 1790989902809,
+                    "queue_id": 440,
+                    "win": true,
+                    "champion": "LeeSin",
+                    "role": "JUNGLE",
+                    "kills": 4,
+                    "deaths": 5,
+                    "assists": 10,
+                    "kda": 2.8,
+                    "cs_per_min": 5.917103382563125,
+                    "damage_per_min": 423.11576941400665,
+                    "gold_per_min": 370.43353978084804,
+                    "vision_per_min": 1.4006669842782278,
+                    "kill_participation": 0.358974358974359,
+                    "items": [
+                        3156,
+                        3077,
+                        2055,
+                        3065,
+                        6692,
+                        3111,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 35,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3472,
+                                "cs": 54,
+                                "xp": 3219,
+                                "gold_diff": -178,
+                                "cs_diff": -22,
+                                "xp_diff": -859
+                            },
+                            "15": {
+                                "gold": 5512,
+                                "cs": 92,
+                                "xp": 5887,
+                                "gold_diff": 100,
+                                "cs_diff": -30,
+                                "xp_diff": -786
+                            },
+                            "20": {
+                                "gold": 7016,
+                                "cs": 120,
+                                "xp": 8021,
+                                "gold_diff": -1139,
+                                "cs_diff": -45,
+                                "xp_diff": -2145
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 1,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 3,
+                            "baron": 1,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 3156,
+                                "name": "Mandíbula de Malmortius",
+                                "minute": 33.3
+                            },
+                            {
+                                "id": 3065,
+                                "name": "Semblante Espiritual",
+                                "minute": 29.4
+                            },
+                            {
+                                "id": 6692,
+                                "name": "Eclipse",
+                                "minute": 15.8
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3281431072",
                     "timestamp": 1789000010118,
@@ -2050,8 +2147,8 @@
                     "champion_id": 64,
                     "champion": "Lee Sin",
                     "level": 80,
-                    "points": 901393,
-                    "last_play_time": 1790821053000
+                    "points": 903137,
+                    "last_play_time": 1790989908000
                 },
                 {
                     "champion_id": 79,
@@ -2092,8 +2189,8 @@
                     "champion_id": 45,
                     "champion": "Veigar",
                     "level": 11,
-                    "points": 87765,
-                    "last_play_time": 1790822770000
+                    "points": 88952,
+                    "last_play_time": 1790987399000
                 },
                 {
                     "champion_id": 121,
@@ -2187,8 +2284,14 @@
                     "last_play_time": 1790819860000
                 }
             ],
-            "total_mastery_points": 5191065,
+            "total_mastery_points": 5194554,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790990667,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1790980422,
                     "lol_solo": null,
@@ -2538,7 +2641,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-02T19:33:42-03:00"
+            "updated_at": "2026-10-02T22:24:27-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -2556,6 +2659,100 @@
                 "losses": 41
             },
             "lol_matches": [
+                {
+                    "id": "BR1_3289163380",
+                    "timestamp": 1790989902809,
+                    "queue_id": 440,
+                    "win": true,
+                    "champion": "Mordekaiser",
+                    "role": "TOP",
+                    "kills": 14,
+                    "deaths": 5,
+                    "assists": 4,
+                    "kda": 3.6,
+                    "cs_per_min": 6.7460695569318725,
+                    "damage_per_min": 1508.318246784183,
+                    "gold_per_min": 510.1858027632206,
+                    "vision_per_min": 0.6002858504049547,
+                    "kill_participation": 0.46153846153846156,
+                    "items": [
+                        6653,
+                        3065,
+                        3111,
+                        4633,
+                        2504,
+                        3075,
+                        3363
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 35,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3183,
+                                "cs": 65,
+                                "xp": 4748,
+                                "gold_diff": -76,
+                                "cs_diff": 11,
+                                "xp_diff": 428
+                            },
+                            "15": {
+                                "gold": 5636,
+                                "cs": 107,
+                                "xp": 8757,
+                                "gold_diff": 1111,
+                                "cs_diff": 23,
+                                "xp_diff": 1341
+                            },
+                            "20": {
+                                "gold": 8445,
+                                "cs": 154,
+                                "xp": 12997,
+                                "gold_diff": 2216,
+                                "cs_diff": 20,
+                                "xp_diff": 2210
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 1,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 1,
+                            "herald": 1
+                        },
+                        "final_items": [
+                            {
+                                "id": 6653,
+                                "name": "Tormento de Liandry",
+                                "minute": 18.4
+                            },
+                            {
+                                "id": 3065,
+                                "name": "Semblante Espiritual",
+                                "minute": 23.3
+                            },
+                            {
+                                "id": 4633,
+                                "name": "Criafendas",
+                                "minute": 11.7
+                            },
+                            {
+                                "id": 2504,
+                                "name": "Rookern Lamúrico",
+                                "minute": 28.5
+                            },
+                            {
+                                "id": 3075,
+                                "name": "Armadura de Espinhos",
+                                "minute": 32.5
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3281431072",
                     "timestamp": 1789000010118,
@@ -3782,8 +3979,21 @@
                     "last_play_time": 1790041220000
                 }
             ],
-            "total_mastery_points": 7421031,
+            "total_mastery_points": 7424854,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790990670,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1790980424,
                     "lol_solo": null,
@@ -4539,7 +4749,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-02T19:33:44-03:00"
+            "updated_at": "2026-10-02T22:24:30-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -4558,12 +4768,295 @@
                 "queue": "RANKED_FLEX_SR",
                 "tier": "PLATINUM",
                 "rank": "II",
-                "lp": 34,
-                "wins": 42,
-                "losses": 39
+                "lp": 21,
+                "wins": 43,
+                "losses": 41
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3289163380",
+                    "timestamp": 1790989902809,
+                    "queue_id": 440,
+                    "win": true,
+                    "champion": "Fizz",
+                    "role": "MIDDLE",
+                    "kills": 15,
+                    "deaths": 5,
+                    "assists": 8,
+                    "kda": 4.6,
+                    "cs_per_min": 8.404001905669366,
+                    "damage_per_min": 1163.468318246784,
+                    "gold_per_min": 536.8270605050024,
+                    "vision_per_min": 1.0576464983325393,
+                    "kill_participation": 0.5897435897435898,
+                    "items": [
+                        4646,
+                        6655,
+                        4645,
+                        3100,
+                        3089,
+                        3175,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 35,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4442,
+                                "cs": 67,
+                                "xp": 5196,
+                                "gold_diff": 1085,
+                                "cs_diff": 6,
+                                "xp_diff": 1059
+                            },
+                            "15": {
+                                "gold": 6375,
+                                "cs": 108,
+                                "xp": 8142,
+                                "gold_diff": 1428,
+                                "cs_diff": 10,
+                                "xp_diff": 1943
+                            },
+                            "20": {
+                                "gold": 9155,
+                                "cs": 156,
+                                "xp": 11181,
+                                "gold_diff": 133,
+                                "cs_diff": 2,
+                                "xp_diff": 820
+                            }
+                        },
+                        "early": {
+                            "kills_10": 4,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 2,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 4646,
+                                "name": "Ápice da Tempestade",
+                                "minute": 29.3
+                            },
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 8.3
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 23.3
+                            },
+                            {
+                                "id": 3100,
+                                "name": "Perdição de Lich",
+                                "minute": 17.5
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 32
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "BR1_3289122356",
+                    "timestamp": 1790984054599,
+                    "queue_id": 440,
+                    "win": false,
+                    "champion": "Fizz",
+                    "role": "MIDDLE",
+                    "kills": 13,
+                    "deaths": 10,
+                    "assists": 3,
+                    "kda": 1.6,
+                    "cs_per_min": 7.805596465390279,
+                    "damage_per_min": 890.9278350515464,
+                    "gold_per_min": 485.1251840942562,
+                    "vision_per_min": 0.8247422680412371,
+                    "kill_participation": 0.43243243243243246,
+                    "items": [
+                        6655,
+                        4645,
+                        3089,
+                        3175,
+                        3100,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 34,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4978,
+                                "cs": 90,
+                                "xp": 5882,
+                                "gold_diff": 751,
+                                "cs_diff": 6,
+                                "xp_diff": 1327
+                            },
+                            "15": {
+                                "gold": 6873,
+                                "cs": 129,
+                                "xp": 8104,
+                                "gold_diff": -977,
+                                "cs_diff": -2,
+                                "xp_diff": 30
+                            },
+                            "20": {
+                                "gold": 8226,
+                                "cs": 161,
+                                "xp": 9795,
+                                "gold_diff": -1450,
+                                "cs_diff": -8,
+                                "xp_diff": -582
+                            }
+                        },
+                        "early": {
+                            "kills_10": 4,
+                            "deaths_10": 1,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 10.3
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 23.3
+                            },
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 30.6
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 3100,
+                                "name": "Perdição de Lich",
+                                "minute": 18.1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "BR1_3289100704",
+                    "timestamp": 1790980546023,
+                    "queue_id": 440,
+                    "win": false,
+                    "champion": "Fizz",
+                    "role": "MIDDLE",
+                    "kills": 13,
+                    "deaths": 9,
+                    "assists": 1,
+                    "kda": 1.5555555555555556,
+                    "cs_per_min": 8.731487443657437,
+                    "damage_per_min": 1059.639407598197,
+                    "gold_per_min": 610.0837089504186,
+                    "vision_per_min": 0.6181584030907921,
+                    "kill_participation": 0.5,
+                    "items": [
+                        3089,
+                        6655,
+                        1052,
+                        3175,
+                        3100,
+                        4645,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 25.9,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 4709,
+                                "cs": 69,
+                                "xp": 4485,
+                                "gold_diff": 997,
+                                "cs_diff": 5,
+                                "xp_diff": -308
+                            },
+                            "15": {
+                                "gold": 6659,
+                                "cs": 104,
+                                "xp": 6477,
+                                "gold_diff": 1089,
+                                "cs_diff": 14,
+                                "xp_diff": -844
+                            },
+                            "20": {
+                                "gold": 10430,
+                                "cs": 167,
+                                "xp": 10310,
+                                "gold_diff": 2165,
+                                "cs_diff": 55,
+                                "xp_diff": 483
+                            }
+                        },
+                        "early": {
+                            "kills_10": 4,
+                            "deaths_10": 2,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3089,
+                                "name": "Capuz da Morte de Rabadon",
+                                "minute": 24.9
+                            },
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 9.2
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 3100,
+                                "name": "Perdição de Lich",
+                                "minute": 15.9
+                            },
+                            {
+                                "id": 4645,
+                                "name": "Chama Sombria",
+                                "minute": 20.7
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3288228524",
                     "timestamp": 1790727582667,
@@ -7257,8 +7750,8 @@
                     "champion_id": 105,
                     "champion": "Fizz",
                     "level": 19,
-                    "points": 179548,
-                    "last_play_time": 1790724678000
+                    "points": 183160,
+                    "last_play_time": 1790989908000
                 },
                 {
                     "champion_id": 84,
@@ -7373,15 +7866,35 @@
                     "last_play_time": 1788911131000
                 },
                 {
-                    "champion_id": 11,
-                    "champion": "Master Yi",
+                    "champion_id": 79,
+                    "champion": "Gragas",
                     "level": 8,
-                    "points": 57066,
-                    "last_play_time": 1790291892000
+                    "points": 57375,
+                    "last_play_time": 1790987399000
                 }
             ],
-            "total_mastery_points": 4010301,
+            "total_mastery_points": 4015655,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790990674,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 91,
+                        "wins": 10,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 21,
+                        "wins": 43,
+                        "losses": 41
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1790980426,
                     "lol_solo": {
@@ -8543,7 +9056,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-02T19:33:46-03:00"
+            "updated_at": "2026-10-02T22:24:34-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -8562,12 +9075,96 @@
                 "queue": "RANKED_FLEX_SR",
                 "tier": "PLATINUM",
                 "rank": "IV",
-                "lp": 20,
-                "wins": 15,
+                "lp": 46,
+                "wins": 16,
                 "losses": 10
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3289163380",
+                    "timestamp": 1790989902809,
+                    "queue_id": 440,
+                    "win": true,
+                    "champion": "Lucian",
+                    "role": "BOTTOM",
+                    "kills": 4,
+                    "deaths": 5,
+                    "assists": 11,
+                    "kda": 3,
+                    "cs_per_min": 6.574559313959028,
+                    "damage_per_min": 618.5516912815626,
+                    "gold_per_min": 404.62124821343497,
+                    "vision_per_min": 1.1719866603144353,
+                    "kill_participation": 0.38461538461538464,
+                    "items": [
+                        3033,
+                        3155,
+                        3508,
+                        6675,
+                        1086,
+                        1038,
+                        3363
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 35,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3119,
+                                "cs": 67,
+                                "xp": 3498,
+                                "gold_diff": -558,
+                                "cs_diff": 0,
+                                "xp_diff": 204
+                            },
+                            "15": {
+                                "gold": 5305,
+                                "cs": 90,
+                                "xp": 5252,
+                                "gold_diff": -792,
+                                "cs_diff": -8,
+                                "xp_diff": 534
+                            },
+                            "20": {
+                                "gold": 7933,
+                                "cs": 129,
+                                "xp": 8012,
+                                "gold_diff": 474,
+                                "cs_diff": -3,
+                                "xp_diff": 1181
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 1,
+                            "assists_10": 1
+                        },
+                        "objectives": {
+                            "dragon": 3,
+                            "baron": 1,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3033,
+                                "name": "Lembrete Mortal",
+                                "minute": 29.7
+                            },
+                            {
+                                "id": 3508,
+                                "name": "Colhedor de Essência",
+                                "minute": 13.3
+                            },
+                            {
+                                "id": 6675,
+                                "name": "Adaga Oscilante Navori",
+                                "minute": 18.8
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3287504059",
                     "timestamp": 1790540940421,
@@ -10457,9 +11054,9 @@
                 {
                     "champion_id": 236,
                     "champion": "Lucian",
-                    "level": 17,
-                    "points": 161974,
-                    "last_play_time": 1790494894000
+                    "level": 18,
+                    "points": 163751,
+                    "last_play_time": 1790989908000
                 },
                 {
                     "champion_id": 84,
@@ -10581,8 +11178,28 @@
                     "last_play_time": 1787458076000
                 }
             ],
-            "total_mastery_points": 5001929,
+            "total_mastery_points": 5005341,
             "rank_snapshots": [
+                {
+                    "timestamp": 1790990677,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 2,
+                        "wins": 17,
+                        "losses": 10
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 46,
+                        "wins": 16,
+                        "losses": 10
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1790980428,
                     "lol_solo": {
@@ -11644,8 +12261,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-02T19:33:48-03:00"
+            "updated_at": "2026-10-02T22:24:37-03:00"
         }
     },
-    "updated_at": "2026-10-02T19:33:48-03:00"
+    "updated_at": "2026-10-02T22:24:37-03:00"
 }
