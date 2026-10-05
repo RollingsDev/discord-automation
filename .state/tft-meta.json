@@ -10,7 +10,7 @@
             "play_rate": 0.94,
             "avg_place": 4.06,
             "top4_rate": 0.596,
-            "win_rate": 0.121,
+            "win_rate": 0.12,
             "units": [
                 "Diana",
                 "Kog'Maw",
@@ -43,9 +43,9 @@
         {
             "name": "Espinhos Negros Warwick & Malphite",
             "play_rate": 0.05,
-            "avg_place": 4.11,
-            "top4_rate": 0.599,
-            "win_rate": 0.0742,
+            "avg_place": 4.1,
+            "top4_rate": 0.6,
+            "win_rate": 0.0741,
             "units": [
                 "Rek'Sai",
                 "Warwick",
@@ -67,7 +67,7 @@
                 ],
                 "Lobo Trevoguari": [
                     "Mercúrio",
-                    "Mão da Justiça"
+                    "Sinal de Sterak"
                 ],
                 "Malphite": [
                     "Proteção Imutável",
@@ -82,8 +82,8 @@
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.35,
-            "avg_place": 4.14,
-            "top4_rate": 0.565,
+            "avg_place": 4.13,
+            "top4_rate": 0.5660000000000001,
             "win_rate": 0.154,
             "units": [
                 "Veigar",
@@ -120,7 +120,7 @@
         },
         {
             "name": "Colosso Zyra & Amumu",
-            "play_rate": 0.46,
+            "play_rate": 0.47,
             "avg_place": 4.15,
             "top4_rate": 0.562,
             "win_rate": 0.149,
@@ -137,8 +137,8 @@
             "unit_items": {
                 "Amumu": [
                     "Centelha Iônica",
-                    "Coração Inabalável",
-                    "Proteção Imutável"
+                    "Proteção Imutável",
+                    "Juramento do Protetor"
                 ],
                 "Maokai": [
                     "Armadura de Warmog",
@@ -151,9 +151,9 @@
         },
         {
             "name": "Fera do Rift Ahri & Morgana",
-            "play_rate": 0.52,
+            "play_rate": 0.53,
             "avg_place": 4.23,
-            "top4_rate": 0.557,
+            "top4_rate": 0.556,
             "win_rate": 0.121,
             "units": [
                 "Cascalho",
@@ -213,7 +213,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 4.06,
+            "play_rate": 4.05,
             "avg_place": 4.31,
             "top4_rate": 0.534,
             "win_rate": 0.14,
@@ -227,9 +227,9 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 3.22,
+            "play_rate": 3.23,
             "avg_place": 4.41,
-            "top4_rate": 0.513,
+            "top4_rate": 0.514,
             "win_rate": 0.133,
             "top_users": [
                 "Caitlyn",
@@ -255,8 +255,8 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 2.83,
-            "avg_place": 4.34,
+            "play_rate": 2.82,
+            "avg_place": 4.33,
             "top4_rate": 0.53,
             "win_rate": 0.135,
             "top_users": [
@@ -270,13 +270,13 @@
         {
             "name": "Semblante Espiritual",
             "play_rate": 2.77,
-            "avg_place": 4.28,
-            "top4_rate": 0.542,
+            "avg_place": 4.27,
+            "top4_rate": 0.5429999999999999,
             "win_rate": 0.139,
             "top_users": [
-                "Alistar",
                 "Rammus",
                 "Malphite",
+                "Alistar",
                 "Hecarim",
                 "Maokai"
             ]
@@ -286,7 +286,7 @@
             "play_rate": 2.7,
             "avg_place": 4.18,
             "top4_rate": 0.56,
-            "win_rate": 0.146,
+            "win_rate": 0.147,
             "top_users": [
                 "Morgana",
                 "LeBlanc",
@@ -304,14 +304,14 @@
             "top_users": [
                 "Ashe",
                 "Morgana",
-                "LeBlanc",
                 "Aphelios",
+                "LeBlanc",
                 "Draven"
             ]
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.42,
+            "play_rate": 2.43,
             "avg_place": 4.24,
             "top4_rate": 0.5479999999999999,
             "win_rate": 0.142,
@@ -324,38 +324,38 @@
             ]
         },
         {
-            "name": "Stemmaguarda",
+            "name": "Luvas do Ladrão",
             "play_rate": 2.22,
-            "avg_place": 4.16,
+            "avg_place": 4.06,
+            "top4_rate": 0.579,
+            "win_rate": 0.162,
+            "top_users": [
+                "Kennen",
+                "Diana",
+                "Soraka",
+                "Vi",
+                "Gnar"
+            ]
+        },
+        {
+            "name": "Stemmaguarda",
+            "play_rate": 2.21,
+            "avg_place": 4.15,
             "top4_rate": 0.568,
             "win_rate": 0.146,
             "top_users": [
                 "Rammus",
                 "Malphite",
                 "Hecarim",
-                "Maokai",
-                "Ornn"
-            ]
-        },
-        {
-            "name": "Luvas do Ladrão",
-            "play_rate": 2.21,
-            "avg_place": 4.06,
-            "top4_rate": 0.58,
-            "win_rate": 0.162,
-            "top_users": [
-                "Kennen",
-                "Diana",
-                "Vi",
-                "Gnar",
-                "Azuporã"
+                "Ornn",
+                "Maokai"
             ]
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.18,
+            "play_rate": 2.19,
             "avg_place": 4.14,
-            "top4_rate": 0.573,
+            "top4_rate": 0.5720000000000001,
             "win_rate": 0.146,
             "top_users": [
                 "Hecarim",
@@ -368,7 +368,7 @@
         {
             "name": "Elmo Adaptativo",
             "play_rate": 2.03,
-            "avg_place": 4.04,
+            "avg_place": 4.03,
             "top4_rate": 0.591,
             "win_rate": 0.158,
             "top_users": [
@@ -381,9 +381,9 @@
         },
         {
             "name": "Cajado do Arcanjo",
-            "play_rate": 1.93,
+            "play_rate": 1.94,
             "avg_place": 4.22,
-            "top4_rate": 0.552,
+            "top4_rate": 0.551,
             "win_rate": 0.141,
             "top_users": [
                 "Ivern",
@@ -394,5 +394,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-04T21:06:56-03:00"
+    "fetched_at": "2026-10-05T16:43:57-03:00"
 }
