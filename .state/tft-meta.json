@@ -8,74 +8,39 @@
         {
             "name": "Fera do Rift Aphelios & Nidalee",
             "play_rate": 0.94,
-            "avg_place": 4.06,
-            "top4_rate": 0.596,
-            "win_rate": 0.12,
+            "avg_place": 4.07,
+            "top4_rate": 0.594,
+            "win_rate": 0.124,
             "units": [
                 "Diana",
-                "Kog'Maw",
                 "Vi",
                 "Aphelios",
+                "Amumu",
                 "Nidalee",
-                "Varus",
+                "Kog'Maw",
                 "Azuporã",
-                "Maokai"
+                "Kennen"
             ],
             "unit_items": {
-                "Kog'Maw": [
-                    "Efeito Vermelho"
-                ],
                 "Aphelios": [
                     "Gume do Infinito",
                     "Fúria do Cráquem",
                     "Lâmina Mortal"
+                ],
+                "Amumu": [
+                    "Armadura de Warmog",
+                    "Juramento do Protetor"
                 ],
                 "Nidalee": [
                     "Emblema de Devastador",
                     "Sinal de Sterak",
                     "Gume do Infinito"
                 ],
+                "Kog'Maw": [
+                    "Efeito Vermelho"
+                ],
                 "Azuporã": [
                     "Armadura de Warmog"
-                ]
-            }
-        },
-        {
-            "name": "Espinhos Negros Warwick & Malphite",
-            "play_rate": 0.05,
-            "avg_place": 4.1,
-            "top4_rate": 0.6,
-            "win_rate": 0.0741,
-            "units": [
-                "Rek'Sai",
-                "Warwick",
-                "Lobo Trevoguari",
-                "Krugue",
-                "Malphite",
-                "Rubrivira",
-                "Akali",
-                "Azir"
-            ],
-            "unit_items": {
-                "Rek'Sai": [
-                    "Proteção Imutável"
-                ],
-                "Warwick": [
-                    "Determinação Titânica Radiante",
-                    "Luvinhas",
-                    "Determinação Titânica"
-                ],
-                "Lobo Trevoguari": [
-                    "Mercúrio",
-                    "Sinal de Sterak"
-                ],
-                "Malphite": [
-                    "Proteção Imutável",
-                    "Stemmaguarda",
-                    "Placa Gargolítica"
-                ],
-                "Rubrivira": [
-                    "Emblema de Espinhos Negros"
                 ]
             }
         },
@@ -84,7 +49,7 @@
             "play_rate": 0.35,
             "avg_place": 4.13,
             "top4_rate": 0.5660000000000001,
-            "win_rate": 0.154,
+            "win_rate": 0.155,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -120,7 +85,7 @@
         },
         {
             "name": "Colosso Zyra & Amumu",
-            "play_rate": 0.47,
+            "play_rate": 0.48,
             "avg_place": 4.15,
             "top4_rate": 0.562,
             "win_rate": 0.149,
@@ -143,17 +108,14 @@
                 "Maokai": [
                     "Armadura de Warmog",
                     "Centelha Iônica"
-                ],
-                "Sivir": [
-                    "Efeito Vermelho"
                 ]
             }
         },
         {
             "name": "Fera do Rift Ahri & Morgana",
-            "play_rate": 0.53,
+            "play_rate": 0.52,
             "avg_place": 4.23,
-            "top4_rate": 0.556,
+            "top4_rate": 0.557,
             "win_rate": 0.121,
             "units": [
                 "Cascalho",
@@ -162,7 +124,7 @@
                 "Morgana",
                 "Azuporã",
                 "Sivir",
-                "Alune",
+                "Ashe",
                 "Taric"
             ],
             "unit_items": {
@@ -175,9 +137,44 @@
                     "Cajado do Vazio",
                     "Morellonomicon",
                     "Efeito Vermelho"
+                ]
+            }
+        },
+        {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.25,
+            "avg_place": 4.24,
+            "top4_rate": 0.532,
+            "win_rate": 0.18,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Draven",
+                "Azuporã",
+                "Ivern",
+                "Maokai",
+                "Taric"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Último Sussurro",
+                    "Lâmina Mortal"
                 ],
-                "Alune": [
-                    "Cajado do Vazio"
+                "Amumu": [
+                    "Proteção Imutável"
+                ],
+                "Draven": [
+                    "Emblema de Carrasco",
+                    "Efeito Vermelho"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Proteção Imutável",
+                    "Armadura de Warmog"
                 ]
             }
         }
@@ -298,7 +295,7 @@
         {
             "name": "Efeito Vermelho",
             "play_rate": 2.61,
-            "avg_place": 4.14,
+            "avg_place": 4.15,
             "top4_rate": 0.564,
             "win_rate": 0.156,
             "top_users": [
@@ -311,7 +308,7 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.43,
+            "play_rate": 2.44,
             "avg_place": 4.24,
             "top4_rate": 0.5479999999999999,
             "win_rate": 0.142,
@@ -325,9 +322,9 @@
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 2.22,
+            "play_rate": 2.21,
             "avg_place": 4.06,
-            "top4_rate": 0.579,
+            "top4_rate": 0.58,
             "win_rate": 0.162,
             "top_users": [
                 "Kennen",
@@ -346,7 +343,7 @@
             "top_users": [
                 "Rammus",
                 "Malphite",
-                "Hecarim",
+                "Alistar",
                 "Ornn",
                 "Maokai"
             ]
@@ -394,5 +391,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-05T16:43:57-03:00"
+    "fetched_at": "2026-10-05T22:51:20-03:00"
 }
