@@ -48,6 +48,13 @@
                     "last_play_time": 1790818734000
                 },
                 {
+                    "champion_id": 111,
+                    "champion": "Nautilus",
+                    "level": 3,
+                    "points": 8342,
+                    "last_play_time": 1791500157000
+                },
+                {
                     "champion_id": 223,
                     "champion": "Tahm Kench",
                     "level": 3,
@@ -55,18 +62,18 @@
                     "last_play_time": 1790646134000
                 },
                 {
-                    "champion_id": 111,
-                    "champion": "Nautilus",
-                    "level": 3,
-                    "points": 8000,
-                    "last_play_time": 1788478830000
-                },
-                {
                     "champion_id": 150,
                     "champion": "Gnar",
                     "level": 3,
                     "points": 7614,
                     "last_play_time": 1786854219000
+                },
+                {
+                    "champion_id": 804,
+                    "champion": "Yunara",
+                    "level": 3,
+                    "points": 6663,
+                    "last_play_time": 1791501055000
                 },
                 {
                     "champion_id": 81,
@@ -95,13 +102,6 @@
                     "level": 3,
                     "points": 6028,
                     "last_play_time": 1789004498000
-                },
-                {
-                    "champion_id": 804,
-                    "champion": "Yunara",
-                    "level": 2,
-                    "points": 5944,
-                    "last_play_time": 1790042672000
                 },
                 {
                     "champion_id": 4,
@@ -160,8 +160,21 @@
                     "last_play_time": 1787622042000
                 }
             ],
-            "total_mastery_points": 290975,
+            "total_mastery_points": 292482,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791513153,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
                 {
                     "timestamp": 1791498300,
                     "lol_solo": null,
@@ -1255,7 +1268,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-08T19:25:00-03:00"
+            "updated_at": "2026-10-08T23:32:33-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -2609,8 +2622,14 @@
                     "last_play_time": 1791417933000
                 }
             ],
-            "total_mastery_points": 5214985,
+            "total_mastery_points": 5219063,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791513155,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1791498302,
                     "lol_solo": null,
@@ -3116,7 +3135,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-08T19:25:02-03:00"
+            "updated_at": "2026-10-08T23:32:35-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -4331,8 +4350,8 @@
                     "champion_id": 81,
                     "champion": "Ezreal",
                     "level": 19,
-                    "points": 191247,
-                    "last_play_time": 1791071094000
+                    "points": 191772,
+                    "last_play_time": 1791503468000
                 },
                 {
                     "champion_id": 25,
@@ -4440,22 +4459,35 @@
                     "last_play_time": 1790819860000
                 },
                 {
+                    "champion_id": 145,
+                    "champion": "Kai'Sa",
+                    "level": 11,
+                    "points": 95632,
+                    "last_play_time": 1791501055000
+                },
+                {
                     "champion_id": 43,
                     "champion": "Karma",
                     "level": 10,
                     "points": 95228,
                     "last_play_time": 1789171726000
-                },
-                {
-                    "champion_id": 145,
-                    "champion": "Kai'Sa",
-                    "level": 11,
-                    "points": 94547,
-                    "last_play_time": 1790041220000
                 }
             ],
-            "total_mastery_points": 7446381,
+            "total_mastery_points": 7450329,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791513156,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1791498303,
                     "lol_solo": null,
@@ -5549,7 +5581,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-08T19:25:03-03:00"
+            "updated_at": "2026-10-08T23:32:36-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -10154,6 +10186,26 @@
             "total_mastery_points": 4048406,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791513158,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "III",
+                        "lp": 66,
+                        "wins": 16,
+                        "losses": 18
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 9,
+                        "wins": 44,
+                        "losses": 43
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791498305,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -11834,7 +11886,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-08T19:25:05-03:00"
+            "updated_at": "2026-10-08T23:32:38-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -15318,6 +15370,26 @@
             "total_mastery_points": 5042967,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791513160,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 52,
+                        "wins": 23,
+                        "losses": 18
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 46,
+                        "wins": 17,
+                        "losses": 12
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791498306,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -16898,8 +16970,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-08T19:25:06-03:00"
+            "updated_at": "2026-10-08T23:32:40-03:00"
         }
     },
-    "updated_at": "2026-10-08T19:25:06-03:00"
+    "updated_at": "2026-10-08T23:32:40-03:00"
 }
