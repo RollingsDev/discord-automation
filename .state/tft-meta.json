@@ -43,7 +43,7 @@
             "name": "Fera do Rift Aphelios & Nidalee",
             "play_rate": 0.83,
             "avg_place": 4.11,
-            "top4_rate": 0.59,
+            "top4_rate": 0.589,
             "win_rate": 0.11800000000000001,
             "units": [
                 "Diana",
@@ -140,15 +140,15 @@
                     "Centelha Iônica"
                 ],
                 "Kha'Zix": [
+                    "Mangual do Guerreiro",
                     "Mão da Justiça",
-                    "Capuz da Morte de Rabadon",
-                    "Limiar da Noite"
+                    "Capuz da Morte de Rabadon"
                 ],
                 "Fiddlesticks": [
                     "Juramento do Protetor"
                 ],
-                "Ezreal": [
-                    "Efeito Vermelho"
+                "Soraka": [
+                    "Efeito Azul"
                 ]
             }
         },
@@ -219,8 +219,8 @@
                 "Ezreal",
                 "Nidalee",
                 "Ashe",
-                "Cassiopeia",
-                "Zyra"
+                "Zyra",
+                "Cassiopeia"
             ]
         },
         {
@@ -392,5 +392,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-08T14:58:35-03:00"
+    "fetched_at": "2026-10-08T22:22:14-03:00"
 }
