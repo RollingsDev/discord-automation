@@ -163,6 +163,19 @@
             "total_mastery_points": 292482,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791750781,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1791734205,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1411,7 +1424,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-11T12:56:45-03:00"
+            "updated_at": "2026-10-11T17:33:01-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -2670,8 +2683,8 @@
                     "champion_id": 45,
                     "champion": "Veigar",
                     "level": 11,
-                    "points": 90822,
-                    "last_play_time": 1791079566000
+                    "points": 91979,
+                    "last_play_time": 1791748592000
                 },
                 {
                     "champion_id": 121,
@@ -2765,8 +2778,14 @@
                     "last_play_time": 1791417933000
                 }
             ],
-            "total_mastery_points": 5219063,
+            "total_mastery_points": 5221753,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791750782,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
                 {
                     "timestamp": 1791734206,
                     "lol_solo": null,
@@ -3344,7 +3363,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-11T12:56:46-03:00"
+            "updated_at": "2026-10-11T17:33:02-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -4671,8 +4690,8 @@
                     "champion_id": 145,
                     "champion": "Kai'Sa",
                     "level": 11,
-                    "points": 95632,
-                    "last_play_time": 1791501055000
+                    "points": 96732,
+                    "last_play_time": 1791748592000
                 },
                 {
                     "champion_id": 43,
@@ -4682,8 +4701,21 @@
                     "last_play_time": 1789171726000
                 }
             ],
-            "total_mastery_points": 7450329,
+            "total_mastery_points": 7453021,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791750783,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1791734208,
                     "lol_solo": null,
@@ -5933,7 +5965,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-11T12:56:48-03:00"
+            "updated_at": "2026-10-11T17:33:03-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -5952,12 +5984,95 @@
                 "queue": "RANKED_FLEX_SR",
                 "tier": "PLATINUM",
                 "rank": "II",
-                "lp": 53,
+                "lp": 35,
                 "wins": 46,
-                "losses": 43
+                "losses": 44
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3291986763",
+                    "timestamp": 1791738274855,
+                    "queue_id": 440,
+                    "win": false,
+                    "champion": "Fizz",
+                    "role": "MIDDLE",
+                    "kills": 2,
+                    "deaths": 10,
+                    "assists": 1,
+                    "kda": 0.3,
+                    "cs_per_min": 6.947743467933492,
+                    "damage_per_min": 506.93586698337293,
+                    "gold_per_min": 313.1828978622328,
+                    "vision_per_min": 0.6057007125890737,
+                    "kill_participation": 0.16666666666666666,
+                    "items": [
+                        1056,
+                        6655,
+                        2031,
+                        3175,
+                        3100,
+                        4630,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 28.1,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 2887,
+                                "cs": 72,
+                                "xp": 4534,
+                                "gold_diff": -594,
+                                "cs_diff": 2,
+                                "xp_diff": -827
+                            },
+                            "15": {
+                                "gold": 4868,
+                                "cs": 102,
+                                "xp": 6642,
+                                "gold_diff": -390,
+                                "cs_diff": 10,
+                                "xp_diff": -1605
+                            },
+                            "20": {
+                                "gold": 6521,
+                                "cs": 147,
+                                "xp": 8957,
+                                "gold_diff": -248,
+                                "cs_diff": 17,
+                                "xp_diff": -1824
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 2,
+                            "assists_10": 0
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 6655,
+                                "name": "Eco de Luden",
+                                "minute": 11.8
+                            },
+                            {
+                                "id": 3175,
+                                "name": "Sapatos Enfeitiçados"
+                            },
+                            {
+                                "id": 3100,
+                                "name": "Perdição de Lich",
+                                "minute": 24.4
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3291436259",
                     "timestamp": 1791595040776,
@@ -10647,8 +10762,8 @@
                     "champion_id": 105,
                     "champion": "Fizz",
                     "level": 21,
-                    "points": 202021,
-                    "last_play_time": 1791671518000
+                    "points": 202658,
+                    "last_play_time": 1791738282000
                 },
                 {
                     "champion_id": 84,
@@ -10770,8 +10885,28 @@
                     "last_play_time": 1791151002000
                 }
             ],
-            "total_mastery_points": 4071943,
+            "total_mastery_points": 4075437,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791750785,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "III",
+                        "lp": 66,
+                        "wins": 16,
+                        "losses": 18
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 35,
+                        "wins": 46,
+                        "losses": 44
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1791734209,
                     "lol_solo": {
@@ -12693,7 +12828,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-11T12:56:49-03:00"
+            "updated_at": "2026-10-11T17:33:05-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -16177,6 +16312,26 @@
             "total_mastery_points": 5042967,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791750787,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 52,
+                        "wins": 23,
+                        "losses": 18
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 46,
+                        "wins": 17,
+                        "losses": 12
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791734210,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -17997,8 +18152,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-11T12:56:50-03:00"
+            "updated_at": "2026-10-11T17:33:07-03:00"
         }
     },
-    "updated_at": "2026-10-11T12:56:50-03:00"
+    "updated_at": "2026-10-11T17:33:07-03:00"
 }
