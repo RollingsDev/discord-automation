@@ -6,46 +6,43 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Fera do Rift Krugue & Cascalho",
-            "play_rate": 0.41,
-            "avg_place": 4.08,
-            "top4_rate": 0.581,
-            "win_rate": 0.146,
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.42,
+            "avg_place": 4.1,
+            "top4_rate": 0.5579999999999999,
+            "win_rate": 0.193,
             "units": [
-                "Cascalho",
-                "Lobo Trevoguari",
-                "Aronguejo",
-                "Krugue",
-                "Rubrivira",
-                "Azuporã",
-                "Rubrivirim",
-                "Sett"
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Draven",
+                "Azir",
+                "Gnar",
+                "Ivern",
+                "Maokai"
             ],
             "unit_items": {
-                "Cascalho": [
-                    "Manopla Adornada",
-                    "Capuz da Morte de Rabadon",
-                    "Cajado do Arcanjo"
-                ],
-                "Lobo Trevoguari": [
-                    "Gume do Infinito"
-                ],
-                "Aronguejo": [
-                    "Placa Gargolítica"
-                ],
-                "Krugue": [
-                    "Placa Gargolítica",
-                    "Armadura de Warmog",
-                    "Capa de Fogo Solar"
-                ],
-                "Rubrivirim": [
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
                     "Último Sussurro"
+                ],
+                "Draven": [
+                    "Emblema de Carrasco",
+                    "Efeito Vermelho"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Proteção Imutável",
+                    "Armadura de Warmog"
                 ]
             }
         },
         {
             "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.45,
+            "play_rate": 0.46,
             "avg_place": 4.1,
             "top4_rate": 0.5710000000000001,
             "win_rate": 0.155,
@@ -83,37 +80,40 @@
             }
         },
         {
-            "name": "Sabugueiro Ezreal",
+            "name": "Fera do Rift Cascalho & Krugue",
             "play_rate": 0.42,
-            "avg_place": 4.11,
-            "top4_rate": 0.557,
-            "win_rate": 0.192,
+            "avg_place": 4.12,
+            "top4_rate": 0.574,
+            "win_rate": 0.142,
             "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Draven",
-                "Soraka",
-                "Ivern",
-                "Kennen",
-                "Maokai"
+                "Cascalho",
+                "Lobo Trevoguari",
+                "Aronguejo",
+                "Krugue",
+                "Rubrivira",
+                "Azuporã",
+                "Rubrivirim",
+                "Sett"
             ],
             "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
+                "Cascalho": [
+                    "Manopla Adornada",
+                    "Capuz da Morte de Rabadon",
+                    "Cajado do Arcanjo"
                 ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Efeito Vermelho"
+                "Lobo Trevoguari": [
+                    "Gume do Infinito"
                 ],
-                "Ivern": [
-                    "Lança de Shojin"
+                "Aronguejo": [
+                    "Placa Gargolítica"
                 ],
-                "Maokai": [
+                "Krugue": [
+                    "Placa Gargolítica",
                     "Armadura de Warmog",
-                    "Proteção Imutável"
+                    "Semblante Espiritual"
+                ],
+                "Rubrivirim": [
+                    "Último Sussurro"
                 ]
             }
         },
@@ -122,7 +122,7 @@
             "play_rate": 0.64,
             "avg_place": 4.17,
             "top4_rate": 0.5660000000000001,
-            "win_rate": 0.136,
+            "win_rate": 0.135,
             "units": [
                 "Diana",
                 "Vi",
@@ -130,8 +130,8 @@
                 "Amumu",
                 "Nidalee",
                 "Varus",
-                "Kog'Maw",
-                "Taric"
+                "Azuporã",
+                "Alune"
             ],
             "unit_items": {
                 "Aphelios": [
@@ -148,8 +148,8 @@
                     "Emblema de Devastador",
                     "Sinal de Sterak"
                 ],
-                "Kog'Maw": [
-                    "Efeito Vermelho"
+                "Azuporã": [
+                    "Armadura de Warmog"
                 ]
             }
         },
@@ -157,7 +157,7 @@
             "name": "Fera do Rift Ahri & Morgana",
             "play_rate": 0.45,
             "avg_place": 4.24,
-            "top4_rate": 0.555,
+            "top4_rate": 0.556,
             "win_rate": 0.121,
             "units": [
                 "Cascalho",
@@ -220,20 +220,6 @@
             ]
         },
         {
-            "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 3.77,
-            "avg_place": 4.45,
-            "top4_rate": 0.506,
-            "win_rate": 0.136,
-            "top_users": [
-                "Elise",
-                "Draven",
-                "Azir",
-                "Rengar",
-                "Tristana"
-            ]
-        },
-        {
             "name": "Lança de Shojin",
             "play_rate": 3.77,
             "avg_place": 4.31,
@@ -245,6 +231,20 @@
                 "LeBlanc",
                 "Nidalee",
                 "Ivern"
+            ]
+        },
+        {
+            "name": "Lâmina da Fúria de Guinsoo",
+            "play_rate": 3.77,
+            "avg_place": 4.45,
+            "top4_rate": 0.506,
+            "win_rate": 0.136,
+            "top_users": [
+                "Elise",
+                "Draven",
+                "Azir",
+                "Rengar",
+                "Tristana"
             ]
         },
         {
@@ -264,7 +264,7 @@
         {
             "name": "Semblante Espiritual",
             "play_rate": 2.97,
-            "avg_place": 4.25,
+            "avg_place": 4.26,
             "top4_rate": 0.546,
             "win_rate": 0.141,
             "top_users": [
@@ -286,7 +286,7 @@
                 "Ahri",
                 "LeBlanc",
                 "Cascalho",
-                "Morgana"
+                "Cassiopeia"
             ]
         },
         {
@@ -325,9 +325,9 @@
             "win_rate": 0.15,
             "top_users": [
                 "Ashe",
+                "Draven",
                 "Sivir",
                 "Morgana",
-                "Draven",
                 "LeBlanc"
             ]
         },
@@ -338,8 +338,8 @@
             "top4_rate": 0.57,
             "win_rate": 0.147,
             "top_users": [
-                "Hecarim",
                 "Maokai",
+                "Hecarim",
                 "Lillia",
                 "Fiddlesticks",
                 "Malphite"
@@ -376,15 +376,15 @@
         {
             "name": "Elmo Adaptativo",
             "play_rate": 1.98,
-            "avg_place": 4.03,
+            "avg_place": 4.02,
             "top4_rate": 0.593,
             "win_rate": 0.158,
             "top_users": [
                 "Ivern",
                 "Morgana",
                 "Lillia",
-                "Zyra",
-                "Kennen"
+                "Kennen",
+                "Zyra"
             ]
         },
         {
@@ -402,5 +402,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-13T15:28:55-03:00"
+    "fetched_at": "2026-10-13T21:33:43-03:00"
 }
