@@ -163,6 +163,19 @@
             "total_mastery_points": 302434,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791943715,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1791933917,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1528,7 +1541,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-13T20:25:17-03:00"
+            "updated_at": "2026-10-13T23:08:35-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -2885,6 +2898,12 @@
             "total_mastery_points": 5249768,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791943716,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1791933918,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -3515,7 +3534,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T20:25:18-03:00"
+            "updated_at": "2026-10-13T23:08:36-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -4855,6 +4874,19 @@
             ],
             "total_mastery_points": 7480193,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791943718,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1791933920,
                     "lol_solo": null,
@@ -6221,7 +6253,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-13T20:25:20-03:00"
+            "updated_at": "2026-10-13T23:08:38-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -12163,6 +12195,26 @@
             "total_mastery_points": 4097017,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791943719,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "III",
+                        "lp": 52,
+                        "wins": 16,
+                        "losses": 19
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 57,
+                        "wins": 51,
+                        "losses": 49
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791933921,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -14263,7 +14315,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T20:25:21-03:00"
+            "updated_at": "2026-10-13T23:08:39-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -14274,9 +14326,9 @@
                 "queue": "RANKED_SOLO_5x5",
                 "tier": "PLATINUM",
                 "rank": "IV",
-                "lp": 52,
+                "lp": 21,
                 "wins": 23,
-                "losses": 18
+                "losses": 20
             },
             "lol_flex": {
                 "queue": "RANKED_FLEX_SR",
@@ -14288,6 +14340,156 @@
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3292946258",
+                    "timestamp": 1791937564891,
+                    "queue_id": 420,
+                    "win": false,
+                    "champion": "Jhin",
+                    "role": "BOTTOM",
+                    "kills": 3,
+                    "deaths": 5,
+                    "assists": 3,
+                    "kda": 1.2,
+                    "cs_per_min": 6.3157894736842115,
+                    "damage_per_min": 447.87449392712557,
+                    "gold_per_min": 382.834008097166,
+                    "vision_per_min": 0.5465587044534413,
+                    "kill_participation": 0.5,
+                    "items": [
+                        2031,
+                        1036,
+                        1018,
+                        6697,
+                        1086,
+                        1042,
+                        3340
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "RED",
+                        "duration_min": 16.5,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 3121,
+                                "cs": 64,
+                                "xp": 3734,
+                                "gold_diff": -1542,
+                                "cs_diff": -23,
+                                "xp_diff": 22
+                            },
+                            "15": {
+                                "gold": 5870,
+                                "cs": 92,
+                                "xp": 5615,
+                                "gold_diff": -1479,
+                                "cs_diff": -18,
+                                "xp_diff": 98
+                            }
+                        },
+                        "early": {
+                            "kills_10": 0,
+                            "deaths_10": 3,
+                            "assists_10": 2
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 6697,
+                                "name": "Húbris",
+                                "minute": 10.8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "BR1_3292921929",
+                    "timestamp": 1791936236160,
+                    "queue_id": 420,
+                    "win": false,
+                    "champion": "Thresh",
+                    "role": "UTILITY",
+                    "kills": 2,
+                    "deaths": 8,
+                    "assists": 23,
+                    "kda": 3.125,
+                    "cs_per_min": 0.900155199172271,
+                    "damage_per_min": 334.36109674081735,
+                    "gold_per_min": 296.15106052767715,
+                    "vision_per_min": 2.3900672529746507,
+                    "kill_participation": 0.5208333333333334,
+                    "items": [
+                        3869,
+                        3075,
+                        3190,
+                        3009,
+                        3110,
+                        1029,
+                        3364
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 32.2,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 2985,
+                                "cs": 10,
+                                "xp": 2473,
+                                "gold_diff": 75,
+                                "cs_diff": -6,
+                                "xp_diff": -413
+                            },
+                            "15": {
+                                "gold": 5007,
+                                "cs": 15,
+                                "xp": 4610,
+                                "gold_diff": 762,
+                                "cs_diff": -4,
+                                "xp_diff": 872
+                            },
+                            "20": {
+                                "gold": 6512,
+                                "cs": 21,
+                                "xp": 6369,
+                                "gold_diff": 245,
+                                "cs_diff": -13,
+                                "xp_diff": -965
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 1,
+                            "assists_10": 4
+                        },
+                        "objectives": {
+                            "dragon": 1,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3075,
+                                "name": "Armadura de Espinhos",
+                                "minute": 30.6
+                            },
+                            {
+                                "id": 3190,
+                                "name": "Medalhão dos Solari de Ferro",
+                                "minute": 10.7
+                            },
+                            {
+                                "id": 3110,
+                                "name": "Coração Congelado",
+                                "minute": 23
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3292409930",
                     "timestamp": 1791826902616,
@@ -18058,8 +18260,8 @@
                     "champion_id": 202,
                     "champion": "Jhin",
                     "level": 15,
-                    "points": 133700,
-                    "last_play_time": 1791824185000
+                    "points": 134086,
+                    "last_play_time": 1791937571000
                 },
                 {
                     "champion_id": 238,
@@ -18083,18 +18285,18 @@
                     "last_play_time": 1790540947000
                 },
                 {
+                    "champion_id": 412,
+                    "champion": "Thresh",
+                    "level": 12,
+                    "points": 101268,
+                    "last_play_time": 1791936243000
+                },
+                {
                     "champion_id": 99,
                     "champion": "Lux",
                     "level": 11,
                     "points": 100976,
                     "last_play_time": 1790030415000
-                },
-                {
-                    "champion_id": 412,
-                    "champion": "Thresh",
-                    "level": 12,
-                    "points": 100480,
-                    "last_play_time": 1791831147000
                 },
                 {
                     "champion_id": 81,
@@ -18167,8 +18369,28 @@
                     "last_play_time": 1779559706000
                 }
             ],
-            "total_mastery_points": 5067404,
+            "total_mastery_points": 5068578,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791943722,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 21,
+                        "wins": 23,
+                        "losses": 20
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 52,
+                        "wins": 19,
+                        "losses": 15
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1791933923,
                     "lol_solo": {
@@ -20170,8 +20392,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T20:25:23-03:00"
+            "updated_at": "2026-10-13T23:08:42-03:00"
         }
     },
-    "updated_at": "2026-10-13T20:25:23-03:00"
+    "updated_at": "2026-10-13T23:08:43-03:00"
 }
