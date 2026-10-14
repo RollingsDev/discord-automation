@@ -163,6 +163,19 @@
             "total_mastery_points": 302434,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791964791,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1791943715,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1541,7 +1554,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-13T23:08:35-03:00"
+            "updated_at": "2026-10-14T04:59:51-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -2898,6 +2911,12 @@
             "total_mastery_points": 5249768,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791964793,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1791943716,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -3534,7 +3553,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T23:08:36-03:00"
+            "updated_at": "2026-10-14T04:59:53-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -4874,6 +4893,19 @@
             ],
             "total_mastery_points": 7480193,
             "rank_snapshots": [
+                {
+                    "timestamp": 1791964794,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1791943718,
                     "lol_solo": null,
@@ -6253,7 +6285,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-13T23:08:38-03:00"
+            "updated_at": "2026-10-14T04:59:54-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -12195,6 +12227,26 @@
             "total_mastery_points": 4097017,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791964795,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "III",
+                        "lp": 52,
+                        "wins": 16,
+                        "losses": 19
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 57,
+                        "wins": 51,
+                        "losses": 49
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791943719,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -14315,7 +14367,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T23:08:39-03:00"
+            "updated_at": "2026-10-14T04:59:55-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -18372,6 +18424,26 @@
             "total_mastery_points": 5068578,
             "rank_snapshots": [
                 {
+                    "timestamp": 1791964796,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 21,
+                        "wins": 23,
+                        "losses": 20
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 52,
+                        "wins": 19,
+                        "losses": 15
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1791943722,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -20392,8 +20464,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-13T23:08:42-03:00"
+            "updated_at": "2026-10-14T04:59:56-03:00"
         }
     },
-    "updated_at": "2026-10-13T23:08:43-03:00"
+    "updated_at": "2026-10-14T04:59:56-03:00"
 }
