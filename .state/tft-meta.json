@@ -7,19 +7,19 @@
     "comps": [
         {
             "name": "Sabugueiro Ezreal",
-            "play_rate": 0.43,
+            "play_rate": 0.42,
             "avg_place": 4.1,
-            "top4_rate": 0.5579999999999999,
+            "top4_rate": 0.5589999999999999,
             "win_rate": 0.192,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Amumu",
-                "Maokai",
-                "Azir",
+                "Soraka",
                 "Draven",
-                "Gnar",
-                "Ivern"
+                "Ivern",
+                "Kennen",
+                "Maokai"
             ],
             "unit_items": {
                 "Ezreal": [
@@ -27,16 +27,16 @@
                     "Lâmina Mortal",
                     "Último Sussurro"
                 ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
-                ],
                 "Draven": [
                     "Emblema de Carrasco",
                     "Efeito Vermelho"
                 ],
                 "Ivern": [
                     "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
                 ]
             }
         },
@@ -45,7 +45,7 @@
             "play_rate": 0.46,
             "avg_place": 4.1,
             "top4_rate": 0.573,
-            "win_rate": 0.156,
+            "win_rate": 0.155,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -83,7 +83,7 @@
             "name": "Fera do Rift Cascalho & Krugue",
             "play_rate": 0.43,
             "avg_place": 4.1,
-            "top4_rate": 0.5760000000000001,
+            "top4_rate": 0.5770000000000001,
             "win_rate": 0.142,
             "units": [
                 "Cascalho",
@@ -110,7 +110,7 @@
                 "Krugue": [
                     "Placa Gargolítica",
                     "Armadura de Warmog",
-                    "Semblante Espiritual"
+                    "Capa de Fogo Solar"
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
@@ -120,8 +120,8 @@
         {
             "name": "Fera do Rift Amumu & Aphelios",
             "play_rate": 0.63,
-            "avg_place": 4.17,
-            "top4_rate": 0.565,
+            "avg_place": 4.18,
+            "top4_rate": 0.563,
             "win_rate": 0.13699999999999998,
             "units": [
                 "Diana",
@@ -140,8 +140,8 @@
                     "Fúria do Cráquem"
                 ],
                 "Amumu": [
-                    "Placa Gargolítica",
                     "Armadura de Warmog",
+                    "Placa Gargolítica",
                     "Semblante Espiritual"
                 ],
                 "Nidalee": [
@@ -193,16 +193,16 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.84,
+            "play_rate": 5.85,
             "avg_place": 4.41,
             "top4_rate": 0.517,
             "win_rate": 0.131,
             "top_users": [
                 "Rammus",
+                "Sejuani",
                 "Malphite",
                 "Alistar",
-                "Maokai",
-                "Krugue"
+                "Maokai"
             ]
         },
         {
@@ -262,6 +262,20 @@
             ]
         },
         {
+            "name": "Manopla Adornada",
+            "play_rate": 2.97,
+            "avg_place": 4.32,
+            "top4_rate": 0.534,
+            "win_rate": 0.134,
+            "top_users": [
+                "Kayle",
+                "Ahri",
+                "Cascalho",
+                "LeBlanc",
+                "Cassiopeia"
+            ]
+        },
+        {
             "name": "Semblante Espiritual",
             "play_rate": 2.97,
             "avg_place": 4.26,
@@ -273,20 +287,6 @@
                 "Sejuani",
                 "Maokai",
                 "Krugue"
-            ]
-        },
-        {
-            "name": "Manopla Adornada",
-            "play_rate": 2.96,
-            "avg_place": 4.32,
-            "top4_rate": 0.534,
-            "win_rate": 0.134,
-            "top_users": [
-                "Kayle",
-                "Ahri",
-                "Cascalho",
-                "Cassiopeia",
-                "LeBlanc"
             ]
         },
         {
@@ -319,9 +319,9 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.23,
+            "play_rate": 2.22,
             "avg_place": 4.14,
-            "top4_rate": 0.5710000000000001,
+            "top4_rate": 0.57,
             "win_rate": 0.147,
             "top_users": [
                 "Maokai",
@@ -334,15 +334,15 @@
         {
             "name": "Efeito Vermelho",
             "play_rate": 2.22,
-            "avg_place": 4.15,
+            "avg_place": 4.14,
             "top4_rate": 0.5660000000000001,
             "win_rate": 0.15,
             "top_users": [
                 "Ashe",
                 "Draven",
-                "Sivir",
                 "Morgana",
-                "Zyra"
+                "Sivir",
+                "LeBlanc"
             ]
         },
         {
@@ -352,8 +352,8 @@
             "top4_rate": 0.5770000000000001,
             "win_rate": 0.162,
             "top_users": [
-                "Diana",
                 "Kennen",
+                "Diana",
                 "Soraka",
                 "Rubrivira",
                 "Gnar"
@@ -361,7 +361,7 @@
         },
         {
             "name": "Capuz da Morte de Rabadon",
-            "play_rate": 2.05,
+            "play_rate": 2.06,
             "avg_place": 4.13,
             "top4_rate": 0.57,
             "win_rate": 0.151,
@@ -375,7 +375,7 @@
         },
         {
             "name": "Último Sussurro",
-            "play_rate": 1.98,
+            "play_rate": 1.99,
             "avg_place": 4.25,
             "top4_rate": 0.54,
             "win_rate": 0.154,
@@ -398,9 +398,9 @@
                 "Morgana",
                 "Lillia",
                 "Zyra",
-                "Kennen"
+                "Fiddlesticks"
             ]
         }
     ],
-    "fetched_at": "2026-10-16T12:30:12-03:00"
+    "fetched_at": "2026-10-16T20:49:40-03:00"
 }
