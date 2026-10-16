@@ -7,19 +7,19 @@
     "comps": [
         {
             "name": "Sabugueiro Ezreal",
-            "play_rate": 0.42,
+            "play_rate": 0.43,
             "avg_place": 4.1,
-            "top4_rate": 0.5589999999999999,
-            "win_rate": 0.193,
+            "top4_rate": 0.5579999999999999,
+            "win_rate": 0.192,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Amumu",
+                "Maokai",
+                "Azir",
                 "Draven",
-                "Soraka",
-                "Ivern",
-                "Kennen",
-                "Maokai"
+                "Gnar",
+                "Ivern"
             ],
             "unit_items": {
                 "Ezreal": [
@@ -27,16 +27,16 @@
                     "Lâmina Mortal",
                     "Último Sussurro"
                 ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
+                ],
                 "Draven": [
                     "Emblema de Carrasco",
                     "Efeito Vermelho"
                 ],
                 "Ivern": [
                     "Lança de Shojin"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
                 ]
             }
         },
@@ -157,7 +157,7 @@
             "name": "Fera do Rift Ahri & Morgana",
             "play_rate": 0.44,
             "avg_place": 4.24,
-            "top4_rate": 0.556,
+            "top4_rate": 0.555,
             "win_rate": 0.12,
             "units": [
                 "Cascalho",
@@ -257,8 +257,8 @@
                 "Varus",
                 "Xayah",
                 "Camille",
-                "Nidalee",
-                "Dragão Ancião"
+                "Dragão Ancião",
+                "Nidalee"
             ]
         },
         {
@@ -285,13 +285,13 @@
                 "Kayle",
                 "Ahri",
                 "Cascalho",
-                "LeBlanc",
-                "Cassiopeia"
+                "Cassiopeia",
+                "LeBlanc"
             ]
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.54,
+            "play_rate": 2.55,
             "avg_place": 4.18,
             "top4_rate": 0.56,
             "win_rate": 0.14800000000000002,
@@ -321,28 +321,28 @@
             "name": "Juramento do Protetor",
             "play_rate": 2.23,
             "avg_place": 4.14,
-            "top4_rate": 0.57,
+            "top4_rate": 0.5710000000000001,
             "win_rate": 0.147,
             "top_users": [
                 "Maokai",
                 "Hecarim",
                 "Lillia",
-                "Malphite",
+                "Rammus",
                 "Azuporã"
             ]
         },
         {
             "name": "Efeito Vermelho",
-            "play_rate": 2.23,
+            "play_rate": 2.22,
             "avg_place": 4.15,
-            "top4_rate": 0.565,
+            "top4_rate": 0.5660000000000001,
             "win_rate": 0.15,
             "top_users": [
                 "Ashe",
                 "Draven",
-                "Morgana",
                 "Sivir",
-                "LeBlanc"
+                "Morgana",
+                "Zyra"
             ]
         },
         {
@@ -352,8 +352,8 @@
             "top4_rate": 0.5770000000000001,
             "win_rate": 0.162,
             "top_users": [
-                "Kennen",
                 "Diana",
+                "Kennen",
                 "Soraka",
                 "Rubrivira",
                 "Gnar"
@@ -377,7 +377,7 @@
             "name": "Último Sussurro",
             "play_rate": 1.98,
             "avg_place": 4.25,
-            "top4_rate": 0.541,
+            "top4_rate": 0.54,
             "win_rate": 0.154,
             "top_users": [
                 "Yunara",
@@ -402,5 +402,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-15T20:47:35-03:00"
+    "fetched_at": "2026-10-16T12:30:12-03:00"
 }
