@@ -6,44 +6,9 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.42,
-            "avg_place": 4.1,
-            "top4_rate": 0.5589999999999999,
-            "win_rate": 0.192,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Soraka",
-                "Draven",
-                "Ivern",
-                "Kennen",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Efeito Vermelho"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
-                ]
-            }
-        },
-        {
             "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.46,
-            "avg_place": 4.1,
+            "play_rate": 0.47,
+            "avg_place": 4.09,
             "top4_rate": 0.573,
             "win_rate": 0.155,
             "units": [
@@ -80,11 +45,42 @@
             }
         },
         {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.42,
+            "avg_place": 4.1,
+            "top4_rate": 0.5589999999999999,
+            "win_rate": 0.193,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Soraka",
+                "Ivern",
+                "Kennen",
+                "Maokai",
+                "Taric"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Proteção Imutável"
+                ]
+            }
+        },
+        {
             "name": "Fera do Rift Cascalho & Krugue",
             "play_rate": 0.43,
             "avg_place": 4.1,
             "top4_rate": 0.5770000000000001,
-            "win_rate": 0.142,
+            "win_rate": 0.141,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -110,7 +106,7 @@
                 "Krugue": [
                     "Placa Gargolítica",
                     "Armadura de Warmog",
-                    "Capa de Fogo Solar"
+                    "Semblante Espiritual"
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
@@ -122,15 +118,15 @@
             "play_rate": 0.63,
             "avg_place": 4.18,
             "top4_rate": 0.563,
-            "win_rate": 0.13699999999999998,
+            "win_rate": 0.138,
             "units": [
                 "Diana",
-                "Vi",
                 "Aphelios",
                 "Amumu",
-                "Nidalee",
                 "Varus",
                 "Kog'Maw",
+                "Vi",
+                "Nidalee",
                 "Taric"
             ],
             "unit_items": {
@@ -144,20 +140,20 @@
                     "Placa Gargolítica",
                     "Semblante Espiritual"
                 ],
+                "Kog'Maw": [
+                    "Efeito Vermelho"
+                ],
                 "Nidalee": [
                     "Emblema de Devastador",
                     "Sinal de Sterak"
-                ],
-                "Kog'Maw": [
-                    "Efeito Vermelho"
                 ]
             }
         },
         {
             "name": "Fera do Rift Ahri & Morgana",
             "play_rate": 0.44,
-            "avg_place": 4.24,
-            "top4_rate": 0.555,
+            "avg_place": 4.25,
+            "top4_rate": 0.5539999999999999,
             "win_rate": 0.12,
             "units": [
                 "Cascalho",
@@ -165,9 +161,9 @@
                 "Ahri",
                 "Morgana",
                 "Azuporã",
-                "Diana",
-                "Sett",
-                "Alune"
+                "Sivir",
+                "Alune",
+                "Taric"
             ],
             "unit_items": {
                 "Ahri": [
@@ -179,10 +175,6 @@
                     "Cajado do Vazio",
                     "Morellonomicon",
                     "Efeito Vermelho"
-                ],
-                "Sett": [
-                    "Juramento do Protetor",
-                    "Armadura de Warmog"
                 ],
                 "Alune": [
                     "Cajado do Vazio"
@@ -207,13 +199,13 @@
         },
         {
             "name": "Armadura de Warmog",
-            "play_rate": 4.09,
+            "play_rate": 4.1,
             "avg_place": 4.31,
             "top4_rate": 0.535,
             "win_rate": 0.135,
             "top_users": [
-                "Maokai",
                 "Rammus",
+                "Maokai",
                 "Malphite",
                 "Krugue",
                 "Alistar"
@@ -223,7 +215,7 @@
             "name": "Lança de Shojin",
             "play_rate": 3.78,
             "avg_place": 4.31,
-            "top4_rate": 0.535,
+            "top4_rate": 0.534,
             "win_rate": 0.138,
             "top_users": [
                 "Yunara",
@@ -237,19 +229,19 @@
             "name": "Lâmina da Fúria de Guinsoo",
             "play_rate": 3.77,
             "avg_place": 4.44,
-            "top4_rate": 0.507,
+            "top4_rate": 0.508,
             "win_rate": 0.136,
             "top_users": [
                 "Elise",
                 "Draven",
-                "Azir",
                 "Rengar",
+                "Azir",
                 "Master Yi"
             ]
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 3.08,
+            "play_rate": 3.07,
             "avg_place": 4.32,
             "top4_rate": 0.532,
             "win_rate": 0.138,
@@ -263,21 +255,21 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 2.97,
+            "play_rate": 2.98,
             "avg_place": 4.32,
-            "top4_rate": 0.534,
+            "top4_rate": 0.5329999999999999,
             "win_rate": 0.134,
             "top_users": [
                 "Kayle",
                 "Ahri",
                 "Cascalho",
-                "LeBlanc",
-                "Cassiopeia"
+                "Cassiopeia",
+                "LeBlanc"
             ]
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 2.97,
+            "play_rate": 2.96,
             "avg_place": 4.26,
             "top4_rate": 0.546,
             "win_rate": 0.141,
@@ -305,9 +297,9 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.3,
+            "play_rate": 2.29,
             "avg_place": 4.24,
-            "top4_rate": 0.547,
+            "top4_rate": 0.5479999999999999,
             "win_rate": 0.14300000000000002,
             "top_users": [
                 "Azir",
@@ -326,22 +318,22 @@
             "top_users": [
                 "Maokai",
                 "Hecarim",
-                "Lillia",
                 "Rammus",
+                "Lillia",
                 "Azuporã"
             ]
         },
         {
             "name": "Efeito Vermelho",
-            "play_rate": 2.22,
+            "play_rate": 2.21,
             "avg_place": 4.14,
             "top4_rate": 0.5660000000000001,
             "win_rate": 0.15,
             "top_users": [
                 "Ashe",
                 "Draven",
-                "Morgana",
                 "Sivir",
+                "Morgana",
                 "LeBlanc"
             ]
         },
@@ -352,16 +344,16 @@
             "top4_rate": 0.5770000000000001,
             "win_rate": 0.162,
             "top_users": [
-                "Kennen",
                 "Diana",
+                "Kennen",
                 "Soraka",
-                "Rubrivira",
-                "Gnar"
+                "Gnar",
+                "Rubrivira"
             ]
         },
         {
             "name": "Capuz da Morte de Rabadon",
-            "play_rate": 2.06,
+            "play_rate": 2.07,
             "avg_place": 4.13,
             "top4_rate": 0.57,
             "win_rate": 0.151,
@@ -380,27 +372,27 @@
             "top4_rate": 0.54,
             "win_rate": 0.154,
             "top_users": [
-                "Yunara",
                 "Dragão Ancião",
+                "Yunara",
                 "Rubrivirim",
                 "Varus",
                 "Mamãe Bicuda"
             ]
         },
         {
-            "name": "Elmo Adaptativo",
-            "play_rate": 1.97,
-            "avg_place": 4.03,
-            "top4_rate": 0.593,
-            "win_rate": 0.158,
+            "name": "Stemmaguarda",
+            "play_rate": 1.96,
+            "avg_place": 4.13,
+            "top4_rate": 0.5720000000000001,
+            "win_rate": 0.146,
             "top_users": [
-                "Ivern",
-                "Morgana",
-                "Lillia",
-                "Zyra",
-                "Fiddlesticks"
+                "Rammus",
+                "Malphite",
+                "Ornn",
+                "Maokai",
+                "Krugue"
             ]
         }
     ],
-    "fetched_at": "2026-10-16T20:49:40-03:00"
+    "fetched_at": "2026-10-17T11:23:32-03:00"
 }
