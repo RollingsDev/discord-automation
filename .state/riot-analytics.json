@@ -163,6 +163,19 @@
             "total_mastery_points": 302434,
             "rank_snapshots": [
                 {
+                    "timestamp": 1792258283,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "GOLD",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 46,
+                        "losses": 52
+                    }
+                },
+                {
                     "timestamp": 1792247052,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -1801,7 +1814,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-17T11:24:12-03:00"
+            "updated_at": "2026-10-17T14:31:23-03:00"
         },
         "nao-grita": {
             "riot_id": {
@@ -3158,6 +3171,12 @@
             "total_mastery_points": 5258400,
             "rank_snapshots": [
                 {
+                    "timestamp": 1792258285,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": null
+                },
+                {
                     "timestamp": 1792247053,
                     "lol_solo": null,
                     "lol_flex": null,
@@ -3914,7 +3933,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-17T11:24:13-03:00"
+            "updated_at": "2026-10-17T14:31:25-03:00"
         },
         "flafu": {
             "riot_id": {
@@ -5254,6 +5273,19 @@
             ],
             "total_mastery_points": 7489218,
             "rank_snapshots": [
+                {
+                    "timestamp": 1792258286,
+                    "lol_solo": null,
+                    "lol_flex": null,
+                    "tft": {
+                        "queue": "RANKED_TFT",
+                        "tier": "PLATINUM",
+                        "rank": "I",
+                        "lp": 37,
+                        "wins": 56,
+                        "losses": 41
+                    }
+                },
                 {
                     "timestamp": 1792247054,
                     "lol_solo": null,
@@ -6893,7 +6925,7 @@
                     }
                 }
             ],
-            "updated_at": "2026-10-17T11:24:14-03:00"
+            "updated_at": "2026-10-17T14:31:26-03:00"
         },
         "lappush": {
             "riot_id": {
@@ -12835,6 +12867,26 @@
             "total_mastery_points": 4102149,
             "rank_snapshots": [
                 {
+                    "timestamp": 1792258288,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "GOLD",
+                        "rank": "III",
+                        "lp": 52,
+                        "wins": 16,
+                        "losses": 19
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "II",
+                        "lp": 57,
+                        "wins": 51,
+                        "losses": 49
+                    },
+                    "tft": null
+                },
+                {
                     "timestamp": 1792247055,
                     "lol_solo": {
                         "queue": "RANKED_SOLO_5x5",
@@ -15355,7 +15407,7 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-17T11:24:15-03:00"
+            "updated_at": "2026-10-17T14:31:28-03:00"
         },
         "souza-nara": {
             "riot_id": {
@@ -15368,7 +15420,7 @@
                 "rank": "IV",
                 "lp": 0,
                 "wins": 23,
-                "losses": 22
+                "losses": 23
             },
             "lol_flex": {
                 "queue": "RANKED_FLEX_SR",
@@ -15380,6 +15432,85 @@
             },
             "tft_rank": null,
             "lol_matches": [
+                {
+                    "id": "BR1_3294131147",
+                    "timestamp": 1792258145853,
+                    "queue_id": 420,
+                    "win": false,
+                    "champion": "Alistar",
+                    "role": "UTILITY",
+                    "kills": 2,
+                    "deaths": 10,
+                    "assists": 18,
+                    "kda": 2,
+                    "cs_per_min": 0.7683352735739232,
+                    "damage_per_min": 397.36903376018626,
+                    "gold_per_min": 291.3736903376019,
+                    "vision_per_min": 2.724097788125728,
+                    "kill_participation": 0.7407407407407407,
+                    "items": [
+                        3869,
+                        3190,
+                        3047,
+                        3075,
+                        3067,
+                        1029,
+                        3364
+                    ],
+                    "advanced": {
+                        "version": 2,
+                        "side": "BLUE",
+                        "duration_min": 28.6,
+                        "checkpoints": {
+                            "10": {
+                                "gold": 2979,
+                                "cs": 11,
+                                "xp": 3108,
+                                "gold_diff": 240,
+                                "cs_diff": 2,
+                                "xp_diff": 173
+                            },
+                            "15": {
+                                "gold": 4385,
+                                "cs": 14,
+                                "xp": 4825,
+                                "gold_diff": -347,
+                                "cs_diff": 1,
+                                "xp_diff": 366
+                            },
+                            "20": {
+                                "gold": 5485,
+                                "cs": 20,
+                                "xp": 6452,
+                                "gold_diff": -1647,
+                                "cs_diff": 1,
+                                "xp_diff": -976
+                            }
+                        },
+                        "early": {
+                            "kills_10": 1,
+                            "deaths_10": 1,
+                            "assists_10": 4
+                        },
+                        "objectives": {
+                            "dragon": 0,
+                            "baron": 0,
+                            "herald": 0
+                        },
+                        "final_items": [
+                            {
+                                "id": 3190,
+                                "name": "Medalhão dos Solari de Ferro",
+                                "minute": 24.5
+                            },
+                            {
+                                "id": 3075,
+                                "name": "Armadura de Espinhos",
+                                "minute": 15
+                            }
+                        ]
+                    }
+                },
                 {
                     "id": "BR1_3293249030",
                     "timestamp": 1792022225912,
@@ -19576,8 +19707,28 @@
                     "last_play_time": 1779559706000
                 }
             ],
-            "total_mastery_points": 5074390,
+            "total_mastery_points": 5076735,
             "rank_snapshots": [
+                {
+                    "timestamp": 1792258290,
+                    "lol_solo": {
+                        "queue": "RANKED_SOLO_5x5",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 0,
+                        "wins": 23,
+                        "losses": 23
+                    },
+                    "lol_flex": {
+                        "queue": "RANKED_FLEX_SR",
+                        "tier": "PLATINUM",
+                        "rank": "IV",
+                        "lp": 52,
+                        "wins": 19,
+                        "losses": 15
+                    },
+                    "tft": null
+                },
                 {
                     "timestamp": 1792247057,
                     "lol_solo": {
@@ -21999,8 +22150,8 @@
                     "tft": null
                 }
             ],
-            "updated_at": "2026-10-17T11:24:17-03:00"
+            "updated_at": "2026-10-17T14:31:30-03:00"
         }
     },
-    "updated_at": "2026-10-17T11:24:17-03:00"
+    "updated_at": "2026-10-17T14:31:30-03:00"
 }
