@@ -1,7 +1,8 @@
 {
     "initialized_at": "2026-09-20T20:19:25-03:00",
-    "updated_at": "2026-10-16T13:51:24-03:00",
+    "updated_at": "2026-10-18T13:03:11-03:00",
     "items": [
+        "pestphp/pest@v5.3.3",
         "laravel/framework@v13.37.0",
         "laravel/octane@v2.22.0",
         "laravel/framework@v13.36.0",
