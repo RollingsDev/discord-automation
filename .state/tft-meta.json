@@ -45,6 +45,41 @@
             }
         },
         {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.43,
+            "avg_place": 4.1,
+            "top4_rate": 0.5579999999999999,
+            "win_rate": 0.193,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Draven",
+                "Azuporã",
+                "Ivern",
+                "Maokai",
+                "Taric"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Draven": [
+                    "Emblema de Carrasco",
+                    "Efeito Vermelho"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Proteção Imutável"
+                ]
+            }
+        },
+        {
             "name": "Fera do Rift Cascalho & Krugue",
             "play_rate": 0.43,
             "avg_place": 4.1,
@@ -83,45 +118,10 @@
             }
         },
         {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.43,
-            "avg_place": 4.11,
-            "top4_rate": 0.557,
-            "win_rate": 0.192,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Maokai",
-                "Azuporã",
-                "Draven",
-                "Ivern",
-                "Kennen"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
-                ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Efeito Vermelho"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ]
-            }
-        },
-        {
             "name": "Fera do Rift Amumu & Aphelios",
             "play_rate": 0.63,
-            "avg_place": 4.17,
-            "top4_rate": 0.564,
+            "avg_place": 4.18,
+            "top4_rate": 0.563,
             "win_rate": 0.138,
             "units": [
                 "Diana",
@@ -134,6 +134,9 @@
                 "Taric"
             ],
             "unit_items": {
+                "Diana": [
+                    "Luvas do Ladrão"
+                ],
                 "Aphelios": [
                     "Gume do Infinito",
                     "Lâmina Mortal",
@@ -143,9 +146,6 @@
                     "Armadura de Warmog",
                     "Placa Gargolítica",
                     "Semblante Espiritual"
-                ],
-                "Kog'Maw": [
-                    "Efeito Vermelho"
                 ],
                 "Nidalee": [
                     "Emblema de Devastador",
@@ -266,8 +266,8 @@
             "top_users": [
                 "Kayle",
                 "Ahri",
-                "Cascalho",
                 "Cassiopeia",
+                "Cascalho",
                 "Azir"
             ]
         },
@@ -384,19 +384,19 @@
             ]
         },
         {
-            "name": "Elmo Adaptativo",
+            "name": "Stemmaguarda",
             "play_rate": 1.96,
-            "avg_place": 4.03,
-            "top4_rate": 0.593,
-            "win_rate": 0.158,
+            "avg_place": 4.13,
+            "top4_rate": 0.5720000000000001,
+            "win_rate": 0.146,
             "top_users": [
-                "Ivern",
-                "Morgana",
-                "Lillia",
-                "Zyra",
-                "Fiddlesticks"
+                "Rammus",
+                "Malphite",
+                "Ornn",
+                "Krugue",
+                "Maokai"
             ]
         }
     ],
-    "fetched_at": "2026-10-17T20:20:57-03:00"
+    "fetched_at": "2026-10-18T11:46:45-03:00"
 }
