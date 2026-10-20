@@ -9,7 +9,7 @@
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.47,
             "avg_place": 4.08,
-            "top4_rate": 0.575,
+            "top4_rate": 0.5760000000000001,
             "win_rate": 0.156,
             "units": [
                 "Veigar",
@@ -47,9 +47,9 @@
         {
             "name": "Fera do Rift Cascalho & Krugue",
             "play_rate": 0.44,
-            "avg_place": 4.1,
-            "top4_rate": 0.578,
-            "win_rate": 0.141,
+            "avg_place": 4.09,
+            "top4_rate": 0.579,
+            "win_rate": 0.142,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -75,7 +75,7 @@
                 "Krugue": [
                     "Placa Gargolítica",
                     "Armadura de Warmog",
-                    "Semblante Espiritual"
+                    "Capa de Fogo Solar"
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
@@ -86,7 +86,7 @@
             "name": "Sabugueiro Ezreal",
             "play_rate": 0.43,
             "avg_place": 4.11,
-            "top4_rate": 0.556,
+            "top4_rate": 0.557,
             "win_rate": 0.191,
             "units": [
                 "Alistar",
@@ -121,7 +121,7 @@
             "name": "Fera do Rift Amumu & Aphelios",
             "play_rate": 0.63,
             "avg_place": 4.17,
-            "top4_rate": 0.563,
+            "top4_rate": 0.565,
             "win_rate": 0.13699999999999998,
             "units": [
                 "Diana",
@@ -157,7 +157,7 @@
             "name": "Fera do Rift Ahri & Morgana",
             "play_rate": 0.43,
             "avg_place": 4.26,
-            "top4_rate": 0.551,
+            "top4_rate": 0.55,
             "win_rate": 0.11900000000000001,
             "units": [
                 "Cascalho",
@@ -166,7 +166,7 @@
                 "Morgana",
                 "Azuporã",
                 "Sivir",
-                "Ashe",
+                "Alune",
                 "Taric"
             ],
             "unit_items": {
@@ -179,6 +179,9 @@
                     "Cajado do Vazio",
                     "Morellonomicon",
                     "Manopla Adornada"
+                ],
+                "Alune": [
+                    "Cajado do Vazio"
                 ]
             }
         }
@@ -223,7 +226,7 @@
                 "Cassiopeia",
                 "Nidalee",
                 "Ivern",
-                "LeBlanc"
+                "Ahri"
             ]
         },
         {
@@ -236,8 +239,8 @@
                 "Elise",
                 "Draven",
                 "Rengar",
-                "Master Yi",
-                "Azir"
+                "Azir",
+                "Master Yi"
             ]
         },
         {
@@ -256,9 +259,9 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3.01,
+            "play_rate": 3.02,
             "avg_place": 4.33,
-            "top4_rate": 0.5329999999999999,
+            "top4_rate": 0.532,
             "win_rate": 0.134,
             "top_users": [
                 "Karma",
@@ -326,7 +329,7 @@
         },
         {
             "name": "Efeito Vermelho",
-            "play_rate": 2.21,
+            "play_rate": 2.2,
             "avg_place": 4.14,
             "top4_rate": 0.5660000000000001,
             "win_rate": 0.151,
@@ -354,7 +357,7 @@
         },
         {
             "name": "Capuz da Morte de Rabadon",
-            "play_rate": 2.09,
+            "play_rate": 2.1,
             "avg_place": 4.13,
             "top4_rate": 0.57,
             "win_rate": 0.151,
@@ -395,5 +398,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-10-19T14:44:33-03:00"
+    "fetched_at": "2026-10-19T21:34:59-03:00"
 }
