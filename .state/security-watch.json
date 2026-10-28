@@ -1,7 +1,8 @@
 {
     "initialized_at": "2026-09-21T14:12:59-03:00",
-    "updated_at": "2026-10-24T11:54:34-03:00",
+    "updated_at": "2026-10-28T14:26:40-03:00",
     "items": [
+        "GHSA-r925-mgvr-h9cc",
         "GHSA-f9x3-7vq9-cph6",
         "GHSA-587h-7wmj-h5pm",
         "GHSA-m8m8-qj5v-23w3",
