@@ -6,11 +6,11 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Fera do Rift Morgana & Azuporã",
-            "play_rate": 0.58,
-            "avg_place": 4.06,
-            "top4_rate": 0.579,
-            "win_rate": 0.174,
+            "name": "Vanguarda Morgana & Azuporã",
+            "play_rate": 0.62,
+            "avg_place": 4.05,
+            "top4_rate": 0.578,
+            "win_rate": 0.179,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -39,10 +39,10 @@
         },
         {
             "name": "Fera do Rift Rubrivira & Krugue",
-            "play_rate": 0.68,
-            "avg_place": 4.13,
-            "top4_rate": 0.568,
-            "win_rate": 0.141,
+            "play_rate": 0.67,
+            "avg_place": 4.12,
+            "top4_rate": 0.569,
+            "win_rate": 0.14300000000000002,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -78,8 +78,8 @@
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.19,
-            "avg_place": 4.17,
-            "top4_rate": 0.564,
+            "avg_place": 4.16,
+            "top4_rate": 0.565,
             "win_rate": 0.131,
             "units": [
                 "Veigar",
@@ -117,9 +117,9 @@
         {
             "name": "Florescer Sett & Ezreal",
             "play_rate": 0.06,
-            "avg_place": 4.2,
-            "top4_rate": 0.5710000000000001,
-            "win_rate": 0.09539999999999998,
+            "avg_place": 4.18,
+            "top4_rate": 0.575,
+            "win_rate": 0.09519999999999999,
             "units": [
                 "Fiddlesticks",
                 "Ezreal",
@@ -131,9 +131,6 @@
                 "Soraka"
             ],
             "unit_items": {
-                "Fiddlesticks": [
-                    "Capa de Fogo Solar"
-                ],
                 "Ezreal": [
                     "Lâmina Mortal",
                     "Lança de Shojin",
@@ -154,26 +151,38 @@
             }
         },
         {
-            "name": "Sabugueiro Ezreal & Draven",
-            "play_rate": 0.4,
-            "avg_place": 4.21,
-            "top4_rate": 0.534,
-            "win_rate": 0.201,
+            "name": "Vivaz Teemo & Alistar",
+            "play_rate": 0.15,
+            "avg_place": 4.22,
+            "top4_rate": 0.578,
+            "win_rate": 0.0623,
             "units": [
+                "Veigar",
                 "Alistar",
-                "Ezreal",
-                "Ornn",
-                "Xayah",
                 "LeBlanc",
+                "Teemo",
                 "Hecarim",
-                "Gnar",
-                "Lux Sabugueiro"
+                "Kobuko",
+                "Kog'Maw",
+                "Azuporã"
             ],
             "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
+                "Alistar": [
+                    "Placa Gargolítica",
+                    "Semblante Espiritual",
+                    "Capa de Fogo Solar"
+                ],
+                "LeBlanc": [
+                    "Cajado do Vazio",
+                    "Lança de Shojin"
+                ],
+                "Teemo": [
+                    "Mangual do Guerreiro",
+                    "Cajado do Vazio",
+                    "Manopla Adornada"
+                ],
+                "Hecarim": [
+                    "Centelha Iônica"
                 ]
             }
         }
@@ -195,16 +204,16 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.12,
+            "play_rate": 4.11,
             "avg_place": 4.43,
             "top4_rate": 0.51,
             "win_rate": 0.135,
             "top_users": [
                 "Draven",
-                "Azir",
-                "Mamãe Bicuda",
+                "Tristana",
                 "Rengar",
-                "Tristana"
+                "Azir",
+                "Mamãe Bicuda"
             ]
         },
         {
@@ -223,16 +232,16 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.74,
+            "play_rate": 3.75,
             "avg_place": 4.29,
             "top4_rate": 0.5379999999999999,
             "win_rate": 0.14,
             "top_users": [
                 "Yunara",
+                "Cassiopeia",
                 "Ezreal",
                 "Zyra",
-                "Cassiopeia",
-                "LeBlanc"
+                "Ivern"
             ]
         },
         {
@@ -251,7 +260,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.99,
+            "play_rate": 3,
             "avg_place": 4.28,
             "top4_rate": 0.5379999999999999,
             "win_rate": 0.147,
@@ -268,7 +277,7 @@
             "play_rate": 2.99,
             "avg_place": 4.35,
             "top4_rate": 0.529,
-            "win_rate": 0.131,
+            "win_rate": 0.13,
             "top_users": [
                 "Teemo",
                 "Karma",
@@ -279,9 +288,9 @@
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.34,
+            "play_rate": 2.35,
             "avg_place": 4.2,
-            "top4_rate": 0.556,
+            "top4_rate": 0.557,
             "win_rate": 0.14300000000000002,
             "top_users": [
                 "Morgana",
@@ -293,15 +302,15 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.31,
+            "play_rate": 2.32,
             "avg_place": 4.16,
             "top4_rate": 0.565,
             "win_rate": 0.15,
             "top_users": [
                 "Rakan",
                 "Maokai",
-                "Lillia",
                 "Sejuani",
+                "Lillia",
                 "Fiddlesticks"
             ]
         },
@@ -309,14 +318,14 @@
             "name": "Último Sussurro",
             "play_rate": 2.28,
             "avg_place": 4.22,
-            "top4_rate": 0.547,
+            "top4_rate": 0.546,
             "win_rate": 0.159,
             "top_users": [
                 "Yunara",
                 "Varus",
+                "Dragão Ancião",
                 "Ezreal",
-                "Sivir",
-                "Dragão Ancião"
+                "Xayah"
             ]
         },
         {
@@ -324,13 +333,13 @@
             "play_rate": 2.13,
             "avg_place": 4.1,
             "top4_rate": 0.574,
-            "win_rate": 0.154,
+            "win_rate": 0.153,
             "top_users": [
                 "Yunara",
                 "Ashe",
                 "Morgana",
-                "Kog'Maw",
-                "Kayle"
+                "Kayle",
+                "Kog'Maw"
             ]
         },
         {
@@ -349,24 +358,24 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.03,
+            "play_rate": 2.02,
             "avg_place": 4.24,
             "top4_rate": 0.5489999999999999,
             "win_rate": 0.139,
             "top_users": [
                 "Cassiopeia",
                 "Mamãe Bicuda",
-                "Azir",
                 "Tristana",
-                "Morgana"
+                "Azir",
+                "Zyra"
             ]
         },
         {
             "name": "Efeito Azul",
             "play_rate": 1.98,
-            "avg_place": 4.17,
-            "top4_rate": 0.564,
-            "win_rate": 0.149,
+            "avg_place": 4.16,
+            "top4_rate": 0.565,
+            "win_rate": 0.15,
             "top_users": [
                 "Karma",
                 "Cassiopeia",
@@ -377,18 +386,18 @@
         },
         {
             "name": "Elmo Adaptativo",
-            "play_rate": 1.94,
+            "play_rate": 1.95,
             "avg_place": 4.04,
-            "top4_rate": 0.59,
-            "win_rate": 0.159,
+            "top4_rate": 0.589,
+            "win_rate": 0.158,
             "top_users": [
                 "Ivern",
                 "Morgana",
-                "Fiddlesticks",
                 "Lillia",
+                "Fiddlesticks",
                 "Soraka"
             ]
         }
     ],
-    "fetched_at": "2026-10-30T21:59:08-03:00"
+    "fetched_at": "2026-10-31T13:17:24-03:00"
 }
