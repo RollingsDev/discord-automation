@@ -10,7 +10,7 @@
             "play_rate": 0.61,
             "avg_place": 4.02,
             "top4_rate": 0.584,
-            "win_rate": 0.18100000000000002,
+            "win_rate": 0.18,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -40,9 +40,9 @@
         {
             "name": "Fera do Rift Rubrivira & Krugue",
             "play_rate": 0.64,
-            "avg_place": 4.1,
-            "top4_rate": 0.574,
-            "win_rate": 0.14400000000000002,
+            "avg_place": 4.09,
+            "top4_rate": 0.575,
+            "win_rate": 0.145,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -76,10 +76,46 @@
             }
         },
         {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.08,
+            "avg_place": 4.12,
+            "top4_rate": 0.563,
+            "win_rate": 0.165,
+            "units": [
+                "Vi",
+                "Sivir",
+                "Amumu",
+                "Ashe",
+                "Rakan",
+                "Yorick",
+                "Aronguejo",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Efeito Vermelho",
+                    "Gume do Infinito",
+                    "Lança de Shojin"
+                ],
+                "Amumu": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
+                ],
+                "Ashe": [
+                    "Efeito Vermelho",
+                    "Último Sussurro",
+                    "Emblema de Inferno"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
+                ]
+            }
+        },
+        {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.19,
             "avg_place": 4.16,
-            "top4_rate": 0.5660000000000001,
+            "top4_rate": 0.5670000000000001,
             "win_rate": 0.13,
             "units": [
                 "Veigar",
@@ -118,8 +154,8 @@
             "name": "Florescer Sett & Ezreal",
             "play_rate": 0.06,
             "avg_place": 4.17,
-            "top4_rate": 0.578,
-            "win_rate": 0.09390000000000001,
+            "top4_rate": 0.58,
+            "win_rate": 0.09449999999999999,
             "units": [
                 "Fiddlesticks",
                 "Ezreal",
@@ -152,48 +188,12 @@
                     "Lança de Shojin"
                 ]
             }
-        },
-        {
-            "name": "Vivaz Teemo & Alistar",
-            "play_rate": 0.15,
-            "avg_place": 4.23,
-            "top4_rate": 0.578,
-            "win_rate": 0.0613,
-            "units": [
-                "Veigar",
-                "Alistar",
-                "LeBlanc",
-                "Teemo",
-                "Hecarim",
-                "Kobuko",
-                "Kog'Maw",
-                "Azuporã"
-            ],
-            "unit_items": {
-                "Veigar": [
-                    "Lança de Shojin"
-                ],
-                "Alistar": [
-                    "Placa Gargolítica",
-                    "Semblante Espiritual",
-                    "Centelha Iônica"
-                ],
-                "LeBlanc": [
-                    "Cajado do Vazio",
-                    "Lança de Shojin"
-                ],
-                "Teemo": [
-                    "Cajado do Vazio",
-                    "Mangual do Guerreiro",
-                    "Capuz da Morte de Rabadon"
-                ]
-            }
         }
     ],
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.72,
+            "play_rate": 5.71,
             "avg_place": 4.41,
             "top4_rate": 0.516,
             "win_rate": 0.129,
@@ -215,13 +215,13 @@
                 "Draven",
                 "Tristana",
                 "Rengar",
-                "Azir",
-                "Mamãe Bicuda"
+                "Mamãe Bicuda",
+                "Azir"
             ]
         },
         {
             "name": "Armadura de Warmog",
-            "play_rate": 4.09,
+            "play_rate": 4.1,
             "avg_place": 4.31,
             "top4_rate": 0.535,
             "win_rate": 0.136,
@@ -236,7 +236,7 @@
         {
             "name": "Lança de Shojin",
             "play_rate": 3.77,
-            "avg_place": 4.29,
+            "avg_place": 4.3,
             "top4_rate": 0.5379999999999999,
             "win_rate": 0.14,
             "top_users": [
@@ -252,11 +252,11 @@
             "play_rate": 3.16,
             "avg_place": 4.26,
             "top4_rate": 0.545,
-            "win_rate": 0.14,
+            "win_rate": 0.141,
             "top_users": [
                 "Rammus",
-                "Maokai",
                 "Sejuani",
+                "Maokai",
                 "Vi",
                 "Sett"
             ]
@@ -271,13 +271,13 @@
                 "Yunara",
                 "Xayah",
                 "Varus",
-                "Sivir",
-                "Camille"
+                "Camille",
+                "Sivir"
             ]
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3,
+            "play_rate": 3.01,
             "avg_place": 4.35,
             "top4_rate": 0.528,
             "win_rate": 0.13,
@@ -286,7 +286,7 @@
                 "Karma",
                 "Ahri",
                 "Morgana",
-                "Kayle"
+                "Cascalho"
             ]
         },
         {
@@ -314,7 +314,7 @@
                 "Maokai",
                 "Sejuani",
                 "Lillia",
-                "Hecarim"
+                "Azuporã"
             ]
         },
         {
@@ -355,7 +355,7 @@
                 "Yunara",
                 "Ashe",
                 "Morgana",
-                "Kayle",
+                "Dragão Ancião",
                 "Kog'Maw"
             ]
         },
@@ -376,15 +376,15 @@
         {
             "name": "Efeito Azul",
             "play_rate": 1.99,
-            "avg_place": 4.16,
+            "avg_place": 4.17,
             "top4_rate": 0.564,
             "win_rate": 0.15,
             "top_users": [
                 "Karma",
-                "Cassiopeia",
                 "Cascalho",
                 "Sivir",
-                "LeBlanc"
+                "LeBlanc",
+                "Ahri"
             ]
         },
         {
@@ -402,5 +402,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-01T14:13:42-03:00"
+    "fetched_at": "2026-11-01T21:59:24-03:00"
 }
