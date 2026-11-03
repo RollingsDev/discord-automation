@@ -6,39 +6,6 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.06,
-            "avg_place": 3.96,
-            "top4_rate": 0.594,
-            "win_rate": 0.17600000000000002,
-            "units": [
-                "Vi",
-                "Sivir",
-                "Amumu",
-                "Ashe",
-                "Rakan",
-                "Yorick",
-                "Aronguejo",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Efeito Vermelho",
-                    "Último Sussurro",
-                    "Gume do Infinito"
-                ],
-                "Amumu": [
-                    "Proteção Imutável",
-                    "Semblante Espiritual"
-                ],
-                "Ashe": [
-                    "Efeito Vermelho",
-                    "Emblema de Inferno",
-                    "Gume do Infinito"
-                ]
-            }
-        },
-        {
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.6,
             "avg_place": 4,
@@ -77,11 +44,11 @@
                 "Alistar",
                 "Ezreal",
                 "Amumu",
-                "Kennen",
                 "Draven",
                 "Azuporã",
                 "Gnar",
-                "Ivern"
+                "Ivern",
+                "Taric"
             ],
             "unit_items": {
                 "Ezreal": [
@@ -89,15 +56,51 @@
                     "Gume do Infinito",
                     "Último Sussurro"
                 ],
-                "Kennen": [
-                    "Limiar da Noite"
-                ],
                 "Draven": [
                     "Emblema de Carrasco",
                     "Lâmina Mortal"
                 ],
                 "Ivern": [
                     "Lança de Shojin"
+                ],
+                "Taric": [
+                    "Proteção Imutável"
+                ]
+            }
+        },
+        {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.07,
+            "avg_place": 4.01,
+            "top4_rate": 0.586,
+            "win_rate": 0.17,
+            "units": [
+                "Vi",
+                "Sivir",
+                "Amumu",
+                "Ashe",
+                "Rakan",
+                "Yorick",
+                "Aronguejo",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Efeito Vermelho",
+                    "Gume do Infinito",
+                    "Lança de Shojin"
+                ],
+                "Amumu": [
+                    "Armadura de Warmog",
+                    "Proteção Imutável"
+                ],
+                "Ashe": [
+                    "Efeito Vermelho",
+                    "Último Sussurro",
+                    "Emblema de Inferno"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
                 ]
             }
         },
@@ -141,7 +144,7 @@
         },
         {
             "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.19,
+            "play_rate": 0.18,
             "avg_place": 4.15,
             "top4_rate": 0.569,
             "win_rate": 0.13,
@@ -191,7 +194,7 @@
                 "Rammus",
                 "Alistar",
                 "Maokai",
-                "Vi"
+                "Sett"
             ]
         },
         {
@@ -224,9 +227,9 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.79,
+            "play_rate": 3.8,
             "avg_place": 4.3,
-            "top4_rate": 0.5379999999999999,
+            "top4_rate": 0.537,
             "win_rate": 0.14,
             "top_users": [
                 "Yunara",
@@ -251,6 +254,20 @@
             ]
         },
         {
+            "name": "Gume do Infinito",
+            "play_rate": 3.02,
+            "avg_place": 4.29,
+            "top4_rate": 0.536,
+            "win_rate": 0.147,
+            "top_users": [
+                "Yunara",
+                "Varus",
+                "Xayah",
+                "Camille",
+                "Dragão Ancião"
+            ]
+        },
+        {
             "name": "Manopla Adornada",
             "play_rate": 3.02,
             "avg_place": 4.36,
@@ -262,20 +279,6 @@
                 "Ahri",
                 "Morgana",
                 "Kayle"
-            ]
-        },
-        {
-            "name": "Gume do Infinito",
-            "play_rate": 3.01,
-            "avg_place": 4.28,
-            "top4_rate": 0.537,
-            "win_rate": 0.147,
-            "top_users": [
-                "Xayah",
-                "Yunara",
-                "Varus",
-                "Dragão Ancião",
-                "Camille"
             ]
         },
         {
@@ -323,7 +326,7 @@
         {
             "name": "Luvas do Ladrão",
             "play_rate": 2.12,
-            "avg_place": 4.07,
+            "avg_place": 4.06,
             "top4_rate": 0.578,
             "win_rate": 0.163,
             "top_users": [
@@ -345,7 +348,7 @@
                 "Dragão Ancião",
                 "Ashe",
                 "Morgana",
-                "Kog'Maw"
+                "Kayle"
             ]
         },
         {
@@ -364,15 +367,15 @@
         },
         {
             "name": "Efeito Azul",
-            "play_rate": 1.99,
+            "play_rate": 2,
             "avg_place": 4.16,
             "top4_rate": 0.564,
             "win_rate": 0.15,
             "top_users": [
                 "Karma",
                 "Cascalho",
-                "Sivir",
                 "Ahri",
+                "Sivir",
                 "LeBlanc"
             ]
         },
@@ -386,10 +389,10 @@
                 "Ivern",
                 "Fiddlesticks",
                 "Lillia",
-                "Soraka",
-                "Morgana"
+                "Morgana",
+                "Soraka"
             ]
         }
     ],
-    "fetched_at": "2026-11-03T00:01:46-03:00"
+    "fetched_at": "2026-11-03T15:38:31-03:00"
 }
