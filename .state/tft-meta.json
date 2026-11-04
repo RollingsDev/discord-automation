@@ -6,10 +6,86 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.06,
+            "avg_place": 3.91,
+            "top4_rate": 0.606,
+            "win_rate": 0.18100000000000002,
+            "units": [
+                "Vi",
+                "Sivir",
+                "Amumu",
+                "Ashe",
+                "Rakan",
+                "Yorick",
+                "Aronguejo",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Efeito Vermelho",
+                    "Último Sussurro",
+                    "Gume do Infinito"
+                ],
+                "Amumu": [
+                    "Proteção Imutável",
+                    "Semblante Espiritual"
+                ],
+                "Ashe": [
+                    "Efeito Vermelho",
+                    "Emblema de Inferno",
+                    "Gume do Infinito"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
+                ]
+            }
+        },
+        {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.45,
+            "avg_place": 3.99,
+            "top4_rate": 0.585,
+            "win_rate": 0.191,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Kennen",
+                "Draven",
+                "Soraka",
+                "Ivern",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Kennen": [
+                    "Limiar da Noite"
+                ],
+                "Draven": [
+                    "Lâmina Mortal",
+                    "Gume do Infinito"
+                ],
+                "Soraka": [
+                    "Emblema de Sabugueiro"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
+                ]
+            }
+        },
+        {
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.6,
             "avg_place": 4,
-            "top4_rate": 0.589,
+            "top4_rate": 0.588,
             "win_rate": 0.182,
             "units": [
                 "Morgana",
@@ -35,94 +111,27 @@
             }
         },
         {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.52,
-            "avg_place": 4.01,
-            "top4_rate": 0.58,
-            "win_rate": 0.196,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Draven",
-                "Azuporã",
-                "Gnar",
-                "Ivern",
-                "Taric"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Lâmina Mortal",
-                    "Gume do Infinito",
-                    "Último Sussurro"
-                ],
-                "Draven": [
-                    "Emblema de Carrasco",
-                    "Lâmina Mortal"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ],
-                "Taric": [
-                    "Proteção Imutável"
-                ]
-            }
-        },
-        {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.07,
-            "avg_place": 4.01,
-            "top4_rate": 0.586,
-            "win_rate": 0.17,
-            "units": [
-                "Vi",
-                "Sivir",
-                "Amumu",
-                "Ashe",
-                "Rakan",
-                "Yorick",
-                "Aronguejo",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Efeito Vermelho",
-                    "Gume do Infinito",
-                    "Lança de Shojin"
-                ],
-                "Amumu": [
-                    "Armadura de Warmog",
-                    "Proteção Imutável"
-                ],
-                "Ashe": [
-                    "Efeito Vermelho",
-                    "Último Sussurro",
-                    "Emblema de Inferno"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog"
-                ]
-            }
-        },
-        {
             "name": "Fera do Rift Rubrivira & Krugue",
-            "play_rate": 0.62,
-            "avg_place": 4.08,
-            "top4_rate": 0.5760000000000001,
+            "play_rate": 0.61,
+            "avg_place": 4.07,
+            "top4_rate": 0.578,
             "win_rate": 0.146,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
+                "Aronguejo",
                 "Krugue",
                 "Rubrivira",
                 "Azuporã",
                 "Rubrivirim",
-                "Aronguejo",
                 "Gnar"
             ],
             "unit_items": {
                 "Lobo Trevoguari": [
                     "Mão da Justiça"
+                ],
+                "Aronguejo": [
+                    "Placa Gargolítica"
                 ],
                 "Krugue": [
                     "Placa Gargolítica",
@@ -136,18 +145,15 @@
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
-                ],
-                "Aronguejo": [
-                    "Placa Gargolítica"
                 ]
             }
         },
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.18,
-            "avg_place": 4.15,
-            "top4_rate": 0.569,
-            "win_rate": 0.13,
+            "avg_place": 4.16,
+            "top4_rate": 0.568,
+            "win_rate": 0.129,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -185,13 +191,13 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.71,
+            "play_rate": 5.7,
             "avg_place": 4.41,
             "top4_rate": 0.516,
             "win_rate": 0.129,
             "top_users": [
-                "Sejuani",
                 "Rammus",
+                "Sejuani",
                 "Alistar",
                 "Maokai",
                 "Sett"
@@ -213,7 +219,7 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.09,
+            "play_rate": 4.08,
             "avg_place": 4.43,
             "top4_rate": 0.509,
             "win_rate": 0.136,
@@ -254,20 +260,6 @@
             ]
         },
         {
-            "name": "Gume do Infinito",
-            "play_rate": 3.02,
-            "avg_place": 4.29,
-            "top4_rate": 0.536,
-            "win_rate": 0.147,
-            "top_users": [
-                "Yunara",
-                "Varus",
-                "Xayah",
-                "Camille",
-                "Dragão Ancião"
-            ]
-        },
-        {
             "name": "Manopla Adornada",
             "play_rate": 3.02,
             "avg_place": 4.36,
@@ -279,6 +271,20 @@
                 "Ahri",
                 "Morgana",
                 "Kayle"
+            ]
+        },
+        {
+            "name": "Gume do Infinito",
+            "play_rate": 3.02,
+            "avg_place": 4.29,
+            "top4_rate": 0.536,
+            "win_rate": 0.147,
+            "top_users": [
+                "Yunara",
+                "Xayah",
+                "Varus",
+                "Camille",
+                "Dragão Ancião"
             ]
         },
         {
@@ -348,7 +354,7 @@
                 "Dragão Ancião",
                 "Ashe",
                 "Morgana",
-                "Kayle"
+                "Kog'Maw"
             ]
         },
         {
@@ -369,7 +375,7 @@
             "name": "Efeito Azul",
             "play_rate": 2,
             "avg_place": 4.16,
-            "top4_rate": 0.564,
+            "top4_rate": 0.565,
             "win_rate": 0.15,
             "top_users": [
                 "Karma",
@@ -394,5 +400,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-03T15:38:31-03:00"
+    "fetched_at": "2026-11-03T22:36:40-03:00"
 }
