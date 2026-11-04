@@ -6,82 +6,6 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.06,
-            "avg_place": 3.91,
-            "top4_rate": 0.606,
-            "win_rate": 0.18100000000000002,
-            "units": [
-                "Vi",
-                "Sivir",
-                "Amumu",
-                "Ashe",
-                "Rakan",
-                "Yorick",
-                "Aronguejo",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Efeito Vermelho",
-                    "Último Sussurro",
-                    "Gume do Infinito"
-                ],
-                "Amumu": [
-                    "Proteção Imutável",
-                    "Semblante Espiritual"
-                ],
-                "Ashe": [
-                    "Efeito Vermelho",
-                    "Emblema de Inferno",
-                    "Gume do Infinito"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog"
-                ]
-            }
-        },
-        {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.45,
-            "avg_place": 3.99,
-            "top4_rate": 0.585,
-            "win_rate": 0.191,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Kennen",
-                "Draven",
-                "Soraka",
-                "Ivern",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Kennen": [
-                    "Limiar da Noite"
-                ],
-                "Draven": [
-                    "Lâmina Mortal",
-                    "Gume do Infinito"
-                ],
-                "Soraka": [
-                    "Emblema de Sabugueiro"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog"
-                ]
-            }
-        },
-        {
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.6,
             "avg_place": 4,
@@ -111,27 +35,62 @@
             }
         },
         {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.52,
+            "avg_place": 4.01,
+            "top4_rate": 0.58,
+            "win_rate": 0.19399999999999998,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Kennen",
+                "Draven",
+                "Soraka",
+                "Ivern",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Draven": [
+                    "Lâmina Mortal",
+                    "Gume do Infinito"
+                ],
+                "Soraka": [
+                    "Emblema de Sabugueiro"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
+                ]
+            }
+        },
+        {
             "name": "Fera do Rift Rubrivira & Krugue",
             "play_rate": 0.61,
             "avg_place": 4.07,
             "top4_rate": 0.578,
-            "win_rate": 0.146,
+            "win_rate": 0.147,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
-                "Aronguejo",
                 "Krugue",
                 "Rubrivira",
                 "Azuporã",
                 "Rubrivirim",
+                "Aronguejo",
                 "Gnar"
             ],
             "unit_items": {
                 "Lobo Trevoguari": [
                     "Mão da Justiça"
-                ],
-                "Aronguejo": [
-                    "Placa Gargolítica"
                 ],
                 "Krugue": [
                     "Placa Gargolítica",
@@ -145,6 +104,9 @@
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
+                ],
+                "Aronguejo": [
+                    "Placa Gargolítica"
                 ]
             }
         },
@@ -153,7 +115,7 @@
             "play_rate": 0.18,
             "avg_place": 4.16,
             "top4_rate": 0.568,
-            "win_rate": 0.129,
+            "win_rate": 0.13,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -186,6 +148,45 @@
                     "Emblema de Carrasco"
                 ]
             }
+        },
+        {
+            "name": "Florescer Sett & Ezreal",
+            "play_rate": 0.06,
+            "avg_place": 4.16,
+            "top4_rate": 0.583,
+            "win_rate": 0.09380000000000001,
+            "units": [
+                "Fiddlesticks",
+                "Ezreal",
+                "Sett",
+                "Ornn",
+                "Alistar",
+                "Yunara",
+                "Ahri",
+                "Soraka"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Sett": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica",
+                    "Semblante Espiritual"
+                ],
+                "Yunara": [
+                    "Lança de Shojin"
+                ],
+                "Ahri": [
+                    "Emblema de Carrasco",
+                    "Efeito Azul"
+                ],
+                "Soraka": [
+                    "Lança de Shojin"
+                ]
+            }
         }
     ],
     "items": [
@@ -198,8 +199,8 @@
             "top_users": [
                 "Rammus",
                 "Sejuani",
-                "Alistar",
                 "Maokai",
+                "Alistar",
                 "Sett"
             ]
         },
@@ -233,10 +234,10 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.8,
+            "play_rate": 3.81,
             "avg_place": 4.3,
             "top4_rate": 0.537,
-            "win_rate": 0.14,
+            "win_rate": 0.139,
             "top_users": [
                 "Yunara",
                 "Cassiopeia",
@@ -260,6 +261,20 @@
             ]
         },
         {
+            "name": "Gume do Infinito",
+            "play_rate": 3.03,
+            "avg_place": 4.29,
+            "top4_rate": 0.536,
+            "win_rate": 0.147,
+            "top_users": [
+                "Yunara",
+                "Xayah",
+                "Varus",
+                "Dragão Ancião",
+                "Camille"
+            ]
+        },
+        {
             "name": "Manopla Adornada",
             "play_rate": 3.02,
             "avg_place": 4.36,
@@ -271,20 +286,6 @@
                 "Ahri",
                 "Morgana",
                 "Kayle"
-            ]
-        },
-        {
-            "name": "Gume do Infinito",
-            "play_rate": 3.02,
-            "avg_place": 4.29,
-            "top4_rate": 0.536,
-            "win_rate": 0.147,
-            "top_users": [
-                "Yunara",
-                "Xayah",
-                "Varus",
-                "Camille",
-                "Dragão Ancião"
             ]
         },
         {
@@ -303,7 +304,7 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.34,
+            "play_rate": 2.35,
             "avg_place": 4.16,
             "top4_rate": 0.565,
             "win_rate": 0.151,
@@ -322,11 +323,11 @@
             "top4_rate": 0.545,
             "win_rate": 0.158,
             "top_users": [
-                "Yunara",
                 "Dragão Ancião",
+                "Yunara",
                 "Varus",
                 "Xayah",
-                "Ezreal"
+                "Tristana"
             ]
         },
         {
@@ -337,15 +338,15 @@
             "win_rate": 0.163,
             "top_users": [
                 "Kennen",
-                "Diana",
                 "Gnar",
+                "Diana",
                 "Lillia",
                 "Azuporã"
             ]
         },
         {
             "name": "Efeito Vermelho",
-            "play_rate": 2.12,
+            "play_rate": 2.11,
             "avg_place": 4.1,
             "top4_rate": 0.574,
             "win_rate": 0.154,
@@ -355,20 +356,6 @@
                 "Ashe",
                 "Morgana",
                 "Kog'Maw"
-            ]
-        },
-        {
-            "name": "Pistola Laminar Hextec",
-            "play_rate": 2,
-            "avg_place": 4.23,
-            "top4_rate": 0.55,
-            "win_rate": 0.139,
-            "top_users": [
-                "Cassiopeia",
-                "Tristana",
-                "Mamãe Bicuda",
-                "Azir",
-                "Zyra"
             ]
         },
         {
@@ -382,7 +369,21 @@
                 "Cascalho",
                 "Ahri",
                 "Sivir",
-                "LeBlanc"
+                "Zyra"
+            ]
+        },
+        {
+            "name": "Pistola Laminar Hextec",
+            "play_rate": 1.99,
+            "avg_place": 4.23,
+            "top4_rate": 0.551,
+            "win_rate": 0.139,
+            "top_users": [
+                "Cassiopeia",
+                "Tristana",
+                "Mamãe Bicuda",
+                "Azir",
+                "Zyra"
             ]
         },
         {
@@ -395,10 +396,10 @@
                 "Ivern",
                 "Fiddlesticks",
                 "Lillia",
-                "Morgana",
-                "Soraka"
+                "Soraka",
+                "Morgana"
             ]
         }
     ],
-    "fetched_at": "2026-11-03T22:36:40-03:00"
+    "fetched_at": "2026-11-04T15:51:00-03:00"
 }
