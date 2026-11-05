@@ -7,47 +7,89 @@
     "comps": [
         {
             "name": "Vanguarda Morgana & Azuporã",
-            "play_rate": 0.6,
-            "avg_place": 4,
-            "top4_rate": 0.588,
-            "win_rate": 0.182,
+            "play_rate": 0.09,
+            "avg_place": 3.47,
+            "top4_rate": 0.6729999999999999,
+            "win_rate": 0.289,
             "units": [
+                "Elise",
                 "Morgana",
                 "Azuporã",
-                "Taric",
-                "Karma",
-                "Cascalho",
-                "Krugue",
-                "Ahri",
-                "Sett"
+                "Camille",
+                "Caitlyn",
+                "Cassiopeia",
+                "Lux Congregação das Bruxas",
+                "Taric"
             ],
             "unit_items": {
+                "Elise": [
+                    "Determinação Titânica"
+                ],
                 "Morgana": [
-                    "Cajado do Vazio",
                     "Morellonomicon",
-                    "Efeito Vermelho"
+                    "Cajado do Vazio",
+                    "Manopla Adornada"
                 ],
                 "Azuporã": [
-                    "Juramento do Protetor",
                     "Armadura de Warmog",
-                    "Stemmaguarda"
+                    "Semblante Espiritual",
+                    "Juramento do Protetor"
+                ],
+                "Lux Congregação das Bruxas": [
+                    "Lança de Shojin"
+                ]
+            }
+        },
+        {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.05,
+            "avg_place": 3.95,
+            "top4_rate": 0.599,
+            "win_rate": 0.175,
+            "units": [
+                "Vi",
+                "Sivir",
+                "Amumu",
+                "Ashe",
+                "Rakan",
+                "Yorick",
+                "Aronguejo",
+                "Maokai"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Efeito Vermelho",
+                    "Gume do Infinito",
+                    "Último Sussurro"
+                ],
+                "Amumu": [
+                    "Armadura de Warmog",
+                    "Placa Gargolítica"
+                ],
+                "Ashe": [
+                    "Efeito Vermelho",
+                    "Último Sussurro",
+                    "Emblema de Inferno"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
                 ]
             }
         },
         {
             "name": "Sabugueiro Ezreal",
-            "play_rate": 0.52,
-            "avg_place": 4.01,
-            "top4_rate": 0.58,
-            "win_rate": 0.19399999999999998,
+            "play_rate": 0.53,
+            "avg_place": 4,
+            "top4_rate": 0.581,
+            "win_rate": 0.195,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Amumu",
-                "Kennen",
                 "Draven",
                 "Soraka",
                 "Ivern",
+                "Kennen",
                 "Maokai"
             ],
             "unit_items": {
@@ -74,9 +116,9 @@
         },
         {
             "name": "Fera do Rift Rubrivira & Krugue",
-            "play_rate": 0.61,
+            "play_rate": 0.6,
             "avg_place": 4.07,
-            "top4_rate": 0.578,
+            "top4_rate": 0.579,
             "win_rate": 0.147,
             "units": [
                 "Cascalho",
@@ -94,8 +136,8 @@
                 ],
                 "Krugue": [
                     "Placa Gargolítica",
-                    "Armadura de Warmog",
-                    "Proteção Imutável"
+                    "Proteção Imutável",
+                    "Armadura de Warmog"
                 ],
                 "Rubrivira": [
                     "Limiar da Noite",
@@ -107,84 +149,6 @@
                 ],
                 "Aronguejo": [
                     "Placa Gargolítica"
-                ]
-            }
-        },
-        {
-            "name": "Vivaz Azir & Rammus",
-            "play_rate": 0.18,
-            "avg_place": 4.16,
-            "top4_rate": 0.568,
-            "win_rate": 0.13,
-            "units": [
-                "Veigar",
-                "Teemo",
-                "Azir",
-                "Rammus",
-                "Fiddlesticks",
-                "Soraka",
-                "Zyra",
-                "Yorick"
-            ],
-            "unit_items": {
-                "Azir": [
-                    "Pistola Laminar Hextec",
-                    "Capuz da Morte de Rabadon",
-                    "Lâmina da Fúria de Guinsoo"
-                ],
-                "Rammus": [
-                    "Placa Gargolítica",
-                    "Semblante Espiritual",
-                    "Capa de Fogo Solar"
-                ],
-                "Fiddlesticks": [
-                    "Centelha Iônica"
-                ],
-                "Soraka": [
-                    "Cajado do Vazio"
-                ],
-                "Zyra": [
-                    "Cajado do Vazio",
-                    "Emblema de Carrasco"
-                ]
-            }
-        },
-        {
-            "name": "Florescer Sett & Ezreal",
-            "play_rate": 0.06,
-            "avg_place": 4.16,
-            "top4_rate": 0.583,
-            "win_rate": 0.09380000000000001,
-            "units": [
-                "Fiddlesticks",
-                "Ezreal",
-                "Sett",
-                "Ornn",
-                "Alistar",
-                "Yunara",
-                "Ahri",
-                "Soraka"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Sett": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica",
-                    "Semblante Espiritual"
-                ],
-                "Yunara": [
-                    "Lança de Shojin"
-                ],
-                "Ahri": [
-                    "Emblema de Carrasco",
-                    "Efeito Azul"
-                ],
-                "Soraka": [
-                    "Lança de Shojin"
                 ]
             }
         }
@@ -262,7 +226,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 3.03,
+            "play_rate": 3.02,
             "avg_place": 4.29,
             "top4_rate": 0.536,
             "win_rate": 0.147,
@@ -341,7 +305,7 @@
                 "Gnar",
                 "Diana",
                 "Lillia",
-                "Azuporã"
+                "Amumu"
             ]
         },
         {
@@ -401,5 +365,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-04T15:51:00-03:00"
+    "fetched_at": "2026-11-04T22:44:20-03:00"
 }
