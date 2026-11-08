@@ -192,8 +192,8 @@
             "top4_rate": 0.515,
             "win_rate": 0.129,
             "top_users": [
-                "Rammus",
                 "Sejuani",
+                "Rammus",
                 "Alistar",
                 "Malphite",
                 "Maokai"
@@ -206,8 +206,8 @@
             "top4_rate": 0.535,
             "win_rate": 0.13699999999999998,
             "top_users": [
-                "Maokai",
                 "Sejuani",
+                "Maokai",
                 "Malphite",
                 "Alistar",
                 "Taric"
@@ -221,8 +221,8 @@
             "win_rate": 0.139,
             "top_users": [
                 "Rengar",
-                "Draven",
                 "Tristana",
+                "Draven",
                 "Mamãe Bicuda",
                 "Master Yi"
             ]
@@ -235,24 +235,24 @@
             "win_rate": 0.13699999999999998,
             "top_users": [
                 "Yunara",
-                "Zyra",
                 "Sivir",
+                "Zyra",
                 "Ezreal",
                 "Teemo"
             ]
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 3.14,
+            "play_rate": 3.15,
             "avg_place": 4.25,
             "top4_rate": 0.546,
-            "win_rate": 0.142,
+            "win_rate": 0.141,
             "top_users": [
                 "Sejuani",
                 "Rammus",
                 "Maokai",
                 "Vi",
-                "Sett"
+                "Hecarim"
             ]
         },
         {
@@ -264,8 +264,8 @@
             "top_users": [
                 "Yunara",
                 "Sivir",
-                "Xayah",
                 "Varus",
+                "Xayah",
                 "Ezreal"
             ]
         },
@@ -276,8 +276,8 @@
             "top4_rate": 0.525,
             "win_rate": 0.128,
             "top_users": [
-                "Karma",
                 "Teemo",
+                "Karma",
                 "Ahri",
                 "Morgana",
                 "LeBlanc"
@@ -293,8 +293,8 @@
                 "Sejuani",
                 "Maokai",
                 "Fiddlesticks",
-                "Lillia",
-                "Hecarim"
+                "Hecarim",
+                "Lillia"
             ]
         },
         {
@@ -315,8 +315,8 @@
             "name": "Último Sussurro",
             "play_rate": 2.22,
             "avg_place": 4.23,
-            "top4_rate": 0.544,
-            "win_rate": 0.159,
+            "top4_rate": 0.545,
+            "win_rate": 0.16,
             "top_users": [
                 "Yunara",
                 "Varus",
@@ -329,7 +329,7 @@
             "name": "Efeito Vermelho",
             "play_rate": 2.08,
             "avg_place": 4.13,
-            "top4_rate": 0.568,
+            "top4_rate": 0.569,
             "win_rate": 0.152,
             "top_users": [
                 "Yunara",
@@ -355,8 +355,8 @@
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 1.97,
-            "avg_place": 4.08,
+            "play_rate": 1.96,
+            "avg_place": 4.09,
             "top4_rate": 0.573,
             "win_rate": 0.162,
             "top_users": [
@@ -375,10 +375,10 @@
             "win_rate": 0.159,
             "top_users": [
                 "Ivern",
-                "Lillia",
                 "Morgana",
+                "Lillia",
                 "Zyra",
-                "Kennen"
+                "Soraka"
             ]
         },
         {
@@ -389,12 +389,12 @@
             "win_rate": 0.147,
             "top_users": [
                 "Sejuani",
-                "Rammus",
                 "Malphite",
+                "Rammus",
                 "Ornn",
                 "Taric"
             ]
         }
     ],
-    "fetched_at": "2026-11-07T13:58:44-03:00"
+    "fetched_at": "2026-11-07T21:52:48-03:00"
 }
