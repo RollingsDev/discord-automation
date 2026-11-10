@@ -6,49 +6,11 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.38,
-            "avg_place": 3.96,
-            "top4_rate": 0.584,
-            "win_rate": 0.20600000000000002,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Amumu",
-                "Gnar",
-                "Draven",
-                "Ivern",
-                "Lux",
-                "Maokai"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Lança de Shojin"
-                ],
-                "Amumu": [
-                    "Placa Gargolítica"
-                ],
-                "Draven": [
-                    "Lâmina Mortal",
-                    "Emblema de Carrasco"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ],
-                "Maokai": [
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
-                ]
-            }
-        },
-        {
             "name": "Vanguarda Morgana & Azuporã",
-            "play_rate": 0.53,
-            "avg_place": 4.02,
-            "top4_rate": 0.5770000000000001,
-            "win_rate": 0.205,
+            "play_rate": 0.51,
+            "avg_place": 3.98,
+            "top4_rate": 0.586,
+            "win_rate": 0.20800000000000002,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -68,7 +30,7 @@
                 "Azuporã": [
                     "Juramento do Protetor",
                     "Armadura de Warmog",
-                    "Placa Gargolítica"
+                    "Semblante Espiritual"
                 ]
             }
         },
@@ -77,7 +39,7 @@
             "play_rate": 0.51,
             "avg_place": 4.09,
             "top4_rate": 0.575,
-            "win_rate": 0.147,
+            "win_rate": 0.14800000000000002,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -89,18 +51,18 @@
                 "Taric"
             ],
             "unit_items": {
+                "Aronguejo": [
+                    "Placa Gargolítica"
+                ],
                 "Krugue": [
                     "Placa Gargolítica",
-                    "Semblante Espiritual",
-                    "Armadura de Warmog"
+                    "Armadura de Warmog",
+                    "Semblante Espiritual"
                 ],
                 "Rubrivira": [
                     "Limiar da Noite",
                     "Mercúrio",
                     "Lâmina da Fúria de Guinsoo"
-                ],
-                "Azuporã": [
-                    "Placa Gargolítica"
                 ],
                 "Rubrivirim": [
                     "Último Sussurro"
@@ -111,8 +73,8 @@
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
             "avg_place": 4.16,
-            "top4_rate": 0.569,
-            "win_rate": 0.127,
+            "top4_rate": 0.568,
+            "win_rate": 0.126,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -124,9 +86,12 @@
                 "Yorick"
             ],
             "unit_items": {
+                "Teemo": [
+                    "Cajado do Vazio"
+                ],
                 "Azir": [
-                    "Pistola Laminar Hextec",
                     "Capuz da Morte de Rabadon",
+                    "Pistola Laminar Hextec",
                     "Lâmina da Fúria de Guinsoo"
                 ],
                 "Rammus": [
@@ -136,9 +101,6 @@
                 ],
                 "Fiddlesticks": [
                     "Centelha Iônica"
-                ],
-                "Soraka": [
-                    "Cajado do Vazio"
                 ],
                 "Zyra": [
                     "Cajado do Vazio",
@@ -150,8 +112,8 @@
             "name": "Sabugueiro Mamãe Bicuda & Hecarim",
             "play_rate": 0.07,
             "avg_place": 4.16,
-            "top4_rate": 0.578,
-            "win_rate": 0.0904,
+            "top4_rate": 0.579,
+            "win_rate": 0.092,
             "units": [
                 "Xayah",
                 "Alistar",
@@ -168,8 +130,8 @@
                 ],
                 "Hecarim": [
                     "Placa Gargolítica",
-                    "Juramento do Protetor",
-                    "Semblante Espiritual"
+                    "Semblante Espiritual",
+                    "Juramento do Protetor"
                 ],
                 "Mamãe Bicuda": [
                     "Lâmina da Fúria de Guinsoo",
@@ -180,8 +142,47 @@
                     "Proteção Imutável"
                 ],
                 "Zyra": [
-                    "Pistola Laminar Hextec",
+                    "Emblema de Fumegante",
                     "Efeito Vermelho"
+                ]
+            }
+        },
+        {
+            "name": "Florescer Sett & Ezreal",
+            "play_rate": 0.06,
+            "avg_place": 4.2,
+            "top4_rate": 0.574,
+            "win_rate": 0.09140000000000001,
+            "units": [
+                "Fiddlesticks",
+                "Ezreal",
+                "Sett",
+                "Soraka",
+                "Ornn",
+                "Alistar",
+                "Yunara",
+                "Ahri"
+            ],
+            "unit_items": {
+                "Fiddlesticks": [
+                    "Capa de Fogo Solar"
+                ],
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Sett": [
+                    "Capa de Fogo Solar",
+                    "Placa Gargolítica",
+                    "Armadura de Warmog"
+                ],
+                "Soraka": [
+                    "Lança de Shojin"
+                ],
+                "Ahri": [
+                    "Emblema de Carrasco",
+                    "Capuz da Morte de Rabadon"
                 ]
             }
         }
@@ -239,15 +240,15 @@
                 "Yunara",
                 "Sivir",
                 "Zyra",
-                "Ezreal",
-                "Teemo"
+                "Teemo",
+                "Ezreal"
             ]
         },
         {
             "name": "Semblante Espiritual",
             "play_rate": 3.16,
             "avg_place": 4.25,
-            "top4_rate": 0.546,
+            "top4_rate": 0.545,
             "win_rate": 0.142,
             "top_users": [
                 "Rammus",
@@ -273,9 +274,9 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3.06,
+            "play_rate": 3.07,
             "avg_place": 4.38,
-            "top4_rate": 0.525,
+            "top4_rate": 0.524,
             "win_rate": 0.128,
             "top_users": [
                 "Teemo",
@@ -287,7 +288,7 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.38,
+            "play_rate": 2.37,
             "avg_place": 4.17,
             "top4_rate": 0.563,
             "win_rate": 0.151,
@@ -336,8 +337,8 @@
             "top_users": [
                 "Yunara",
                 "Morgana",
-                "Ashe",
                 "Kog'Maw",
+                "Ashe",
                 "Sivir"
             ]
         },
@@ -398,5 +399,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-09T18:36:39-03:00"
+    "fetched_at": "2026-11-10T00:45:42-03:00"
 }
