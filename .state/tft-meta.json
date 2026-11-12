@@ -257,7 +257,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 3.08,
+            "play_rate": 3.07,
             "avg_place": 4.3,
             "top4_rate": 0.534,
             "win_rate": 0.147,
@@ -273,7 +273,7 @@
             "name": "Manopla Adornada",
             "play_rate": 3.07,
             "avg_place": 4.38,
-            "top4_rate": 0.525,
+            "top4_rate": 0.524,
             "win_rate": 0.128,
             "top_users": [
                 "Teemo",
@@ -292,8 +292,8 @@
             "top_users": [
                 "Sejuani",
                 "Maokai",
-                "Lillia",
                 "Hecarim",
+                "Lillia",
                 "Fiddlesticks"
             ]
         },
@@ -321,8 +321,8 @@
                 "Yunara",
                 "Dragão Ancião",
                 "Varus",
-                "Sivir",
-                "Xayah"
+                "Xayah",
+                "Sivir"
             ]
         },
         {
@@ -385,7 +385,7 @@
             "name": "Stemmaguarda",
             "play_rate": 1.89,
             "avg_place": 4.13,
-            "top4_rate": 0.573,
+            "top4_rate": 0.5720000000000001,
             "win_rate": 0.147,
             "top_users": [
                 "Rammus",
@@ -396,5 +396,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-11T15:51:11-03:00"
+    "fetched_at": "2026-11-11T23:27:44-03:00"
 }
