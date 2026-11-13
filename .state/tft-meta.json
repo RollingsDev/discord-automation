@@ -8,9 +8,9 @@
         {
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.53,
-            "avg_place": 4.01,
-            "top4_rate": 0.579,
-            "win_rate": 0.207,
+            "avg_place": 4,
+            "top4_rate": 0.581,
+            "win_rate": 0.20800000000000002,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -72,9 +72,9 @@
         {
             "name": "Sabugueiro Mamãe Bicuda & Hecarim",
             "play_rate": 0.07,
-            "avg_place": 4.15,
-            "top4_rate": 0.581,
-            "win_rate": 0.0913,
+            "avg_place": 4.14,
+            "top4_rate": 0.583,
+            "win_rate": 0.092,
             "units": [
                 "Xayah",
                 "Alistar",
@@ -86,6 +86,9 @@
                 "Aronguejo"
             ],
             "unit_items": {
+                "Alistar": [
+                    "Proteção Imutável"
+                ],
                 "Hecarim": [
                     "Placa Gargolítica",
                     "Semblante Espiritual",
@@ -95,9 +98,6 @@
                     "Lâmina da Fúria de Guinsoo",
                     "Pistola Laminar Hextec",
                     "Determinação Titânica"
-                ],
-                "Krugue": [
-                    "Proteção Imutável"
                 ],
                 "Zyra": [
                     "Efeito Vermelho",
@@ -110,7 +110,7 @@
             "play_rate": 0.17,
             "avg_place": 4.16,
             "top4_rate": 0.568,
-            "win_rate": 0.126,
+            "win_rate": 0.127,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -132,8 +132,8 @@
                 ],
                 "Rammus": [
                     "Placa Gargolítica",
-                    "Capa de Fogo Solar",
-                    "Semblante Espiritual"
+                    "Semblante Espiritual",
+                    "Capa de Fogo Solar"
                 ],
                 "Fiddlesticks": [
                     "Centelha Iônica"
@@ -148,8 +148,8 @@
             "name": "Florescer Sett & Ezreal",
             "play_rate": 0.05,
             "avg_place": 4.2,
-            "top4_rate": 0.575,
-            "win_rate": 0.0908,
+            "top4_rate": 0.574,
+            "win_rate": 0.0901,
             "units": [
                 "Fiddlesticks",
                 "Ezreal",
@@ -167,7 +167,7 @@
                 "Ezreal": [
                     "Gume do Infinito",
                     "Lâmina Mortal",
-                    "Último Sussurro"
+                    "Lança de Shojin"
                 ],
                 "Sett": [
                     "Capa de Fogo Solar",
@@ -252,7 +252,7 @@
                 "Sejuani",
                 "Maokai",
                 "Vi",
-                "Hecarim"
+                "Taric"
             ]
         },
         {
@@ -274,7 +274,7 @@
             "play_rate": 3.07,
             "avg_place": 4.38,
             "top4_rate": 0.524,
-            "win_rate": 0.128,
+            "win_rate": 0.127,
             "top_users": [
                 "Teemo",
                 "Karma",
@@ -308,7 +308,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Kennen"
+                "Ivern"
             ]
         },
         {
@@ -396,5 +396,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-12T16:05:31-03:00"
+    "fetched_at": "2026-11-12T23:04:07-03:00"
 }
