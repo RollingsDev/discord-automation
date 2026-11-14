@@ -9,8 +9,8 @@
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.53,
             "avg_place": 4,
-            "top4_rate": 0.5820000000000001,
-            "win_rate": 0.20800000000000002,
+            "top4_rate": 0.581,
+            "win_rate": 0.207,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -37,8 +37,8 @@
         {
             "name": "Fera do Rift Rubrivira & Krugue",
             "play_rate": 0.51,
-            "avg_place": 4.06,
-            "top4_rate": 0.58,
+            "avg_place": 4.07,
+            "top4_rate": 0.579,
             "win_rate": 0.149,
             "units": [
                 "Cascalho",
@@ -187,7 +187,7 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.69,
+            "play_rate": 5.68,
             "avg_place": 4.41,
             "top4_rate": 0.515,
             "win_rate": 0.129,
@@ -208,8 +208,8 @@
             "top_users": [
                 "Sejuani",
                 "Maokai",
-                "Malphite",
                 "Alistar",
+                "Vi",
                 "Taric"
             ]
         },
@@ -244,7 +244,7 @@
         {
             "name": "Semblante Espiritual",
             "play_rate": 3.17,
-            "avg_place": 4.25,
+            "avg_place": 4.26,
             "top4_rate": 0.545,
             "win_rate": 0.142,
             "top_users": [
@@ -274,7 +274,7 @@
             "play_rate": 3.07,
             "avg_place": 4.38,
             "top4_rate": 0.524,
-            "win_rate": 0.127,
+            "win_rate": 0.128,
             "top_users": [
                 "Teemo",
                 "Karma",
@@ -285,9 +285,9 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.38,
+            "play_rate": 2.39,
             "avg_place": 4.17,
-            "top4_rate": 0.563,
+            "top4_rate": 0.562,
             "win_rate": 0.151,
             "top_users": [
                 "Sejuani",
@@ -300,7 +300,7 @@
         {
             "name": "Cajado do Vazio",
             "play_rate": 2.37,
-            "avg_place": 4.22,
+            "avg_place": 4.23,
             "top4_rate": 0.5529999999999999,
             "win_rate": 0.141,
             "top_users": [
@@ -308,7 +308,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Ivern"
+                "Kennen"
             ]
         },
         {
@@ -356,7 +356,7 @@
         {
             "name": "Elmo Adaptativo",
             "play_rate": 1.95,
-            "avg_place": 4.04,
+            "avg_place": 4.05,
             "top4_rate": 0.589,
             "win_rate": 0.159,
             "top_users": [
@@ -369,7 +369,7 @@
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 1.94,
+            "play_rate": 1.93,
             "avg_place": 4.09,
             "top4_rate": 0.5720000000000001,
             "win_rate": 0.161,
@@ -383,7 +383,7 @@
         },
         {
             "name": "Stemmaguarda",
-            "play_rate": 1.89,
+            "play_rate": 1.88,
             "avg_place": 4.13,
             "top4_rate": 0.573,
             "win_rate": 0.147,
@@ -396,5 +396,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-13T22:41:23-03:00"
+    "fetched_at": "2026-11-14T14:16:43-03:00"
 }
