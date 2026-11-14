@@ -9,7 +9,7 @@
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.53,
             "avg_place": 4,
-            "top4_rate": 0.581,
+            "top4_rate": 0.5820000000000001,
             "win_rate": 0.20800000000000002,
             "units": [
                 "Morgana",
@@ -37,9 +37,9 @@
         {
             "name": "Fera do Rift Rubrivira & Krugue",
             "play_rate": 0.51,
-            "avg_place": 4.07,
-            "top4_rate": 0.579,
-            "win_rate": 0.14800000000000002,
+            "avg_place": 4.06,
+            "top4_rate": 0.58,
+            "win_rate": 0.149,
             "units": [
                 "Cascalho",
                 "Lobo Trevoguari",
@@ -149,7 +149,7 @@
             "play_rate": 0.05,
             "avg_place": 4.2,
             "top4_rate": 0.574,
-            "win_rate": 0.0901,
+            "win_rate": 0.0902,
             "units": [
                 "Fiddlesticks",
                 "Ezreal",
@@ -308,7 +308,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Kennen"
+                "Ivern"
             ]
         },
         {
@@ -396,5 +396,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-13T15:43:20-03:00"
+    "fetched_at": "2026-11-13T22:41:23-03:00"
 }
