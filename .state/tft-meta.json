@@ -9,8 +9,8 @@
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.53,
             "avg_place": 4,
-            "top4_rate": 0.581,
-            "win_rate": 0.207,
+            "top4_rate": 0.58,
+            "win_rate": 0.20800000000000002,
             "units": [
                 "Morgana",
                 "Azuporã",
@@ -25,7 +25,7 @@
                 "Morgana": [
                     "Cajado do Vazio",
                     "Morellonomicon",
-                    "Lança de Shojin"
+                    "Manopla Adornada"
                 ],
                 "Azuporã": [
                     "Juramento do Protetor",
@@ -36,9 +36,9 @@
         },
         {
             "name": "Fera do Rift Rubrivira & Krugue",
-            "play_rate": 0.51,
-            "avg_place": 4.07,
-            "top4_rate": 0.579,
+            "play_rate": 0.52,
+            "avg_place": 4.05,
+            "top4_rate": 0.5820000000000001,
             "win_rate": 0.149,
             "units": [
                 "Cascalho",
@@ -48,7 +48,7 @@
                 "Rubrivira",
                 "Azuporã",
                 "Rubrivirim",
-                "Taric"
+                "Sett"
             ],
             "unit_items": {
                 "Aronguejo": [
@@ -73,8 +73,8 @@
             "name": "Sabugueiro Mamãe Bicuda & Hecarim",
             "play_rate": 0.07,
             "avg_place": 4.14,
-            "top4_rate": 0.583,
-            "win_rate": 0.092,
+            "top4_rate": 0.585,
+            "win_rate": 0.0929,
             "units": [
                 "Xayah",
                 "Alistar",
@@ -109,7 +109,7 @@
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
             "avg_place": 4.16,
-            "top4_rate": 0.568,
+            "top4_rate": 0.569,
             "win_rate": 0.127,
             "units": [
                 "Veigar",
@@ -147,9 +147,9 @@
         {
             "name": "Florescer Sett & Ezreal",
             "play_rate": 0.05,
-            "avg_place": 4.2,
-            "top4_rate": 0.574,
-            "win_rate": 0.0902,
+            "avg_place": 4.19,
+            "top4_rate": 0.5760000000000001,
+            "win_rate": 0.09050000000000001,
             "units": [
                 "Fiddlesticks",
                 "Ezreal",
@@ -167,7 +167,7 @@
                 "Ezreal": [
                     "Gume do Infinito",
                     "Lâmina Mortal",
-                    "Lança de Shojin"
+                    "Último Sussurro"
                 ],
                 "Sett": [
                     "Capa de Fogo Solar",
@@ -209,27 +209,27 @@
                 "Sejuani",
                 "Maokai",
                 "Alistar",
-                "Vi",
-                "Taric"
+                "Taric",
+                "Vi"
             ]
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
             "play_rate": 4.05,
-            "avg_place": 4.41,
+            "avg_place": 4.4,
             "top4_rate": 0.513,
-            "win_rate": 0.139,
+            "win_rate": 0.138,
             "top_users": [
                 "Rengar",
                 "Master Yi",
-                "Tristana",
                 "Mamãe Bicuda",
-                "Draven"
+                "Draven",
+                "Tristana"
             ]
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.85,
+            "play_rate": 3.84,
             "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
@@ -238,12 +238,12 @@
                 "Sivir",
                 "Ivern",
                 "Ezreal",
-                "Zyra"
+                "Ahri"
             ]
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 3.17,
+            "play_rate": 3.18,
             "avg_place": 4.26,
             "top4_rate": 0.545,
             "win_rate": 0.142,
@@ -252,21 +252,21 @@
                 "Sejuani",
                 "Maokai",
                 "Vi",
-                "Taric"
+                "Hecarim"
             ]
         },
         {
             "name": "Gume do Infinito",
             "play_rate": 3.07,
-            "avg_place": 4.3,
-            "top4_rate": 0.534,
+            "avg_place": 4.29,
+            "top4_rate": 0.535,
             "win_rate": 0.147,
             "top_users": [
                 "Xayah",
-                "Yunara",
                 "Varus",
+                "Yunara",
                 "Camille",
-                "Sivir"
+                "Dragão Ancião"
             ]
         },
         {
@@ -274,11 +274,11 @@
             "play_rate": 3.07,
             "avg_place": 4.38,
             "top4_rate": 0.524,
-            "win_rate": 0.128,
+            "win_rate": 0.127,
             "top_users": [
                 "Teemo",
-                "Karma",
                 "Ahri",
+                "Karma",
                 "Kayle",
                 "Morgana"
             ]
@@ -308,7 +308,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Kennen"
+                "Ivern"
             ]
         },
         {
@@ -318,8 +318,8 @@
             "top4_rate": 0.544,
             "win_rate": 0.159,
             "top_users": [
-                "Yunara",
                 "Dragão Ancião",
+                "Yunara",
                 "Varus",
                 "Xayah",
                 "Sivir"
@@ -336,7 +336,7 @@
                 "Kog'Maw",
                 "Morgana",
                 "Ashe",
-                "Sivir"
+                "Dragão Ancião"
             ]
         },
         {
@@ -356,14 +356,14 @@
         {
             "name": "Elmo Adaptativo",
             "play_rate": 1.95,
-            "avg_place": 4.05,
+            "avg_place": 4.04,
             "top4_rate": 0.589,
             "win_rate": 0.159,
             "top_users": [
                 "Ivern",
+                "Zyra",
                 "Kennen",
                 "Morgana",
-                "Zyra",
                 "Lillia"
             ]
         },
@@ -377,14 +377,14 @@
                 "Kennen",
                 "Diana",
                 "Lillia",
-                "Azuporã",
-                "Ivern"
+                "Ivern",
+                "Azuporã"
             ]
         },
         {
             "name": "Stemmaguarda",
             "play_rate": 1.88,
-            "avg_place": 4.13,
+            "avg_place": 4.12,
             "top4_rate": 0.573,
             "win_rate": 0.147,
             "top_users": [
@@ -396,5 +396,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-14T14:16:43-03:00"
+    "fetched_at": "2026-11-14T22:15:03-03:00"
 }
