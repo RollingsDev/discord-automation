@@ -6,10 +6,47 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.37,
+            "avg_place": 3.93,
+            "top4_rate": 0.591,
+            "win_rate": 0.207,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Amumu",
+                "Draven",
+                "Gnar",
+                "Ivern",
+                "Kennen",
+                "Taric"
+            ],
+            "unit_items": {
+                "Alistar": [
+                    "Capa de Fogo Solar"
+                ],
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Lança de Shojin"
+                ],
+                "Draven": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ],
+                "Kennen": [
+                    "Emblema de Sabugueiro"
+                ]
+            }
+        },
+        {
             "name": "Vanguarda Morgana & Azuporã",
             "play_rate": 0.53,
             "avg_place": 4,
-            "top4_rate": 0.58,
+            "top4_rate": 0.581,
             "win_rate": 0.20800000000000002,
             "units": [
                 "Morgana",
@@ -36,8 +73,8 @@
         },
         {
             "name": "Fera do Rift Rubrivira & Krugue",
-            "play_rate": 0.52,
-            "avg_place": 4.05,
+            "play_rate": 0.53,
+            "avg_place": 4.06,
             "top4_rate": 0.5820000000000001,
             "win_rate": 0.149,
             "units": [
@@ -73,8 +110,8 @@
             "name": "Sabugueiro Mamãe Bicuda & Hecarim",
             "play_rate": 0.07,
             "avg_place": 4.14,
-            "top4_rate": 0.585,
-            "win_rate": 0.0929,
+            "top4_rate": 0.584,
+            "win_rate": 0.0926,
             "units": [
                 "Xayah",
                 "Alistar",
@@ -108,7 +145,7 @@
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
-            "avg_place": 4.16,
+            "avg_place": 4.15,
             "top4_rate": 0.569,
             "win_rate": 0.127,
             "units": [
@@ -143,45 +180,6 @@
                     "Emblema de Carrasco"
                 ]
             }
-        },
-        {
-            "name": "Florescer Sett & Ezreal",
-            "play_rate": 0.05,
-            "avg_place": 4.19,
-            "top4_rate": 0.5760000000000001,
-            "win_rate": 0.09050000000000001,
-            "units": [
-                "Fiddlesticks",
-                "Ezreal",
-                "Sett",
-                "Soraka",
-                "Ornn",
-                "Alistar",
-                "Yunara",
-                "Ahri"
-            ],
-            "unit_items": {
-                "Fiddlesticks": [
-                    "Capa de Fogo Solar"
-                ],
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Sett": [
-                    "Capa de Fogo Solar",
-                    "Armadura de Warmog",
-                    "Placa Gargolítica"
-                ],
-                "Soraka": [
-                    "Lança de Shojin"
-                ],
-                "Ahri": [
-                    "Emblema de Carrasco",
-                    "Efeito Azul"
-                ]
-            }
         }
     ],
     "items": [
@@ -200,6 +198,20 @@
             ]
         },
         {
+            "name": "Lâmina da Fúria de Guinsoo",
+            "play_rate": 4.06,
+            "avg_place": 4.4,
+            "top4_rate": 0.513,
+            "win_rate": 0.138,
+            "top_users": [
+                "Rengar",
+                "Master Yi",
+                "Mamãe Bicuda",
+                "Draven",
+                "Tristana"
+            ]
+        },
+        {
             "name": "Armadura de Warmog",
             "play_rate": 4.06,
             "avg_place": 4.31,
@@ -214,22 +226,8 @@
             ]
         },
         {
-            "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.05,
-            "avg_place": 4.4,
-            "top4_rate": 0.513,
-            "win_rate": 0.138,
-            "top_users": [
-                "Rengar",
-                "Master Yi",
-                "Mamãe Bicuda",
-                "Draven",
-                "Tristana"
-            ]
-        },
-        {
             "name": "Lança de Shojin",
-            "play_rate": 3.84,
+            "play_rate": 3.83,
             "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
@@ -271,7 +269,7 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3.07,
+            "play_rate": 3.06,
             "avg_place": 4.38,
             "top4_rate": 0.524,
             "win_rate": 0.127,
@@ -333,10 +331,10 @@
             "win_rate": 0.152,
             "top_users": [
                 "Yunara",
-                "Kog'Maw",
                 "Morgana",
-                "Ashe",
-                "Dragão Ancião"
+                "Kog'Maw",
+                "Dragão Ancião",
+                "Ashe"
             ]
         },
         {
@@ -362,9 +360,9 @@
             "top_users": [
                 "Ivern",
                 "Zyra",
-                "Kennen",
                 "Morgana",
-                "Lillia"
+                "Lillia",
+                "Kennen"
             ]
         },
         {
@@ -372,7 +370,7 @@
             "play_rate": 1.93,
             "avg_place": 4.09,
             "top4_rate": 0.5720000000000001,
-            "win_rate": 0.161,
+            "win_rate": 0.16,
             "top_users": [
                 "Kennen",
                 "Diana",
@@ -386,15 +384,15 @@
             "play_rate": 1.88,
             "avg_place": 4.12,
             "top4_rate": 0.573,
-            "win_rate": 0.147,
+            "win_rate": 0.14800000000000002,
             "top_users": [
                 "Rammus",
                 "Malphite",
                 "Sejuani",
-                "Taric",
-                "Ornn"
+                "Ornn",
+                "Taric"
             ]
         }
     ],
-    "fetched_at": "2026-11-14T22:15:03-03:00"
+    "fetched_at": "2026-11-15T14:57:37-03:00"
 }
