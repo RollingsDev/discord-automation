@@ -227,7 +227,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.83,
+            "play_rate": 3.82,
             "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
@@ -272,7 +272,7 @@
             "play_rate": 3.06,
             "avg_place": 4.38,
             "top4_rate": 0.524,
-            "win_rate": 0.127,
+            "win_rate": 0.128,
             "top_users": [
                 "Teemo",
                 "Ahri",
@@ -394,5 +394,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-15T14:57:37-03:00"
+    "fetched_at": "2026-11-15T22:20:36-03:00"
 }
