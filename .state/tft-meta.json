@@ -185,7 +185,7 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.68,
+            "play_rate": 5.67,
             "avg_place": 4.41,
             "top4_rate": 0.515,
             "win_rate": 0.129,
@@ -199,7 +199,7 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.06,
+            "play_rate": 4.07,
             "avg_place": 4.4,
             "top4_rate": 0.513,
             "win_rate": 0.138,
@@ -227,7 +227,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.82,
+            "play_rate": 3.81,
             "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
@@ -241,10 +241,10 @@
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 3.18,
+            "play_rate": 3.19,
             "avg_place": 4.26,
             "top4_rate": 0.545,
-            "win_rate": 0.142,
+            "win_rate": 0.141,
             "top_users": [
                 "Rammus",
                 "Sejuani",
@@ -271,8 +271,8 @@
             "name": "Manopla Adornada",
             "play_rate": 3.06,
             "avg_place": 4.38,
-            "top4_rate": 0.524,
-            "win_rate": 0.128,
+            "top4_rate": 0.523,
+            "win_rate": 0.127,
             "top_users": [
                 "Teemo",
                 "Ahri",
@@ -283,7 +283,7 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.39,
+            "play_rate": 2.4,
             "avg_place": 4.17,
             "top4_rate": 0.562,
             "win_rate": 0.151,
@@ -297,7 +297,7 @@
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.37,
+            "play_rate": 2.36,
             "avg_place": 4.23,
             "top4_rate": 0.5529999999999999,
             "win_rate": 0.141,
@@ -311,9 +311,9 @@
         },
         {
             "name": "Último Sussurro",
-            "play_rate": 2.22,
+            "play_rate": 2.23,
             "avg_place": 4.23,
-            "top4_rate": 0.544,
+            "top4_rate": 0.545,
             "win_rate": 0.159,
             "top_users": [
                 "Dragão Ancião",
@@ -367,9 +367,9 @@
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 1.93,
-            "avg_place": 4.09,
-            "top4_rate": 0.5720000000000001,
+            "play_rate": 1.92,
+            "avg_place": 4.1,
+            "top4_rate": 0.5710000000000001,
             "win_rate": 0.16,
             "top_users": [
                 "Kennen",
@@ -394,5 +394,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-15T22:20:36-03:00"
+    "fetched_at": "2026-11-16T18:13:15-03:00"
 }
