@@ -186,7 +186,7 @@
         {
             "name": "Placa Gargolítica",
             "play_rate": 5.67,
-            "avg_place": 4.41,
+            "avg_place": 4.42,
             "top4_rate": 0.515,
             "win_rate": 0.129,
             "top_users": [
@@ -199,7 +199,7 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.07,
+            "play_rate": 4.08,
             "avg_place": 4.4,
             "top4_rate": 0.513,
             "win_rate": 0.138,
@@ -227,7 +227,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.81,
+            "play_rate": 3.8,
             "avg_place": 4.32,
             "top4_rate": 0.534,
             "win_rate": 0.13699999999999998,
@@ -269,7 +269,7 @@
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3.06,
+            "play_rate": 3.05,
             "avg_place": 4.38,
             "top4_rate": 0.523,
             "win_rate": 0.127,
@@ -283,10 +283,10 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.4,
+            "play_rate": 2.41,
             "avg_place": 4.17,
-            "top4_rate": 0.562,
-            "win_rate": 0.151,
+            "top4_rate": 0.561,
+            "win_rate": 0.15,
             "top_users": [
                 "Sejuani",
                 "Maokai",
@@ -299,7 +299,7 @@
             "name": "Cajado do Vazio",
             "play_rate": 2.36,
             "avg_place": 4.23,
-            "top4_rate": 0.5529999999999999,
+            "top4_rate": 0.552,
             "win_rate": 0.141,
             "top_users": [
                 "Morgana",
@@ -354,8 +354,8 @@
         {
             "name": "Elmo Adaptativo",
             "play_rate": 1.95,
-            "avg_place": 4.04,
-            "top4_rate": 0.589,
+            "avg_place": 4.05,
+            "top4_rate": 0.588,
             "win_rate": 0.159,
             "top_users": [
                 "Ivern",
@@ -394,5 +394,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-17T01:08:16-03:00"
+    "fetched_at": "2026-11-17T16:59:20-03:00"
 }
