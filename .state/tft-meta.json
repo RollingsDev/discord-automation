@@ -241,7 +241,7 @@
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 3.19,
+            "play_rate": 3.2,
             "avg_place": 4.26,
             "top4_rate": 0.545,
             "win_rate": 0.141,
@@ -383,7 +383,7 @@
             "name": "Stemmaguarda",
             "play_rate": 1.88,
             "avg_place": 4.12,
-            "top4_rate": 0.573,
+            "top4_rate": 0.574,
             "win_rate": 0.14800000000000002,
             "top_users": [
                 "Rammus",
@@ -394,5 +394,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-17T16:59:20-03:00"
+    "fetched_at": "2026-11-18T00:05:48-03:00"
 }
