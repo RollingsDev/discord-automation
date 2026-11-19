@@ -189,13 +189,13 @@
     "items": [
         {
             "name": "Placa Gargolítica",
-            "play_rate": 5.64,
+            "play_rate": 5.65,
             "avg_place": 4.41,
             "top4_rate": 0.517,
             "win_rate": 0.129,
             "top_users": [
-                "Sejuani",
                 "Alistar",
+                "Sejuani",
                 "Rammus",
                 "Hecarim",
                 "Maokai"
@@ -203,51 +203,51 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.23,
+            "play_rate": 4.24,
             "avg_place": 4.4,
-            "top4_rate": 0.514,
+            "top4_rate": 0.515,
             "win_rate": 0.133,
             "top_users": [
                 "Mamãe Bicuda",
                 "Rengar",
-                "Azir",
                 "Master Yi",
+                "Azir",
                 "Nidalee"
             ]
         },
         {
             "name": "Armadura de Warmog",
-            "play_rate": 4.07,
-            "avg_place": 4.31,
-            "top4_rate": 0.536,
-            "win_rate": 0.136,
+            "play_rate": 4.08,
+            "avg_place": 4.3,
+            "top4_rate": 0.537,
+            "win_rate": 0.13699999999999998,
             "top_users": [
                 "Sejuani",
+                "Hecarim",
                 "Maokai",
                 "Alistar",
-                "Hecarim",
-                "Sett"
+                "Vi"
             ]
         },
         {
             "name": "Lança de Shojin",
             "play_rate": 3.71,
-            "avg_place": 4.3,
+            "avg_place": 4.29,
             "top4_rate": 0.537,
-            "win_rate": 0.142,
+            "win_rate": 0.14300000000000002,
             "top_users": [
                 "Yunara",
                 "Zyra",
                 "Sivir",
-                "LeBlanc",
-                "Ezreal"
+                "Ezreal",
+                "LeBlanc"
             ]
         },
         {
             "name": "Semblante Espiritual",
-            "play_rate": 3.26,
+            "play_rate": 3.27,
             "avg_place": 4.26,
-            "top4_rate": 0.544,
+            "top4_rate": 0.545,
             "win_rate": 0.14,
             "top_users": [
                 "Alistar",
@@ -260,8 +260,8 @@
         {
             "name": "Manopla Adornada",
             "play_rate": 3.04,
-            "avg_place": 4.37,
-            "top4_rate": 0.525,
+            "avg_place": 4.36,
+            "top4_rate": 0.526,
             "win_rate": 0.133,
             "top_users": [
                 "Ahri",
@@ -278,11 +278,11 @@
             "top4_rate": 0.53,
             "win_rate": 0.14300000000000002,
             "top_users": [
+                "Yunara",
                 "Sivir",
                 "Nidalee",
-                "Yunara",
                 "Aphelios",
-                "Xayah"
+                "Ezreal"
             ]
         },
         {
@@ -303,36 +303,36 @@
             "name": "Cajado do Vazio",
             "play_rate": 2.32,
             "avg_place": 4.19,
-            "top4_rate": 0.56,
+            "top4_rate": 0.5579999999999999,
             "win_rate": 0.14800000000000002,
             "top_users": [
                 "Morgana",
                 "Zyra",
                 "LeBlanc",
                 "Soraka",
-                "Kennen"
+                "Cassiopeia"
             ]
         },
         {
             "name": "Último Sussurro",
             "play_rate": 2.21,
             "avg_place": 4.25,
-            "top4_rate": 0.542,
+            "top4_rate": 0.541,
             "win_rate": 0.152,
             "top_users": [
                 "Yunara",
                 "Sivir",
                 "Ezreal",
                 "Varus",
-                "Ashe"
+                "Dragão Ancião"
             ]
         },
         {
             "name": "Efeito Vermelho",
             "play_rate": 2.06,
             "avg_place": 4.11,
-            "top4_rate": 0.5710000000000001,
-            "win_rate": 0.153,
+            "top4_rate": 0.5720000000000001,
+            "win_rate": 0.152,
             "top_users": [
                 "Morgana",
                 "Ashe",
@@ -344,34 +344,20 @@
         {
             "name": "Efeito Azul",
             "play_rate": 2.05,
-            "avg_place": 4.19,
+            "avg_place": 4.18,
             "top4_rate": 0.56,
             "win_rate": 0.14800000000000002,
             "top_users": [
                 "Sivir",
                 "Karma",
-                "Zyra",
                 "LeBlanc",
+                "Zyra",
                 "Cassiopeia"
             ]
         },
         {
-            "name": "Luvas do Ladrão",
-            "play_rate": 1.94,
-            "avg_place": 4.08,
-            "top4_rate": 0.574,
-            "win_rate": 0.161,
-            "top_users": [
-                "Diana",
-                "Kennen",
-                "Ivern",
-                "Sett",
-                "Krugue"
-            ]
-        },
-        {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 1.94,
+            "play_rate": 1.96,
             "avg_place": 4.2,
             "top4_rate": 0.557,
             "win_rate": 0.13699999999999998,
@@ -384,19 +370,33 @@
             ]
         },
         {
+            "name": "Luvas do Ladrão",
+            "play_rate": 1.95,
+            "avg_place": 4.08,
+            "top4_rate": 0.575,
+            "win_rate": 0.161,
+            "top_users": [
+                "Diana",
+                "Kennen",
+                "Ivern",
+                "Sett",
+                "Krugue"
+            ]
+        },
+        {
             "name": "Elmo Adaptativo",
-            "play_rate": 1.93,
-            "avg_place": 4.05,
-            "top4_rate": 0.589,
-            "win_rate": 0.158,
+            "play_rate": 1.94,
+            "avg_place": 4.04,
+            "top4_rate": 0.59,
+            "win_rate": 0.16,
             "top_users": [
                 "Morgana",
-                "Lillia",
                 "Ivern",
-                "Azuporã",
-                "Soraka"
+                "Lillia",
+                "Soraka",
+                "Azuporã"
             ]
         }
     ],
-    "fetched_at": "2026-11-18T23:45:27-03:00"
+    "fetched_at": "2026-11-19T16:36:38-03:00"
 }
