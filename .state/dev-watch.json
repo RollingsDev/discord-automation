@@ -1,7 +1,9 @@
 {
     "initialized_at": "2026-09-20T20:19:25-03:00",
-    "updated_at": "2026-11-19T17:53:22-03:00",
+    "updated_at": "2026-11-21T22:26:13-03:00",
     "items": [
+        "livewire/livewire@v4.4.9",
+        "dunglas/frankenphp@v1.14.0",
         "dunglas/frankenphp@v1.13.6",
         "php/php-src@php-8.6.0",
         "laravel/framework@v13.43.0",
