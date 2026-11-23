@@ -7,10 +7,10 @@
     "comps": [
         {
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
-            "play_rate": 0.3,
-            "avg_place": 4.05,
-            "top4_rate": 0.6,
-            "win_rate": 0.102,
+            "play_rate": 0.31,
+            "avg_place": 4.03,
+            "top4_rate": 0.605,
+            "win_rate": 0.10400000000000001,
             "units": [
                 "Xayah",
                 "Hecarim",
@@ -24,8 +24,8 @@
             "unit_items": {
                 "Hecarim": [
                     "Armadura de Warmog",
-                    "Placa Gargolítica",
-                    "Juramento do Protetor"
+                    "Proteção Imutável",
+                    "Placa Gargolítica"
                 ],
                 "Mamãe Bicuda": [
                     "Lâmina da Fúria de Guinsoo",
@@ -45,29 +45,60 @@
             }
         },
         {
+            "name": "Vanguarda Morgana & Alune",
+            "play_rate": 0.57,
+            "avg_place": 4.11,
+            "top4_rate": 0.557,
+            "win_rate": 0.20800000000000002,
+            "units": [
+                "Diana",
+                "Fiddlesticks",
+                "Lillia",
+                "Azuporã",
+                "Rakan",
+                "Morgana",
+                "Ivern",
+                "Taric"
+            ],
+            "unit_items": {
+                "Azuporã": [
+                    "Armadura de Warmog",
+                    "Semblante Espiritual"
+                ],
+                "Morgana": [
+                    "Cajado do Vazio",
+                    "Morellonomicon",
+                    "Lança de Shojin"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ]
+            }
+        },
+        {
             "name": "Sabugueiro Ezreal",
-            "play_rate": 0.36,
-            "avg_place": 4.12,
-            "top4_rate": 0.552,
-            "win_rate": 0.203,
+            "play_rate": 0.37,
+            "avg_place": 4.13,
+            "top4_rate": 0.5489999999999999,
+            "win_rate": 0.204,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Ornn",
+                "Xayah",
                 "LeBlanc",
                 "Fiddlesticks",
                 "Hecarim",
-                "Soraka",
-                "Kennen"
+                "Soraka"
             ],
             "unit_items": {
                 "Ezreal": [
-                    "Lâmina Mortal",
                     "Gume do Infinito",
-                    "Lança de Shojin"
+                    "Lâmina Mortal",
+                    "Último Sussurro"
                 ],
-                "LeBlanc": [
-                    "Lança de Shojin"
+                "Xayah": [
+                    "Lâmina da Fúria de Guinsoo"
                 ],
                 "Fiddlesticks": [
                     "Emblema de Sabugueiro"
@@ -75,39 +106,11 @@
             }
         },
         {
-            "name": "Vanguarda Morgana & Alune",
-            "play_rate": 0.56,
-            "avg_place": 4.13,
-            "top4_rate": 0.5529999999999999,
-            "win_rate": 0.205,
-            "units": [
-                "Diana",
-                "Fiddlesticks",
-                "Lillia",
-                "Azuporã",
-                "Rakan",
-                "Nidalee",
-                "Alune",
-                "Taric"
-            ],
-            "unit_items": {
-                "Azuporã": [
-                    "Juramento do Protetor",
-                    "Armadura de Warmog"
-                ],
-                "Alune": [
-                    "Manopla Adornada",
-                    "Cajado do Arcanjo",
-                    "Mangual do Guerreiro"
-                ]
-            }
-        },
-        {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
             "avg_place": 4.14,
-            "top4_rate": 0.573,
-            "win_rate": 0.131,
+            "top4_rate": 0.5710000000000001,
+            "win_rate": 0.132,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -115,8 +118,7 @@
                 "Rammus",
                 "Fiddlesticks",
                 "Soraka",
-                "Zyra",
-                "Yorick"
+                "Kennen"
             ],
             "unit_items": {
                 "Azir": [
@@ -134,19 +136,15 @@
                 ],
                 "Soraka": [
                     "Cajado do Vazio"
-                ],
-                "Zyra": [
-                    "Emblema de Carrasco",
-                    "Cajado do Vazio"
                 ]
             }
         },
         {
             "name": "Florescer Master Yi & Vi",
             "play_rate": 0.23,
-            "avg_place": 4.16,
-            "top4_rate": 0.5660000000000001,
-            "win_rate": 0.121,
+            "avg_place": 4.17,
+            "top4_rate": 0.565,
+            "win_rate": 0.12,
             "units": [
                 "Yorick",
                 "Master Yi",
@@ -166,13 +164,13 @@
                 "Vi": [
                     "Emblema de Lutador",
                     "Capa de Fogo Solar",
-                    "Semblante Espiritual"
+                    "Placa Gargolítica"
+                ],
+                "Sett": [
+                    "Capa de Fogo Solar"
                 ],
                 "Kog'Maw": [
                     "Efeito Vermelho"
-                ],
-                "Krugue": [
-                    "Capa de Fogo Solar"
                 ],
                 "Rengar": [
                     "Determinação Titânica",
@@ -215,13 +213,13 @@
             "play_rate": 4.1,
             "avg_place": 4.3,
             "top4_rate": 0.536,
-            "win_rate": 0.13699999999999998,
+            "win_rate": 0.136,
             "top_users": [
                 "Maokai",
                 "Sejuani",
                 "Alistar",
                 "Hecarim",
-                "Taric"
+                "Vi"
             ]
         },
         {
@@ -255,20 +253,20 @@
         {
             "name": "Manopla Adornada",
             "play_rate": 3.09,
-            "avg_place": 4.35,
+            "avg_place": 4.36,
             "top4_rate": 0.527,
             "win_rate": 0.133,
             "top_users": [
                 "Ahri",
                 "Karma",
                 "Teemo",
-                "Nidalee",
-                "Kayle"
+                "Kayle",
+                "Nidalee"
             ]
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.96,
+            "play_rate": 2.95,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
@@ -291,12 +289,12 @@
                 "Sejuani",
                 "Lillia",
                 "Taric",
-                "Maokai"
+                "Vi"
             ]
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.35,
+            "play_rate": 2.36,
             "avg_place": 4.19,
             "top4_rate": 0.5579999999999999,
             "win_rate": 0.14800000000000002,
@@ -305,7 +303,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Kennen"
+                "Soraka"
             ]
         },
         {
@@ -327,7 +325,7 @@
             "play_rate": 2.07,
             "avg_place": 4.1,
             "top4_rate": 0.574,
-            "win_rate": 0.153,
+            "win_rate": 0.154,
             "top_users": [
                 "Yunara",
                 "Ashe",
@@ -340,7 +338,7 @@
             "name": "Pistola Laminar Hextec",
             "play_rate": 2.06,
             "avg_place": 4.19,
-            "top4_rate": 0.5589999999999999,
+            "top4_rate": 0.56,
             "win_rate": 0.13699999999999998,
             "top_users": [
                 "Mamãe Bicuda",
@@ -375,7 +373,7 @@
                 "Kennen",
                 "Azuporã",
                 "Lillia",
-                "Ivern"
+                "Hecarim"
             ]
         },
         {
@@ -393,5 +391,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-22T15:38:18-03:00"
+    "fetched_at": "2026-11-22T22:56:11-03:00"
 }
