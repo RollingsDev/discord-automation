@@ -9,7 +9,7 @@
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
             "play_rate": 0.31,
             "avg_place": 4.03,
-            "top4_rate": 0.604,
+            "top4_rate": 0.605,
             "win_rate": 0.10400000000000001,
             "units": [
                 "Xayah",
@@ -34,7 +34,7 @@
                 ],
                 "Krugue": [
                     "Capa de Fogo Solar",
-                    "Semblante Espiritual"
+                    "Proteção Imutável"
                 ],
                 "Zyra": [
                     "Emblema de Fumegante"
@@ -45,72 +45,11 @@
             }
         },
         {
-            "name": "Vanguarda Morgana & Alune",
-            "play_rate": 0.57,
-            "avg_place": 4.09,
-            "top4_rate": 0.56,
-            "win_rate": 0.21,
-            "units": [
-                "Diana",
-                "Fiddlesticks",
-                "Lillia",
-                "Azuporã",
-                "Rakan",
-                "Morgana",
-                "Ivern",
-                "Taric"
-            ],
-            "unit_items": {
-                "Azuporã": [
-                    "Armadura de Warmog",
-                    "Juramento do Protetor"
-                ],
-                "Morgana": [
-                    "Cajado do Vazio",
-                    "Morellonomicon",
-                    "Lança de Shojin"
-                ],
-                "Ivern": [
-                    "Lança de Shojin"
-                ]
-            }
-        },
-        {
-            "name": "Sabugueiro Ezreal",
-            "play_rate": 0.37,
-            "avg_place": 4.09,
-            "top4_rate": 0.556,
-            "win_rate": 0.207,
-            "units": [
-                "Alistar",
-                "Ezreal",
-                "Ornn",
-                "Xayah",
-                "LeBlanc",
-                "Fiddlesticks",
-                "Hecarim",
-                "Soraka"
-            ],
-            "unit_items": {
-                "Ezreal": [
-                    "Gume do Infinito",
-                    "Lâmina Mortal",
-                    "Último Sussurro"
-                ],
-                "Xayah": [
-                    "Lâmina da Fúria de Guinsoo"
-                ],
-                "Fiddlesticks": [
-                    "Emblema de Sabugueiro"
-                ]
-            }
-        },
-        {
-            "name": "Colosso Sivir",
-            "play_rate": 0.08,
-            "avg_place": 4.14,
-            "top4_rate": 0.5589999999999999,
-            "win_rate": 0.174,
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.07,
+            "avg_place": 4.07,
+            "top4_rate": 0.573,
+            "win_rate": 0.179,
             "units": [
                 "Rakan",
                 "Sivir",
@@ -134,10 +73,74 @@
             }
         },
         {
+            "name": "Vanguarda Morgana & Alune",
+            "play_rate": 0.57,
+            "avg_place": 4.09,
+            "top4_rate": 0.56,
+            "win_rate": 0.21,
+            "units": [
+                "Diana",
+                "Fiddlesticks",
+                "Lillia",
+                "Azuporã",
+                "Rakan",
+                "Morgana",
+                "Ivern",
+                "Taric"
+            ],
+            "unit_items": {
+                "Azuporã": [
+                    "Armadura de Warmog",
+                    "Semblante Espiritual"
+                ],
+                "Morgana": [
+                    "Cajado do Vazio",
+                    "Morellonomicon",
+                    "Lança de Shojin"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
+                ]
+            }
+        },
+        {
+            "name": "Sabugueiro Ezreal",
+            "play_rate": 0.37,
+            "avg_place": 4.1,
+            "top4_rate": 0.5529999999999999,
+            "win_rate": 0.20600000000000002,
+            "units": [
+                "Alistar",
+                "Ezreal",
+                "Ornn",
+                "Xayah",
+                "LeBlanc",
+                "Fiddlesticks",
+                "Hecarim",
+                "Soraka"
+            ],
+            "unit_items": {
+                "Ezreal": [
+                    "Gume do Infinito",
+                    "Lâmina Mortal",
+                    "Último Sussurro"
+                ],
+                "Xayah": [
+                    "Lâmina da Fúria de Guinsoo"
+                ],
+                "Hecarim": [
+                    "Capa de Fogo Solar"
+                ],
+                "Soraka": [
+                    "Emblema de Sabugueiro"
+                ]
+            }
+        },
+        {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
             "avg_place": 4.14,
-            "top4_rate": 0.57,
+            "top4_rate": 0.5710000000000001,
             "win_rate": 0.131,
             "units": [
                 "Veigar",
@@ -167,8 +170,8 @@
                     "Lança de Shojin"
                 ],
                 "Zyra": [
-                    "Cajado do Vazio",
-                    "Emblema de Carrasco"
+                    "Emblema de Carrasco",
+                    "Cajado do Vazio"
                 ]
             }
         }
@@ -190,16 +193,16 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.23,
-            "avg_place": 4.4,
+            "play_rate": 4.24,
+            "avg_place": 4.41,
             "top4_rate": 0.514,
             "win_rate": 0.133,
             "top_users": [
                 "Mamãe Bicuda",
                 "Rengar",
                 "Master Yi",
-                "Tristana",
-                "Azir"
+                "Azir",
+                "Tristana"
             ]
         },
         {
@@ -227,7 +230,7 @@
                 "Sivir",
                 "Zyra",
                 "Teemo",
-                "Ivern"
+                "Ahri"
             ]
         },
         {
@@ -235,19 +238,19 @@
             "play_rate": 3.25,
             "avg_place": 4.25,
             "top4_rate": 0.546,
-            "win_rate": 0.14,
+            "win_rate": 0.139,
             "top_users": [
                 "Alistar",
                 "Sejuani",
                 "Hecarim",
-                "Vi",
-                "Maokai"
+                "Maokai",
+                "Vi"
             ]
         },
         {
             "name": "Manopla Adornada",
-            "play_rate": 3.1,
-            "avg_place": 4.35,
+            "play_rate": 3.11,
+            "avg_place": 4.36,
             "top4_rate": 0.527,
             "win_rate": 0.133,
             "top_users": [
@@ -260,14 +263,14 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.95,
+            "play_rate": 2.96,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
             "top_users": [
                 "Yunara",
-                "Sivir",
                 "Camille",
+                "Sivir",
                 "Xayah",
                 "Ezreal"
             ]
@@ -297,12 +300,12 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Soraka"
+                "Kennen"
             ]
         },
         {
             "name": "Último Sussurro",
-            "play_rate": 2.15,
+            "play_rate": 2.14,
             "avg_place": 4.25,
             "top4_rate": 0.542,
             "win_rate": 0.154,
@@ -316,7 +319,7 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.07,
+            "play_rate": 2.08,
             "avg_place": 4.19,
             "top4_rate": 0.56,
             "win_rate": 0.13699999999999998,
@@ -324,8 +327,8 @@
                 "Cassiopeia",
                 "Mamãe Bicuda",
                 "Azir",
-                "Morgana",
-                "Tristana"
+                "Tristana",
+                "Morgana"
             ]
         },
         {
@@ -333,7 +336,7 @@
             "play_rate": 2.07,
             "avg_place": 4.1,
             "top4_rate": 0.574,
-            "win_rate": 0.153,
+            "win_rate": 0.154,
             "top_users": [
                 "Yunara",
                 "Ashe",
@@ -360,7 +363,7 @@
             "name": "Luvas do Ladrão",
             "play_rate": 1.99,
             "avg_place": 4.09,
-            "top4_rate": 0.573,
+            "top4_rate": 0.5720000000000001,
             "win_rate": 0.159,
             "top_users": [
                 "Diana",
@@ -380,10 +383,10 @@
                 "Ivern",
                 "Morgana",
                 "Lillia",
-                "Zyra",
-                "Kennen"
+                "Kennen",
+                "Zyra"
             ]
         }
     ],
-    "fetched_at": "2026-11-24T02:28:34-03:00"
+    "fetched_at": "2026-11-24T18:29:09-03:00"
 }
