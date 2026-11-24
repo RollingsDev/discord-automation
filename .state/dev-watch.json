@@ -1,7 +1,13 @@
 {
     "initialized_at": "2026-09-20T20:19:25-03:00",
-    "updated_at": "2026-11-21T22:26:13-03:00",
+    "updated_at": "2026-11-24T19:40:03-03:00",
     "items": [
+        "laravel/framework@v13.44.1",
+        "laravel/framework@v13.44.0",
+        "livewire/livewire@v4.4.10",
+        "laravel/octane@v2.26.0",
+        "mysql/mysql-server@mysql-cluster-26.10.0.1",
+        "mysql/mysql-server@mysql-cluster-9.7.4.1",
         "livewire/livewire@v4.4.9",
         "dunglas/frankenphp@v1.14.0",
         "dunglas/frankenphp@v1.13.6",
