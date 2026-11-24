@@ -9,7 +9,7 @@
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
             "play_rate": 0.31,
             "avg_place": 4.03,
-            "top4_rate": 0.605,
+            "top4_rate": 0.604,
             "win_rate": 0.10400000000000001,
             "units": [
                 "Xayah",
@@ -34,7 +34,7 @@
                 ],
                 "Krugue": [
                     "Capa de Fogo Solar",
-                    "Proteção Imutável"
+                    "Semblante Espiritual"
                 ],
                 "Zyra": [
                     "Emblema de Fumegante"
@@ -57,7 +57,7 @@
                 "Azuporã",
                 "Rakan",
                 "Morgana",
-                "Ashe",
+                "Ivern",
                 "Taric"
             ],
             "unit_items": {
@@ -69,15 +69,18 @@
                     "Cajado do Vazio",
                     "Morellonomicon",
                     "Lança de Shojin"
+                ],
+                "Ivern": [
+                    "Lança de Shojin"
                 ]
             }
         },
         {
             "name": "Sabugueiro Ezreal",
             "play_rate": 0.37,
-            "avg_place": 4.1,
-            "top4_rate": 0.5539999999999999,
-            "win_rate": 0.20600000000000002,
+            "avg_place": 4.09,
+            "top4_rate": 0.556,
+            "win_rate": 0.207,
             "units": [
                 "Alistar",
                 "Ezreal",
@@ -92,13 +95,41 @@
                 "Ezreal": [
                     "Gume do Infinito",
                     "Lâmina Mortal",
-                    "Lança de Shojin"
+                    "Último Sussurro"
                 ],
                 "Xayah": [
                     "Lâmina da Fúria de Guinsoo"
                 ],
-                "Soraka": [
+                "Fiddlesticks": [
                     "Emblema de Sabugueiro"
+                ]
+            }
+        },
+        {
+            "name": "Colosso Sivir",
+            "play_rate": 0.08,
+            "avg_place": 4.14,
+            "top4_rate": 0.5589999999999999,
+            "win_rate": 0.174,
+            "units": [
+                "Rakan",
+                "Sivir",
+                "Amumu",
+                "Shen",
+                "Kog'Maw",
+                "Azuporã",
+                "Lillia",
+                "Nidalee"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Gume do Infinito",
+                    "Efeito Vermelho",
+                    "Lança de Shojin"
+                ],
+                "Amumu": [
+                    "Capa de Fogo Solar",
+                    "Armadura de Warmog"
                 ]
             }
         },
@@ -106,7 +137,7 @@
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
             "avg_place": 4.14,
-            "top4_rate": 0.5710000000000001,
+            "top4_rate": 0.57,
             "win_rate": 0.131,
             "units": [
                 "Veigar",
@@ -140,45 +171,6 @@
                     "Emblema de Carrasco"
                 ]
             }
-        },
-        {
-            "name": "Florescer Master Yi & Vi",
-            "play_rate": 0.23,
-            "avg_place": 4.18,
-            "top4_rate": 0.563,
-            "win_rate": 0.11900000000000001,
-            "units": [
-                "Yorick",
-                "Master Yi",
-                "Vi",
-                "Sett",
-                "Nidalee",
-                "Kog'Maw",
-                "Krugue",
-                "Rengar"
-            ],
-            "unit_items": {
-                "Master Yi": [
-                    "Determinação Titânica",
-                    "Mercúrio",
-                    "Fúria do Cráquem"
-                ],
-                "Vi": [
-                    "Emblema de Lutador",
-                    "Capa de Fogo Solar",
-                    "Placa Gargolítica"
-                ],
-                "Nidalee": [
-                    "Sinal de Sterak"
-                ],
-                "Kog'Maw": [
-                    "Efeito Vermelho"
-                ],
-                "Rengar": [
-                    "Limiar da Noite",
-                    "Determinação Titânica"
-                ]
-            }
         }
     ],
     "items": [
@@ -198,7 +190,7 @@
         },
         {
             "name": "Lâmina da Fúria de Guinsoo",
-            "play_rate": 4.24,
+            "play_rate": 4.23,
             "avg_place": 4.4,
             "top4_rate": 0.514,
             "win_rate": 0.133,
@@ -206,13 +198,13 @@
                 "Mamãe Bicuda",
                 "Rengar",
                 "Master Yi",
-                "Azir",
-                "Tristana"
+                "Tristana",
+                "Azir"
             ]
         },
         {
             "name": "Armadura de Warmog",
-            "play_rate": 4.1,
+            "play_rate": 4.11,
             "avg_place": 4.3,
             "top4_rate": 0.536,
             "win_rate": 0.13699999999999998,
@@ -243,7 +235,7 @@
             "play_rate": 3.25,
             "avg_place": 4.25,
             "top4_rate": 0.546,
-            "win_rate": 0.139,
+            "win_rate": 0.14,
             "top_users": [
                 "Alistar",
                 "Sejuani",
@@ -255,7 +247,7 @@
         {
             "name": "Manopla Adornada",
             "play_rate": 3.1,
-            "avg_place": 4.36,
+            "avg_place": 4.35,
             "top4_rate": 0.527,
             "win_rate": 0.133,
             "top_users": [
@@ -268,7 +260,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.96,
+            "play_rate": 2.95,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
@@ -341,7 +333,7 @@
             "play_rate": 2.07,
             "avg_place": 4.1,
             "top4_rate": 0.574,
-            "win_rate": 0.154,
+            "win_rate": 0.153,
             "top_users": [
                 "Yunara",
                 "Ashe",
@@ -368,7 +360,7 @@
             "name": "Luvas do Ladrão",
             "play_rate": 1.99,
             "avg_place": 4.09,
-            "top4_rate": 0.5720000000000001,
+            "top4_rate": 0.573,
             "win_rate": 0.159,
             "top_users": [
                 "Diana",
@@ -387,11 +379,11 @@
             "top_users": [
                 "Ivern",
                 "Morgana",
-                "Kennen",
                 "Lillia",
-                "Zyra"
+                "Zyra",
+                "Kennen"
             ]
         }
     ],
-    "fetched_at": "2026-11-23T19:53:48-03:00"
+    "fetched_at": "2026-11-24T02:28:34-03:00"
 }
