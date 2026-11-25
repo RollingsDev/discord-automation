@@ -8,7 +8,7 @@
         {
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
             "play_rate": 0.31,
-            "avg_place": 4.03,
+            "avg_place": 4.02,
             "top4_rate": 0.605,
             "win_rate": 0.10400000000000001,
             "units": [
@@ -34,7 +34,7 @@
                 ],
                 "Krugue": [
                     "Capa de Fogo Solar",
-                    "Proteção Imutável"
+                    "Placa Gargolítica"
                 ],
                 "Zyra": [
                     "Emblema de Fumegante"
@@ -45,38 +45,10 @@
             }
         },
         {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.07,
-            "avg_place": 4.07,
-            "top4_rate": 0.573,
-            "win_rate": 0.179,
-            "units": [
-                "Rakan",
-                "Sivir",
-                "Amumu",
-                "Shen",
-                "Kog'Maw",
-                "Azuporã",
-                "Lillia",
-                "Nidalee"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Gume do Infinito",
-                    "Efeito Vermelho",
-                    "Lança de Shojin"
-                ],
-                "Amumu": [
-                    "Capa de Fogo Solar",
-                    "Armadura de Warmog"
-                ]
-            }
-        },
-        {
             "name": "Vanguarda Morgana & Alune",
             "play_rate": 0.57,
             "avg_place": 4.09,
-            "top4_rate": 0.56,
+            "top4_rate": 0.561,
             "win_rate": 0.21,
             "units": [
                 "Diana",
@@ -85,20 +57,17 @@
                 "Azuporã",
                 "Rakan",
                 "Morgana",
-                "Ivern",
+                "Ashe",
                 "Taric"
             ],
             "unit_items": {
                 "Azuporã": [
                     "Armadura de Warmog",
-                    "Semblante Espiritual"
+                    "Juramento do Protetor"
                 ],
                 "Morgana": [
                     "Cajado do Vazio",
                     "Morellonomicon",
-                    "Lança de Shojin"
-                ],
-                "Ivern": [
                     "Lança de Shojin"
                 ]
             }
@@ -107,7 +76,7 @@
             "name": "Sabugueiro Ezreal",
             "play_rate": 0.37,
             "avg_place": 4.1,
-            "top4_rate": 0.5529999999999999,
+            "top4_rate": 0.5539999999999999,
             "win_rate": 0.20600000000000002,
             "units": [
                 "Alistar",
@@ -127,9 +96,6 @@
                 ],
                 "Xayah": [
                     "Lâmina da Fúria de Guinsoo"
-                ],
-                "Hecarim": [
-                    "Capa de Fogo Solar"
                 ],
                 "Soraka": [
                     "Emblema de Sabugueiro"
@@ -174,6 +140,34 @@
                     "Cajado do Vazio"
                 ]
             }
+        },
+        {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.09,
+            "avg_place": 4.16,
+            "top4_rate": 0.555,
+            "win_rate": 0.17300000000000001,
+            "units": [
+                "Rakan",
+                "Sivir",
+                "Amumu",
+                "Shen",
+                "Kog'Maw",
+                "Azuporã",
+                "Lillia",
+                "Nidalee"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Gume do Infinito",
+                    "Efeito Vermelho",
+                    "Lança de Shojin"
+                ],
+                "Amumu": [
+                    "Capa de Fogo Solar",
+                    "Armadura de Warmog"
+                ]
+            }
         }
     ],
     "items": [
@@ -201,8 +195,8 @@
                 "Mamãe Bicuda",
                 "Rengar",
                 "Master Yi",
-                "Azir",
-                "Tristana"
+                "Tristana",
+                "Azir"
             ]
         },
         {
@@ -236,8 +230,8 @@
         {
             "name": "Semblante Espiritual",
             "play_rate": 3.25,
-            "avg_place": 4.26,
-            "top4_rate": 0.545,
+            "avg_place": 4.25,
+            "top4_rate": 0.546,
             "win_rate": 0.139,
             "top_users": [
                 "Alistar",
@@ -258,12 +252,12 @@
                 "Ahri",
                 "Karma",
                 "Kayle",
-                "Nidalee"
+                "Morgana"
             ]
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.95,
+            "play_rate": 2.96,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
@@ -291,7 +285,7 @@
         },
         {
             "name": "Cajado do Vazio",
-            "play_rate": 2.36,
+            "play_rate": 2.37,
             "avg_place": 4.2,
             "top4_rate": 0.557,
             "win_rate": 0.14800000000000002,
@@ -307,14 +301,14 @@
             "name": "Último Sussurro",
             "play_rate": 2.14,
             "avg_place": 4.25,
-            "top4_rate": 0.542,
+            "top4_rate": 0.541,
             "win_rate": 0.154,
             "top_users": [
                 "Yunara",
                 "Sivir",
                 "Xayah",
-                "Varus",
-                "Rubrivirim"
+                "Rubrivirim",
+                "Varus"
             ]
         },
         {
@@ -347,7 +341,7 @@
         },
         {
             "name": "Efeito Azul",
-            "play_rate": 2.05,
+            "play_rate": 2.06,
             "avg_place": 4.19,
             "top4_rate": 0.5579999999999999,
             "win_rate": 0.14800000000000002,
@@ -361,8 +355,8 @@
         },
         {
             "name": "Luvas do Ladrão",
-            "play_rate": 1.99,
-            "avg_place": 4.09,
+            "play_rate": 2,
+            "avg_place": 4.1,
             "top4_rate": 0.5720000000000001,
             "win_rate": 0.159,
             "top_users": [
@@ -382,11 +376,11 @@
             "top_users": [
                 "Ivern",
                 "Morgana",
-                "Lillia",
                 "Kennen",
-                "Zyra"
+                "Zyra",
+                "Lillia"
             ]
         }
     ],
-    "fetched_at": "2026-11-25T01:31:39-03:00"
+    "fetched_at": "2026-11-25T17:37:37-03:00"
 }
