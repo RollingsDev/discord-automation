@@ -194,8 +194,8 @@
         {
             "name": "Lâmina da Fúria de Guinsoo",
             "play_rate": 4.24,
-            "avg_place": 4.41,
-            "top4_rate": 0.514,
+            "avg_place": 4.4,
+            "top4_rate": 0.515,
             "win_rate": 0.133,
             "top_users": [
                 "Mamãe Bicuda",
@@ -221,7 +221,7 @@
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.78,
+            "play_rate": 3.79,
             "avg_place": 4.29,
             "top4_rate": 0.5379999999999999,
             "win_rate": 0.14400000000000002,
@@ -236,8 +236,8 @@
         {
             "name": "Semblante Espiritual",
             "play_rate": 3.25,
-            "avg_place": 4.25,
-            "top4_rate": 0.546,
+            "avg_place": 4.26,
+            "top4_rate": 0.545,
             "win_rate": 0.139,
             "top_users": [
                 "Alistar",
@@ -263,7 +263,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.96,
+            "play_rate": 2.95,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
@@ -284,8 +284,8 @@
             "top_users": [
                 "Hecarim",
                 "Sejuani",
-                "Lillia",
                 "Maokai",
+                "Lillia",
                 "Vi"
             ]
         },
@@ -300,7 +300,7 @@
                 "Cassiopeia",
                 "Zyra",
                 "LeBlanc",
-                "Kennen"
+                "Soraka"
             ]
         },
         {
@@ -322,7 +322,7 @@
             "play_rate": 2.08,
             "avg_place": 4.19,
             "top4_rate": 0.56,
-            "win_rate": 0.13699999999999998,
+            "win_rate": 0.136,
             "top_users": [
                 "Cassiopeia",
                 "Mamãe Bicuda",
@@ -350,13 +350,13 @@
             "play_rate": 2.05,
             "avg_place": 4.19,
             "top4_rate": 0.5579999999999999,
-            "win_rate": 0.149,
+            "win_rate": 0.14800000000000002,
             "top_users": [
                 "Karma",
                 "Cassiopeia",
                 "Sivir",
-                "LeBlanc",
-                "Zyra"
+                "Zyra",
+                "LeBlanc"
             ]
         },
         {
@@ -388,5 +388,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-24T18:29:09-03:00"
+    "fetched_at": "2026-11-25T01:31:39-03:00"
 }
