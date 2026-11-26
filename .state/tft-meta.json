@@ -6,8 +6,36 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
+            "name": "Colosso Sivir & Ashe",
+            "play_rate": 0.06,
+            "avg_place": 3.97,
+            "top4_rate": 0.591,
+            "win_rate": 0.187,
+            "units": [
+                "Rakan",
+                "Sivir",
+                "Amumu",
+                "Shen",
+                "Kog'Maw",
+                "Azuporã",
+                "Lillia",
+                "Nidalee"
+            ],
+            "unit_items": {
+                "Sivir": [
+                    "Gume do Infinito",
+                    "Efeito Vermelho",
+                    "Lança de Shojin"
+                ],
+                "Amumu": [
+                    "Capa de Fogo Solar",
+                    "Armadura de Warmog"
+                ]
+            }
+        },
+        {
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
-            "play_rate": 0.31,
+            "play_rate": 0.32,
             "avg_place": 4.02,
             "top4_rate": 0.605,
             "win_rate": 0.10400000000000001,
@@ -25,7 +53,7 @@
                 "Hecarim": [
                     "Proteção Imutável",
                     "Placa Gargolítica",
-                    "Armadura de Warmog"
+                    "Capa de Fogo Solar"
                 ],
                 "Mamãe Bicuda": [
                     "Lâmina da Fúria de Guinsoo",
@@ -39,8 +67,8 @@
                 "Zyra": [
                     "Emblema de Fumegante"
                 ],
-                "Azir": [
-                    "Lâmina da Fúria de Guinsoo"
+                "Azuporã": [
+                    "Proteção Imutável"
                 ]
             }
         },
@@ -57,27 +85,30 @@
                 "Azuporã",
                 "Rakan",
                 "Morgana",
-                "Ashe",
+                "Ivern",
                 "Taric"
             ],
             "unit_items": {
                 "Azuporã": [
-                    "Armadura de Warmog",
-                    "Juramento do Protetor"
+                    "Juramento do Protetor",
+                    "Centelha Iônica"
                 ],
                 "Morgana": [
                     "Cajado do Vazio",
                     "Morellonomicon",
+                    "Lança de Shojin"
+                ],
+                "Ivern": [
                     "Lança de Shojin"
                 ]
             }
         },
         {
             "name": "Sabugueiro Ezreal",
-            "play_rate": 0.37,
-            "avg_place": 4.1,
-            "top4_rate": 0.5539999999999999,
-            "win_rate": 0.20600000000000002,
+            "play_rate": 0.38,
+            "avg_place": 4.13,
+            "top4_rate": 0.5489999999999999,
+            "win_rate": 0.205,
             "units": [
                 "Alistar",
                 "Ezreal",
@@ -97,7 +128,7 @@
                 "Xayah": [
                     "Lâmina da Fúria de Guinsoo"
                 ],
-                "Soraka": [
+                "Fiddlesticks": [
                     "Emblema de Sabugueiro"
                 ]
             }
@@ -107,7 +138,7 @@
             "play_rate": 0.17,
             "avg_place": 4.14,
             "top4_rate": 0.5710000000000001,
-            "win_rate": 0.131,
+            "win_rate": 0.132,
             "units": [
                 "Veigar",
                 "Teemo",
@@ -133,39 +164,11 @@
                     "Centelha Iônica"
                 ],
                 "Soraka": [
-                    "Lança de Shojin"
+                    "Cajado do Vazio"
                 ],
                 "Zyra": [
-                    "Emblema de Carrasco",
-                    "Cajado do Vazio"
-                ]
-            }
-        },
-        {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.09,
-            "avg_place": 4.16,
-            "top4_rate": 0.555,
-            "win_rate": 0.17300000000000001,
-            "units": [
-                "Rakan",
-                "Sivir",
-                "Amumu",
-                "Shen",
-                "Kog'Maw",
-                "Azuporã",
-                "Lillia",
-                "Nidalee"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Gume do Infinito",
-                    "Efeito Vermelho",
-                    "Lança de Shojin"
-                ],
-                "Amumu": [
-                    "Capa de Fogo Solar",
-                    "Armadura de Warmog"
+                    "Cajado do Vazio",
+                    "Emblema de Carrasco"
                 ]
             }
         }
@@ -236,8 +239,8 @@
             "top_users": [
                 "Alistar",
                 "Sejuani",
-                "Hecarim",
                 "Maokai",
+                "Hecarim",
                 "Vi"
             ]
         },
@@ -257,7 +260,7 @@
         },
         {
             "name": "Gume do Infinito",
-            "play_rate": 2.96,
+            "play_rate": 2.95,
             "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
@@ -271,7 +274,7 @@
         },
         {
             "name": "Juramento do Protetor",
-            "play_rate": 2.48,
+            "play_rate": 2.47,
             "avg_place": 4.17,
             "top4_rate": 0.562,
             "win_rate": 0.149,
@@ -301,19 +304,19 @@
             "name": "Último Sussurro",
             "play_rate": 2.14,
             "avg_place": 4.25,
-            "top4_rate": 0.541,
+            "top4_rate": 0.542,
             "win_rate": 0.154,
             "top_users": [
                 "Yunara",
                 "Sivir",
-                "Xayah",
                 "Rubrivirim",
+                "Xayah",
                 "Varus"
             ]
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.08,
+            "play_rate": 2.09,
             "avg_place": 4.19,
             "top4_rate": 0.56,
             "win_rate": 0.136,
@@ -349,8 +352,8 @@
                 "Karma",
                 "Cassiopeia",
                 "Sivir",
-                "Zyra",
-                "LeBlanc"
+                "Ahri",
+                "Zyra"
             ]
         },
         {
@@ -377,10 +380,10 @@
                 "Ivern",
                 "Morgana",
                 "Kennen",
-                "Zyra",
-                "Lillia"
+                "Lillia",
+                "Zyra"
             ]
         }
     ],
-    "fetched_at": "2026-11-25T17:37:37-03:00"
+    "fetched_at": "2026-11-26T00:43:51-03:00"
 }
