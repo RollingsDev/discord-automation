@@ -209,13 +209,13 @@
                 "Maokai",
                 "Sejuani",
                 "Alistar",
-                "Hecarim",
-                "Taric"
+                "Taric",
+                "Hecarim"
             ]
         },
         {
             "name": "Lança de Shojin",
-            "play_rate": 3.8,
+            "play_rate": 3.81,
             "avg_place": 4.29,
             "top4_rate": 0.5379999999999999,
             "win_rate": 0.14400000000000002,
@@ -232,7 +232,7 @@
             "play_rate": 3.25,
             "avg_place": 4.25,
             "top4_rate": 0.546,
-            "win_rate": 0.14,
+            "win_rate": 0.139,
             "top_users": [
                 "Alistar",
                 "Sejuani",
@@ -245,12 +245,12 @@
             "name": "Manopla Adornada",
             "play_rate": 3.12,
             "avg_place": 4.36,
-            "top4_rate": 0.527,
+            "top4_rate": 0.526,
             "win_rate": 0.133,
             "top_users": [
                 "Teemo",
-                "Karma",
                 "Ahri",
+                "Karma",
                 "Kayle",
                 "Morgana"
             ]
@@ -273,7 +273,7 @@
             "name": "Juramento do Protetor",
             "play_rate": 2.47,
             "avg_place": 4.17,
-            "top4_rate": 0.562,
+            "top4_rate": 0.563,
             "win_rate": 0.15,
             "top_users": [
                 "Hecarim",
@@ -287,8 +287,8 @@
             "name": "Cajado do Vazio",
             "play_rate": 2.37,
             "avg_place": 4.2,
-            "top4_rate": 0.557,
-            "win_rate": 0.14800000000000002,
+            "top4_rate": 0.556,
+            "win_rate": 0.147,
             "top_users": [
                 "Morgana",
                 "Cassiopeia",
@@ -299,9 +299,9 @@
         },
         {
             "name": "Último Sussurro",
-            "play_rate": 2.14,
+            "play_rate": 2.13,
             "avg_place": 4.25,
-            "top4_rate": 0.541,
+            "top4_rate": 0.542,
             "win_rate": 0.154,
             "top_users": [
                 "Yunara",
@@ -313,10 +313,10 @@
         },
         {
             "name": "Pistola Laminar Hextec",
-            "play_rate": 2.09,
-            "avg_place": 4.19,
+            "play_rate": 2.1,
+            "avg_place": 4.18,
             "top4_rate": 0.561,
-            "win_rate": 0.136,
+            "win_rate": 0.13699999999999998,
             "top_users": [
                 "Cassiopeia",
                 "Mamãe Bicuda",
@@ -330,20 +330,20 @@
             "play_rate": 2.06,
             "avg_place": 4.1,
             "top4_rate": 0.574,
-            "win_rate": 0.154,
+            "win_rate": 0.153,
             "top_users": [
                 "Yunara",
                 "Ashe",
                 "Morgana",
                 "Kog'Maw",
-                "Sivir"
+                "Dragão Ancião"
             ]
         },
         {
             "name": "Efeito Azul",
             "play_rate": 2.06,
-            "avg_place": 4.19,
-            "top4_rate": 0.5579999999999999,
+            "avg_place": 4.2,
+            "top4_rate": 0.557,
             "win_rate": 0.14800000000000002,
             "top_users": [
                 "Karma",
@@ -382,5 +382,5 @@
             ]
         }
     ],
-    "fetched_at": "2026-11-27T00:44:35-03:00"
+    "fetched_at": "2026-11-27T17:16:25-03:00"
 }
