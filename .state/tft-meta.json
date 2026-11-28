@@ -6,38 +6,10 @@
     "rank_filter": "Platinum+",
     "comps": [
         {
-            "name": "Colosso Sivir & Ashe",
-            "play_rate": 0.05,
-            "avg_place": 3.94,
-            "top4_rate": 0.598,
-            "win_rate": 0.188,
-            "units": [
-                "Sivir",
-                "Amumu",
-                "Rakan",
-                "Shen",
-                "Kog'Maw",
-                "Azuporã",
-                "Lillia",
-                "Nidalee"
-            ],
-            "unit_items": {
-                "Sivir": [
-                    "Gume do Infinito",
-                    "Efeito Vermelho",
-                    "Lança de Shojin"
-                ],
-                "Amumu": [
-                    "Capa de Fogo Solar",
-                    "Armadura de Warmog"
-                ]
-            }
-        },
-        {
             "name": "Fera do Rift Mamãe Bicuda & Hecarim",
             "play_rate": 0.32,
             "avg_place": 4.01,
-            "top4_rate": 0.607,
+            "top4_rate": 0.608,
             "win_rate": 0.105,
             "units": [
                 "Xayah",
@@ -53,7 +25,7 @@
                 "Hecarim": [
                     "Placa Gargolítica",
                     "Capa de Fogo Solar",
-                    "Armadura de Warmog"
+                    "Juramento do Protetor"
                 ],
                 "Mamãe Bicuda": [
                     "Lâmina da Fúria de Guinsoo",
@@ -66,18 +38,15 @@
                 ],
                 "Zyra": [
                     "Emblema de Fumegante"
-                ],
-                "Azir": [
-                    "Lâmina da Fúria de Guinsoo"
                 ]
             }
         },
         {
             "name": "Vanguarda Morgana & Alune",
             "play_rate": 0.58,
-            "avg_place": 4.08,
-            "top4_rate": 0.562,
-            "win_rate": 0.21100000000000002,
+            "avg_place": 4.07,
+            "top4_rate": 0.564,
+            "win_rate": 0.212,
             "units": [
                 "Diana",
                 "Fiddlesticks",
@@ -103,18 +72,18 @@
         {
             "name": "Sabugueiro Ezreal",
             "play_rate": 0.38,
-            "avg_place": 4.12,
-            "top4_rate": 0.551,
-            "win_rate": 0.20600000000000002,
+            "avg_place": 4.1,
+            "top4_rate": 0.5539999999999999,
+            "win_rate": 0.207,
             "units": [
                 "Alistar",
                 "Ezreal",
                 "Ornn",
-                "Xayah",
                 "LeBlanc",
                 "Fiddlesticks",
                 "Hecarim",
-                "Soraka"
+                "Soraka",
+                "Kennen"
             ],
             "unit_items": {
                 "Ezreal": [
@@ -122,10 +91,7 @@
                     "Lâmina Mortal",
                     "Último Sussurro"
                 ],
-                "Xayah": [
-                    "Lâmina da Fúria de Guinsoo"
-                ],
-                "Soraka": [
+                "Fiddlesticks": [
                     "Emblema de Sabugueiro"
                 ]
             }
@@ -133,8 +99,8 @@
         {
             "name": "Vivaz Azir & Rammus",
             "play_rate": 0.17,
-            "avg_place": 4.14,
-            "top4_rate": 0.5710000000000001,
+            "avg_place": 4.13,
+            "top4_rate": 0.5720000000000001,
             "win_rate": 0.132,
             "units": [
                 "Veigar",
@@ -168,6 +134,42 @@
                     "Emblema de Carrasco"
                 ]
             }
+        },
+        {
+            "name": "Colosso Zyra & Amumu",
+            "play_rate": 0.1,
+            "avg_place": 4.18,
+            "top4_rate": 0.563,
+            "win_rate": 0.13,
+            "units": [
+                "Yorick",
+                "Vi",
+                "Zyra",
+                "Amumu",
+                "Maokai",
+                "Rakan",
+                "Sejuani",
+                "Nidalee"
+            ],
+            "unit_items": {
+                "Zyra": [
+                    "Pistola Laminar Hextec",
+                    "Cajado do Arcanjo",
+                    "Cajado do Vazio"
+                ],
+                "Amumu": [
+                    "Capa de Fogo Solar",
+                    "Centelha Iônica",
+                    "Coração Inabalável"
+                ],
+                "Maokai": [
+                    "Armadura de Warmog"
+                ],
+                "Nidalee": [
+                    "Cajado do Arcanjo",
+                    "Lâmina da Fúria de Guinsoo"
+                ]
+            }
         }
     ],
     "items": [
@@ -182,7 +184,7 @@
                 "Sejuani",
                 "Alistar",
                 "Maokai",
-                "Hecarim"
+                "Taric"
             ]
         },
         {
@@ -195,8 +197,8 @@
                 "Mamãe Bicuda",
                 "Rengar",
                 "Master Yi",
-                "Azir",
-                "Tristana"
+                "Tristana",
+                "Azir"
             ]
         },
         {
@@ -258,7 +260,7 @@
         {
             "name": "Gume do Infinito",
             "play_rate": 2.95,
-            "avg_place": 4.34,
+            "avg_place": 4.33,
             "top4_rate": 0.527,
             "win_rate": 0.14300000000000002,
             "top_users": [
@@ -279,8 +281,8 @@
                 "Hecarim",
                 "Sejuani",
                 "Maokai",
-                "Lillia",
-                "Vi"
+                "Vi",
+                "Lillia"
             ]
         },
         {
@@ -336,7 +338,7 @@
                 "Ashe",
                 "Morgana",
                 "Kog'Maw",
-                "Dragão Ancião"
+                "Sivir"
             ]
         },
         {
@@ -376,11 +378,11 @@
             "top_users": [
                 "Ivern",
                 "Morgana",
-                "Lillia",
                 "Kennen",
+                "Lillia",
                 "Hecarim"
             ]
         }
     ],
-    "fetched_at": "2026-11-27T17:16:25-03:00"
+    "fetched_at": "2026-11-28T00:28:34-03:00"
 }
